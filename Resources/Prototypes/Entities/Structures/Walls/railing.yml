@@ -7,9 +7,9 @@
   components:
   - type: Sprite
     drawdepth: SmallObjects
-    sprite: Structures/Walls/railing.rsi
+    sprite: DeltaV/Structures/Walls/railing.rsi # Delta V - Resprite railings
   - type: Icon
-    sprite: Structures/Walls/railing.rsi
+    sprite: DeltaV/Structures/Walls/railing.rsi # Delta V - Resprite railings
   - type: Physics
     bodyType: Static
   - type: InteractionOutline
