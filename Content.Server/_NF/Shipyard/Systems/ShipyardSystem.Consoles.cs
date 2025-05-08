@@ -71,6 +71,7 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
     [Dependency] private readonly ShuttleRecordsSystem _shuttleRecordsSystem = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly ShipyardDirectionSystem _directionSystem = default!; // Aurora Song port of Monolith direction system
+    [Dependency] private readonly IGameTiming _timing = default!; // Mono
 
     private static readonly Regex DeedRegex = new(@"\s*\([^()]*\)");
 
@@ -474,6 +475,23 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         RefreshState(uid, bank.Balance, true, null, 0, refreshId, (ShipyardConsoleUiKey)args.UiKey, voucherUsed);
     }
 
+    // Monolith Start
+    /// <summary>
+    /// Checks if a player is currently on the unassign cooldown and returns the remaining time.
+    /// </summary>
+    private TimeSpan? GetRemainingCooldownTime(EntityUid player)
+    {
+        if (!TryComp<ShipyardUnassignCooldownComponent>(player, out var cooldown))
+            return null;
+
+        var currentTime = _timing.CurTime;
+        if (currentTime >= cooldown.NextUnassignTime)
+            return null;
+
+        return cooldown.NextUnassignTime - currentTime;
+    }
+    // Monolith End
+
     private void OnConsoleUIOpened(EntityUid uid, ShipyardConsoleComponent component, BoundUIOpenedEvent args)
     {
         if (!component.Initialized)
@@ -513,6 +531,17 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
         }
 
         var fullName = deed != null ? GetFullName(deed) : null;
+
+        // Monolith Start
+        // If the player is on cooldown, disable the unassign button
+        var remainingCooldown = GetRemainingCooldownTime(player);
+        if (remainingCooldown.HasValue)
+        {
+            // TODO: Update UI to show cooldown time on button
+            // For now we'll just let them see the cooldown message when they try to use it
+        }
+        // Monolith End
+
         RefreshState(uid, bank.Balance, true, fullName, sellValue, targetId, (ShipyardConsoleUiKey)args.UiKey, voucherUsed);
     }
 
@@ -903,11 +932,36 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             return;
         }
 
+        // Check if the player is on cooldown
+        var cooldown = EnsureComp<ShipyardUnassignCooldownComponent>(player);
+        var currentTime = _timing.CurTime;
+
+        if (currentTime < cooldown.NextUnassignTime)
+        {
+            // Calculate remaining time
+            var timeRemaining = cooldown.NextUnassignTime - currentTime;
+            var hoursRemaining = (int)timeRemaining.TotalHours;
+            var minutesRemaining = (int)timeRemaining.TotalMinutes % 60;
+
+            // Display cooldown message
+            var cooldownMessage = Loc.GetString(
+                "shipyard-console-unassign-cooldown",
+                ("hours", hoursRemaining),
+                ("minutes", minutesRemaining)
+            );
+            ConsolePopup(player, cooldownMessage);
+            PlayDenySound(player, uid, component);
+            return;
+        }
+
         // Get the name of the ship before we remove the component
         var shipName = GetFullName(deed);
 
         // Remove the deed component from the ID card
         RemComp<ShuttleDeedComponent>(targetId);
+
+        // Set the cooldown
+        cooldown.NextUnassignTime = currentTime + cooldown.CooldownDuration;
 
         ConsolePopup(player, Loc.GetString("shipyard-console-deed-unassigned"));
         PlayConfirmSound(player, uid, component);
