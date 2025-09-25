@@ -5,7 +5,7 @@
   description: A little bit of nature contained in a pot.
   abstract: true
   components:
-  - type: SpriteFade
+#  - type: SpriteFade # Coyote
   - type: Transform
     noRot: true
   - type: InteractionOutline
@@ -55,6 +55,7 @@
   - type: StaticPrice
     price: 50
     # Coyote start
+    vendPrice: 2000 # eat it
   - type: PortableScrubber
     baseTransferRate: 1
     TransferRate: 1
