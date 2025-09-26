@@ -15,12 +15,19 @@
           showInChat: true
           force: true
           probability: 0.18
+          conditions:
+            - !type:Consent # Aurora Song
+              effectTypes:
+                - Polymorph
         - !type:Polymorph
           prototype: ChemicalMothroach
           conditions:
             - !type:NFIsHumanoid
             - !type:ReagentThreshold
               min: 10
+            - !type:Consent # Aurora Song
+              effectTypes:
+                - Polymorph
         - !type:AdjustReagent
           reagent: Mothrazine
           amount: -3
@@ -45,6 +52,10 @@
           showInChat: true
           force: true
           probability: 0.09
+          conditions:
+            - !type:Consent # Aurora Song
+              effectTypes:
+                - Polymorph
         - !type:Polymorph
           prototype: ChemicalFelinid
           conditions:
@@ -52,7 +63,7 @@
             - !type:ReagentThreshold
               min: 15
             - !type:Consent # Aurora Song
-              EffectTypes:
+              effectTypes:
                 - Polymorph
         - !type:AdjustReagent
           reagent: Catgirlium
@@ -61,7 +72,7 @@
             - !type:ReagentThreshold
               min: 15
             - !type:Consent # Aurora Song
-              EffectTypes:
+              effectTypes:
                 - Polymorph
         - !type:GenericStatusEffect
           key: Stutter
@@ -83,7 +94,7 @@
         - !type:ReagentThreshold
           min: 15
         - !type:Consent # Aurora Song
-          EffectTypes:
+          effectTypes:
             - Polymorph
         damage:
           types:
@@ -108,7 +119,7 @@
             - !type:ReagentThreshold
               min: 20
             - !type:Consent # Aurora Song
-              EffectTypes:
+              effectTypes:
                 - Polymorph
         - !type:AdjustReagent
           reagent: Davisicium
@@ -117,5 +128,5 @@
             - !type:ReagentThreshold
               min: 20
             - !type:Consent # Aurora Song
-              EffectTypes:
+              effectTypes:
                 - Polymorph

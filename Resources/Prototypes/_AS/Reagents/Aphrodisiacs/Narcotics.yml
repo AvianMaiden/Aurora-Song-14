@@ -27,8 +27,8 @@
           - !type:ReagentThreshold
             max: 30
           - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs
       - !type:PopupMessage # Overdose causes nausea and vomiting
         type: Local
         visualType: LargeCaution
@@ -43,22 +43,22 @@
           - !type:ReagentThreshold
             min: 30
           - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs
       - !type:Drunk
         conditions:
         - !type:ReagentThreshold
           min: 50
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
       - !type:HealthChange
         conditions:
         - !type:ReagentThreshold
           min: 35
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
         damage:
           types:
             Poison: 0.01
@@ -67,8 +67,8 @@
         - !type:ReagentThreshold
           min: 50
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
         probability: 0.05
       - !type:PopupMessage
         type: Local
@@ -80,5 +80,5 @@
           - !type:ReagentThreshold
             max: 0.1
           - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs

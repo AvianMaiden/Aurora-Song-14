@@ -24,8 +24,8 @@
           - !type:ReagentThreshold
             max: 50
           - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs
       - !type:PopupMessage # Overdose causes nausea and vomiting
         type: Local
         visualType: Medium
@@ -36,22 +36,22 @@
           - !type:ReagentThreshold
             min: 50
           - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs
       - !type:Drunk
         conditions:
         - !type:ReagentThreshold
           min: 50
         - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs
       - !type:ChemVomit
         conditions:
         - !type:ReagentThreshold
           min: 60
         - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs
         probability: 0.05
       - !type:PopupMessage
         type: Local
@@ -63,8 +63,8 @@
           - !type:ReagentThreshold
             max: 0.1
           - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs
 
 - type: reagent
   id: Philterex
@@ -92,8 +92,8 @@
         - !type:ReagentThreshold
           max: 16.5
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
       - !type:PopupMessage
         type: Local
         visualType: MediumCaution
@@ -109,15 +109,15 @@
         - !type:ReagentThreshold
           min: 16.5
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
       - !type:Emote
         conditions:
         - !type:ReagentThreshold
           min: 16.5
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
         emote: Yawn
         showInChat: true
         probability: 0.02
@@ -128,15 +128,15 @@
         - !type:ReagentThreshold
           min: 16.5
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
       - !type:GenericStatusEffect
         conditions:
         - !type:ReagentThreshold
           min: 30.0
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
         key: ForcedSleep
         component: ForcedSleeping
         refresh: false
@@ -147,8 +147,8 @@
         - !type:ReagentThreshold
           min: 30
         - !type:Consent # Aurora Song
-          EffectTypes:
-            - Aphrodisiac
+          effectTypes:
+            - Aphrodisiacs
         damage:
           types:
             Poison: 1
@@ -162,5 +162,5 @@
           - !type:ReagentThreshold
             max: 0.1
           - !type:Consent # Aurora Song
-            EffectTypes:
-              - Aphrodisiac
+            effectTypes:
+              - Aphrodisiacs
