@@ -21,6 +21,7 @@
     tags: # DeltaV - let borgs, bots, and IPCs use it
     - SiliconOrIPCEmotes
   name: chat-emote-name-whirr
-  chatMessages: [ whirrs ]
+  chatMessages: [ whirrs. ] # DeltaV - period
   chatTriggers:
+    - whirr
     - whirrs
