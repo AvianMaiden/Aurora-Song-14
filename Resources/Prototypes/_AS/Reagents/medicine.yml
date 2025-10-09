@@ -30,7 +30,7 @@
                 - Polymorph
         - !type:AdjustReagent
           reagent: Mothrazine
-          amount: -3
+          amount: -5
           conditions:
             - !type:ReagentThreshold
               min: 10
@@ -67,13 +67,13 @@
                 - Polymorph
         - !type:AdjustReagent
           reagent: Catgirlium
-          amount: -2
+          amount: -5
           conditions:
             - !type:ReagentThreshold
               min: 15
-            - !type:Consent # Aurora Song
-              effectTypes:
-                - Polymorph
+#            - !type:Consent # Aurora Song
+#              effectTypes:
+#                - Polymorph
         - !type:GenericStatusEffect
           key: Stutter
           component: ScrambledAccent
@@ -123,10 +123,10 @@
                 - Polymorph
         - !type:AdjustReagent
           reagent: Davisicium
-          amount: -3
+          amount: -10
           conditions:
             - !type:ReagentThreshold
               min: 20
-            - !type:Consent # Aurora Song
-              effectTypes:
-                - Polymorph
+#            - !type:Consent # Aurora Song
+#              effectTypes:
+#                - Polymorph
