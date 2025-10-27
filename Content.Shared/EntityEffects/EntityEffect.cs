@@ -112,8 +112,6 @@ public record class EntityEffectBaseArgs
 
     public IEntityManager EntityManager = default!;
 
-    private IPrototypeManager PrototypeManager = default!;
-
     public EntityEffectBaseArgs(EntityUid targetEntity, IEntityManager entityManager)
     {
         TargetEntity = targetEntity;
