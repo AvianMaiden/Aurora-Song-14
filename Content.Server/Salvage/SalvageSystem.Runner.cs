@@ -27,7 +27,15 @@ using Robust.Shared.Map; // Frontier
 using Content.Server.GameTicking; // Frontier
 using Content.Server._NF.Salvage.Expeditions.Structure; // Frontier
 using Content.Server._NF.Salvage.Expeditions;
-using Content.Shared.Salvage; // Frontier
+using Content.Server.Buckle.Systems;
+using Content.Shared.Buckle.Components;
+using Content.Shared.Mind.Components;
+using Content.Shared.Salvage;
+using Content.Shared.Warps;
+using Robust.Server.Player;
+using Robust.Shared.Audio;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Enums; // Frontier
 
 namespace Content.Server.Salvage;
 
@@ -40,6 +48,7 @@ public sealed partial class SalvageSystem
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly GameTicker _gameTicker = default!; // Frontier
     [Dependency] private readonly DamageableSystem _damageable = default!;
+    [Dependency] private readonly IPlayerManager _players = default!;
 
     private void InitializeRunner()
     {
@@ -208,6 +217,8 @@ public sealed partial class SalvageSystem
             var remaining = comp.EndTime - _timing.CurTime;
             var audioLength = _audio.GetAudioLength(comp.SelectedSong);
 
+            AbortIfWiped(uid, comp); // Frontier
+
             if (comp.Stage < ExpeditionStage.FinalCountdown && remaining < TimeSpan.FromSeconds(45))
             {
                 comp.Stage = ExpeditionStage.FinalCountdown;
@@ -296,7 +307,13 @@ public sealed partial class SalvageSystem
                                 dropLocation = _random.NextVector2(minRange, maxRange);
                             }
 
-                            _shuttle.FTLToCoordinates(shuttleUid, shuttle, new EntityCoordinates(mapUid.Value, dropLocation), 0f, ftlTime, TravelTime);
+                            _shuttle.FTLToCoordinates(
+                                shuttleUid,
+                                shuttle,
+                                new EntityCoordinates(mapUid.Value, dropLocation),
+                                0f,
+                                ftlTime,
+                                TravelTime);
                             // End Frontier:  try to find a potential destination for ship that doesn't collide with other grids.
                             //_shuttle.FTLToDock(shuttleUid, shuttle, member, ftlTime); // Frontier: use above instead
                         }
@@ -325,6 +342,10 @@ public sealed partial class SalvageSystem
                             {
                                 // If they aren't on the expedition map, don't want em
                                 if (mobXform.MapUid != uid)
+                                    continue;
+
+                                //if they are on the shuttle, don't bother.
+                                if (mobXform.GridUid == shuttleUid)
                                     continue;
 
                                 // Not player controlled at any point
@@ -438,6 +459,69 @@ public sealed partial class SalvageSystem
             }
         }
         // End Frontier: mission-specific logic
+    }
+
+    /// <summary>
+    /// Checks if everyone on the map worth caring about is dead, and aborts the expedition if so.
+    /// Honestly, as long as one person is not in crit and not SSD, we consider the expedition salvageable.
+    /// </summary>
+    private void AbortIfWiped(EntityUid mapUid, SalvageExpeditionComponent component)
+    {
+        // give it a 30 second grade after first check to avoid instant aborts
+        if (component.NextAutoAbortCheck == TimeSpan.Zero)
+        {
+            component.NextAutoAbortCheck = _timing.CurTime + TimeSpan.FromSeconds(30);
+            return;
+        }
+        // only check frequently in case of some method of revival and/or performance methods
+        if (_timing.CurTime < component.NextAutoAbortCheck)
+            return;
+        component.NextAutoAbortCheck = _timing.CurTime + TimeSpan.FromSeconds(15);
+
+        var query =
+            EntityQueryEnumerator<
+                HumanoidAppearanceComponent,
+                MindContainerComponent,
+                MobStateComponent,
+                TransformComponent>();
+        // prevent abort if:
+        // - anyone is alive AND connected
+        while (query.MoveNext(
+                   out var uid,
+                   out _,
+                   out var mindC,
+                   out var mobState,
+                   out var xform))
+        {
+            if (xform.MapUid != mapUid)
+                continue;
+            // unidentified humans (loot) dont count
+            if (!mindC.HasMind)
+                continue;
+            // if anyone is alive and not in crit, we are good
+            if (_mobState.IsAlive(uid, mobState))
+            {
+                // okay weve got something alive, is their session?
+                _players.TryGetSessionByEntity(uid, out var session);
+                // if no session, check if they are SSD
+                if (session == null)
+                    continue;
+                if (session.Status == SessionStatus.Disconnected)
+                    continue;
+                return; // alive and connected player found, expedition is salvageable
+            }
+        }
+        // everyone is dead or ssd, abort the expedition
+        const int departTime = 20;
+        Announce(mapUid, Loc.GetString("salvage-expedition-abort-wipe", ("departTime", departTime)));
+        component.NextAutoAbortCheck = TimeSpan.FromDays(1); // prevent further checks
+        var newEndTime = _timing.CurTime + TimeSpan.FromSeconds(departTime);
+
+        if (component.EndTime <= newEndTime)
+            return;
+
+        component.Stage = ExpeditionStage.FinalCountdown;
+        component.EndTime = newEndTime;
     }
 }
 
