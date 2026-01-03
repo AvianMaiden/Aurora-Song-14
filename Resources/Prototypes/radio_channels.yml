@@ -4,7 +4,8 @@
   keycode: ";"
   frequency: 1459
   color: "#2cdb2c"
-  maxRange: 6000 # CS - increase range 3000 => 6000
+  # maxRange: 10000 # CS - increase range 3000 => 10000
+
 - type: radioChannel
   id: CentCom
   name: chat-radio-centcom
