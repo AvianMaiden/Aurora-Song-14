@@ -282,7 +282,8 @@ public sealed class ClientClothingSystem : ClothingSystem
 
         // temporary, until layer draw depths get added. Basically: a layer with the key "slot" is being used as a
         // bookmark to determine where in the list of layers we should insert the clothing layers.
-        var slotLayerExists = _sprite.LayerMapTryGet((equipee, sprite), slot, out var index, false);
+        var bookmarkSlot = slot == "neck2" ? "neck" : slot; // Aurora's Song: neck2 shares neck bookmark
+        var slotLayerExists = _sprite.LayerMapTryGet((equipee, sprite), bookmarkSlot, out var index, false);
 
         // Select displacement maps
         var displacementData = inventory.Displacements.GetValueOrDefault(slot); //Default unsexed map
@@ -304,7 +305,8 @@ public sealed class ClientClothingSystem : ClothingSystem
         }
 
         // add the new layers
-        var firstLayer = true; // Aurora's Song - second neck slot
+        // Aurora's Song - Track first layer for neck2 slot to control rendering order
+        var firstLayer = true;
         foreach (var (key, layerData) in ev.Layers)
         {
             if (!revealedLayers.Add(key))
@@ -315,17 +317,12 @@ public sealed class ClientClothingSystem : ClothingSystem
 
             if (slotLayerExists)
             {
-                // Aurora's Song - second neck slot - start
-                // For neck2, insert at the bookmark position on the first layer so it renders behind neck
+                // Aurora's Song - neck2 doesn't increment on first layer, making it render behind neck items
                 if (slot == "neck2" && firstLayer)
-                {
                     firstLayer = false;
-                }
                 else
-                {
                     index++;
-                }
-                // Aurora's Song - second neck slot - end
+                // Aurora's Song - end neck2 layering logic
                 // note that every insertion requires reshuffling & remapping all the existing layers.
                 _sprite.AddBlankLayer((equipee, sprite), index);
                 _sprite.LayerMapSet((equipee, sprite), key, index);
