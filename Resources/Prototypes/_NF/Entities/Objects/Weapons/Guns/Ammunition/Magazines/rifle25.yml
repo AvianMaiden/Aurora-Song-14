@@ -1,4 +1,7 @@
 # Aurora - With the refactor from .25 caseless to .25 rifle, we need to update the magazine prototypes accordingly.
+# Also Aurora - Fixed magazine rendering issues: corrected rubber sprite paths from _NF to base Objects path, added proper layered sprite
+# system with base/mag/stripe for visual consistency, updated color to cyan (#00b0ff), added weapon compatibility tags,
+# fixed in-hand visuals with proper left/right stripe overlays, and updated pistol mag state to mag-5 for better capacity visualization.
 #region .25 Rifle mags | Aurora
 - type: entity
   id: ASMagazinePistolCaselessRifle
