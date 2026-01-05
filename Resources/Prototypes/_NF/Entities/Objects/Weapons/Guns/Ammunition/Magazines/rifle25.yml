@@ -16,7 +16,7 @@
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
     - state: stripe
       color: "#ff0000"
@@ -25,6 +25,16 @@
     steps: 6
     zeroVisible: false
   - type: Appearance
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#ff0000"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#ff0000"
 
 - type: entity
   id: ASMagazineCaselessRifle
@@ -45,6 +55,21 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: stripe
       color: "#ff0000"
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#ff0000"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#ff0000"
 
 - type: entity
   id: ASMagazineCaselessRifleShort
@@ -66,6 +91,21 @@
       map: ["enum.GunVisualLayers.Mag"]
     - state: stripe
       color: "#ff0000"
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#ff0000"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#ff0000"
 #endregion .25 Rifle mags | Aurora
 - type: entity
   id: MagazinePistolCaselessRifleRubber
@@ -96,7 +136,7 @@
         color: "#0000ff"
       right:
       - state: inhand-right-mag
-      - state: inhand-left-stripe
+      - state: inhand-right-stripe
         color: "#0000ff"
 
 - type: entity
@@ -113,6 +153,17 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#0000ff"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#0000ff"
 
 - type: entity
   id: MagazineCaselessRifleShortRubber
@@ -129,3 +180,14 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag_short.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#0000ff"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#0000ff"
