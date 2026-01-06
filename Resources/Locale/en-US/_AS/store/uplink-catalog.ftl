@@ -87,6 +87,9 @@ uplink-exchange-debranded-hardsuit-desc = A Cybersun hardsuit with the paint str
 uplink-exchange-debranded-elite-hardsuit-name = Debranded Elite Armored Hardsuit
 uplink-exchange-debranded-elite-hardsuit-desc = An Elite Cybersun hardsuit with the paint stripped and trackers removed.
 
+uplink-exchange-military-surplus-hardsuit-name = Military Surplus Hardsuit
+uplink-exchange-military-surplus-hardsuit-desc = Auroran MilSurp hardsuit. Designed for most types of engagement. Armor adjusted to match protection of other surplus offerings in its tier.
+
 uplink-exchange-spesos-name = 3000 spesos
 uplink-exchange-spesos-desc = A stack of 3000 spesos, hard currency.
 
