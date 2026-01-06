@@ -66,6 +66,7 @@
   - NFAmmunitionBoxShellShotgunSlug
   - NFAmmunitionBoxRifle30Rubber
   - NFAmmunitionBoxPistol35Rubber
+  - ASAmmunitionBoxPistol40 # Aurora Song
   - ASAmmunitionBoxPistol40Rubber # Aurora Song
   - NFAmmunitionBoxPistol45Rubber
   - NFAmmunitionBoxRifle20Rubber
@@ -88,11 +89,6 @@
   - NFSpeedLoaderPistol45
   - NFMagazineClipRifle20
   - NFMagazineRifle30
-  - ASMagazinePistol40Empty # Aurora Song
-  - ASMagazinePistol40 # Aurora Song
-  - ASMagazineSubMachineGun40Empty # Aurora Song
-  - ASMagazineSubMachineGun40 # Aurora Song
-  - ASAmmunitionBoxPistol40 # Aurora Song
 
 - type: latheRecipePack
   id: NFMercenaryTechfabDynamicDeprecated
@@ -196,3 +192,7 @@
   - NFSpeedLoaderPistol45
   - NFMagazineClipRifle20
   - NFMagazineRifle30
+  - ASMagazinePistol40Empty # Aurora Song
+  - ASMagazinePistol40 # Aurora Song
+  - ASMagazineSubMachineGun40Empty # Aurora Song
+  - ASMagazineSubMachineGun40 # Aurora Song

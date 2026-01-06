@@ -37,7 +37,7 @@
   productEntity: ASWeaponSubMachineGunAP4C
   icon: { sprite: _AS/Objects/Weapons/Guns/SMGs/ap4c.rsi, state: icon }
   cost:
-    ExchangeCoin: 30
+    ExchangeCoin: 15
   categories:
   - UplinkExchangeWeapons
   conditions:
