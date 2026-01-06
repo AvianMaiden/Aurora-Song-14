@@ -5544,3 +5544,14 @@ Entries:
   id: 8912
   time: '2026-01-06T00:05:47.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/677
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: .40cal distro in several vendors, fabs
+    - type: Fix
+      message: 12g missing from rng vend (libstation)
+    - type: Tweak
+      message: AP4C volume
+  id: 8913
+  time: '2026-01-06T00:22:34.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/670
