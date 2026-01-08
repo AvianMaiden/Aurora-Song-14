@@ -29,6 +29,37 @@
       tags:
       - ExchangeUplink
 
+# Armor
+- type: listing
+  id: UplinkFortArmor
+  name:  uplink-exchange-fort-armor-name
+  description: uplink-exchange-fort-armor-desc
+  productEntity: ASClothingOuterArmorFort
+  cost:
+    ExchangeCoin: 10
+  categories:
+  - UplinkExchangeArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - ExchangeUplink
+
+- type: listing
+  id: UplinkFortHelmet
+  name:  uplink-exchange-fort-helmet-name
+  description: uplink-exchange-fort-helmet-desc
+  productEntity: ASClothingHeadHelmetFort
+  cost:
+    ExchangeCoin: 5
+  categories:
+  - UplinkExchangeArmor
+  conditions:
+  - !type:StoreWhitelistCondition
+    whitelist:
+      tags:
+      - ExchangeUplink
+
 # Weapons
 - type: listing
   id: UplinkExchangeAP4C
