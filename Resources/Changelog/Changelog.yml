@@ -5608,3 +5608,10 @@ Entries:
   id: 8920
   time: '2026-01-09T07:58:18.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/684
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: ledger tab entry for Aurora Sector
+  id: 8921
+  time: '2026-01-13T03:14:13.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/687
