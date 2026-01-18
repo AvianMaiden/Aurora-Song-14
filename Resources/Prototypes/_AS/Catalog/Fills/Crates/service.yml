@@ -1,0 +1,25 @@
+- type: entity
+  id: ASCrateFreezerWaterFill
+  parent: CrateFreezer
+  name: freezer
+  suffix: Filled, Water Bottles
+  description: Chill to the touch.
+  components:
+  - type: StorageFill
+    contents:
+      - id: DrinkWaterBottleFull
+        amount: 6
+
+- type: entity
+  id: ASCratePlasticBiodegradableSeatingFill
+  parent: CratePlasticBiodegradable
+  name: chairs and tables
+  suffix: Filled, Seating
+  description: Labeled "For all your cookout seating needs!"
+  components:
+  - type: StorageFill
+    contents:
+      - id: ChairFoldingSpawnFolded
+        amount: 8
+      - id: TableFoldingSpawnFolded
+        amount: 4
