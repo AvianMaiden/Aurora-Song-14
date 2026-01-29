@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 01/29/2026 17:08:00
-  entityCount: 6622
+  time: 01/29/2026 18:02:01
+  entityCount: 6626
 maps: []
 grids:
 - 2
@@ -3041,6 +3041,13 @@ entities:
     components:
     - type: Transform
       pos: -9.5,-37.5
+      parent: 2
+- proto: AirlockMaintBolted
+  entities:
+  - uid: 2402
+    components:
+    - type: Transform
+      pos: -21.5,-1.5
       parent: 2
 - proto: AlwaysPoweredlightOrange
   entities:
@@ -9481,6 +9488,13 @@ entities:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 25.5,-4.5
+      parent: 2
+- proto: ButtonFrameCautionSecurity
+  entities:
+  - uid: 4661
+    components:
+    - type: Transform
+      pos: -20.5,-1.5
       parent: 2
 - proto: ButtonFrameExit
   entities:
@@ -23060,12 +23074,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 20
-  - uid: 2399
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -19.5,-14.5
-      parent: 2
   - uid: 2400
     components:
     - type: Transform
@@ -23083,12 +23091,6 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 20
-  - uid: 2402
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -19.5,-15.5
-      parent: 2
   - uid: 2405
     components:
     - type: Transform
@@ -23136,17 +23138,23 @@ entities:
       rot: 3.141592653589793 rad
       pos: 11.5,-22.5
       parent: 2
-  - uid: 3993
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: -21.5,-8.5
-      parent: 2
   - uid: 4056
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 13.5,-20.5
+      parent: 2
+  - uid: 4338
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -20.5,-14.5
+      parent: 2
+  - uid: 4340
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -20.5,-15.5
       parent: 2
   - uid: 4840
     components:
@@ -23160,12 +23168,24 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,-0.5
       parent: 2
+  - uid: 6624
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -22.5,-8.5
+      parent: 2
 - proto: FirelockGlass
   entities:
   - uid: 2215
     components:
     - type: Transform
       pos: 10.5,-21.5
+      parent: 2
+  - uid: 2399
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: -21.5,-1.5
       parent: 2
   - uid: 2409
     components:
@@ -33308,6 +33328,13 @@ entities:
     - type: Transform
       pos: 8.21893,-25.748528
       parent: 2
+- proto: PaperOfficeEmergencyDoorNote
+  entities:
+  - uid: 6626
+    components:
+    - type: Transform
+      pos: -21.923906,-2.157129
+      parent: 2
 - proto: PaperScrap
   entities:
   - uid: 3635
@@ -36372,6 +36399,16 @@ entities:
         3698:
         - - Pressed
           - Toggle
+  - uid: 6623
+    components:
+    - type: Transform
+      pos: -20.5,-1.5
+      parent: 2
+    - type: DeviceLinkSource
+      linkedPorts:
+        2402:
+        - - Pressed
+          - DoorBolt
 - proto: SignalControlledValve
   entities:
   - uid: 3405
@@ -37895,10 +37932,10 @@ entities:
       parent: 2
 - proto: SpawnMobKoboldYipyip
   entities:
-  - uid: 4338
+  - uid: 3993
     components:
     - type: Transform
-      pos: 4.5,-4.5
+      pos: 11.5,-16.5
       parent: 2
 - proto: SpawnMobMedibot
   entities:
@@ -37909,10 +37946,10 @@ entities:
       parent: 2
 - proto: SpawnMobMonkeyPunpun
   entities:
-  - uid: 4340
+  - uid: 6625
     components:
     - type: Transform
-      pos: -0.5,2.5
+      pos: -0.5,5.5
       parent: 2
 - proto: SpawnMobSmallPurpleSnake
   entities:
@@ -39910,11 +39947,6 @@ entities:
     - type: Transform
       pos: 14.5,-1.5
       parent: 2
-  - uid: 4661
-    components:
-    - type: Transform
-      pos: -21.5,-1.5
-      parent: 2
   - uid: 4662
     components:
     - type: Transform
@@ -41097,7 +41129,7 @@ entities:
       pos: 15.5,-16.5
       parent: 2
     - type: Door
-      secondsUntilStateChange: -153613.77
+      secondsUntilStateChange: -154169.11
       state: Opening
   - uid: 4879
     components:
