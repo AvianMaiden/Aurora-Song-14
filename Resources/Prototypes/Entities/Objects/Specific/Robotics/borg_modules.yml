@@ -1633,3 +1633,62 @@
     - CloakingDevice
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye-module }
+
+- type: entity
+  parent: [ BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband ]
+  id: ShipmindModuleHand
+  name: hand shipmind module
+  description: A versatile module capable of holding almost anything alongside wielding an integrated set of tools. The manipulators are incompatible with firearms.
+  components:
+  - type: Sprite
+    layers:
+    - state: xenoborg_generic
+    - state: icon-xenoborg-tools
+  - type: ItemBorgModule
+    moduleId: ShipmindHand # Frontier
+    items:
+    - Crowbar
+    - Wrench
+    - Screwdriver
+    - Wirecutter
+    - Multitool
+    - RefuelingWelder
+  - type: DroppableBorgModule
+    moduleId: Hands
+    items: []
+    placeholders:
+    - id: ClothingHandsGlovesColorBlack
+      whitelist:
+        components:
+        - Item
+      blacklist:
+        components:
+        - Gun
+      displayName: borg-placeholder-display-name-universal
+  - type: BorgModule
+    default: true
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-tool-module }
+  
+- type: entity
+  parent: [ BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband ]
+  id: ShipmindModuleSpaceMovement
+  name: space movement shipmind module
+  description: Module that helps a shipmind chassis move better in space.
+  components:
+  - type: Sprite
+    layers:
+    - state: xenoborg_scout
+    - state: icon-xenoborg-space-movement
+  - type: ItemBorgModule
+    moduleId: ShipmindSpaceMovement # Frontier
+    items:
+    - HandheldGPSBasic
+    - HandHeldMassScannerBorg
+    - HandheldStationMapUnpowered
+    - WeaponGrapplingGun
+    - JetpackShipmind
+  - type: BorgModule
+    default: true
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-space-movement-module }

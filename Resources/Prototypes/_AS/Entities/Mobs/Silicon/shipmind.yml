@@ -1,0 +1,167 @@
+- type: entity
+  id: PlayerStationAiShipmind
+  parent: PlayerStationAiEmpty
+  suffix: Ghost role, Shipmind
+  components:
+  - type: ContainerComp
+    proto: AiHeldShipmind
+    container: station_ai_mind_slot
+  - type: ContainerFill
+    containers:
+      station_ai_mind_slot:
+      - StationAiBrainShipmind
+  - type: Sprite
+    sprite: Mobs/Silicon/station_ai.rsi
+    layers:
+    - state: base
+    - state: ai_empty
+      shader: unshaded
+    - state: ai
+      map: ["enum.StationAiVisualState.Key"]
+      shader: unshaded
+      visible: false
+  - type: Anchorable
+
+- type: entity
+  id: AiHeldShipmind
+  description: Components added / removed from an entity that gets inserted into an AI core.
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: IntrinsicRadioReceiver
+  - type: IntrinsicRadioTransmitter
+    channels:
+    - Binary
+    - Common
+    - Traffic
+    - Science
+    - Supply
+    - Engineering
+    - Medical
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
+    - Traffic
+    - Science
+    - Supply
+    - Engineering
+    - Medical
+  - type: IgnoreUIRange
+  - type: StationAiHeld
+  - type: StationAiOverlay
+  - type: ShowElectrocutionHUD
+  - type: ActionGrant
+    actions:
+    - ActionJumpToCore
+    - ActionSurvCameraLights
+    - ActionAIViewLaws
+    - ActionOpenRemoteDevicesMenu # Corvax-Next-AiRemoteControl
+  - type: UserInterface
+    interfaces:
+      enum.RadarConsoleUiKey.Key:
+        type: RadarConsoleBoundUserInterface
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+      enum.RemoteDeviceUiKey.Key: # Corvax-Next-AiRemoteControl
+        type: RemoteDevicesBoundUserInterface
+  - type: IntrinsicUI
+    uis:
+      enum.RadarConsoleUiKey.Key:
+        toggleAction: ActionAGhostShowRadar
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: CrewMonitor
+    transmitFrequencyId: ShuttleTimer
+  - type: RadarConsole
+    followEntity: false
+  - type: HolographicAvatar
+    layerData:
+    - sprite: Mobs/Silicon/station_ai.rsi
+      state: default
+  - type: ShowJobIcons
+  - type: Tag
+    tags:
+    - CanPilot
+
+- type: entity
+  id: StationAiBrainShipmind
+  parent: StationAiBrain
+  categories: [ HideSpawnMenu, DoNotMap ]
+  components:
+  - type: Sprite
+  - type: SiliconLawProvider
+    laws: shipmind
+  - type: GhostRole
+    name: ghost-role-information-Shipmind-core
+    description: ghost-role-information-Shipmind-core-description
+    rules: ghost-role-information-Shipmind-core-rules
+    raffle:
+      settings: default
+    prototype: ShipmindAICore
+    mindRoles:
+      - MindRoleGhostRoleSilicon
+      - MindRoleSubvertedSilicon
+  - type: GhostTakeoverAvailable
+  - type: RandomMetadata
+    nameSegments:
+    - NamesFirstShipmind
+    - NamesLastShipmind
+    nameFormat: name-format-shipmind
+
+- type: entity
+  id: BorgChassisShipmind
+  parent: [BaseBorgChassisSyndicate, ShowMedicalIcons]
+  name: remote shipmind cyborg
+  description: An advanced cyborg chassis designed to be remote controlled by a Shipmind
+  components:
+    - type: Sprite
+      sprite: _AS\Mobs\Silicon\remotechassis.rsi
+      layers:
+        - state: remote
+          map: ["movement"]
+        - state: remote_eyes
+          map: ["enum.BorgVisualLayers.Light"]
+          shader: unshaded
+          visible: false
+        - state: remote_flashlight
+          shader: unshaded
+          map: ["light"]
+          visible: false
+    - type: SpriteMovement
+      movementLayers:
+        movement:
+          state: remote_moving
+      noMovementLayers:
+        movement:
+          state: remote
+    - type: BorgChassis
+      maxModules: 2
+      moduleWhitelist:
+        tags:
+          - ShipmindModuleHand
+          - ShipmindSpaceMovement
+      hasMindState: remote_eyes
+      noMindState: remote_eyes_empty
+    - type: ShowHealthBars
+    - type: InteractionPopup
+      interactSuccessString: petting-success-syndicate-cyborg
+      interactFailureString: petting-failure-syndicate-cyborg
+      interactSuccessSound:
+        path: /Audio/Ambience/Objects/periodic_beep.ogg
+    - type: SolutionScanner
+    - type: ContainerFill
+      containers:
+        borg_brain:
+          - AiRemoteBrain
+        borg_module:
+          - ShipmindModuleHand
+          - ShipmindModuleSpaceMovement
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: PowerCellMedium
+    - type: StartingMindRole
+      mindRole: "MindRoleSiliconBrain"
+      silent: true
+    - type: AiRemoteController
