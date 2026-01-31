@@ -22,7 +22,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-lieutenant
-    stampedColor: "#51703b"
+    stampedColor: "#2A4F63"
     stampState: "paper_stamp-as-lieutenant"
   - type: Sprite
     sprite: _AS/Objects/Misc/stamps.rsi
@@ -36,7 +36,7 @@
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-pal
-    stampedColor: "#61943a"
+    stampedColor: "#98bbc2"
     stampState: "paper_stamp-as-pal"
   - type: Sprite
     sprite: _AS/Objects/Misc/stamps.rsi
