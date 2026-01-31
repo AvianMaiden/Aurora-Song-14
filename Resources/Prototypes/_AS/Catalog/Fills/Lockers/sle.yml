@@ -73,9 +73,9 @@
   id: FillASLockerSLESheriff
   table: !type:AllSelector
     children:
-    - id: ClothingHeadHatBeretCommissioner # Using existing commissioner beret until SLE sheriff beret is created
+    - id: ClothingHeadHatBeretCommissioner
     - id: ASClothingOuterCoatSLEFormalSheriff
-    - id: ASClothingHeadsetSLEGreenCommon # Using green common headset until gold command headset is created
+    - id: ASClothingHeadsetSLEGreenCommon
     - id: ASClothingNeckSLEBadgeSheriff
     - id: ShriffIDCard
     - id: BoxHandcuff
@@ -85,3 +85,9 @@
     - id: ASWeaponShotgunBailiff
     - id: NFAmmunitionBoxShellShotgunBuckshot
       amount: 2
+    - id: NFAmmunitionBoxShellShotgunBeanbag
+      amount: 2
+    - id: ClothingOuterHardsuitSleCombat
+    - id: ClothingOuterSoftsuitSlePatrol
+    - id: ASJetpackSLEFilled
+    - id: ASClothingShoesBootsMagSLEFilled

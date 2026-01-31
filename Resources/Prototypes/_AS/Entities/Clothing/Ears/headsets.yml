@@ -1,11 +1,11 @@
-# Aurora Song - SLE (Security Logistics Enforcement) headsets
+# Aurora Song - SLE (Sector Law Enforcement) headsets
 # Prototypes for Aurora Song's SLE faction equipment
 
 - type: entity
   parent: ClothingHeadset
   id: ASClothingHeadsetSLEBrown
   name: SLE headset
-  description: An updated headset for Security Logistics Enforcement personnel.
+  description: An updated headset for Sector Law Enforcement personnel.
   components:
   - type: Sprite
     sprite: _AS/Clothing/Ears/Headsets/sle_e_brown.rsi # Aurora Song - Using SLE-recolored sprites
@@ -21,7 +21,7 @@
   parent: ASClothingHeadsetSLEBrown
   id: ASClothingHeadsetSLEGreen
   name: SLE headset
-  description: An updated headset for Security Logistics Enforcement personnel.
+  description: An updated headset for Sector Law Enforcement personnel.
   components:
   - type: Sprite
     sprite: _AS/Clothing/Ears/Headsets/sle_e_green.rsi # Aurora Song - Using SLE-recolored sprites
@@ -32,7 +32,7 @@
   parent: ASClothingHeadsetSLEBrown
   id: ASClothingHeadsetSLECream
   name: SLE headset
-  description: An updated headset for Security Logistics Enforcement personnel.
+  description: An updated headset for Sector Law Enforcement personnel.
   components:
   - type: Sprite
     sprite: _AS/Clothing/Ears/Headsets/sle_e_cb.rsi # Aurora Song - Using SLE-recolored sprites

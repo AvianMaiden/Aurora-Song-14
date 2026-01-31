@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 01/27/2026 14:22:22
-  entityCount: 4718
+  time: 01/31/2026 00:15:20
+  entityCount: 4737
 maps: []
 grids:
 - 1
@@ -3179,6 +3179,12 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -21.5,-1.5
       parent: 1
+  - uid: 4075
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -2.5,32.5
+      parent: 1
 - proto: ASAirlockExternalGlassSLELocked
   entities:
   - uid: 13
@@ -3313,7 +3319,7 @@ entities:
       pos: 17.5,-5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -44358.62
+      secondsUntilStateChange: -44583.277
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3371,7 +3377,7 @@ entities:
       pos: -2.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -59704.94
+      secondsUntilStateChange: -59929.598
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3382,7 +3388,7 @@ entities:
       pos: -1.5,3.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -17553.084
+      secondsUntilStateChange: -17777.738
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3413,7 +3419,7 @@ entities:
       pos: -11.5,1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -59708.473
+      secondsUntilStateChange: -59933.13
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3429,7 +3435,7 @@ entities:
       pos: -11.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -60490.008
+      secondsUntilStateChange: -60714.664
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3465,7 +3471,7 @@ entities:
       pos: -17.5,-2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -61818.04
+      secondsUntilStateChange: -62042.695
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3569,7 +3575,7 @@ entities:
       pos: 5.5,9.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -43491.992
+      secondsUntilStateChange: -43716.65
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3782,6 +3788,13 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 18.5,4.5
+      parent: 1
+- proto: ASTechFabSLEFlatpack
+  entities:
+  - uid: 4174
+    components:
+    - type: Transform
+      pos: -4.488785,6.538308
       parent: 1
 - proto: ASVendingMachineSLEDrobe
   entities:
@@ -10778,6 +10791,91 @@ entities:
     components:
     - type: Transform
       pos: 7.5,-8.5
+      parent: 1
+  - uid: 3626
+    components:
+    - type: Transform
+      pos: 1.5,20.5
+      parent: 1
+  - uid: 3627
+    components:
+    - type: Transform
+      pos: 1.5,21.5
+      parent: 1
+  - uid: 3628
+    components:
+    - type: Transform
+      pos: 1.5,22.5
+      parent: 1
+  - uid: 3629
+    components:
+    - type: Transform
+      pos: 1.5,23.5
+      parent: 1
+  - uid: 3630
+    components:
+    - type: Transform
+      pos: 1.5,24.5
+      parent: 1
+  - uid: 3631
+    components:
+    - type: Transform
+      pos: 1.5,25.5
+      parent: 1
+  - uid: 3662
+    components:
+    - type: Transform
+      pos: 1.5,26.5
+      parent: 1
+  - uid: 3868
+    components:
+    - type: Transform
+      pos: 1.5,27.5
+      parent: 1
+  - uid: 3869
+    components:
+    - type: Transform
+      pos: 1.5,28.5
+      parent: 1
+  - uid: 3884
+    components:
+    - type: Transform
+      pos: 1.5,29.5
+      parent: 1
+  - uid: 4027
+    components:
+    - type: Transform
+      pos: 1.5,30.5
+      parent: 1
+  - uid: 4028
+    components:
+    - type: Transform
+      pos: 1.5,31.5
+      parent: 1
+  - uid: 4029
+    components:
+    - type: Transform
+      pos: 1.5,32.5
+      parent: 1
+  - uid: 4053
+    components:
+    - type: Transform
+      pos: 0.5,32.5
+      parent: 1
+  - uid: 4059
+    components:
+    - type: Transform
+      pos: -0.5,32.5
+      parent: 1
+  - uid: 4066
+    components:
+    - type: Transform
+      pos: -1.5,32.5
+      parent: 1
+  - uid: 4069
+    components:
+    - type: Transform
+      pos: -2.5,32.5
       parent: 1
 - proto: CableTerminal
   entities:
@@ -22054,7 +22152,7 @@ entities:
       pos: -1.5,33.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -68803.12
+      secondsUntilStateChange: -69027.77
       state: Opening
   - uid: 3347
     components:
@@ -22062,7 +22160,7 @@ entities:
       pos: 0.5,33.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -68801.484
+      secondsUntilStateChange: -69026.14
       state: Opening
   - uid: 3348
     components:
@@ -22070,7 +22168,7 @@ entities:
       pos: 2.5,33.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -68800.12
+      secondsUntilStateChange: -69024.77
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -30377,7 +30475,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -67838.79
+      secondsUntilStateChange: -68063.445
       state: Opening
     - type: Airlock
       autoClose: False
