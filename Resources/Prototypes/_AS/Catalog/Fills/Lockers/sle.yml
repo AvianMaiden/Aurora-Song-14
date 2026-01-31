@@ -75,7 +75,7 @@
     children:
     - id: ClothingHeadHatBeretCommissioner
     - id: ASClothingOuterCoatSLEFormalSheriff
-    - id: ASClothingHeadsetSLEGreenCommon
+    - id: ASClothingHeadsetSLEOOrangeCommon
     - id: ASClothingNeckSLEBadgeSheriff
     - id: ShriffIDCard
     - id: BoxHandcuff
