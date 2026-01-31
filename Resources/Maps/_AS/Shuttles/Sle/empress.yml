@@ -2680,7 +2680,7 @@ entities:
     - type: Transform
       pos: 26.5,-5.5
       parent: 1
-- proto: ASBedsheetSLESheriff
+- proto: ASBedsheetSLECommissioner
   entities:
   - uid: 105
     components:
