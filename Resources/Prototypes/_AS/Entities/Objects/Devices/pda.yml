@@ -2,19 +2,21 @@
 
 - type: entity
   parent: BasePDA
-  id: ASBaseSecurityPDA
+  id: ASBaseSecurityPDA # copy of BaseSecurityPDA from NF with different sprite directory
   abstract: true
   components:
   - type: Sprite
-    sprite: _AS/Objects/Devices/pda.rsi # Frontier
+    sprite: _AS/Objects/Devices/pda.rsi
+  - type: Icon
+    sprite: _AS/Objects/Devices/pda.rsi
   - type: CartridgeLoader
     preinstalled:
     - CrewManifestCartridge
     - NotekeeperCartridge
     - NanoTaskCartridge
     - NewsReaderCartridge
-    - BountyContractsCartridge # Frontier
-    - AstroNavCartridge # Frontier
+    - BountyContractsCartridge
+    - AstroNavCartridge
     - WantedListCartridge
 
 #region SLE
