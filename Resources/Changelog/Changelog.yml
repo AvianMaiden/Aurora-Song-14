@@ -5712,3 +5712,14 @@ Entries:
   id: 8930
   time: '2026-02-01T10:42:44.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/700
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: further rebrands SLE to 95% feature-complete items, gear, subsystems
+    - type: Tweak
+      message: revert NFSD back to their original forms
+    - type: Tweak
+      message: further rebrands Aurora Sector from NF/ NT branding
+  id: 8931
+  time: '2026-02-01T22:52:46.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/698
