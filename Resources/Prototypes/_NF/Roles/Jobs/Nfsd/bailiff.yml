@@ -47,7 +47,7 @@
   id: BailiffGear
   equipment:
     pocket1: ASWeaponPistolMk58SLessLethal
-    pocket2: HoloprojectorNfsd
+    pocket2: ASHoloprojectorSLE # Aurora Song - Changed from HoloprojectorNfsd to use SLE prototype
   storage:
     back:
     - Flash

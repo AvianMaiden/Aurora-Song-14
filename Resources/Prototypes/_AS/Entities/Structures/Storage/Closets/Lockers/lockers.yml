@@ -126,7 +126,7 @@
   id: ASLockerSLELieutenant
   parent: ASLockerSLESergeant
   name: SLE locker
-  suffix: Bailiff
+  suffix: Lieutenant
   components:
   - type: AccessReader
     access: [["Bailiff"]]

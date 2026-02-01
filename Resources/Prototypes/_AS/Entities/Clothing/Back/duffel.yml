@@ -3,7 +3,7 @@
 
 - type: entity
   parent: ClothingBackpackDuffelSecurity
-  id: ASClothingBackpackDuffelSLEBrown
+  id: ASClothingBackpackDuffelSLENavy
   name: SLE duffel
   description: A large duffel bag used by Sector Law Enforcement personnel.
   components:
@@ -11,9 +11,9 @@
     sprite: _AS/Clothing/Back/Duffels/sle_brown.rsi # Aurora Song - Using SLE-recolored sprites
 
 - type: entity
-  parent: ASClothingBackpackDuffelSLEBrown
-  id: ASClothingBackpackDuffelSLECream
-  name: SLE duffel
+  parent: ASClothingBackpackDuffelSLENavy
+  id: ASClothingBackpackDuffelSLECorpsman
+  name: SLE corpsman duffel
   description: A large duffel bag used by Sector Law Enforcement personnel.
   components:
   - type: Sprite
