@@ -378,6 +378,8 @@
     anchorAfterWarp: false
     groups:
       grid: !type:GridSpawnGroup
+        nameLoc:
+        - station-event-bluespace-name-shipmind
         minCount: 1
         maxCount: 1 
         minimumDistance: 3500

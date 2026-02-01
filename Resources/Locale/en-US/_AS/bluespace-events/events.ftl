@@ -3,3 +3,4 @@ station-event-bluespace-mcargo-ftl-warning-announcement = Remote FTL procedures 
 station-event-bluespace-mcargo-ftl-end-announcement = In compliance with Colonial FTL traffic patterns, the McDeliveries have been dissipated to ensure non-collision.
 
 station-event-bluespace-shipmind-ftl-start-announcement = Attention all Colonial citizens and/ or immigrants! Colonial Command has detected an unscheduled FTL transit. An unknown vessel is believed to have entered the sector. As per Colonial Law, any hostility from this vessel will result in it automatically being recognized as belligerent. It is recommended to avoid contact with this vessel until its intent is discovered. Law Enforcement or capable sector residents may investigate and respond accordingly to any signs of hostility.
+station-event-bluespace-name-shipmind = Respite-Class Auto-Exploration Cruiser
