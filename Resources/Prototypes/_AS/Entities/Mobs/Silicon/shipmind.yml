@@ -114,7 +114,7 @@
   description: An advanced cyborg chassis designed to be remote controlled by a Shipmind
   components:
     - type: Sprite
-      sprite: _AS\Mobs\Silicon\remotechassis.rsi
+      sprite: _AS/Mobs/Silicon/remotechassis.rsi
       layers:
         - state: remote
           map: ["movement"]
