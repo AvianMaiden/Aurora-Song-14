@@ -5705,3 +5705,10 @@ Entries:
   id: 8929
   time: '2026-02-01T06:09:09.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/695
+- author: emergency-ketchup
+  changes:
+    - type: Tweak
+      message: Little-Byte Key QoL changes
+  id: 8930
+  time: '2026-02-01T10:42:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/700
