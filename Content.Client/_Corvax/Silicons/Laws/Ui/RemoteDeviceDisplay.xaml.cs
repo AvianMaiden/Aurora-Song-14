@@ -10,13 +10,15 @@ public sealed partial class RemoteDeviceDisplay : Control
 {
     public event Action<RemoteDeviceActionEvent>? OnRemoteDeviceAction;
 
-    public RemoteDeviceDisplay(NetEntity netEntityUid, string displayName, float devicePosX, float devicePosY)
+    public RemoteDeviceDisplay(NetEntity netEntityUid, string displayName, float devicePosX, float devicePosY, float deviceDistance)
     {
         RobustXamlLoader.Load(this);
 
         DeviceName.SetMessage(displayName);
 
-        DevicePos.SetMessage("(" + Math.Round(devicePosX) + ", " + Math.Round(devicePosY) + ")");
+        DevicePos.SetMessage("Position: (" + Math.Round(devicePosX) + ", " + Math.Round(devicePosY) + ")");
+
+        DeviceDistance.SetMessage("Distance " + Math.Round(deviceDistance) + " metres");
 
         MoveButton.OnPressed += _ =>
         {

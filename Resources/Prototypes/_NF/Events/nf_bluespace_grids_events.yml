@@ -359,3 +359,30 @@
         - type: ForceAnchor
         paths:
         - /Maps/_AS/Bluespace/mercuiv.yml
+
+- type: entity # Aurora
+  id: BluespaceShipmindFTLCrash
+  parent: BaseStationEventShortDelay
+  components:
+  - type: StationEvent
+    startAnnouncement: station-event-bluespace-shipmind-ftl-start-announcement
+    startAudio:
+      path: /Audio/Misc/notice1.ogg
+    earliestStart: 5
+    minimumPlayers: 2 
+    weight: 1
+    duration: 1
+    reoccurrenceDelay: 360 # 6 hours
+  - type: BluespaceErrorRule
+    deleteGridsOnEnd: false
+    anchorAfterWarp: false
+    groups:
+      grid: !type:GridSpawnGroup
+        minCount: 1
+        maxCount: 1 
+        minimumDistance: 3500
+        maximumDistance: 6000
+        addComponents:
+        - type: DeletionCensusExempt
+        paths:
+        - /Maps/_AS/Shuttles/Custom/respite.yml

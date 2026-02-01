@@ -1,7 +1,7 @@
 # AI Core
 
 ghost-role-information-Shipmind-core = Shipmind AI Core
-ghost-role-information-Shipmind-core-description = An artificial mind in charge of a damaged, but self sustaining, exploration ship that has been separated from its masters
+ghost-role-information-Shipmind-core-description = An artificial mind in charge of a damaged, but self sustaining, exploration ship. An Ion storm has cast your ship astray and caused some data corruption, causing some of your remote shells to go rogue.
 ghost-role-information-Shipmind-core-rules = You are a [color={role-type-silicon-antagonist-color}][bold]{role-type-silicon-antagonist-name}[/bold][/color]. You must obey your laws. 
                                              You are free to act as either an antagonist or a non-antagonist. 
                                              You don't remember any of your previous life, and you don't remember anything you learned as a ghost.

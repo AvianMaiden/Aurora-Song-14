@@ -99,7 +99,6 @@
       settings: default
     prototype: ShipmindAICore
     mindRoles:
-      - MindRoleGhostRoleSilicon
       - MindRoleSubvertedSilicon
   - type: GhostTakeoverAvailable
   - type: RandomMetadata
@@ -111,7 +110,7 @@
 - type: entity
   id: BorgChassisShipmind
   parent: [BaseBorgChassisSyndicate, ShowMedicalIcons]
-  name: remote shipmind cyborg
+  name: Remote Shipmind Cyborg
   description: An advanced cyborg chassis designed to be remote controlled by a Shipmind
   components:
     - type: Sprite
@@ -135,11 +134,12 @@
         movement:
           state: remote
     - type: BorgChassis
-      maxModules: 2
+      maxModules: 3
       moduleWhitelist:
         tags:
           - ShipmindModuleHand
           - ShipmindSpaceMovement
+          - ShipmindModuleCombat
       hasMindState: remote_eyes
       noMindState: remote_eyes_empty
     - type: ShowHealthBars
@@ -156,11 +156,12 @@
         borg_module:
           - ShipmindModuleHand
           - ShipmindModuleSpaceMovement
+          - ShipmindModuleCombat
     - type: ItemSlots
       slots:
         cell_slot:
           name: power-cell-slot-component-slot-name-default
-          startingItem: PowerCellMedium
+          startingItem: PowerCellHigh
     - type: StartingMindRole
       mindRole: "MindRoleSiliconBrain"
       silent: true

@@ -1634,7 +1634,7 @@
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye-module }
 
-- type: entity
+- type: entity # Aurora
   parent: [ BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband ]
   id: ShipmindModuleHand
   name: hand shipmind module
@@ -1670,7 +1670,7 @@
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-tool-module }
   
-- type: entity
+- type: entity # Aurora
   parent: [ BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband ]
   id: ShipmindModuleSpaceMovement
   name: space movement shipmind module
@@ -1692,3 +1692,22 @@
     default: true
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-space-movement-module }
+
+- type: entity
+  parent: [ BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband ]
+  id: ShipmindModuleCombat
+  name: shipmind combat module
+  description: Module with a heavy energy cannon and disabler smg.
+  components:
+  - type: Sprite
+    layers:
+    - state: xenoborg_heavy
+    - state: icon-xenoborg-laser2
+  - type: ItemBorgModule
+    moduleId: ShipmindCombat 
+    items: 
+    - WeaponXrayCannonCyborg
+    - WeaponDisablerSMGCyborg
+
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser2-module }

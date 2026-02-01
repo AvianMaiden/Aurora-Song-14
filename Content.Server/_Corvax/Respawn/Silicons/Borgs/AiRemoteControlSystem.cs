@@ -105,7 +105,7 @@ public sealed class AiRemoteControlSystem : SharedAiRemoteControlSystem
         if (!TryComp<AiRemoteControllerComponent>(entity, out var aiRemoteComp))
             return;
         if (_stationAiSystem.TryGetCore(ai, out var stationAiCore) && stationAiCore.Comp?.RemoteEntity != null
-                && (Transform(stationAiCore).Coordinates.Position - Transform(entity).Coordinates.Position).Length() > 256 // Should be enough range to work with without being able to snipe another chassis a few miles away
+                && (Transform(stationAiCore).WorldPosition - Transform(entity).WorldPosition).Length() > 256 // Should be enough range to work with without being able to snipe another chassis a few miles away
             )
         {
             var msg = Loc.GetString("ai-remote-out-of-range");
@@ -166,11 +166,12 @@ public sealed class AiRemoteControlSystem : SharedAiRemoteControlSystem
             {
                 NetEntityUid = GetNetEntity(queryUid),
                 DisplayName = Comp<MetaDataComponent>(queryUid).EntityName,
-                DevicePosX = Transform(queryUid).Coordinates.X,
-                DevicePosY = Transform(queryUid).Coordinates.Y
+                DevicePosX = Transform(queryUid).WorldPosition.X,
+                DevicePosY = Transform(queryUid).WorldPosition.Y,
+                DeviceDistance = (Transform(uid).WorldPosition - Transform(queryUid).WorldPosition).Length()
             };
             if (_stationAiSystem.TryGetCore(uid, out var stationAiCore) && stationAiCore.Comp?.RemoteEntity != null
-                    && (Transform(stationAiCore).Coordinates.Position - Transform(queryUid).Coordinates.Position).Length() < 3000
+                    && (Transform(stationAiCore).WorldPosition - Transform(queryUid).WorldPosition).Length() < 4096
                 )
             {
                 remoteDevices.Add(data);
