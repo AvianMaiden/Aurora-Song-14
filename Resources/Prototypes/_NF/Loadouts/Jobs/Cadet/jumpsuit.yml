@@ -1,21 +1,21 @@
+# Aurora's Song - Edited file to contain SLE assets only
+
 - type: loadout
-  id: CadetClothingUniformJumpsuitCadet
+  id: CadetClothingUniformJumpsuitSLEShort
   equipment:
     jumpsuit: ASClothingUniformJumpsuitSLEShort
 
 - type: loadout
-  id: CadetClothingUniformJumpskirtCadet
+  id: CadetClothingUniformJumpskirtSLEShort
   equipment:
     jumpsuit: ASClothingUniformJumpskirtSLEShort
 
-# Aurora Song
 - type: loadout
-  id: CadetClothingUniformJumpsuitSle
+  id: CadetClothingUniformJumpsuitSLE
   equipment:
     jumpsuit: ASClothingUniformJumpsuitSLE
 
 - type: loadout
-  id: CadetClothingUniformJumpskirtSle
+  id: CadetClothingUniformJumpskirtSLE
   equipment:
     jumpsuit: ASClothingUniformJumpskirtSLE
-# Aurora Song
