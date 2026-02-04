@@ -33,7 +33,7 @@
   name: Rookie ID card
   components:
   - type: PresetIdCard
-    job: Cadet
+    job: Rookie
   - type: Sprite
     sprite: _AS/Objects/Misc/id_cards.rsi
     layers:
@@ -50,7 +50,7 @@
   name: Officer ID card
   components:
   - type: PresetIdCard
-    job: Deputy
+    job: Officer
   - type: Sprite
     sprite: _AS/Objects/Misc/id_cards.rsi
     layers:
@@ -63,7 +63,7 @@
   name: Corpsman ID card
   components:
   - type: PresetIdCard
-    job: Brigmedic
+    job: Corpsman
   - type: Sprite
     sprite: _AS/Objects/Misc/id_cards.rsi
     layers:
@@ -76,7 +76,7 @@
   name: Sergeant ID card
   components:
   - type: PresetIdCard
-    job: SeniorOfficer
+    job: Sergeant
   - type: Sprite
     sprite: _AS/Objects/Misc/id_cards.rsi
     layers:
@@ -89,7 +89,7 @@
   name: Lieutenant ID card
   components:
   - type: PresetIdCard
-    job: Bailiff
+    job: Lieutenant
   - type: Sprite
     sprite: _AS/Objects/Misc/id_cards.rsi
     layers:
@@ -102,7 +102,7 @@
   name: Commissioner ID card
   components:
   - type: PresetIdCard
-    job: Sheriff
+    job: Commissioner
   - type: Sprite
     sprite: _AS/Objects/Misc/id_cards.rsi
     layers:
@@ -117,7 +117,7 @@
   name: Detective ID card
   components:
   - type: PresetIdCard
-    job: NFDetective
+    job: ASDetective
   - type: Sprite
     sprite: _AS/Objects/Misc/id_cards.rsi
     layers:

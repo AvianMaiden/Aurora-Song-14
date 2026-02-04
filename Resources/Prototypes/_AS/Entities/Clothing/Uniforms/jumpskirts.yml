@@ -2,7 +2,7 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpskirtSle
+  id: ASClothingUniformJumpskirtSLE
   name: SLE jumpskirt
   description: A long-sleeved jumpskirt for SLE Officers.
   components:
@@ -13,8 +13,8 @@
 
 - type: entity
   parent: ClothingUniformSkirtBase
-  id: ASClothingUniformJumpskirtSLE
-  name: SLE jumpskirt
+  id: ASClothingUniformJumpskirtSLEShort
+  name: SLE short-sleeve jumpskirt
   description: A short-sleeved jumpskirt for SLE Officers.
   components:
   - type: Sprite
@@ -24,8 +24,8 @@
 
 - type: entity
   parent: ClothingUniformSkirtBase
-  id: ASClothingUniformJumpskirtSLEShort
-  name: SLE jumpskirt (short)
+  id: ASClothingUniformJumpskirtSLEClassic
+  name: SLE classic jumpskirt
   description: A classic jumpsuit for SLE Officers. Smells like scientists trying to get you in trouble.
   components:
   - type: Sprite

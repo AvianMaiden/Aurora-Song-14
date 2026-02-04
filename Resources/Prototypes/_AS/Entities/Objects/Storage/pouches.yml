@@ -1,0 +1,50 @@
+- type: entity
+  id: ASPouchSLE
+  parent: NFPouchUtility
+  name: SLE pouch
+  components:
+  - type: Sprite
+    layers:
+    - state: base
+      color: "#2A4F63"
+    - state: closed
+      map: ["closeLayer"]
+      color: "#E37B40"
+    - state: open
+      color: "#E37B40"
+      map: ["openLayer"]
+      visible: false
+    - state: inside
+      map: ["insideLayer"]
+      visible: false
+    - state: fill-util4-1
+      map: [ "pouchFill4" ]
+      visible: false
+    - state: fill-util3-1
+      map: [ "pouchFill3" ]
+      visible: false
+    - state: fill-util2-1
+      map: [ "pouchFill2" ]
+      visible: false
+    - state: fill-util1-1
+      map: [ "pouchFill1" ]
+      visible: false
+    - state: decal-shield
+      map: [ "decal1" ]
+      color: "#f2b833"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+        color: "#E37B40"
+      right:
+      - state: inhand-right
+        color: "#E37B40"
+  - type: Clothing
+    clothingVisuals:
+      belt:
+      - state: equipped-BELT
+        color: "#E37B40"
+      pocket:
+      - state: equipped-BELT
+        color: "#E37B40"

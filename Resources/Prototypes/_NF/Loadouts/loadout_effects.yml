@@ -16,6 +16,7 @@
     - Vox
     - Sheleg # Different meds
     - IPC
+    - Feroxi # Water vapor breather - Aurora Song
     inverted: true
 
 - type: loadoutEffectGroup
@@ -88,7 +89,7 @@
 
 # Begin Aurora Song
 - type: loadoutEffectGroup
-  id: ASFeroxi
+  id: ASWaterVaporBreather
   effects:
   - !type:SpeciesLoadoutEffect
     species:

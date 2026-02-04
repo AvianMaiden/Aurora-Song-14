@@ -8108,6 +8108,20 @@ entities:
     - type: Transform
       pos: -3.5,2.5
       parent: 179
+- proto: SpawnPointMedic
+  entities:
+  - uid: 31740
+    components:
+    - type: Transform
+      pos: -3.5,2.5
+      parent: 179
+- proto: SpawnPointService
+  entities:
+  - uid: 31741
+    components:
+    - type: Transform
+      pos: -3.5,2.5
+      parent: 179
 - proto: SpawnPointDeputy
   entities:
   - uid: 1486

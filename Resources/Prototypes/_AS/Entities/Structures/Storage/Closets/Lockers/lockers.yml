@@ -105,7 +105,7 @@
     stateDoorOpen: sle_brigmed_open
     stateDoorClosed: sle_brigmed_door
   - type: AccessReader
-    access: [["Brigmedic"]]
+    access: [["Corpsman"]] # Aurora's Song - Changed from Brigmedic to Corpsman
 
 # SLE Gold - Sergeant
 - type: entity
@@ -129,7 +129,7 @@
   suffix: Lieutenant
   components:
   - type: AccessReader
-    access: [["Bailiff"]]
+    access: [["Lieutenant"]] # Aurora's Song - Changed from Bailiff to Lieutenant
 
 # SLE Sheriff/Commissioner
 - type: entity

@@ -19,6 +19,42 @@
     - AstroNavCartridge
     - WantedListCartridge
 
+#region Medical
+
+- type: entity
+  parent: [ParamedicPDA, BaseC2ContrabandMedicalUnredeemable]
+  id: ASMedicPDA
+  name: Medic PDA
+  description: It smells like disinfectant.
+  components:
+  - type: Pda
+    id: MedicIDCard
+    penSlot:
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#2a4b5b"
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-paramedic
+  - type: Icon
+    sprite: _NF/Objects/Devices/pda.rsi
+    state: pda-paramedic
+  - type: CartridgeLoader
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - BountyContractsCartridge
+    - AstroNavCartridge
+    - MedTekCartridge
+
 #region SLE
 
 - type: entity

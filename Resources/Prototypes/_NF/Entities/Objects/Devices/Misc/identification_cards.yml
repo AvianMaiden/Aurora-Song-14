@@ -64,7 +64,7 @@
   name: NFSD cadet ID card
   components:
   - type: PresetIdCard
-    job: Cadet
+    job: Rookie
   - type: Sprite
     sprite: _NF/Objects/Misc/id_cards.rsi
     layers:
@@ -81,7 +81,7 @@
   name: NFSD deputy ID card
   components:
   - type: PresetIdCard
-    job: Deputy
+    job: Officer
   - type: Sprite
     sprite: _NF/Objects/Misc/id_cards.rsi
     layers:
@@ -94,7 +94,7 @@
   name: NFSD brigmedic ID card
   components:
   - type: PresetIdCard
-    job: Brigmedic
+    job: Corpsman
   - type: Sprite
     sprite: _NF/Objects/Misc/id_cards.rsi
     layers:
@@ -107,7 +107,7 @@
   name: NFSD sergeant ID card
   components:
   - type: PresetIdCard
-    job: SeniorOfficer
+    job: Sergeant
   - type: Sprite
     sprite: _NF/Objects/Misc/id_cards.rsi
     layers:
@@ -120,7 +120,7 @@
   name: NFSD bailiff ID card
   components:
   - type: PresetIdCard
-    job: Bailiff
+    job: Lieutenant
   - type: Sprite
     sprite: _NF/Objects/Misc/id_cards.rsi
     layers:
@@ -133,7 +133,7 @@
   name: NFSD sheriff ID card
   components:
   - type: PresetIdCard
-    job: Sheriff
+    job: Commissioner
   - type: Sprite
     sprite: _NF/Objects/Misc/id_cards.rsi
     layers:
@@ -148,7 +148,7 @@
   name: NFSD detective ID card
   components:
   - type: PresetIdCard
-    job: NFDetective
+    job: ASDetective
   - type: Sprite
     sprite: _NF/Objects/Misc/id_cards.rsi
     layers:

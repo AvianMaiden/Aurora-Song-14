@@ -44,6 +44,13 @@
   - type: Contraband
     allowedDepartments: [ Engineering ]
 
+- type: entity # Aurora's Song - added for Medical
+  parent: BaseC2ContrabandUnredeemable
+  id: BaseC2ContrabandMedicalUnredeemable
+  abstract: true
+  components:
+  - type: Contraband
+    allowedDepartments: [ Medical ]
 
 - type: entity
   parent: BaseC2ContrabandUnredeemable
