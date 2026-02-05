@@ -2,6 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
 using Content.Server._NF.Shuttles.Components; // Frontier: FTL knockdown immunity
+using Content.Server._NF.PublicTransit.Components;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
 using Content.Server.Station.Events;
@@ -388,6 +389,10 @@ public sealed partial class ShuttleSystem
         var targetCoords = new EntityCoordinates(target, Vector2.Zero);
         bool isExpedition = IsTargetExpedition(targetCoords);
 
+        if (HasComp<TransitShuttleComponent>(shuttleUid))
+        {
+            _dockSystem.UndockDocks(shuttleUid);
+        }
         // If going to an expedition, undock all other shuttles before FTL
         if (isExpedition)
         {
@@ -425,6 +430,11 @@ public sealed partial class ShuttleSystem
             hyperspace.TargetCoordinates = new EntityCoordinates(dock.DockedWith.Value, Vector2.Zero);
             hyperspace.TargetAngle = _transform.GetWorldRotation(dock.DockedWith.Value) + Math.PI;
         }
+        else if (HasComp<TransitShuttleComponent>(shuttleUid) && _dockSystem.GetDockingConfig(shuttleUid, target, priorityTag) is { } destination)
+        {
+            hyperspace.TargetCoordinates = destination.Coordinates;
+            hyperspace.TargetAngle = destination.Angle;
+        }
         else if (TryFTLDock(shuttleUid, component, target, out var config))
         {
             hyperspace.TargetCoordinates = config.Coordinates;
@@ -451,6 +461,7 @@ public sealed partial class ShuttleSystem
         startupTime ??= DefaultStartupTime;
         hyperspaceTime ??= DefaultTravelTime;
 
+        hyperspace.State = FTLState.Starting;
         hyperspace.StartupTime = startupTime.Value;
         hyperspace.TravelTime = hyperspaceTime.Value;
         hyperspace.StateTime = StartEndTime.FromStartDuration(
@@ -562,8 +573,8 @@ public sealed partial class ShuttleSystem
         var dockedShuttles = new HashSet<EntityUid>();
         GetAllDockedShuttles(uid, dockedShuttles);
 
-        // Force undock emergency and arrivals shuttles
-        if (HasComp<EmergencyShuttleComponent>(uid) || HasComp<ArrivalsShuttleComponent>(uid))
+        // Force undock emergency and arrivals shuttles and busses
+        if (HasComp<EmergencyShuttleComponent>(uid) || HasComp<ArrivalsShuttleComponent>(uid) || HasComp<TransitShuttleComponent>(uid))
         {
             _dockSystem.UndockDocks(uid);
         }
