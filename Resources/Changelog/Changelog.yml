@@ -5737,3 +5737,12 @@ Entries:
   id: 8933
   time: '2026-02-03T18:43:11.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/703
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: add a few QoL to LBK
+    - type: Tweak
+      message: maintenance on LBK and Petrel
+  id: 8934
+  time: '2026-02-05T17:16:59.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/705
