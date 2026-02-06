@@ -5698,3 +5698,90 @@ Entries:
   id: 8928
   time: '2026-01-30T17:20:16.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/694
+- author: Zenixic
+  changes:
+    - type: Add
+      message: Added a new shuttle to the scrapyard, the XED Drone
+  id: 8929
+  time: '2026-02-01T06:09:09.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/695
+- author: emergency-ketchup
+  changes:
+    - type: Tweak
+      message: Little-Byte Key QoL changes
+  id: 8930
+  time: '2026-02-01T10:42:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/700
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: further rebrands SLE to 95% feature-complete items, gear, subsystems
+    - type: Tweak
+      message: revert NFSD back to their original forms
+    - type: Tweak
+      message: further rebrands Aurora Sector from NF/ NT branding
+  id: 8931
+  time: '2026-02-01T22:52:46.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/698
+- author: Zenixic
+  changes:
+    - type: Tweak
+      message: Added holopad, recharger and EVA lockers to the Drone
+  id: 8932
+  time: '2026-02-02T05:20:30.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/701
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: prison riot wasn't spawning correctly
+  id: 8933
+  time: '2026-02-03T18:43:11.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/703
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: add a few QoL to LBK
+    - type: Tweak
+      message: maintenance on LBK and Petrel
+  id: 8934
+  time: '2026-02-05T17:16:59.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/705
+- author: Phoenix51505
+  changes:
+    - type: Add
+      message: Added FTL Drives and the ability to FTL
+  id: 8935
+  time: '2026-02-05T18:34:29.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/702
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: adds a FTL drive to the Petrel
+  id: 8936
+  time: '2026-02-05T18:46:10.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/706
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: changed consent menu icon and location
+  id: 8937
+  time: '2026-02-06T04:56:21.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/709
+- author: Phoenix51505
+  changes:
+    - type: Tweak
+      message: >-
+        Tweaked the rules for mass exclusion to now cause ships you are docked
+        with to mass lock you unless you are FTL Locked together
+    - type: Fix
+      message: Made the Heavy core parts movable
+  id: 8938
+  time: '2026-02-06T07:12:45.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/708
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: fix buttons on LBK and Petrel
+  id: 8939
+  time: '2026-02-06T11:38:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/707
