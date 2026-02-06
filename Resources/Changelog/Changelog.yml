@@ -5778,3 +5778,10 @@ Entries:
   id: 8938
   time: '2026-02-06T07:12:45.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/708
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: fix buttons on LBK and Petrel
+  id: 8939
+  time: '2026-02-06T11:38:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/707
