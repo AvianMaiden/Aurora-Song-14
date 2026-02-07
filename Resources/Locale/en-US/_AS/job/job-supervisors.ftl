@@ -5,3 +5,4 @@ job-supervisors-officer = the Sergeant and Lieutenant
 job-supervisors-asdetective = the Lieutenant
 job-supervisors-corpsman = the Lieutenant
 job-supervisors-commissioner = the Commissioner
+job-supervisors-colonial-representative = the Colonial Representative

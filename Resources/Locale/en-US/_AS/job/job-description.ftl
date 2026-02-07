@@ -9,3 +9,4 @@ job-description-officer = Catch criminals and enemies of the state, enforce the 
 job-description-asdetective = Investigate crime scenes using forensic tools, ensure that the guilty party is found, and have a couple smokes.
 job-description-sergeant = Teach new officers the basics of searches, performing arrests, prison times and how to properly shoot a firearm.
 job-description-commissioner = Manage your department and keep them efficient, quell dissent, and keep the sector safe.
+job-description-colonial-representative = Represent the interests of the frontier colonies, manage civilian affairs, and liaise with command staff to ensure colonial prosperity.

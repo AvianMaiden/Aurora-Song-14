@@ -11,9 +11,9 @@
   job: Borg
 
 - type: stationPay
-  id: srPay
+  id: colonialRepPay
   payPerHour: 30000
-  job: StationRepresentative
+  job: ColonialRepresentative
 
 - type: stationPay
   id: stcPay

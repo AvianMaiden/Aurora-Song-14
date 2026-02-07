@@ -23,3 +23,16 @@
     sprite: _AS/Clothing/Neck/Mantles/slecommissioner.rsi
   - type: Clothing
     sprite: _AS/Clothing/Neck/Mantles/slecommissioner.rsi
+
+#region Command
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ASClothingNeckMantleColonialRepresentative
+  name: colonial representative's mantle
+  description: A decorative mantle worn by the Colonial Representative.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/Neck/Mantles/cr.rsi
+  - type: Clothing
+    sprite: _AS/Clothing/Neck/Mantles/cr.rsi

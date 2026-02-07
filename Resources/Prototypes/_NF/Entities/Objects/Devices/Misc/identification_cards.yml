@@ -182,7 +182,7 @@
   name: station representative ID card
   components:
   - type: PresetIdCard
-    job: StationRepresentative
+    job: ColonialRepresentative # Aurora Song's - changed from StationRepresentative to ColonialRepresentative
 
 - type: entity
   parent: ValetIDCard

@@ -5,16 +5,16 @@
 
 # Filled Folder
 - type: entity
-  id: ASBoxFolderSr
+  id: ASBoxFolderCR
   parent: BoxFolderBase
-  name: SR folder
+  name: CR folder
   description: A folder filled with paperwork templates.
   suffix: Forms
   components:
   - type: Sprite
     layers:
     - state: folder-colormap
-      color: "#1f6626ff"
+      color: "#0F2854ff"
     - state: folder-base
   - type: StorageFill
     contents:

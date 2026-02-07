@@ -8269,7 +8269,7 @@ entities:
     - type: Transform
       pos: -3.5,2.5
       parent: 179
-- proto: SpawnPointStationRepresentative
+- proto: SpawnPointColonialRepresentative
   entities:
   - uid: 1454
     components:

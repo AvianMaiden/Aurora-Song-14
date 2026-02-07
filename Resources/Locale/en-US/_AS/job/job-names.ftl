@@ -1,5 +1,6 @@
 # Aurora Song: AAC Tablet job quick phrases (Aurora Song specific only)
 job-name-station-representative = Station Representative
+job-name-colonial-representative = Colonial Representative
 job-name-commissioner = Commissioner
 job-name-medic = Medic
 job-name-lieutenant = Lieutenant

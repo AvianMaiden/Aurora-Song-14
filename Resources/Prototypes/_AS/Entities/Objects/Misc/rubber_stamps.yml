@@ -41,3 +41,22 @@
   - type: Sprite
     sprite: _AS/Objects/Misc/stamps.rsi
     state: stamp-pal
+
+#region Command
+
+- type: entity
+  parent: RubberStampBase
+  id: ASRubberStampColonialRepresentative
+  name: colonial representative's rubber stamp
+  description: A rubber stamp for stamping important colonial documents.
+  suffix: DO NOT MAP
+  components:
+  - type: Stamp
+    stampedName: stamp-component-stamped-name-colonial-representative
+    stampState: "paper_stamp-as-colonial-representative"
+    stampedColor: "#1C4D8D"
+  - type: Sprite
+    sprite: _AS/Objects/Misc/stamps.rsi
+    state: stamp-cr
+  - type: Item
+    sprite: _AS/Objects/Misc/stamps.rsi

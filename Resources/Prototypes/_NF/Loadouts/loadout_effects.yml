@@ -85,7 +85,8 @@
   effects:
   - !type:RoleBlacklistLoadoutEffect
     blacklist:
-    - JobStationRepresentative
+    # - JobStationRepresentative # Aurora Song: Replaced with JobColonialRepresentative
+    - JobColonialRepresentative # Aurora Song's - Blacklist Colonial Representative from this loadout
 
 # Begin Aurora Song
 - type: loadoutEffectGroup

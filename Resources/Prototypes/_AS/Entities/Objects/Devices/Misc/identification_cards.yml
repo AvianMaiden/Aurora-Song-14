@@ -123,3 +123,20 @@
     layers:
     - state: sle
     - state: idsledetective
+
+#region Command
+
+- type: entity
+  parent: [HoPIDCard, BaseCommandContraband]
+  id: ASColonialRepresentativeIDCard
+  name: colonial representative ID card
+  components:
+  - type: PresetIdCard
+    job: ColonialRepresentative
+  - type: Sprite
+    sprite: _AS/Objects/Misc/id_cards.rsi
+    layers:
+    - state: silver
+    - state: idcolonialrepresentative
+  - type: Item
+    heldPrefix: silver

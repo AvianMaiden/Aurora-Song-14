@@ -144,13 +144,13 @@
       - state: green
       - state: medic
 
-- type: entity
-  id: SpawnPointStationRepresentative
-  parent: SpawnPointHeadOfPersonnel
-  name: station representative
-  components:
-  - type: SpawnPoint
-    job_id: StationRepresentative
+#- type: entity # Aurora's Song - Commented out pending deletion
+#  id: SpawnPointStationRepresentative
+#  parent: SpawnPointHeadOfPersonnel
+#  name: station representative
+#  components:
+#  - type: SpawnPoint
+#    job_id: StationRepresentative
 
 - type: entity
   id: SpawnPointSheriff

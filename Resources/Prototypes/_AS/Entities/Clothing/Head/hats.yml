@@ -65,6 +65,7 @@
     sprite: _AS/Clothing/Head/Hats/sle_beret_big_orange.rsi
   - type: Clothing
     sprite: _AS/Clothing/Head/Hats/sle_beret_big_orange.rsi
+  - type: HamsterWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -87,6 +88,7 @@
     sprite: _AS/Clothing/Head/Hats/sle_beret_big_navy.rsi
   - type: Clothing
     sprite: _AS/Clothing/Head/Hats/sle_beret_big_navy.rsi
+  - type: HamsterWearable
 
 - type: entity
   parent: ClothingHeadBase
@@ -109,6 +111,7 @@
     sprite: _AS/Clothing/Head/Hats/sle_beret_big_cobalt.rsi
   - type: Clothing
     sprite: _AS/Clothing/Head/Hats/sle_beret_big_cobalt.rsi
+  - type: HamsterWearable
 
 - type: entity
   parent: ASClothingHeadHatSLECampaignFilled
@@ -120,6 +123,44 @@
     sprite: _AS/Clothing/Head/Hats/beret_commissioner.rsi
   - type: Clothing
     sprite: _AS/Clothing/Head/Hats/beret_commissioner.rsi
+  - type: HamsterWearable
+
+#region Command
+
+- type: entity
+  parent: ClothingHeadHatHopcap
+  id: ASClothingHeadHatColonialRepresentativeCap
+  name: colonial representative's cap
+  description: A cap issued to the frontier's colonial representative. Try not to lose it.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/Head/Hats/cr_cap.rsi
+  - type: Clothing
+    sprite: _AS/Clothing/Head/Hats/cr_cap.rsi
+  - type: HamsterWearable
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ASClothingHeadHatColonialRepresentativeBeretBig
+  name: colonial representative's big beret
+  description: Stylish beret given to the Colonial Representative. To help them stand out.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/Head/Hats/cr_beret_big.rsi
+  - type: Clothing
+    sprite: _AS/Clothing/Head/Hats/cr_beret_big.rsi
+  - type: HamsterWearable
+
+- type: entity
+  parent: ClothingHeadHatHopcap
+  id: ASClothingHeadHatColonialRepresentativeBeret
+  name: colonial representative's beret
+  description: A simple beret given to the Colonial Representative.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/Head/Hats/cr_beret.rsi
+  - type: Clothing
+    sprite: _AS/Clothing/Head/Hats/cr_beret.rsi
   - type: HamsterWearable
 
 #region Syndicate

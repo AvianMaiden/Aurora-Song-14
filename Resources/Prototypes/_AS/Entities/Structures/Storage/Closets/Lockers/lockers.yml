@@ -178,3 +178,14 @@
   - type: StorageFillVisualizer
     maxFillLevels: 6
     fillBaseName: fillEva
+
+# CR
+- type: entity
+  id: ASLockerColonialRepresentative
+  parent: [BaseStructureIndestructible, BaseStructureLockImmuneToEmag, BaseStructureAccessReaderImmuneToEmag, ASLockerBaseSecure, LockerHeadOfPersonnel]
+  name: Colonial representative's locker
+  components:
+  - type: EntityStorageVisuals
+    stateBaseClosed: cr
+    stateDoorOpen: cr_open
+    stateDoorClosed: cr_door

@@ -76,7 +76,8 @@
   # - ERTSecurity # Frontier
   # - ERTEngineer # Frontier
   # - DeathSquad # Frontier
-  - StationRepresentative # Frontier
+  # - StationRepresentative # Frontier - Aurora Song: moved to _AS as ColonialRepresentative
+  - ColonialRepresentative # Aurora's Song - Colonial Representative
   - Commissioner # Aurora's Song - switched Sheriff to Commissioner
   - PlantManager # Frontier
   - StationTrafficController # Frontier

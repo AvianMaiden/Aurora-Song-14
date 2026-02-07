@@ -43,3 +43,16 @@
     sprite: _AS/Clothing/Uniforms/Jumpskirt/public_affairs.rsi
   - type: Clothing
     sprite: _AS/Clothing/Uniforms/Jumpskirt/public_affairs.rsi
+
+#region Command
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ASClothingUniformJumpskirtColonialRepresentative
+  name: colonial representative's jumpskirt
+  description: A distinguished skirt-suit for the frontier's colonial representative. Every detail speaks of authority and colonial administration.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/Uniforms/Jumpskirt/cr.rsi
+  - type: Clothing
+    sprite: _AS/Clothing/Uniforms/Jumpskirt/cr.rsi

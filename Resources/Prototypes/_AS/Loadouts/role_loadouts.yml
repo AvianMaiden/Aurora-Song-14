@@ -276,3 +276,29 @@
   - SergeantBackpackItems
   - ContractorHandItems
   - SLESpeciesSpecific
+
+#region Command
+
+- type: roleLoadout
+  id: JobColonialRepresentative
+  groups:
+  - ColonialRepresentativeHead
+  - ColonialRepresentativeNeck
+  - ColonialRepresentativeJumpsuit
+  - ColonialRepresentativeGloves
+  - ColonialRepresentativeBackpack
+  - ColonialRepresentativeOuterClothing
+  - ColonialRepresentativeBelt
+  - ColonialRepresentativeEars
+  - ContractorShoes
+  - ContractorFace
+  - ColonialRepresentativeGlasses
+  - ColonialRepresentativePDA
+  - ColonialRepresentativeBackpackItems
+  - ContractorBoxSurvival
+  - ContractorWallet
+  - ContractorCartridge
+  - ContractorImplanter
+  - ContractorEncryptionKey
+  - ContractorHandItems
+  - NFSpeciesSpecific
