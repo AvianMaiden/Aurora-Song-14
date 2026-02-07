@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Server._NF.Salvage; //AS
 using Content.Server.Salvage.Expeditions;
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
@@ -7,10 +8,20 @@ using Content.Shared.Chat;
 using Content.Shared.Humanoid;
 using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
+using Content.Shared.EntityEffects;
+using Content.Shared.NPC; //AS
+using Content.Shared.Damage; //AS
+using Content.Shared.Damage.Prototypes; //AS
+using Content.Shared.NPC.Components; //AS
+using Content.Shared.NPC.Systems; //AS
 using Content.Shared.Salvage.Expeditions;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Localizations;
+using Content.Shared.Mind.Components; // AS
+using Content.Shared.Mobs.Components; // AS
+using Content.Shared.Warps; // AS
 using Robust.Shared.Map.Components;
+using Robust.Server.GameObjects;
 using Robust.Shared.Player;
 using Robust.Shared.Map; // Frontier
 using Content.Server.GameTicking; // Frontier
@@ -28,6 +39,7 @@ public sealed partial class SalvageSystem
 
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly GameTicker _gameTicker = default!; // Frontier
+    [Dependency] private readonly DamageableSystem _damageable = default!;
 
     private void InitializeRunner()
     {
@@ -294,6 +306,70 @@ public sealed partial class SalvageSystem
                 }
             }
 
+            if (remaining < TimeSpan.FromSeconds(1)) // AS: Get players and non-hostile ghost roles left on the expedition and yeet them onto the shuttle before we delete the map
+            {
+                var shuttleQuery = AllEntityQuery<ShuttleComponent, TransformComponent>();
+
+                if (TryComp<StationDataComponent>(comp.Station, out var data))
+                {
+                    foreach (var member in data.Grids)
+                    {
+                        while (shuttleQuery.MoveNext(out var shuttleUid, out var shuttle, out var shuttleXform))
+                        {
+                            if (shuttleXform.MapUid != uid)
+                                continue;
+
+                            // Get everyone we want to recover that is on the map and not on the shuttle
+                            var playerQuery = EntityQueryEnumerator<MindContainerComponent, MobStateComponent, TransformComponent>();
+                            while (playerQuery.MoveNext(out var quid, out var mindContainer, out var _, out var mobXform))
+                            {
+                                // If they aren't on the expedition map, don't want em
+                                if (mobXform.MapUid != uid)
+                                    continue;
+
+                                // Not player controlled at any point
+                                if (!mindContainer.HasMind)
+                                    continue;
+
+                                // NPC, definitely not a person
+                                if (HasComp<ActiveNPCComponent>(quid) || HasComp<NFSalvageMobRestrictionsComponent>(quid))
+                                    continue;
+
+                                // Hostile ghost role, continue
+                                if (TryComp(quid, out NpcFactionMemberComponent? npcFaction))
+                                {
+                                    var hostileFactions = npcFaction.HostileFactions;
+                                    if (hostileFactions.Contains("NanoTrasen")) // TODO: move away from hardcoded faction
+                                        continue;
+                                }
+                                // If we got this far, we want to try and find a warp point on their ship and warp them to it
+                                var warpQuery = EntityQueryEnumerator<WarpPointComponent, TransformComponent>();
+                                while (warpQuery.MoveNext(out var wuid, out var _, out var warpXform))
+                                {
+                                    if (Transform(wuid).GridUid != shuttleUid)
+                                        continue;
+                                    // first we ensure they are dead
+                                    if (_mobState.IsAlive(quid))
+                                    {
+                                        // Apply a large bricks worth of damage
+                                        var damageAmount = new DamageSpecifier()
+                                        {
+                                            DamageDict = { ["Slash"] = 75, ["Blunt"] = 75, ["Heat"] = 75 }  // If you are still alive after this you deserve it
+                                        };
+                                        _damageable.TryChangeDamage(quid, damageAmount, true);
+                                    }
+                                    // now teleport them to the first one we found
+                                    _transform.SetCoordinates(quid, mobXform, warpXform.Coordinates);
+                                    _transform.AttachToGridOrMap(quid, mobXform);
+                                    Spawn("EffectFlashBluespaceQuiet", mobXform.Coordinates);
+                                    break;
+                                }
+                            } // End AS
+                        }
+                    }
+                }
+            }
+
             if (remaining < TimeSpan.Zero)
             {
                 QueueDel(uid);
@@ -364,3 +440,4 @@ public sealed partial class SalvageSystem
         // End Frontier: mission-specific logic
     }
 }
+
