@@ -5819,3 +5819,10 @@ Entries:
   id: 8943
   time: '2026-02-08T03:52:41.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/714
+- author: BudaLope
+  changes:
+    - type: Tweak
+      message: Can now sell ships with contraband crates aboard
+  id: 8944
+  time: '2026-02-08T04:50:25.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/712
