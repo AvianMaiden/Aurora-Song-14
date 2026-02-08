@@ -5805,3 +5805,10 @@ Entries:
   id: 8941
   time: '2026-02-08T03:39:33.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/711
+- author: assignedgod
+  changes:
+    - type: Tweak
+      message: Ore bags now fit in backpacks
+  id: 8942
+  time: '2026-02-08T03:49:39.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/710
