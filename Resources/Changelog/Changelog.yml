@@ -5785,3 +5785,12 @@ Entries:
   id: 8939
   time: '2026-02-06T11:38:05.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/707
+- author: assignedgod
+  changes:
+    - type: Add
+      message: Ported pr 2130 from the den
+    - type: Tweak
+      message: Moved oxycrem and LBN to the lewd chem tab
+  id: 8940
+  time: '2026-02-08T03:38:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/713
