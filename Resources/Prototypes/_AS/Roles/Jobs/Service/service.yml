@@ -30,7 +30,8 @@
   id: ServiceGear
   storage:
     back:
-    - EncryptionKeyService # Frontier
+    - EncryptionKeyService
+    - ShipVoucherAuroraService
 
 - type: chameleonOutfit
   id: ServiceChameleonOutfit

@@ -57,7 +57,7 @@
     access:
     - Armory
     - Sergeant # Frontier
-    - Bailiff # Frontier
+    - Lieutenant # Aurora's Song - Changed from Bailiff to Lieutenant
     accessGroups: # Frontier
     - GeneralNfsdAccess # Frontier
 

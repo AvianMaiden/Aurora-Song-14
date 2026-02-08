@@ -334,6 +334,12 @@
   components:
   - type: PresetIdCard
     name: Curie
+  - type: Sprite
+    sprite: _NF/Objects/Misc/id_cards.rsi
+    layers:
+    - state: default
+  - type: Clothing
+    sprite: _NF/Objects/Misc/id_cards.rsi
 
 - type: entity
   parent: NFPirateFirstMateIDCard

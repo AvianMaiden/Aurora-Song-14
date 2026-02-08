@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseSubstation
   id: ASSubstationBasicHighPrio
-  suffix: Basic, 2.5MJ
+  suffix: Basic, High Prio, 2.5MJ
   components:
   - type: Battery
     maxCharge: 2500000
