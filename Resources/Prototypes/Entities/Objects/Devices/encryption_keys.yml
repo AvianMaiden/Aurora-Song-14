@@ -89,6 +89,7 @@
     - Supply
     - Traffic # Frontier
     - Greeting # Frontier
+    - Shipboard # Aurora's Song - Shipboard channel, incredibly short range
     defaultChannel: Command
   - type: Sprite
     layers:

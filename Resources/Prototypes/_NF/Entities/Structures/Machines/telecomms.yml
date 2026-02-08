@@ -46,6 +46,7 @@
       key_slots:
       - EncryptionKeyCommon
       - EncryptionKeyTraffic # Aurora's Song - Added Traffic key to shuttle server, to grant Shortband access
+      - EncryptionKeyShipboard # Aurora's Song - Added Shipboard key to shuttle server, so all ships can have short-range comms
       - EncryptionKeyMedical
 
 - type: entity

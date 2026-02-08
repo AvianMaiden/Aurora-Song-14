@@ -12,6 +12,7 @@
     containers:
       key_slots:
       - EncryptionKeyCommon
+      - EncryptionKeyShipboard # Aurora's Song - Added so every person starts with access to incredibly short-range comms
   - type: Headset
   - type: EncryptionKeyHolder
     keySlots: 10 # Frontier 4<10
