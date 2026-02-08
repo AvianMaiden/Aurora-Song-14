@@ -72,13 +72,14 @@
     blacklist:
     - JobDirectorOfCare
 
+# Aurora's Song - JobPlantManager and JobPlantTechnician changed to JobSiteManager and JobSiteWorker
 - type: loadoutEffectGroup
   id: NFNotEngineering
   effects:
   - !type:RoleBlacklistLoadoutEffect
     blacklist:
-    - JobPlantManager
-    - JobPlantTechnician
+    - JobSiteManager
+    - JobSiteWorker
 
 - type: loadoutEffectGroup
   id: NFNotStationRep

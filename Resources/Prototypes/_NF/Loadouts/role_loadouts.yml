@@ -241,54 +241,55 @@
   - ContractorHandItems
   - NFSpeciesSpecific
 
-- type: roleLoadout
-  id: JobPlantManager
-  groups:
-  - PlantManagerHead
-  - PlantManagerNeck
-  - PlantManagerJumpsuit
-  - EngineeringGloves
-  - PlantManagerBackpack
-  - PlantManagerOuterClothing
-  - EngineeringForcedOuterClothing
-  - PlantManagerShoes
-  - EngineeringFace
-  - PlantManagerGlasses
-  - PlantManagerBelt
-  - PlantManagerEars
-  - ContractorBoxSurvival
-  - PlantManagerPDA
-  - ContractorWallet
-  - ContractorCartridge
-  - ContractorImplanter
-  - ContractorEncryptionKey
-  - ContractorBackpackItems
-  - ContractorHandItems
-  - NFSpeciesSpecific
-
-- type: roleLoadout
-  id: JobPlantTechnician
-  groups:
-  - EngineeringHead
-  - EngineeringJumpsuit
-  - EngineeringGloves
-  - EngineeringBackpack
-  - EngineeringOuterClothing
-  - EngineeringForcedOuterClothing
-  - EngineeringShoes
-  - EngineeringFace
-  - EngineeringGlasses
-  - EngineeringBelt
-  - EngineeringEars
-  - ContractorBoxSurvival
-  - PlantTechnicianPDA
-  - ContractorWallet
-  - ContractorCartridge
-  - ContractorImplanter
-  - ContractorEncryptionKey
-  - ContractorBackpackItems
-  - ContractorHandItems
-  - NFSpeciesSpecific
+# Aurora's Song - JobPlantManager and JobPlantTechnician roles are disabled
+#- type: roleLoadout
+#  id: JobPlantManager
+#  groups:
+#  - PlantManagerHead
+#  - PlantManagerNeck
+#  - PlantManagerJumpsuit
+#  - EngineeringGloves
+#  - PlantManagerBackpack
+#  - PlantManagerOuterClothing
+#  - EngineeringForcedOuterClothing
+#  - PlantManagerShoes
+#  - EngineeringFace
+#  - PlantManagerGlasses
+#  - PlantManagerBelt
+#  - PlantManagerEars
+#  - ContractorBoxSurvival
+#  - PlantManagerPDA
+#  - ContractorWallet
+#  - ContractorCartridge
+#  - ContractorImplanter
+#  - ContractorEncryptionKey
+#  - ContractorBackpackItems
+#  - ContractorHandItems
+#  - NFSpeciesSpecific
+#
+#- type: roleLoadout
+#  id: JobPlantTechnician
+#  groups:
+#  - EngineeringHead
+#  - EngineeringJumpsuit
+#  - EngineeringGloves
+#  - EngineeringBackpack
+#  - EngineeringOuterClothing
+#  - EngineeringForcedOuterClothing
+#  - EngineeringShoes
+#  - EngineeringFace
+#  - EngineeringGlasses
+#  - EngineeringBelt
+#  - EngineeringEars
+#  - ContractorBoxSurvival
+#  - PlantTechnicianPDA
+#  - ContractorWallet
+#  - ContractorCartridge
+#  - ContractorImplanter
+#  - ContractorEncryptionKey
+#  - ContractorBackpackItems
+#  - ContractorHandItems
+#  - NFSpeciesSpecific
 
 # region NFPirate
 
