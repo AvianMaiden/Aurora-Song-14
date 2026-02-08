@@ -328,7 +328,7 @@
     name: Clippy
 
 - type: entity
-  parent: PlantTechnicianIDCard
+  parent: IDCardStandard
   id: CurieIDCard
   name: curie ID card
   components:

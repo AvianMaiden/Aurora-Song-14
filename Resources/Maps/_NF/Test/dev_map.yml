@@ -4661,7 +4661,7 @@ entities:
     - type: Transform
       pos: -1.5,-11.5
       parent: 179
-- proto: ComputerShipyardNfsd
+- proto: ComputerShipyardSLE
   entities:
   - uid: 284
     components:

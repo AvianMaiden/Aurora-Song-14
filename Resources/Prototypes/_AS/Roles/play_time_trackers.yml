@@ -5,7 +5,7 @@
   id: JobService
 
 - type: playTimeTracker
-  id: JobPlantManager
+  id: JobSiteManager
 
 - type: playTimeTracker
-  id: JobPlantTechnician
+  id: JobSiteWorker
