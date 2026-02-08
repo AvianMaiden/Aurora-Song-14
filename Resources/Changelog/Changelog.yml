@@ -5794,3 +5794,14 @@ Entries:
   id: 8940
   time: '2026-02-08T03:38:55.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/713
+- author: Phoenix51505
+  changes:
+    - type: Tweak
+      message: Being left behind on an expedition is no longer round removing.
+    - type: Tweak
+      message: Expeditions auto abort after some time if all players are dead.
+    - type: Add
+      message: Medical alarms are retriggered after FTL ends
+  id: 8941
+  time: '2026-02-08T03:39:33.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/711
