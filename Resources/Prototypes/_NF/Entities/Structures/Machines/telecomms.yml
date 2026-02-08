@@ -45,6 +45,7 @@
     containers:
       key_slots:
       - EncryptionKeyCommon
+      - EncryptionKeyTraffic # Aurora's Song - Added Traffic key to shuttle server, to grant Shortband access
       - EncryptionKeyMedical
 
 - type: entity
