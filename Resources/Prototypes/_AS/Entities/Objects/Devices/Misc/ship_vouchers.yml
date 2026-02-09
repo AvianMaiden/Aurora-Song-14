@@ -65,6 +65,11 @@
     destroyOnEmpty: true
     access:
     - Aurora
+    - Service
+    - Mail
+    - Janitor
+    accessGroups:
+    - AllAccess
 
 - type: entity
   parent: ASBaseShipVoucher
@@ -81,6 +86,7 @@
     destroyOnEmpty: true
     access:
     - Aurora
+    - Service
 
 #region SLE
 
