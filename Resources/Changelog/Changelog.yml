@@ -5857,3 +5857,10 @@ Entries:
   id: 8947
   time: '2026-02-09T11:36:17.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/718
+- author: Vandanna
+  changes:
+    - type: Remove
+      message: SpreaderGrid from multiple POIs
+  id: 8948
+  time: '2026-02-09T14:28:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/719
