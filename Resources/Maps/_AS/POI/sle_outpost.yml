@@ -2161,7 +2161,6 @@ entities:
       id: Sleo
     - type: IFF
       color: '#6690CCFF'
-    - type: SpreaderGrid
     - type: NavMap
     - type: ImplicitRoof
 - proto: AirAlarm
