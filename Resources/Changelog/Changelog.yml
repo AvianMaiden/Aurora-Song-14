@@ -5873,3 +5873,10 @@ Entries:
   id: 8949
   time: '2026-02-09T17:55:48.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/720
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Corpsman Loadout shows again
+  id: 8950
+  time: '2026-02-09T18:10:17.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/721
