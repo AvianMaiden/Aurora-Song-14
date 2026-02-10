@@ -8,3 +8,4 @@ job-supervisors-commissioner = the Commissioner
 job-supervisors-colonial-representative = the Colonial Representative
 job-supervisors-site-manager = the Site Manager
 job-supervisors-site-worker = the Site Manager
+job-supervisors-colcom = Colonial Command
