@@ -1,0 +1,11 @@
+#region SLE
+
+- type: entity
+  parent: PosterBase
+  id: ASPosterSLEPinpointer
+  name: "Leave your pinpointers!"
+  description: The SLE Department reminds officers to leave their pinpointers here, along the side of this hallway! Remember to pinpointer your ID! A tracked Officer is a safe Officer!
+  components:
+  - type: Sprite
+    sprite: _AS/Structures/Wallmounts/posters.rsi
+    state: as_poster_sle_pinpointer
