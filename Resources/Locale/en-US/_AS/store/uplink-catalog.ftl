@@ -91,6 +91,24 @@ uplink-sle-hardsuit-combat-commissioner-desc = A heavily armored SLE suit. Marke
 uplink-sle-softsuit-patrol-name = SLE Patrol Softsuit
 uplink-sle-softsuit-patrol-desc = The standard-issue SLE space proof suit for patrol duty.
 
+uplink-sle-softsuit-patrol-rookie-name = SLE Rookie Patrol Softsuit
+uplink-sle-softsuit-patrol-rookie-desc = The standard-issue SLE space proof suit for patrol duty. Marked for Rookies.
+
+uplink-sle-softsuit-patrol-officer-name = SLE Officer Patrol Softsuit
+uplink-sle-softsuit-patrol-officer-desc = The standard-issue SLE space proof suit for patrol duty. Marked for Officers.
+
+uplink-sle-softsuit-patrol-sergeant-name = SLE Sergeant Patrol Softsuit
+uplink-sle-softsuit-patrol-sergeant-desc = The standard-issue SLE space proof suit for patrol duty. Marked for Sergeants.
+
+uplink-sle-softsuit-patrol-lieutenant-name = SLE Lieutenant Patrol Softsuit
+uplink-sle-softsuit-patrol-lieutenant-desc = The standard-issue SLE space proof suit for patrol duty. Marked for Lieutenants.
+
+uplink-sle-softsuit-patrol-corpsman-name = SLE Corpsman Patrol Softsuit
+uplink-sle-softsuit-patrol-corpsman-desc = The standard-issue SLE space proof suit for patrol duty. Marked for Corpsmen.
+
+uplink-sle-softsuit-patrol-commissioner-name = SLE Commissioner Patrol Softsuit
+uplink-sle-softsuit-patrol-commissioner-desc = The standard-issue SLE space proof suit for patrol duty. Marked for the Commissioner.
+
 # region ExchangeVend - Aurora
 store-category-exchangehardsuits = EVA Suits
 store-category-exchangearmor = Armor
