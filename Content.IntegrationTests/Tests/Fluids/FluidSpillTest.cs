@@ -59,9 +59,10 @@ public sealed class FluidSpill
             var grid = mapManager.CreateGridEntity(mapId);
             gridId = grid.Owner;
 
-            // Mono
+            // Mono start
             var plating = tileDefinitionManager["Plating"];
             var platingTile = new Tile(plating.TileId);
+            // Mono end
             for (var x = 0; x < 3; x++)
             {
                 for (var y = 0; y < 3; y++)
