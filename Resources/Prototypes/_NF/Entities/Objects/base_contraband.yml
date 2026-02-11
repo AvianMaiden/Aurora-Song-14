@@ -67,7 +67,7 @@
   components:
   - type: Contraband
     severity: Class2Expedition
-    turnInValues: &oneFUC
+    turnInValues: 
       FrontierUplinkCoin: 1
       ExchangeCoin: 1 # AS
       Doubloon: 1
@@ -110,7 +110,10 @@
   abstract: true
   components:
   - type: Contraband
-    turnInValues: *oneFUC
+    turnInValues: 
+      FrontierUplinkCoin: 1
+      ExchangeCoin: 1 # AS
+      Doubloon: 1
 
 - type: entity
   parent: BaseC3ContrabandUnredeemable
@@ -134,7 +137,10 @@
   abstract: true
   components:
   - type: Contraband
-    turnInValues: *oneFUC
+    turnInValues:
+      FrontierUplinkCoin: 1
+      ExchangeCoin: 1 # AS
+      Doubloon: 1
 
 - type: entity
   parent: BaseC3CultContraband
@@ -186,7 +192,10 @@
   abstract: true
   components:
   - type: Contraband
-    turnInValues: *oneFUC
+    turnInValues: 
+      FrontierUplinkCoin: 1
+      ExchangeCoin: 1 # AS
+      Doubloon: 1
 
 - type: entity
   parent: BaseC3ContrabandUnredeemable
@@ -203,7 +212,10 @@
   components:
   - type: Contraband
     severity: Class3Wizard
-    turnInValues: *oneFUC
+    turnInValues: 
+      FrontierUplinkCoin: 1
+      ExchangeCoin: 1 # AS
+      Doubloon: 1
 # endregion
 
 # region Class 3 Mobs

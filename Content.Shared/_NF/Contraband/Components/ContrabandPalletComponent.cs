@@ -14,7 +14,7 @@ public sealed partial class ContrabandPalletConsoleComponent : Component
     public string RewardType = "FrontierUplinkCoin";
 
     [ViewVariables(VVAccess.ReadWrite), DataField("altCashType", serverOnly: true, customTypeSerializer: typeof(PrototypeIdSerializer<StackPrototype>))]
-    public string RewardTypeAlternate = "ExchangeCoin"; // AS: Allow alt reward currencies
+    public string RewardTypeAlternate = string.Empty; // AS: Allow alt reward currencies
 
     [DataField]
     public SoundSpecifier ErrorSound = new SoundCollectionSpecifier("CargoError"); // Aurora: add deny sound

@@ -122,6 +122,7 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: ContrabandPalletConsole
+    altCashType: ExchangeCoin
   - type: ActivatableUI
     key: enum.ContrabandPalletConsoleUiKey.Contraband
   - type: AccessReader
@@ -335,8 +336,7 @@
   - type: Computer
     board: Null # Really shouldn't spawn anything on destruction
   - type: ContrabandPalletConsole
-    cashType: "Doubloon" # AS
-    altCashType: "" # AS
+    cashType: Doubloon
     faction: Pirates
     licenseRequired: Null
     locStringPrefix: pirate-
