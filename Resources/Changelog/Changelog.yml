@@ -5887,3 +5887,10 @@ Entries:
   id: 8951
   time: '2026-02-10T01:09:05.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/722
+- author: Phoenix51505
+  changes:
+    - type: Fix
+      message: Fixed diagonal windows not separating rooms.
+  id: 8952
+  time: '2026-02-11T05:28:35.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/725
