@@ -122,8 +122,8 @@
     - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
       state: generic_panel_open
   - type: ContrabandPalletConsole
-    cashType: FrontierUplinkCoin # AS
-    altCashType: ExchangeCoin
+    cashType: FrontierUplinkCoin
+    altCashType: ExchangeCoin # AS
   - type: ActivatableUI
     key: enum.ContrabandPalletConsoleUiKey.Contraband
   - type: AccessReader
@@ -336,11 +336,9 @@
       state: generic_panel_open
   - type: Computer
     board: Null # Really shouldn't spawn anything on destruction
-  - type: ActivatableUI # AS: Things it inheritated from its former parent
-    key: enum.ContrabandPalletConsoleUiKey.Contraband
   - type: ContrabandPalletConsole
     cashType: Doubloon
-    altCashType: Null
+    altCashType: Null # AS
     faction: Pirates
     licenseRequired: Null
     locStringPrefix: pirate-

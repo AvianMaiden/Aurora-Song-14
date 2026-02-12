@@ -10,7 +10,7 @@ namespace Content.Shared._NF.Contraband.Components;
 [Access(typeof(SharedContrabandTurnInSystem))]
 public sealed partial class ContrabandPalletConsoleComponent : Component
 {
-
+    // AS
     /// <summary>
     /// The primary currency that should be reward. Tries to send it to an entity with a <see cref="ScuOutputComponent"/> first, then the triggering entities hand, and if both of those fail, spawns the coins on the console.
     /// Also determines what currency is given as a registration reward.
