@@ -17,6 +17,8 @@
     magState: mag
     steps: 3
     zeroVisible: true
+  - type: NFWeaponDetails
+    class: weapon-details-manufacturer-hzi
 
 - type: entity
   id: ASWeaponRifleMarksmanHZ-3-3-C
