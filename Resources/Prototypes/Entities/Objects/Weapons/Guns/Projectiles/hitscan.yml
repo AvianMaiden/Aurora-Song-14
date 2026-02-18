@@ -188,7 +188,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: HitscanBasicRaycast
-    maxDistance: 60.0
+    maxDistance: 60
   - type: HitscanBasicDamage
     damage:
       types:
