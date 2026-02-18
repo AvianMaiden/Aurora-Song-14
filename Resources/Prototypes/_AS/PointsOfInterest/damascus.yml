@@ -43,4 +43,4 @@
         - type: StationJobs
           availableJobs:
             SiteManager: [ 1, 1 ]
-            SiteWorker: [ 0, 0 ]
+            SiteWorker: [ 4, 4 ]
