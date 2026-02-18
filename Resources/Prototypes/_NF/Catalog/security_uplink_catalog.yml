@@ -154,6 +154,114 @@
           - SecurityUplink
 
 - type: listing
+  id: UplinkSleCombatHardsuitRookie
+  name:  uplink-sle-hardsuit-combat-rookie-name
+  description: uplink-sle-hardsuit-combat-rookie-desc
+  productEntity: ClothingOuterHardsuitSleCombatRookie
+  icon: { sprite: _AS/Clothing/OuterClothing/Hardsuits/sle_combat.rsi, state: icon-rke-shop }
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSleCombatHardsuitOfficer
+  name:  uplink-sle-hardsuit-combat-officer-name
+  description: uplink-sle-hardsuit-combat-officer-desc
+  productEntity: ClothingOuterHardsuitSleCombatOfficer
+  icon: { sprite: _AS/Clothing/OuterClothing/Hardsuits/sle_combat.rsi, state: icon-off-shop }
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSleCombatHardsuitSergeant
+  name:  uplink-sle-hardsuit-combat-sergeant-name
+  description: uplink-sle-hardsuit-combat-sergeant-desc
+  productEntity: ClothingOuterHardsuitSleCombatSergeant
+  icon: { sprite: _AS/Clothing/OuterClothing/Hardsuits/sle_combat.rsi, state: icon-sgt-shop }
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched to SLE roles
+        - Lieutenant
+        - Sergeant
+        - Commissioner
+
+- type: listing
+  id: UplinkSleCombatHardsuitLieutenant
+  name:  uplink-sle-hardsuit-combat-lieutenant-name
+  description: uplink-sle-hardsuit-combat-lieutenant-desc
+  productEntity: ClothingOuterHardsuitSleCombatLieutenant
+  icon: { sprite: _AS/Clothing/OuterClothing/Hardsuits/sle_combat.rsi, state: icon-lt-shop }
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched to SLE roles
+        - Lieutenant
+        - Commissioner
+
+- type: listing
+  id: UplinkSleCombatHardsuitCorpsman
+  name:  uplink-sle-hardsuit-combat-corpsman-name
+  description: uplink-sle-hardsuit-combat-corpsman-desc
+  productEntity: ClothingOuterHardsuitSleCombatCorpsman
+  icon: { sprite: _AS/Clothing/OuterClothing/Hardsuits/sle_combat.rsi, state: icon-crp-shop }
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSleCombatHardsuitCommissioner
+  name:  uplink-sle-hardsuit-combat-commissioner-name
+  description: uplink-sle-hardsuit-combat-commissioner-desc
+  productEntity: ClothingOuterHardsuitSleCombatCommissioner
+  icon: { sprite: _AS/Clothing/OuterClothing/Hardsuits/sle_combat.rsi, state: icon-com-shop }
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched Sheriff to Commissioner
+        - Commissioner
+
+- type: listing
   id: UplinkSleSoftsuitPatrol
   name:  uplink-sle-softsuit-patrol-name
   description: uplink-sle-softsuit-patrol-desc
@@ -168,6 +276,116 @@
       whitelist:
         tags:
           - SecurityUplink
+
+- type: listing
+  id: UplinkSleSoftsuitPatrolRookie
+  name:  uplink-sle-softsuit-patrol-rookie-name
+  description: uplink-sle-softsuit-patrol-rookie-desc
+  productEntity: ClothingOuterSoftsuitSlePatrolRookie
+  icon: { sprite: _AS/Clothing/OuterClothing/Softsuits/sle_patrol.rsi, state: icon-rke-shop }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSleSoftsuitPatrolOfficer
+  name:  uplink-sle-softsuit-patrol-officer-name
+  description: uplink-sle-softsuit-patrol-officer-desc
+  productEntity: ClothingOuterSoftsuitSlePatrolOfficer
+  icon: { sprite: _AS/Clothing/OuterClothing/Softsuits/sle_patrol.rsi, state: icon-off-shop }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSleSoftsuitPatrolSergeant
+  name:  uplink-sle-softsuit-patrol-sergeant-name
+  description: uplink-sle-softsuit-patrol-sergeant-desc
+  productEntity: ClothingOuterSoftsuitSlePatrolSergeant
+  icon: { sprite: _AS/Clothing/OuterClothing/Softsuits/sle_patrol.rsi, state: icon-sgt-shop }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched to SLE roles
+        - Lieutenant
+        - Sergeant
+        - Commissioner
+
+
+- type: listing
+  id: UplinkSleSoftsuitPatrolLieutenant
+  name:  uplink-sle-softsuit-patrol-lieutenant-name
+  description: uplink-sle-softsuit-patrol-lieutenant-desc
+  productEntity: ClothingOuterSoftsuitSlePatrolLieutenant
+  icon: { sprite: _AS/Clothing/OuterClothing/Softsuits/sle_patrol.rsi, state: icon-lt-shop }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched to SLE roles
+        - Lieutenant
+        - Commissioner
+
+- type: listing
+  id: UplinkSleSoftsuitPatrolCorpsman
+  name:  uplink-sle-softsuit-patrol-corpsman-name
+  description: uplink-sle-softsuit-patrol-corpsman-desc
+  productEntity: ClothingOuterSoftsuitSlePatrolCorpsman
+  icon: { sprite: _AS/Clothing/OuterClothing/Softsuits/sle_patrol.rsi, state: icon-crp-shop }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSleSoftsuitPatrolCommissioner
+  name:  uplink-sle-softsuit-patrol-commissioner-name
+  description: uplink-sle-softsuit-patrol-commissioner-desc
+  productEntity: ClothingOuterSoftsuitSlePatrolCommissioner
+  icon: { sprite: _AS/Clothing/OuterClothing/Softsuits/sle_patrol.rsi, state: icon-com-shop }
+  cost:
+    FrontierUplinkCoin: 2
+  categories:
+    - UplinkSecurityHardsuits
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched Sheriff to Commissioner
+        - Commissioner
+
 # End Aurora Song
 
 #region weapons

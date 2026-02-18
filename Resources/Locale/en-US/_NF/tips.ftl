@@ -1,4 +1,4 @@
-#Aurora's Song - Change Frontier Outpost to the central station, Frontier to Aurora, NFSD to SLE, SR/ Station Representative to CR/ Colonial Representative, Sheriff to Commissioner, tip 111 changed to taste/ rules match
+#Aurora's Song - Change Frontier Outpost to the central station, Frontier to Aurora, Frontier Station to Aurora's Song, NFSD to SLE, SR/ Station Representative to CR/ Colonial Representative, Sheriff to Commissioner, tip 111 changed to taste/ rules match
 nf-tips-dataset-1 = If you're on fire, you can click the alert on the right of your screen to stop, drop, and roll.
 nf-tips-dataset-2 = You can view and edit all keybindings used in-game at any time through the Options menu.
 nf-tips-dataset-3 = You can access the in-game guidebook through the escape menu, or by pressing Numpad 0 by default.
@@ -62,7 +62,7 @@ nf-tips-dataset-60 = In an emergency, you can butcher a jumpsuit with a sharp ob
 nf-tips-dataset-61 = You can use sharp objects to butcher clothes or animals in the right click context menu. This includes glass shards.
 nf-tips-dataset-62 = Most explosives have an adjustable timer that you can set in the right click menu. This includes grenade penguins!
 nf-tips-dataset-63 = You can click on the names of items to pick them up in the right click menu, instead of hovering over the item and then selecting pick up.
-nf-tips-dataset-64 = Frontier Station 14 is open source! If there's a change you want to make, or a simple item you want to add, then try contributing to the game. It's not as hard as you'd think it is.
+nf-tips-dataset-64 = Aurora's Song is open source! If there's a change you want to make, or a simple item you want to add, then try contributing to the game. It's not as hard as you'd think it is.
 nf-tips-dataset-65 = In a pinch, you can throw drinks or other reagent containers behind you to create a spill that can slip people chasing you.
 nf-tips-dataset-66 = Some weapons, such as knives & shivs, have a fast attack speed.
 nf-tips-dataset-67 = The jaws of life can be used to open powered doors.

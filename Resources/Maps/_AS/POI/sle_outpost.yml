@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 02/01/2026 17:49:02
-  entityCount: 4788
+  time: 02/10/2026 13:28:05
+  entityCount: 4789
 maps: []
 grids:
 - 1
@@ -3320,7 +3320,7 @@ entities:
       pos: 17.5,-5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -45247.297
+      secondsUntilStateChange: -45339.426
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3378,7 +3378,7 @@ entities:
       pos: -2.5,2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -60593.617
+      secondsUntilStateChange: -60685.746
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3389,7 +3389,7 @@ entities:
       pos: -1.5,3.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18441.76
+      secondsUntilStateChange: -18533.89
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3420,7 +3420,7 @@ entities:
       pos: -11.5,1.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -60597.15
+      secondsUntilStateChange: -60689.277
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3436,7 +3436,7 @@ entities:
       pos: -11.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -61378.684
+      secondsUntilStateChange: -61470.812
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3472,7 +3472,7 @@ entities:
       pos: -17.5,-2.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -62706.715
+      secondsUntilStateChange: -62798.844
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3576,7 +3576,7 @@ entities:
       pos: 5.5,9.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -44380.668
+      secondsUntilStateChange: -44472.797
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -3787,6 +3787,13 @@ entities:
     components:
     - type: Transform
       pos: -10.5,14.5
+      parent: 1
+- proto: ASPosterSLEPinpointer
+  entities:
+  - uid: 4789
+    components:
+    - type: Transform
+      pos: 2.5,-5.5
       parent: 1
 - proto: ASSignSLEBrief
   entities:
@@ -22408,7 +22415,7 @@ entities:
       pos: -1.5,33.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -69691.8
+      secondsUntilStateChange: -69783.93
       state: Opening
   - uid: 3347
     components:
@@ -22416,7 +22423,7 @@ entities:
       pos: 0.5,33.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -69690.164
+      secondsUntilStateChange: -69782.3
       state: Opening
   - uid: 3348
     components:
@@ -22424,7 +22431,7 @@ entities:
       pos: 2.5,33.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -69688.8
+      secondsUntilStateChange: -69780.93
       state: Opening
 - proto: HospitalCurtainsOpen
   entities:
@@ -30731,7 +30738,7 @@ entities:
       lastSignals:
         DoorStatus: True
     - type: Door
-      secondsUntilStateChange: -68727.47
+      secondsUntilStateChange: -68819.6
       state: Opening
     - type: Airlock
       autoClose: False
