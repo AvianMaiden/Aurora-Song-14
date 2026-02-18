@@ -266,7 +266,7 @@ public sealed partial class ContrabandTurnInSystem : SharedContrabandTurnInSyste
         var outputQuery = EntityQueryEnumerator<ScuOutputComponent, TransformComponent>(); // Begin AS: Makes pirate contraband selling usable
         var output = uid.ToCoordinates();
         var outputSent = false;
-        while (outputQuery.MoveNext(out var _, out var xform))
+        while (outputQuery.MoveNext(out var _, out var xform)) // If theres an entity with an ScuOutputComponent, we want to try and send the primary currency to that first
         {
             if (xform.GridUid == gridUid)
             {
@@ -275,10 +275,10 @@ public sealed partial class ContrabandTurnInSystem : SharedContrabandTurnInSyste
             }
         }
 
-        if (component.RewardType != null) 
+        if (component.RewardType != null) // If we have a primary reward, spawn it
         {
-            var rewardPrototype = _protoMan.Index<StackPrototype>(component.RewardType); // AS: Allow alt reward currencies
-            var stackUid = _stack.Spawn(reward, rewardPrototype, output); // AS: Allow alt reward currencies
+            var rewardPrototype = _protoMan.Index<StackPrototype>(component.RewardType);
+            var stackUid = _stack.Spawn(reward, rewardPrototype, output);
             if (outputSent == false)
             {
                 if (!_hands.TryPickupAnyHand(args.Actor, stackUid)) // If there wasn't a a ScuOutputComponent to send these too, try to pick them up
@@ -291,12 +291,12 @@ public sealed partial class ContrabandTurnInSystem : SharedContrabandTurnInSyste
 
         }
 
-        if (component.RewardTypeAlternate != null) // AS
+        if (component.RewardTypeAlternate != null) // If we have an alternate currency, spawn it
         {
-            var altRewardPrototype = _protoMan.Index<StackPrototype>(component.RewardTypeAlternate); // AS: Allow alt reward currencies
-            var altStackUid = _stack.Spawn(altReward, altRewardPrototype, args.Actor.ToCoordinates()); // AS: Allow alt reward currencies
+            var altRewardPrototype = _protoMan.Index<StackPrototype>(component.RewardTypeAlternate);
+            var altStackUid = _stack.Spawn(altReward, altRewardPrototype, args.Actor.ToCoordinates());
             if (!_hands.TryPickupAnyHand(args.Actor, altStackUid))
-                _transform.SetLocalRotation(altStackUid, Angle.Zero); // Orient these to grid north instead of map north
+                _transform.SetLocalRotation(altStackUid, Angle.Zero); // Orient these to grid north instead of map north if we can't pick them up
         } // End AS
         UpdatePalletConsoleInterface(uid, component);
     }
