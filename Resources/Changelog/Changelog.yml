@@ -5950,3 +5950,12 @@ Entries:
   id: 8958
   time: '2026-02-18T17:00:23.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/731
+- author: Vandanna
+  changes:
+    - type: Add
+      message: Dark Shuttle Walls/ Windows/ Airlocks
+    - type: Tweak
+      message: Base Shuttle Walls/ Airlocks
+  id: 8959
+  time: '2026-02-18T18:10:24.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/730
