@@ -80,6 +80,14 @@
         color: "#ff8d00"
 
 - type: entity
+  id: ASMagazineMarksmanRifle30OverpressureEmpty
+  name: marksman magazine (.30 rifle, fillable, overpressure)
+  parent: ASMagazineMarksmanRifle30Overpressure
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+- type: entity
   id: ASMagazineMarksmanRifle30Incendiary
   name: marksman magazine (.30 rifle, incendiary)
   parent: ASBaseMagazineMarksmanRifle30

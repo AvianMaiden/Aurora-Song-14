@@ -35,7 +35,7 @@
     NFWeaponShotgunKammerer: 4294967295
   # Magazines
     NFMagazinePistol35Empty: 4294967295
-    NFMagazinePistol35Empty: 4294967295 # Aurora's Song
+    NFMagazineSubMachineGun35Empty: 4294967295 # Aurora's Song
     ASMagazinePistol40Empty: 4294967295 # Aurora's Song
     NFMagazineClipRifle20Empty: 4294967295
     NFMagazineLowCapacityRifle30Empty: 4294967295

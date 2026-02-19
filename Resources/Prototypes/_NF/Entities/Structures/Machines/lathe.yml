@@ -344,6 +344,7 @@
     - NFMercenaryAmmoBoxesStatic
     - NfsdPracticeStatic
     - NFMercenaryMagazineStatic
+    - NFMercenarySpeedloadersStatic # Aurora's Song - unsure why this was left out
     - NFPaperAndPaperAccessories # Aurora's Song - for paper and cardboard
   - type: EmagLatheRecipes
     emagStaticPacks:

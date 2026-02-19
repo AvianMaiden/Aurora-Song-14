@@ -1711,11 +1711,13 @@
   recipeUnlocks:
   - NFAmmunitionBoxPistol35Overpressure
   - NFAmmunitionBoxPistol45Overpressure
-  - ASAmmunitionBoxPistol40Overpressure # Aurora Song
+  - ASAmmunitionBoxPistol40Overpressure # Aurora's Song
   - NFMagazineHighCapacityPistol35Empty
-  - ASMagazineHighCapacityPistol40Empty # Aurora Song
+  - NFMagazineHighCapacityPistol35OverpressureEmpty # Aurora's Song
+  - ASMagazineHighCapacityPistol40Empty # Aurora's Song
+  - ASMagazineHighCapacityPistol40OverpressureEmpty # Aurora's Song
   - NFMagazineSubMachineGun35Empty
-  - ASMagazineSubMachineGun40Empty # Aurora Song
+  - ASMagazineSubMachineGun40Empty # Aurora's Song
   - NFMagazineSubMachineGunTopMounted35Empty
   - NFMagazinePistol45Empty
   prerequisiteLineType: Diagonal
