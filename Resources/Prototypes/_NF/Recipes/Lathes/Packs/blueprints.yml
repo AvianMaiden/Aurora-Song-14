@@ -99,6 +99,11 @@
   - MiniStationAnchorCircuitboard
   - SmallThrusterMachineCircuitboard
   - SmallGyroscopeMachineCircuitboard
+  - MachineDriveCTLA25Circuitboard # Aurora's Song
+  - MachineDriveCTLA25sCircuitboard # Aurora's Song
+  - MachineDriveCTLA50Circuitboard # Aurora's Song
+  - MachineDriveCTLA160Circuitboard # Aurora's Song
+  - ComputerDriveCTLA160ConsoleCircuitboard # Aurora's Song
   # AdvancedAtmospherics
   - HellfireFreezerMachineCircuitBoard
   - PortableScrubberMachineCircuitBoard
