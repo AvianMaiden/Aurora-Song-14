@@ -499,6 +499,7 @@
       staticPacks:
       - NfsdAmmoStatic # Frontier: SecurityAmmoStatic<NfsdAmmoStatic
       - NFMercenaryMagazineStatic
+      - NFPaperAndPaperAccessories # Aurora's Song - for paper and cardboard
     - type: MaterialStorage
       whitelist:
         tags:
