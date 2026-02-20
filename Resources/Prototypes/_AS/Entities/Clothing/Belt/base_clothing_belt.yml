@@ -12,6 +12,7 @@
         whitelist:
           tags:
           - Sidearm
+          - Knife # added knife to whitelist
         insertOnInteract: true
   - type: Appearance
   - type: ItemMapper # DeltaV - adjust for DeltaV sprites.
@@ -28,6 +29,10 @@
         whitelist:
           tags:
           - Sidearm
+      knife: # add knife sprite mapping
+        whitelist:
+          tags:
+          - Knife
     sprite: _DV/Clothing/Belt/belt_overlay.rsi
   - type: ContainerContainer
     containers:
@@ -92,7 +97,7 @@
         whitelist:
           tags:
           - Sidearm
-          - Knife
+          - Knife # add knife to whitelist
         insertOnInteract: true
       medkit:
         name: clothing-belt-medkit
@@ -116,7 +121,7 @@
         whitelist:
           tags:
           - Sidearm
-      knife_rig:
+      knife_rig: # add knife sprite mapping
         whitelist:
           tags:
           - Knife
