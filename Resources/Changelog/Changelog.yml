@@ -5977,3 +5977,54 @@ Entries:
   id: 8961
   time: '2026-02-20T17:02:22.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/735
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: map to Trade Spine, fix signage
+    - type: Add
+      message: paper/cardboard recipe to all TechFabs
+    - type: Tweak
+      message: give Mail Carriers a box of crayons
+    - type: Tweak
+      message: give the CR a cutter machine in their locker
+    - type: Tweak
+      message: allow dumping bags on Material Silos
+    - type: Tweak
+      message: add empty .35 smg and .20 rifle mags to the Pick-N-Pack
+    - type: Add
+      message: empty +P mags and make them printable
+    - type: Tweak
+      message: blacklist Fairies and Shelegs from patient/ corpse bounties
+    - type: Tweak
+      message: fixes such as signage and atmos on SLEO, add maps
+    - type: Tweak
+      message: items to MedicGearVend (labeler, syringes, spare glasses)
+    - type: Tweak
+      message: add experimental/ white cat plushie to plushie vend hackventory
+    - type: Tweak
+      message: FTL drives researchable and craftable
+    - type: Remove
+      message: 25S and 160 FTL drives from cargo request inventory
+    - type: Tweak
+      message: FTL drives power reqs and tonnage capability
+    - type: Tweak
+      message: let holsters to fit cobra mags
+    - type: Tweak
+      message: allow belts and rigs to fit knives, with sprite
+    - type: Fix
+      message: (backend) weapons loadouts to proper location
+    - type: Fix
+      message: Honk Bullets
+    - type: Fix
+      message: underwear duplicates
+    - type: Fix
+      message: give Tajarans underwear
+    - type: Fix
+      message: let Tajarans make cat sounds
+    - type: Tweak
+      message: make Prison Riot timer longer
+    - type: Tweak
+      message: Smuggler Intercept windows less cheesable
+  id: 8962
+  time: '2026-02-20T18:03:53.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/736
