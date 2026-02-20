@@ -5959,3 +5959,12 @@ Entries:
   id: 8959
   time: '2026-02-18T18:10:24.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/730
+- author: Phoenix51505
+  changes:
+    - type: Tweak
+      message: Contraband can now be turned in for differing amounts of EC and SCU.
+    - type: Fix
+      message: The Pirate Contraband Console works again.
+  id: 8960
+  time: '2026-02-20T16:59:45.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/723
