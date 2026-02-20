@@ -61,6 +61,7 @@
         - id: ASClothingHandsGlovesColonialRepresentative
         - id: ASClothingNeckMantleColonialRepresentative
         - id: ASClothingNeckCloakColonialRepresentative
+        - id: CutterMachineFlatpack
         - id: ASColonialRepresentativeIDCard
         - id: Flash
         - id: DoorRemoteCommand

@@ -35,6 +35,9 @@
             "name": "medkit"
         },
         {
+            "name": "knife"
+        },
+        {
             "name": "slp_rig"
         },
         {
@@ -42,6 +45,9 @@
         },
         {
             "name": "medkit_rig"
+        },
+        {
+            "name": "knife_rig"
         },
         {
             "name": "slp_beltalt"

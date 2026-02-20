@@ -41,6 +41,7 @@
     - SLEToolsStatic
     - SLETargetsStatic
     - SLEBoardsStatic
+    - NFPaperAndPaperAccessories
   - type: BlueprintReceiver
     whitelist:
       tags:
