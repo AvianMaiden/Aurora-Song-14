@@ -6044,3 +6044,16 @@ Entries:
   id: 8964
   time: '2026-02-22T18:32:10.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/732
+- author: ErhardSteinhauer, Karlm4x
+  changes:
+    - type: Add
+      message: 'Added pilot colors to the Frontier color palette. '
+    - type: Add
+      message: Added pilot wall locker.
+    - type: Tweak
+      message: >-
+        Tweaked pilot webbing contents: replaced mass scanner, remote signaler
+        with welder and universal pinpointer.
+  id: 8965
+  time: '2026-02-22T21:09:13.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/741
