@@ -6057,3 +6057,12 @@ Entries:
   id: 8965
   time: '2026-02-22T21:09:13.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/741
+- author: Karlm4x
+  changes:
+    - type: Tweak
+      message: >-
+        Turns speso trees into gold leaf trees, making them more profitable to
+        grow
+  id: 8966
+  time: '2026-02-22T22:00:23.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/740
