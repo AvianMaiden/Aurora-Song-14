@@ -6035,3 +6035,12 @@ Entries:
   id: 8963
   time: '2026-02-22T17:46:09.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/739
+- author: Phoenix51505
+  changes:
+    - type: Tweak
+      message: >-
+        Refactored how hitscan projectiles are now handled in code, turning them
+        into more modular entities
+  id: 8964
+  time: '2026-02-22T18:32:10.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/732
