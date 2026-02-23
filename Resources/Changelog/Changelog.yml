@@ -6073,3 +6073,10 @@ Entries:
   id: 8967
   time: '2026-02-22T22:59:06.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/742
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: Petrel layout/ size improvements
+  id: 8968
+  time: '2026-02-23T16:08:16.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/743
