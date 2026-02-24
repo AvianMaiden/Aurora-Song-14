@@ -38,6 +38,9 @@
     - FrontierUplinkCoin10
   licenses:
   - LicenseContrabandHandling
+  encryptionKeys: # Aurora's Song - Added traffic and shipboard encryption keys
+  - EncryptionKeyTraffic
+  - EncryptionKeyShipboard
 
 - type: chameleonOutfit
   id: RookieChameleonOutfit

@@ -23,6 +23,9 @@
             "name": "ship_label"
         },
         {
+            "name": "site_manager_label"
+        },
+        {
             "name": "as_label"
         }
     ]

@@ -43,7 +43,9 @@
     - Flash
     - DoorRemoteCommand
   encryptionKeys:
-  - EncryptionKeyStationMaster
+  - EncryptionKeySiteManager
+  - EncryptionKeyTraffic
+  - EncryptionKeyShipboard
 
 - type: chameleonOutfit
   id: SiteManagerChameleonOutfit
