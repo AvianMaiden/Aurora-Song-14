@@ -59,13 +59,6 @@
     species:
     - Sheleg
 
-- type: loadoutEffectGroup # Aurora's Song - Water vapor breather loadout effect group added
-  id: ASWaterVaporBreather
-  effects:
-  - !type:SpeciesLoadoutEffect
-    species:
-    - Feroxi
-
 #region Jobs
 
 - type: loadoutEffectGroup
@@ -82,42 +75,6 @@
   - !type:RoleBlacklistLoadoutEffect
     blacklist:
     - JobDirectorOfCare
-
-- type: loadoutEffectGroup # Aurora's Song - Medical blacklist added
-  id: ASNotMedical
-  effects:
-  - !type:RoleBlacklistLoadoutEffect
-    blacklist:
-    - JobDirectorOfCare
-    - JobMedic
-    - JobCorpsman
-
-- type: loadoutEffectGroup # Aurora's Song - Standard Role blacklist, to hide items, but keep them in the loadout groups as a fallback
-  id: ASNotStandard
-  effects:
-  - !type:RoleBlacklistLoadoutEffect
-    blacklist:
-    - JobColonialRepresentative
-    - JobDirectorOfCare
-    - JobMedic
-    - JobService
-    - JobStationTrafficController
-    - JobNFJanitor
-    - JobMailCarrier
-    - JobSecurityGuard
-    - JobValet
-    - JobLieutenant
-    - JobSergeant
-    - JobOfficer
-    - JobCorpsman
-    - JobASDetective
-    - JobPublicAffairsLiaison
-    - JobRookie
-    - JobContractor
-    - JobPilot
-    - JobMercenary
-    - JobSiteManager
-    - JobSiteWorker
 
 # Aurora's Song - JobPlantManager and JobPlantTechnician changed to JobSiteManager and JobSiteWorker
 - type: loadoutEffectGroup
