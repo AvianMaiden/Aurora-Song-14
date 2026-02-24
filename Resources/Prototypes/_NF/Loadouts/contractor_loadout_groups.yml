@@ -913,9 +913,9 @@
   name: loadout-group-contractor-encryption-key
   minLimit: 0
   maxLimit: 6 # Aurora's Song - Increased to 6 to match total possible keys
-  loadouts: # Aurora's Song - Commented out traffic and shipboard keys, should be default added to loadouts
-#  - ContractorEncryptionKeyTraffic
-#  - ContractorEncryptionKeyShipboard # Aurora's Song - Shipboard encryption key added
+  loadouts:
+  - ContractorEncryptionKeyTraffic
+  - ContractorEncryptionKeyShipboard # Aurora's Song - Shipboard encryption key added
   - ContractorEncryptionKeyMedical
   - ContractorEncryptionKeyCargo
   - ContractorEncryptionKeyEngineering
