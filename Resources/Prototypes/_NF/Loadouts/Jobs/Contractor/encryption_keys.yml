@@ -1,11 +1,17 @@
 #T0
 - type: loadout
   id: ContractorEncryptionKeyTraffic
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: ASNotStandard # Aurora's Song - Assume these roles have them by default, so it's hidden
   encryptionKeys:
   - EncryptionKeyTraffic
 
 - type: loadout # Aurora's Song - Shipboard encryption key added
   id: ContractorEncryptionKeyShipboard
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: ASNotStandard # Aurora's Song - Assume these roles have them by default, so it's hidden
   price: 0
   encryptionKeys:
   - EncryptionKeyShipboard
