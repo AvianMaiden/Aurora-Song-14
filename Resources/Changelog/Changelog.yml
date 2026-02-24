@@ -6087,3 +6087,24 @@ Entries:
   id: 8969
   time: '2026-02-23T16:37:53.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/745
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: >-
+        Refactor encryption keys to ensure all roles start with Shortband and
+        Shipboard
+    - type: Fix
+      message: Make sure Site Workers start with Science
+    - type: Fix
+      message: Make sure Medical Roles always start with Medical
+    - type: Fix
+      message: STC encryption key implementation
+    - type: Tweak
+      message: Hide extra loadout keys from roles that start with them for free
+    - type: Fix
+      message: Loadout groups backend
+    - type: Add
+      message: Site Manager encryption key
+  id: 8970
+  time: '2026-02-24T21:13:19.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/746
