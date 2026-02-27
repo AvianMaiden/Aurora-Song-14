@@ -544,7 +544,7 @@
     - 0,0,9,1
     whitelist:
       tags:
-        - CartridgeAmmo
+        - Cartridge
 
 
 - type: entity
