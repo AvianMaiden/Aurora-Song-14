@@ -15,6 +15,7 @@
     LogProbeCartridge: 3
     ContrabandAppraisalTool: 10
     ClothingOuterArmorBasic: 3
+    ClothingOuterArmorBasicSlim: 3 # Aurora's Song - Added for variety
     NFMetalShield: 3
     NFShieldBallistic: 3
     NFClothingOuterArmorReflective: 3
