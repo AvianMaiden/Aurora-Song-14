@@ -356,6 +356,255 @@
     - Hardsuit
     - WhitelistChameleon
 
+- type: entity
+  parent: [ClothingOuterHardsuitBaseNF, BaseC2Contraband]
+  id: ClothingOuterHardsuitMilitarySurplusSWAT
+  name: SWAT surplus hardsuit
+  description: Auroran heavy police hardsuit. Worn by the Police on the Colony Aurora. Designed for heavy combat engagements.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/OuterClothing/Hardsuits/military_template.rsi
+    layers:
+    - state: icon-fabric
+      color: "#D0D9D0"
+    - state: icon-plate
+      color: "#486875"
+    - state: icon-detail
+      color: "#8DA694"
+  - type: Item
+    size: Huge
+    inhandVisuals:
+      left:
+      - state: inhand-left-fabric
+        color: "#D0D9D0"
+      - state: inhand-left-plate
+        color: "#486875"
+      - state: inhand-left-detail
+        color: "#8DA694"
+      right:
+      - state: inhand-right-fabric
+        color: "#D0D9D0"
+      - state: inhand-right-plate
+        color: "#486875"
+      - state: inhand-right-detail
+        color: "#8DA694"
+  - type: Clothing
+    sprite: _AS/Clothing/OuterClothing/Hardsuits/military_template.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: fabric
+        color: "#D0D9D0"
+      - state: plate
+        color: "#486875"
+      - state: detail
+        color: "#8DA694"
+      outerClothing-harpy:
+      - state: fabric-harpy
+        color: "#D0D9D0"
+      - state: plate-harpy
+        color: "#486875"
+      - state: detail-harpy
+        color: "#8DA694"
+      outerClothing-vox:
+      - state: fabric-vox
+        color: "#D0D9D0"
+      - state: plate-vox
+        color: "#486875"
+      - state: detail-vox
+        color: "#8DA694"
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: StaminaResistance
+    damageCoefficient: 0.75
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Radiation: 0.5
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitMilitarySurplusSWAT
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingOuterHardsuitBaseNF, BaseC2Contraband]
+  id: ClothingOuterHardsuitMilitarySurplusHAZMAT
+  name: HAZMAT surplus hardsuit
+  description: Auroran heavy hazardous materials hardsuit. Worn by the security for hazardous material handling units on the Colony Aurora. Designed for heavy combat engagements.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/OuterClothing/Hardsuits/military_template.rsi
+    layers:
+    - state: icon-fabric
+      color: "#FF8C00"
+    - state: icon-plate
+      color: "#FFD400"
+    - state: icon-detail
+      color: "#010203"
+  - type: Item
+    size: Huge
+    inhandVisuals:
+      left:
+      - state: inhand-left-fabric
+        color: "#FF8C00"
+      - state: inhand-left-plate
+        color: "#FFD400"
+      - state: inhand-left-detail
+        color: "#010203"
+      right:
+      - state: inhand-right-fabric
+        color: "#FF8C00"
+      - state: inhand-right-plate
+        color: "#FFD400"
+      - state: inhand-right-detail
+        color: "#010203"
+  - type: Clothing
+    sprite: _AS/Clothing/OuterClothing/Hardsuits/military_template.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: fabric
+        color: "#FF8C00"
+      - state: plate
+        color: "#FFD400"
+      - state: detail
+        color: "#010203"
+      outerClothing-harpy:
+      - state: fabric-harpy
+        color: "#FF8C00"
+      - state: plate-harpy
+        color: "#FFD400"
+      - state: detail-harpy
+        color: "#010203"
+      outerClothing-vox:
+      - state: fabric-vox
+        color: "#FF8C00"
+      - state: plate-vox
+        color: "#FFD400"
+      - state: detail-vox
+        color: "#010203"
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: StaminaResistance
+    damageCoefficient: 0.75
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Radiation: 0.5
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitMilitarySurplusHAZMAT
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+
+- type: entity
+  parent: [ClothingOuterHardsuitBaseNF, BaseC2Contraband]
+  id: ClothingOuterHardsuitMilitarySurplusRiot
+  name: Riot control surplus hardsuit
+  description: Auroran heavy riot control hardsuit. Worn by the police for riot control operations on the Colony Aurora. Designed for heavy combat engagements.
+  components:
+  - type: Sprite
+    sprite: _AS/Clothing/OuterClothing/Hardsuits/military_template.rsi
+    layers:
+    - state: icon-fabric
+      color: "#BFC6C4"
+    - state: icon-plate
+      color: "#161A1E"
+    - state: icon-detail
+      color: "#7F393A"
+  - type: Item
+    size: Huge
+    inhandVisuals:
+      left:
+      - state: inhand-left-fabric
+        color: "#BFC6C4"
+      - state: inhand-left-plate
+        color: "#161A1E"
+      - state: inhand-left-detail
+        color: "#7F393A"
+      right:
+      - state: inhand-right-fabric
+        color: "#BFC6C4"
+      - state: inhand-right-plate
+        color: "#161A1E"
+      - state: inhand-right-detail
+        color: "#7F393A"
+  - type: Clothing
+    sprite: _AS/Clothing/OuterClothing/Hardsuits/military_template.rsi
+    clothingVisuals:
+      outerClothing:
+      - state: fabric
+        color: "#BFC6C4"
+      - state: plate
+        color: "#161A1E"
+      - state: detail
+        color: "#7F393A"
+      outerClothing-harpy:
+      - state: fabric-harpy
+        color: "#BFC6C4"
+      - state: plate-harpy
+        color: "#161A1E"
+      - state: detail-harpy
+        color: "#7F393A"
+      outerClothing-vox:
+      - state: fabric-vox
+        color: "#BFC6C4"
+      - state: plate-vox
+        color: "#161A1E"
+      - state: detail-vox
+        color: "#7F393A"
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: StaminaResistance
+    damageCoefficient: 0.75
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
+        Radiation: 0.5
+        Caustic: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.9
+    sprintModifier: 0.9
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHelmetHardsuitMilitarySurplusRiot
+  - type: Tag
+    tags:
+    - Hardsuit
+    - WhitelistChameleon
+
 #region Military
 
 - type: entity
@@ -598,12 +847,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
-        Heat: 0.65
-        Radiation: 0.65
-        Caustic: 0.65
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
+        Radiation: 0.35
+        Caustic: 0.35
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -689,12 +938,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
-        Heat: 0.65
-        Radiation: 0.65
-        Caustic: 0.65
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
+        Radiation: 0.35
+        Caustic: 0.35
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -780,12 +1029,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
-        Heat: 0.65
-        Radiation: 0.65
-        Caustic: 0.65
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
+        Radiation: 0.35
+        Caustic: 0.35
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
@@ -871,12 +1120,12 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.65
-        Slash: 0.65
-        Piercing: 0.65
-        Heat: 0.65
-        Radiation: 0.65
-        Caustic: 0.65
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.35
+        Heat: 0.35
+        Radiation: 0.35
+        Caustic: 0.35
   - type: ClothingSpeedModifier
     walkModifier: 0.9
     sprintModifier: 0.9
