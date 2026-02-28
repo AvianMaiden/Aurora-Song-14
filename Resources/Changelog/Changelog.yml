@@ -6179,3 +6179,10 @@ Entries:
   id: 8977
   time: '2026-02-28T08:37:06.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/751
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: add bandoliers to bountyvend
+  id: 8978
+  time: '2026-02-28T08:51:34.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/754
