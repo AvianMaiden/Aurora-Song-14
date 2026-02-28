@@ -6131,3 +6131,30 @@ Entries:
   id: 8973
   time: '2026-02-28T06:06:27.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/749
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Whitelist 40 mags for holsters
+    - type: Fix
+      message: Add the drop-leg holster to the SLETech
+    - type: Fix
+      message: Switch the Commissioner's locker to contain Comm suits
+    - type: Fix
+      message: Swap various CentComm pens for ColComm ones
+    - type: Tweak
+      message: Add the other basic armor (slim) to the BountyVend for variety
+    - type: Fix
+      message: Fix positioning of laser research on the research tree
+    - type: Remove
+      message: Remove NFSD jetpack research
+    - type: Tweak
+      message: Add SLE jetpacks to the fab
+    - type: Tweak
+      message: Add the less-lethal 40mm grenades to the SLEFab
+    - type: Fix
+      message: Fix a visual glitch with the FTL research
+    - type: Fix
+      message: Flip the SLE Outpost Distro Mixer to start On by default
+  id: 8974
+  time: '2026-02-28T06:53:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/750
