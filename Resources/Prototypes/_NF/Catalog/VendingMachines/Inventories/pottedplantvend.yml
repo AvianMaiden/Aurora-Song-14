@@ -1,36 +1,36 @@
 - type: vendingMachineInventory
   id: PottedPlantVendInventory
-  startingInventory: # Coyote: Changed all values from 6 to 10,000
-    PottedPlant0: 10000
-    PottedPlant1: 10000
-    PottedPlant2: 10000
-    PottedPlant3: 10000
-    PottedPlant4: 10000
-    PottedPlant5: 10000
-    PottedPlant6: 10000
-    PottedPlant7: 10000
-    PottedPlant8: 10000
-    PottedPlantBioluminscent: 10000
-    PottedPlant10: 10000
-    PottedPlant11: 10000
-    PottedPlant12: 10000
-    PottedPlant13: 10000
-    PottedPlant14: 10000
-    PottedPlant15: 10000
-    PottedPlant16: 10000
-    PottedPlant17: 10000
-    PottedPlant18: 10000
-    PottedPlant19: 10000
-    PottedPlant20: 10000
-    PottedPlant21: 10000
-    PottedPlant22: 10000
-    PottedPlant23: 10000
-    PottedPlant24: 10000
-    PottedPlantRD: 10000
-    PottedPlant26: 10000
-    PottedPlant27: 10000
-    PottedPlant28: 10000
-    PottedPlant29: 10000
-    PottedPlant30: 10000
+  startingInventory: # Aurora's Song - switched all plant stocks from 6 to infinite
+    PottedPlant0: 4294967295 # Infinite
+    PottedPlant1: 4294967295 # Infinite
+    PottedPlant2: 4294967295 # Infinite
+    PottedPlant3: 4294967295 # Infinite
+    PottedPlant4: 4294967295 # Infinite
+    PottedPlant5: 4294967295 # Infinite
+    PottedPlant6: 4294967295 # Infinite
+    PottedPlant7: 4294967295 # Infinite
+    PottedPlant8: 4294967295 # Infinite
+    PottedPlantBioluminscent: 4294967295 # Infinite
+    PottedPlant10: 4294967295 # Infinite
+    PottedPlant11: 4294967295 # Infinite
+    PottedPlant12: 4294967295 # Infinite
+    PottedPlant13: 4294967295 # Infinite
+    PottedPlant14: 4294967295 # Infinite
+    PottedPlant15: 4294967295 # Infinite
+    PottedPlant16: 4294967295 # Infinite
+    PottedPlant17: 4294967295 # Infinite
+    PottedPlant18: 4294967295 # Infinite
+    PottedPlant19: 4294967295 # Infinite
+    PottedPlant20: 4294967295 # Infinite
+    PottedPlant21: 4294967295 # Infinite
+    PottedPlant22: 4294967295 # Infinite
+    PottedPlant23: 4294967295 # Infinite
+    PottedPlant24: 4294967295 # Infinite
+    PottedPlantRD: 4294967295 # Infinite
+    PottedPlant26: 4294967295 # Infinite
+    PottedPlant27: 4294967295 # Infinite
+    PottedPlant28: 4294967295 # Infinite
+    PottedPlant29: 4294967295 # Infinite
+    PottedPlant30: 4294967295 # Infinite
 #  contrabandInventory:
 #  emaggedInventory:
