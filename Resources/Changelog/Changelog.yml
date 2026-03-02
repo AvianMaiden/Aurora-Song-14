@@ -6186,3 +6186,16 @@ Entries:
   id: 8978
   time: '2026-02-28T08:51:34.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/754
+- author: Stegomancer
+  changes:
+    - type: Add
+      message: Bovine snout, Oni to snout whitelist
+    - type: Remove
+      message: NA
+    - type: Tweak
+      message: NA
+    - type: Fix
+      message: NA
+  id: 8979
+  time: '2026-03-02T02:20:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/756
