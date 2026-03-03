@@ -40,6 +40,16 @@
     - CigarCase
 
 - type: loadout
+  id: ContractorHolocigar
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 500
+  storage:
+    back:
+    - holocigar
+
+- type: loadout
   id: ContractorNFAshtray
   effects:
   - !type:GroupLoadoutEffect
