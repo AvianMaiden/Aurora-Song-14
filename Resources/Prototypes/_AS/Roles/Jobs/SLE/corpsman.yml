@@ -44,6 +44,10 @@
     - FrontierUplinkCoin10
   licenses:
   - LicenseContrabandHandling
+  encryptionKeys: # Added traffic, shipboard, and medical encryption keys
+  - EncryptionKeyTraffic
+  - EncryptionKeyShipboard
+  - EncryptionKeyMedical
 
 - type: chameleonOutfit
   id: CorpsmanChameleonOutfit

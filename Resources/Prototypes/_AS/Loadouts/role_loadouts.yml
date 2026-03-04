@@ -299,7 +299,7 @@
   - ContractorWallet
   - ContractorCartridge
   - ContractorImplanter
-  - ContractorEncryptionKey
+#  - ContractorEncryptionKey # The CR has all comms
   - ContractorHandItems
   - NFSpeciesSpecific
 

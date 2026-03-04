@@ -6028,3 +6028,99 @@ Entries:
   id: 8962
   time: '2026-02-20T18:03:53.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/736
+- author: Karlm4x
+  changes:
+    - type: Add
+      message: Ports helium gas from NF
+  id: 8963
+  time: '2026-02-22T17:46:09.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/739
+- author: Phoenix51505
+  changes:
+    - type: Tweak
+      message: >-
+        Refactored how hitscan projectiles are now handled in code, turning them
+        into more modular entities
+  id: 8964
+  time: '2026-02-22T18:32:10.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/732
+- author: ErhardSteinhauer, Karlm4x
+  changes:
+    - type: Add
+      message: 'Added pilot colors to the Frontier color palette. '
+    - type: Add
+      message: Added pilot wall locker.
+    - type: Tweak
+      message: >-
+        Tweaked pilot webbing contents: replaced mass scanner, remote signaler
+        with welder and universal pinpointer.
+  id: 8965
+  time: '2026-02-22T21:09:13.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/741
+- author: Karlm4x
+  changes:
+    - type: Tweak
+      message: >-
+        Turns speso trees into gold leaf trees, making them more profitable to
+        grow
+  id: 8966
+  time: '2026-02-22T22:00:23.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/740
+- author: ErhardSteinhauer, Karlm4x
+  changes:
+    - type: Tweak
+      message: Brought the pathfinder up to new standards
+  id: 8967
+  time: '2026-02-22T22:59:06.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/742
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: Petrel layout/ size improvements
+  id: 8968
+  time: '2026-02-23T16:08:16.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/743
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Uncover the AME fuel locker on the Pathfinder, remove poster
+  id: 8969
+  time: '2026-02-23T16:37:53.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/745
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: >-
+        Refactor encryption keys to ensure all roles start with Shortband and
+        Shipboard
+    - type: Fix
+      message: Make sure Site Workers start with Science
+    - type: Fix
+      message: Make sure Medical Roles always start with Medical
+    - type: Fix
+      message: STC encryption key implementation
+    - type: Tweak
+      message: Hide extra loadout keys from roles that start with them for free
+    - type: Fix
+      message: Loadout groups backend
+    - type: Add
+      message: Site Manager encryption key
+  id: 8970
+  time: '2026-02-24T21:13:19.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/746
+- author: Karlm4x
+  changes:
+    - type: Add
+      message: Adds a plushie of Shana McTavish
+  id: 8971
+  time: '2026-02-26T13:20:13.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/748
+- author: arimah, Karlm4x
+  changes:
+    - type: Add
+      message: >-
+        Adds shielded light from NF. Less light replacing if you can spare the
+        materials!
+  id: 8972
+  time: '2026-02-26T13:41:14.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/747

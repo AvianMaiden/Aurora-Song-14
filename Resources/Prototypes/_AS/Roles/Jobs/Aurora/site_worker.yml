@@ -38,6 +38,10 @@
   storage:
     back:
     - Flash
+  encryptionKeys: # Added traffic, shipboard, and science encryption keys
+  - EncryptionKeyTraffic
+  - EncryptionKeyShipboard
+  - EncryptionKeyScience
 
 - type: chameleonOutfit
   id: SiteWorkerChameleonOutfit
