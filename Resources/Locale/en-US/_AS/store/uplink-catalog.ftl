@@ -133,6 +133,15 @@ uplink-exchange-fort-helmet-desc = A sturdy tactical helmet and face mask.
 uplink-exchange-military-surplus-hardsuit-name = Military Surplus Hardsuit
 uplink-exchange-military-surplus-hardsuit-desc = Auroran MilSurp hardsuit. Designed for most types of engagement. Armor adjusted to match protection of other surplus offerings in its tier.
 
+uplink-exchange-swat-surplus-hardsuit-name = SWAT Surplus Hardsuit
+uplink-exchange-swat-surplus-hardsuit-desc = Auroran SWAT Surplus hardsuit. Designed for most types of engagement. Armor adjusted to match protection of other surplus offerings in its tier.
+
+uplink-exchange-hazmat-surplus-hardsuit-name = HAZMAT Surplus Hardsuit
+uplink-exchange-hazmat-surplus-hardsuit-desc = Auroran HAZMAT surplus hardsuit. Designed for most types of engagement. Armor adjusted to match protection of other surplus offerings in its tier.
+
+uplink-exchange-riot-surplus-hardsuit-name = Riot Control Surplus Hardsuit
+uplink-exchange-riot-surplus-hardsuit-desc = Auroran Riot control surplus hardsuit. Designed for most types of engagement. Armor adjusted to match protection of other surplus offerings in its tier.
+
 uplink-exchange-spesos-name = 3000 spesos
 uplink-exchange-spesos-desc = A stack of 3000 spesos, hard currency.
 
@@ -142,3 +151,5 @@ uplink-exchange-spesos2-desc = A stack of 15,000 spesos, hard currency.
 uplink-exchange-ap4c-name = AP4C SMG
 uplink-exchange-ap4c-desc = A compact submachine gun chambered in .40 pistol. Battle-tested and reliable.
 
+uplink-exchange-mk32-name = Mk32 Universal
+uplink-exchange-mk32-desc = The Mark 32 Offensive Handgun. Has an OD-Green grip. Chambered in .45.

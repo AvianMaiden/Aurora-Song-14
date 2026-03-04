@@ -6124,3 +6124,120 @@ Entries:
   id: 8972
   time: '2026-02-26T13:41:14.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/747
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Petrel mass scanner shape fix
+  id: 8973
+  time: '2026-02-28T06:06:27.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/749
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Whitelist 40 mags for holsters
+    - type: Fix
+      message: Add the drop-leg holster to the SLETech
+    - type: Fix
+      message: Switch the Commissioner's locker to contain Comm suits
+    - type: Fix
+      message: Swap various CentComm pens for ColComm ones
+    - type: Tweak
+      message: Add the other basic armor (slim) to the BountyVend for variety
+    - type: Fix
+      message: Fix positioning of laser research on the research tree
+    - type: Remove
+      message: Remove NFSD jetpack research
+    - type: Tweak
+      message: Add SLE jetpacks to the fab
+    - type: Tweak
+      message: Add the less-lethal 40mm grenades to the SLEFab
+    - type: Fix
+      message: Fix a visual glitch with the FTL research
+    - type: Fix
+      message: Flip the SLE Outpost Distro Mixer to start On by default
+  id: 8974
+  time: '2026-02-28T06:53:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/750
+- author: Vandanna
+  changes:
+    - type: Add
+      message: SWAT, HAZMAT, Riot Surplus suits to ECVend
+  id: 8975
+  time: '2026-02-28T08:26:21.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/752
+- author: Vandanna
+  changes:
+    - type: Add
+      message: Mk32 Universal to the ECVend
+  id: 8976
+  time: '2026-02-28T08:35:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/753
+- author: snezshiba
+  changes:
+    - type: Tweak
+      message: Changed bandolier to grid storage and allow any bullet
+  id: 8977
+  time: '2026-02-28T08:37:06.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/751
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: add bandoliers to bountyvend
+  id: 8978
+  time: '2026-02-28T08:51:34.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/754
+- author: Stegomancer
+  changes:
+    - type: Add
+      message: Bovine snout, Oni to snout whitelist
+    - type: Remove
+      message: NA
+    - type: Tweak
+      message: NA
+    - type: Fix
+      message: NA
+  id: 8979
+  time: '2026-03-02T02:20:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/756
+- author: Zenixic
+  changes:
+    - type: Tweak
+      message: Updated lattice(IFF shape) on the Drone, Scythe and BH ships
+  id: 8980
+  time: '2026-03-02T02:40:16.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/757
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: add plant vends to TO and Trade Spine
+  id: 8981
+  time: '2026-03-02T10:42:56.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/760
+- author: Superlagg, KodiCraft
+  changes:
+    - type: Tweak
+      message: Potted plants filter CO2, Ammonia, and NO2
+  id: 8982
+  time: '2026-03-02T10:44:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/759
+- author: snezshiba
+  changes:
+    - type: Add
+      message: Added holocigar to loadouts and shadycigs contraband inventory
+  id: 8983
+  time: '2026-03-04T02:39:42.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/761
+- author: ZigTag
+  changes:
+    - type: Add
+      message: mirrored cryobed sprites
+  id: 8984
+  time: '2026-03-04T04:40:00.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/762
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: round timer is no longer scared of times over 24hr
+  id: 8985
+  time: '2026-03-04T06:56:21.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/764
