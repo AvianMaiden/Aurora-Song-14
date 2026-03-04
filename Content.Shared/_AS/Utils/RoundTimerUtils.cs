@@ -7,6 +7,7 @@ public static class RoundTimerUtils
 {
     public static string ToString(TimeSpan ts)
     {
-        return $"{ts.TotalHours:00}:{ts:mm\\:ss}";
+        // (int) truncates the double to int, then string format the remaining minutes and seconds
+        return $"{(int)ts.TotalHours:00}:{ts:mm\\:ss}";
     }
 }
