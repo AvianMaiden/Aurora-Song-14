@@ -540,9 +540,9 @@
   - type: Construction
     graph: HelmetJustice
     node: helmet
-  - type: HideLayerClothing
-    layers:
-      Hair: HEAD
+  #- type: HideLayerClothing # Aurora's Song - removed helmet hiding layers
+    #layers:
+      #Hair: HEAD
 
 - type: entity
   parent: ClothingHeadHelmetJustice
