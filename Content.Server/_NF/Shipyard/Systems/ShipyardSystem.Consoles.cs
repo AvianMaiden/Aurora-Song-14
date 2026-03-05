@@ -71,7 +71,6 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
     [Dependency] private readonly ShuttleRecordsSystem _shuttleRecordsSystem = default!;
     [Dependency] private readonly IEntityManager _entityManager = default!;
     [Dependency] private readonly ShipyardDirectionSystem _directionSystem = default!; // Aurora Song port of Monolith direction system
-    [Dependency] private readonly IGameTiming _timing = default!; // Mono
 
     private static readonly Regex DeedRegex = new(@"\s*\([^()]*\)");
 
