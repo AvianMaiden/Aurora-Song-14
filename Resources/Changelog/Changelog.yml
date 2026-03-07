@@ -6258,3 +6258,14 @@ Entries:
   id: 8986
   time: '2026-03-04T22:50:56.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/765
+- author: Zephyrpak
+  changes:
+    - type: Add
+      message: Gingerbread are now selectable as a roundstart species
+    - type: Tweak
+      message: Gingerbread now have hair
+    - type: Tweak
+      message: Their density has been standardized to be like humans
+  id: 8987
+  time: '2026-03-07T09:16:56.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/773
