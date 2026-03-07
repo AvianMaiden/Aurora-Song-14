@@ -6319,3 +6319,10 @@ Entries:
   id: 8991
   time: '2026-03-07T09:37:24.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/771
+- author: Zephyrpak
+  changes:
+    - type: Tweak
+      message: Sec related helmets now no longer hide your hair!
+  id: 8992
+  time: '2026-03-07T09:44:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/766
