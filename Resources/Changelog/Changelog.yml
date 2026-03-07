@@ -6289,3 +6289,14 @@ Entries:
   id: 8989
   time: '2026-03-07T09:20:31.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/768
+- author: Zephyrpak
+  changes:
+    - type: Add
+      message: >-
+        Added Vulpkanin and Tajaran to a lot of scar whitelists! Go explode your
+        blorbos.
+    - type: Tweak
+      message: Removed gender restrctions on scars such as top scars.
+  id: 8990
+  time: '2026-03-07T09:30:14.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/774
