@@ -213,11 +213,12 @@ uplink-security-breachingcharge-box-desc = A box containing 4 breaching charges.
 uplink-security-hoverbike-name = SLE Hoverbike Flatpack
 uplink-security-hoverbike-desc = Flatpack containing SLE issued turbine with bike handles. Keys already slotted in the ignition. Very safe.
 
-uplink-security-trackingdart-bundle-name = Tracking Dart Bundle
-uplink-security-trackingdart-bundle-desc = A bundle containing a Lake type launcher, 3 tracking darts and 3 pinpointers.
+# Aurora's Song - changed mention of "lake" launcher to NGP-40
+uplink-security-trackingdart-bundle-name = NGP-40 Tracking Dart Bundle
+uplink-security-trackingdart-bundle-desc = A bundle containing an NGP-40 type launcher, 3 tracking darts and 3 pinpointers.
 
-uplink-security-emp-bundle-name = EMP Bundle
-uplink-security-emp-bundle-desc = A bundle containing a Lake type launcher and 12 EMP grenades.
+uplink-security-emp-bundle-name = NGP-40 EMP Bundle
+uplink-security-emp-bundle-desc = A bundle containing an NGP-40 type launcher and 10 EMP grenades.
 
 uplink-security-emp-ammo-name = EMP Projectile Ammo
 uplink-security-emp-ammo-desc = A box containing 4 EMP projectile grenades.

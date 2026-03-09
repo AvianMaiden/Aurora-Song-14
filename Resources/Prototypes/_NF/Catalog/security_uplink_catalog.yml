@@ -771,6 +771,143 @@
         - Sergeant
         - Commissioner
 
+#region bundles
+- type: listing
+  id: UplinkSecurityThrusterKit
+  name:  uplink-security-thrusterkit-name
+  description: uplink-security-thrusterkit-desc
+  productEntity: BoxT3SuperCapacitor
+  icon: { sprite: Objects/Storage/boxes.rsi, state: box}
+  cost:
+    FrontierUplinkCoin: 8 # 4<8
+  categories:
+    - UplinkSecurityBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched NFSD to SLE roles
+        - Lieutenant
+        - Sergeant
+        - Commissioner
+
+- type: listing
+  id: UplinkSecurityLethalArmory
+  name:  uplink-security-lethalarmory-name
+  description: uplink-security-lethalarmory-desc
+  productEntity: ASCrateArmoryLethalSLE
+  icon: { sprite: _AS/Structures/Storage/Crates/sle_secure2.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 15
+  categories:
+    - UplinkSecurityBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched NFSD to SLE roles
+        - Lieutenant
+        - Sergeant
+        - Commissioner
+
+- type: listing
+  id: UplinkSecurityTrackingBundle
+  name: uplink-security-trackingdart-bundle-name
+  description: uplink-security-trackingdart-bundle-desc
+  productEntity: ASClothingBackpackDuffelSLETrackingBundle
+  icon: { sprite: _AS/Clothing/Back/Duffels/sle_navy.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 4
+  categories:
+    - UplinkSecurityBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurityEmpBundle
+  name: uplink-security-emp-bundle-name
+  description: uplink-security-emp-bundle-desc
+  productEntity: ASClothingBackpackDuffelSLEEmpBundle
+  icon: { sprite: _AS/Clothing/Back/Duffels/sle_navy.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 4
+  categories:
+    - UplinkSecurityBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+
+- type: listing
+  id: UplinkSecurityNonLethalArmory
+  name:  uplink-security-nonlethalarmory-name
+  description: uplink-security-nonlethalarmory-desc
+  productEntity: ASCrateArmoryNonLethalSLE
+  icon: { sprite: _AS/Structures/Storage/Crates/sle_secure1.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 10
+  categories:
+    - UplinkSecurityBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched NFSD to SLE roles
+        - Lieutenant
+        - Sergeant
+        - Commissioner
+
+- type: listing
+  id: UplinkSecurityFragBundle
+  name: uplink-security-frag-bundle-name
+  description: uplink-security-frag-bundle-desc
+  productEntity: ASClothingBackpackDuffelSLEFragBundle
+  icon: { sprite: _AS/Clothing/Back/Duffels/sle_navy.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 15
+  categories:
+    - UplinkSecurityBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched NFSD to SLE roles
+        - Lieutenant
+        - Commissioner
+
+- type: listing
+  id: UplinkSecurityBatonBundle
+  name: uplink-security-baton-bundle-name
+  description: uplink-security-baton-bundle-desc
+  productEntity: ASClothingBackpackDuffelSLEBatonBundle
+  icon: { sprite: _AS/Clothing/Back/Duffels/sle_navy.rsi, state: icon }
+  cost:
+    FrontierUplinkCoin: 4
+  categories:
+    - UplinkSecurityBundles
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink
+    - !type:BuyerJobCondition
+      whitelist: # Aurora's Song - Switched NFSD to SLE roles
+        - Lieutenant
+        - Commissioner
+        - Sergeant
+
 #region utililty
 - type: listing
   id: UplinkSecurityHolo
@@ -875,27 +1012,6 @@
           - SecurityUplink
     - !type:BuyerJobCondition
       whitelist: # Aurora's Song - Switched Sheriff to Commissioner
-        - Commissioner
-
-- type: listing
-  id: UplinkSecurityThrusterKit
-  name:  uplink-security-thrusterkit-name
-  description: uplink-security-thrusterkit-desc
-  productEntity: BoxT3SuperCapacitor
-  icon: { sprite: Objects/Storage/boxes.rsi, state: box}
-  cost:
-    FrontierUplinkCoin: 8 # 4<8
-  categories:
-    - UplinkSecurityBundles
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - SecurityUplink
-    - !type:BuyerJobCondition
-      whitelist: # Aurora's Song - Switched NFSD to SLE roles
-        - Lieutenant
-        - Sergeant
         - Commissioner
 
 - type: listing
@@ -1332,80 +1448,6 @@
     FrontierUplinkCoin: 3
   categories:
     - UplinkSecurityUtility
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - SecurityUplink
-    - !type:BuyerJobCondition
-      whitelist: # Aurora's Song - Switched NFSD to SLE roles
-        - Lieutenant
-        - Sergeant
-        - Commissioner
-
-- type: listing
-  id: UplinkSecurityLethalArmory
-  name:  uplink-security-lethalarmory-name
-  description: uplink-security-lethalarmory-desc
-  productEntity: ASCrateArmoryLethalSLE
-  icon: { sprite: _AS/Structures/Storage/Crates/sle_secure2.rsi, state: icon }
-  cost:
-    FrontierUplinkCoin: 15
-  categories:
-    - UplinkSecurityBundles
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - SecurityUplink
-    - !type:BuyerJobCondition
-      whitelist: # Aurora's Song - Switched NFSD to SLE roles
-        - Lieutenant
-        - Sergeant
-        - Commissioner
-
-- type: listing
-  id: UplinkSecurityTrackingBundle
-  name: uplink-security-trackingdart-bundle-name
-  description: uplink-security-trackingdart-bundle-desc
-  productEntity: ASClothingBackpackDuffelSLETrackingBundle
-  icon: { sprite: _AS/Clothing/Back/Duffels/sle_navy.rsi, state: icon }
-  cost:
-    FrontierUplinkCoin: 4
-  categories:
-    - UplinkSecurityBundles
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - SecurityUplink
-
-- type: listing
-  id: UplinkSecurityEmpBundle
-  name: uplink-security-emp-bundle-name
-  description: uplink-security-emp-bundle-desc
-  productEntity: ASClothingBackpackDuffelSLEEmpBundle
-  icon: { sprite: _AS/Clothing/Back/Duffels/sle_navy.rsi, state: icon }
-  cost:
-    FrontierUplinkCoin: 4
-  categories:
-    - UplinkSecurityBundles
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - SecurityUplink
-
-- type: listing
-  id: UplinkSecurityNonLethalArmory
-  name:  uplink-security-nonlethalarmory-name
-  description: uplink-security-nonlethalarmory-desc
-  productEntity: ASCrateArmoryNonLethalSLE
-  icon: { sprite: _AS/Structures/Storage/Crates/sle_secure1.rsi, state: icon }
-  cost:
-    FrontierUplinkCoin: 10
-  categories:
-    - UplinkSecurityBundles
   conditions:
     - !type:StoreWhitelistCondition
       whitelist:
