@@ -6379,3 +6379,10 @@ Entries:
   id: 8997
   time: '2026-03-09T10:36:47.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/778
+- author: SolStar2
+  changes:
+    - type: Tweak
+      message: New lizard plush sprites!
+  id: 8998
+  time: '2026-03-09T12:25:52.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/780
