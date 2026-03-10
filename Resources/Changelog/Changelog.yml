@@ -6393,3 +6393,10 @@ Entries:
   id: 8999
   time: '2026-03-10T02:34:46.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/781
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Damascus air sink glitch
+  id: 9000
+  time: '2026-03-10T13:22:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/782
