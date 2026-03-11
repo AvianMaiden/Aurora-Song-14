@@ -388,4 +388,4 @@
         addComponents:
         - type: DeletionCensusExempt
         paths:
-        - /Maps/_AS/Shuttles/Custom/respite.yml
+        - /Maps/_AS/Event/respite.yml
