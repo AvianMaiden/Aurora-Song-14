@@ -122,13 +122,8 @@
       params:
         volume: -2
         variation: 0.05
-    #maxTargets: 10 # When you see a stat that looks good, just remember that if you hit anything non-psionic, you lose
-    #heavyRateModifier: 1 # Same speed
-    #heavyRangeModifier: 1 # Same range
-    #heavyDamageBaseModifier: 1 # Same damage
-    #heavyStaminaCost: 30 # Also you can't spam them or you'll fall over
-  #- type: DamageOtherOnHit
-    #staminaCost: 80 # Throwing it will nearly, unless your species or traits let you do it, but then you'll still be extremely slow and unarmed # AS: Commented out
+  - type: DamageOtherOnHit
+    #staminaCost: 80 # Throwing it will nearly stun you, unless your species or traits let you do it, but then you'll still be extremely slow and unarmed #Aurora: Commented out
   - type: EmbeddableProjectile
     sound:
       path: /Audio/_DEN/Weapons/Melee/fausthit.ogg
@@ -196,7 +191,15 @@
     sound:
       path: /Audio/Effects/metal_slam1.ogg
       params:
-        volume: -4
+        volume: -3
+        pitch: 0.9
+        variation: 0.05
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/Effects/metal_slam4.ogg
+      params:
+        volume: -6
+        pitch: 1.1
         variation: 0.05
   - type: Appearance
   - type: ContainerContainer
