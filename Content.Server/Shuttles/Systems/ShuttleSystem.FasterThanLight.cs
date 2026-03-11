@@ -2,7 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Numerics;
 using Content.Server._NF.Shuttles.Components; // Frontier: FTL knockdown immunity
-using Content.Server._NF.PublicTransit.Components;
+using Content.Server._NF.PublicTransit.Components; // AS
 using Content.Server.Shuttles.Components;
 using Content.Server.Shuttles.Events;
 using Content.Server.Station.Events;
@@ -10,11 +10,14 @@ using Content.Shared.Body.Components;
 using Content.Shared.CCVar;
 using Content.Shared.Database;
 using Content.Shared.Ghost;
+using Content.Shared.Implants; // Coyote
+using Content.Shared.Implants.Components; // Coyote
 using Content.Shared.Maps;
+using Content.Shared.Mobs.Components; // Coyote
 using Content.Shared.Parallax;
 using Content.Shared.Shuttles.Components;
 using Content.Shared.Shuttles.Systems;
-using Content.Shared.Popups;
+using Content.Shared.Popups; // AS
 using Content.Shared.StatusEffect;
 using Content.Shared.Timing;
 using Content.Shared.Whitelist;
@@ -29,22 +32,22 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
 using FTLMapComponent = Content.Shared.Shuttles.Components.FTLMapComponent;
-using Content.Server.Salvage.Expeditions;
+using Content.Server.Salvage.Expeditions; // AS
 using Content.Shared._Mono.Ships;
-using Robust.Shared.Prototypes;
+using Robust.Shared.Prototypes; // Mono
 
 namespace Content.Server.Shuttles.Systems;
 
 public sealed partial class ShuttleSystem
 {
-    [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly SharedPopupSystem _popup = default!; // AS
     /*
      * This is a way to move a shuttle from one location to another, via an intermediate map for fanciness.
      */
     private readonly SoundSpecifier _errorSound = new SoundPathSpecifier("/Audio/Effects/Cargo/buzz_sigh.ogg")
     {
         Params = AudioParams.Default.WithVolume(-5f),
-    };
+    }; // AS
     private readonly SoundSpecifier _startupSound = new SoundPathSpecifier("/Audio/Effects/Shuttle/hyperspace_begin.ogg")
     {
         Params = AudioParams.Default.WithVolume(-5f),
@@ -55,14 +58,14 @@ public sealed partial class ShuttleSystem
         Params = AudioParams.Default.WithVolume(-5f),
     };
 
-    private const float MassConstant = 50f; // Arbitrary, at this value massMultiplier = 0.65
-    private const float MassMultiplierMin = 0.5f;
-    private const float MassMultiplierMax = 5f;
+    private const float MassConstant = 50f; // Mono: Arbitrary, at this value massMultiplier = 0.65
+    private const float MassMultiplierMin = 0.5f; // Mono
+    private const float MassMultiplierMax = 5f; // Mono
 
     public float DefaultStartupTime;
     public float DefaultTravelTime;
     public float DefaultArrivalTime;
-    //private float FTLCooldown;
+    //private float FTLCooldown; // Mono
     public float FTLMassLimit;
     private TimeSpan _hyperspaceKnockdownTime = TimeSpan.FromSeconds(5);
 
@@ -74,7 +77,7 @@ public sealed partial class ShuttleSystem
     /// <summary>
     /// Space between grids within hyperspace.
     /// </summary>
-    private const float Buffer = 100f;
+    private const float Buffer = 100f; // Mono 500 -> 100
 
     /// <summary>
     /// How many times we try to proximity warp close to something before falling back to map-wideAABB.
@@ -256,7 +259,7 @@ public sealed partial class ShuttleSystem
             if (TryGetFTLDrive(shuttleUid, out _, out var drive))
             {
                 var adjustedMass = shuttlePhysics.Mass * drive.DriveMassMultiplier;
-                // Too large to FTL even with modifiers from the drive
+                // AS: Too large to FTL even with modifiers from the drive
                 if (FTLMassLimit > 0 && adjustedMass > FTLMassLimit)
                 {
                     reason = Loc.GetString("shuttle-console-mass");
@@ -274,13 +277,13 @@ public sealed partial class ShuttleSystem
             }
         }
 
-        if (HasComp<PreventPilotComponent>(shuttleUid))
+        if (HasComp<PreventPilotComponent>(shuttleUid)) // Mono
         {
             reason = Loc.GetString("shuttle-console-prevent");
             return false;
         }
 
-        // Check if the shuttle is in an expedition
+        // Mono: Check if the shuttle is in an expedition
         if (TryComp<TransformComponent>(shuttleUid, out var xform) &&
             xform.MapUid != null &&
             HasComp<SalvageExpeditionComponent>(xform.MapUid))
@@ -314,7 +317,7 @@ public sealed partial class ShuttleSystem
         float? hyperspaceTime = null,
         string? priorityTag = null)
     {
-        // Check if destination is an expedition map
+        // Mono begin: Check if destination is an expedition map
         bool isExpedition = IsTargetExpedition(coordinates);
 
         // If going to an expedition, undock all other shuttles before FTL
@@ -344,7 +347,7 @@ public sealed partial class ShuttleSystem
                     _dockSystem.Undock((dockPort, dockComp));
                 }
             }
-        }
+        } // Mono end
 
         if (!TrySetupFTL(shuttleUid, component, out var hyperspace))
             return;
@@ -381,7 +384,7 @@ public sealed partial class ShuttleSystem
         float? hyperspaceTime = null,
         string? priorityTag = null)
     {
-        // TODO: Validation
+        // Mono begin: TODO: Validation
         if (!TryComp<FTLDestinationComponent>(_mapManager.GetMapEntityId(_transform.GetMapId(target)), out var dest))
         {
             return;
@@ -394,7 +397,7 @@ public sealed partial class ShuttleSystem
         var targetCoords = new EntityCoordinates(target, Vector2.Zero);
         bool isExpedition = IsTargetExpedition(targetCoords);
 
-        if (HasComp<TransitShuttleComponent>(shuttleUid))
+        if (HasComp<TransitShuttleComponent>(shuttleUid)) // AS: Unbork buses
         {
             _dockSystem.UndockDocks(shuttleUid);
         }
@@ -429,12 +432,12 @@ public sealed partial class ShuttleSystem
 
         var hyperspace = EnsureComp<FTLComponent>(shuttleUid);
         SetupFTL(hyperspace, startupTime, hyperspaceTime, priorityTag);
-        _thruster.DisableLinearThrusters(component);
+        _thruster.DisableLinearThrusters(component); // Begin AS
         _thruster.EnableLinearThrustDirection(component, DirectionFlag.North);
         _thruster.SetAngularThrust(component, false);
         var audio = _audio.PlayPvs(_startupSound, shuttleUid);
         _audio.SetGridAudio(audio);
-        hyperspace.StartupStream = audio?.Entity;
+        hyperspace.StartupStream = audio?.Entity; // End AS
 
         if (TryComp<DockingComponent>(target, out var dock) && dock.Docked && dock.DockedWith != null)
         {
@@ -445,7 +448,7 @@ public sealed partial class ShuttleSystem
         {
             hyperspace.TargetCoordinates = destination.Coordinates;
             hyperspace.TargetAngle = destination.Angle;
-        }
+        } // Mono end
         else if (TryFTLDock(shuttleUid, component, target, out var config))
         {
             hyperspace.TargetCoordinates = config.Coordinates;
@@ -464,6 +467,7 @@ public sealed partial class ShuttleSystem
         }
     }
 
+    // Mono
     /// <summary>
     /// Sets up the FTL component with startup and travel times and priority tag.
     /// </summary>
@@ -483,6 +487,7 @@ public sealed partial class ShuttleSystem
         _console.RefreshShuttleConsoles(hyperspace.Owner);
     }
 
+    // Mono
     /// <summary>
     /// Recursively gets all docked shuttles to the target shuttle.
     /// </summary>
@@ -539,6 +544,7 @@ public sealed partial class ShuttleSystem
         }
     }
 
+    // Mono
     /// <summary>
     /// Recursively gets all docked shuttles to the target shuttle, ignoring FTLLock status.
     /// Used for expeditions where ALL docked shuttles must be undocked regardless of FTLLock.
@@ -580,7 +586,7 @@ public sealed partial class ShuttleSystem
             return false;
         }
 
-        // Get all docked shuttles to determine which ones are traveling together
+        // Mono begin: Get all docked shuttles to determine which ones are traveling together
         var dockedShuttles = new HashSet<EntityUid>();
         GetAllDockedShuttles(uid, dockedShuttles);
 
@@ -601,7 +607,7 @@ public sealed partial class ShuttleSystem
                 if (!CanFTL(dockedUid, out var reason))
                 {
                     Log.Warning($"Cannot FTL due to docked shuttle {ToPrettyString(dockedUid)}: {reason}");
-                    var consoleQuery = EntityQueryEnumerator<ShuttleConsoleComponent, TransformComponent>();
+                    var consoleQuery = EntityQueryEnumerator<ShuttleConsoleComponent, TransformComponent>(); // AS
 
                     while (consoleQuery.MoveNext(out var consoleUid, out _, out var xform))
                     {
@@ -610,7 +616,7 @@ public sealed partial class ShuttleSystem
 
                         _popup.PopupEntity(reason, consoleUid, PopupType.Medium);
                         _audio.PlayPvs(_errorSound, consoleUid);
-                    }
+                    } // End AS
                     canAllFTL = false;
                     break;
                 }
@@ -661,7 +667,7 @@ public sealed partial class ShuttleSystem
                     }
                 }
             }
-        }
+        } // Mono end
 
         _thruster.DisableLinearThrusters(shuttle);
         _thruster.EnableLinearThrustDirection(shuttle, DirectionFlag.North);
@@ -679,6 +685,7 @@ public sealed partial class ShuttleSystem
         return true;
     }
 
+    // Mono
     /// <summary>
     /// Checks if the target coordinates are in an expedition map.
     /// </summary>
@@ -693,6 +700,7 @@ public sealed partial class ShuttleSystem
         return HasComp<SalvageExpeditionComponent>(mapUid);
     }
 
+    // Mono
     /// <summary>
     /// Shuttle travelling.
     /// </summary>
@@ -756,7 +764,7 @@ public sealed partial class ShuttleSystem
         DoTheDinosaur(xform);
         _dockSystem.SetDockBolts(entity, false);
 
-        if (TryGetFTLDrive(entity, out _, out var globalDrive))
+        if (TryGetFTLDrive(entity, out _, out var globalDrive)) // Begin Mono
         {
             MassAdjustFTLCooldown(body, globalDrive, out var massAdjustedCooldown);
             globalFtlCooldown = massAdjustedCooldown;
@@ -792,7 +800,7 @@ public sealed partial class ShuttleSystem
             relativeTransforms[dockedUid] = (dockedPos - mainPos, dockedRot - mainRot, dockConnections);
             _physics.SetLinearVelocity(dockedUid, Vector2.Zero, body: dockedBody);
             _physics.SetAngularVelocity(dockedUid, 0f, body: dockedBody);
-        }
+        } // Mono End
 
         // Handle physics for main shuttle
         _physics.SetLinearVelocity(uid, Vector2.Zero, body: body);
@@ -839,7 +847,7 @@ public sealed partial class ShuttleSystem
             _transform.SetCoordinates(uid, xform, target, rotation: comp.TargetAngle.Reduced());
         }
 
-        var handledShuttles = new HashSet<EntityUid>();
+        var handledShuttles = new HashSet<EntityUid>(); // Begin Mono
         // Now move all docked shuttles to maintain their relative positions
         var mainNewPos = _transform.GetWorldPosition(uid);
         var mainNewRot = _transform.GetWorldRotation(uid);
@@ -909,7 +917,7 @@ public sealed partial class ShuttleSystem
 
         // Only remove visualizer after everything is in position
         QueueDel(comp.VisualizerEntity);
-        comp.VisualizerEntity = null;
+        comp.VisualizerEntity = null; // End Mono
         _thruster.DisableLinearThrusters(entity.Comp2);
 
         comp.TravelStream = _audio.Stop(comp.TravelStream);
@@ -925,7 +933,7 @@ public sealed partial class ShuttleSystem
         _mapManager.SetMapPaused(mapId, false);
         Smimsh(uid, xform: xform);
 
-        // Add cooldown before removing the FTL component
+        // Mono: Add cooldown before removing the FTL component
         if (globalFtlCooldown > 0f)
         {
             comp.State = FTLState.Cooldown;
@@ -956,6 +964,23 @@ public sealed partial class ShuttleSystem
                 Enable(uid, component: body, shuttle: entity.Comp2);
             }
         }
+
+        // COYOTE: when the shuttle arrives, go through all the mobs on the grid
+        // and attempt to set off their deathrattle implants
+        var shuttleGridId = xform.GridUid;
+        var implantedQuery = EntityQueryEnumerator<ImplantedComponent, MobStateComponent, TransformComponent>();
+        while (implantedQuery.MoveNext(
+           out var mobUid,
+           out var implanted,
+           out var mobState,
+           out var mobXform))
+        {
+            if (mobXform.GridUid != shuttleGridId)
+                continue;
+
+            var deathrattleEvent = new ReTriggerRattleImplantEvent(mobUid, mobState.CurrentState);
+            RaiseLocalEvent(mobUid, deathrattleEvent);
+        }
     }
 
     private void UpdateFTLCooldown(Entity<FTLComponent, ShuttleComponent> entity)
@@ -963,7 +988,7 @@ public sealed partial class ShuttleSystem
         var uid = entity.Owner;
         RemCompDeferred<FTLComponent>(entity);
 
-        // Find any docked shuttles that might still be in cooldown from the same FTL trip
+        // Mono: Find any docked shuttles that might still be in cooldown from the same FTL trip
         // and force them to also end cooldown at the same time
         var linkedQuery = EntityQueryEnumerator<FTLComponent>();
         while (linkedQuery.MoveNext(out var linkedUid, out var linkedComp))
@@ -982,7 +1007,7 @@ public sealed partial class ShuttleSystem
     {
         var curTime = _gameTiming.CurTime;
 
-        // Create a list to store entities that need to be processed to avoid collection modification issues
+        // Mono: Create a list to store entities that need to be processed to avoid collection modification issues
         var entitiesToProcess = new List<(EntityUid Uid, FTLComponent Comp, ShuttleComponent Shuttle)>();
 
         // First, gather all entities to process
@@ -1504,6 +1529,7 @@ public sealed partial class ShuttleSystem
         RaiseLocalEvent(ref ev);
     }
 
+    // Mono
     /// <summary>
     /// Transitions shuttle to FTL map.
     /// </summary>
