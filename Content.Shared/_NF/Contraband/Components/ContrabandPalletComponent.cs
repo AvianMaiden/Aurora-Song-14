@@ -10,11 +10,20 @@ namespace Content.Shared._NF.Contraband.Components;
 [Access(typeof(SharedContrabandTurnInSystem))]
 public sealed partial class ContrabandPalletConsoleComponent : Component
 {
+    // AS
+    /// <summary>
+    /// The primary currency that should be reward. Tries to send it to an entity with a <see cref="ScuOutputComponent"/> first, then the triggering entities hand, and if both of those fail, spawns the coins on the console.
+    /// Also determines what currency is given as a registration reward.
+    /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("cashType", serverOnly: true, customTypeSerializer: typeof(PrototypeIdSerializer<StackPrototype>))]
-    public string RewardType = "FrontierUplinkCoin";
+    public string? RewardType = null;
 
-    [DataField]
-    public EntProtoId RewardCashPrototype = "ExchangeCoin"; // SpaceCash5000 > ExchangeCoin | switched from cash to ExchangeCoin as economy experiment - Aurora
+    // AS
+    /// <summary>
+    /// The reward that should be sent to the triggering entities hand, or spawn on the console if it can't
+    /// </summary>
+    [ViewVariables(VVAccess.ReadWrite), DataField("altCashType", serverOnly: true, customTypeSerializer: typeof(PrototypeIdSerializer<StackPrototype>))]
+    public string? RewardTypeAlternate = null; // AS: Allow alt reward currencies
 
     [DataField]
     public SoundSpecifier ErrorSound = new SoundCollectionSpecifier("CargoError"); // Aurora: add deny sound
@@ -26,7 +35,7 @@ public sealed partial class ContrabandPalletConsoleComponent : Component
     public string? LicenseRequired = "contraband handling license";
 
     [ViewVariables(VVAccess.ReadWrite), DataField(serverOnly: true)]
-    public string Faction = "NFSD";
+    public string Faction = "SLE"; // Aurora Song - Changed from "NFSD" to "SLE" (Station Law Enforcement)
 
     [ViewVariables(VVAccess.ReadWrite), DataField]
     public string LocStringPrefix = string.Empty;
@@ -39,7 +48,7 @@ public sealed partial class ContrabandPalletConsoleComponent : Component
     {
         {"NFWeaponPistolMk58Expedition","NFWeaponPistolMk58"},
         {"NFWeaponPistolPollockExpedition","NFWeaponPistolPollockHighCapacityMag"},
-        {"NFWeaponPistolUniversalExpedition","NFWeaponPistolUniversal"},
+        {"NFWeaponPistolUniversalExpedition","ASWeaponPistolUniversal"},
         {"NFWeaponRevolverArgentiExpedition","NFWeaponRevolverArgenti"},
         {"NFWeaponRevolverFaithExpedition","NFWeaponRevolverFaith"},
         {"NFWeaponRevolverDeckardExpedition","NFWeaponRevolverDeckard"},
@@ -81,6 +90,10 @@ public sealed partial class ContrabandPalletConsoleComponent : Component
         {"NFWeaponEnergyRifleSniperXrayCannonExpedition","NFWeaponEnergyRifleSniperXrayCannon"},
         {"NFWeaponEnergyRifleSniperCannonExpedition","NFWeaponEnergyRifleSniperCannon"},
         {"NFWeaponEnergyRifleTemperatureExpedition","NFWeaponEnergyRifleTemperature"},
+        {"ASWeaponRifleAssaultEstocExpedition","ASWeaponRifleAssaultEstoc"},
+        {"ASWeaponKasyreLasRifleExpedition","ASWeaponKasyreLasRifle"},
+        {"ASWeaponBasinLasPistolExpedition","ASWeaponBasinLasPistol"},
+        {"ASWeaponSubMachineGunAP4CExpedition","ASWeaponSubMachineGunAP4C"},
 
         {"ClothingOuterHardsuitSyndie","ClothingOuterHardsuitShanlinUnpainted"},
         {"ClothingOuterHardsuitSyndieElite","ClothingOuterHardsuitShiweiUnpainted"},
