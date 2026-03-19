@@ -248,6 +248,8 @@
   params:
     variation: 0.125
 
+# End Of Aurora's Song port of Imp Slime Sounds
+
 - type: emoteSounds
   id: UnisexVox
   sounds:
