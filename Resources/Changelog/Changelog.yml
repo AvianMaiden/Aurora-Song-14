@@ -6258,3 +6258,179 @@ Entries:
   id: 8986
   time: '2026-03-04T22:50:56.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/765
+- author: Zephyrpak
+  changes:
+    - type: Add
+      message: Gingerbread are now selectable as a roundstart species
+    - type: Tweak
+      message: Gingerbread now have hair
+    - type: Tweak
+      message: Their density has been standardized to be like humans
+  id: 8987
+  time: '2026-03-07T09:16:56.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/773
+- author: Zephyrpak
+  changes:
+    - type: Tweak
+      message: >-
+        Rodentia density has been standardized. They can now drag stuff just
+        fine!
+    - type: Tweak
+      message: >-
+        Rodentia sprite scaling has also been standardized. They are default as
+        tall as humans
+  id: 8988
+  time: '2026-03-07T09:19:25.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/772
+- author: GreyScaleHarlequin
+  changes:
+    - type: Add
+      message: Vulpkanin and Feroxi now have their own gasmask/welding mask sprites
+  id: 8989
+  time: '2026-03-07T09:20:31.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/768
+- author: Zephyrpak
+  changes:
+    - type: Add
+      message: >-
+        Added Vulpkanin and Tajaran to a lot of scar whitelists! Go explode your
+        blorbos.
+    - type: Tweak
+      message: Removed gender restrctions on scars such as top scars.
+  id: 8990
+  time: '2026-03-07T09:30:14.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/774
+- author: Zephyrpak
+  changes:
+    - type: Remove
+      message: >-
+        PseudoItem component is now gone. They can no longer be stuffed in
+        duffels to reflect that these are big cats
+    - type: Tweak
+      message: Height is now standardized to human to reflect guidebook lore
+    - type: Tweak
+      message: Changed their hit sound from a punch to a claw sound
+    - type: Tweak
+      message: >-
+        Remove mention of hairball from the guidebook (false info) and the
+        mention to be shoved into duffles
+    - type: Tweak
+      message: Tajaran are now as dense as humans, making it easier to drag things
+  id: 8991
+  time: '2026-03-07T09:37:24.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/771
+- author: Zephyrpak
+  changes:
+    - type: Tweak
+      message: Sec related helmets now no longer hide your hair!
+  id: 8992
+  time: '2026-03-07T09:44:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/766
+- author: snezshiba
+  changes:
+    - type: Add
+      message: Added Coyote Pants to loadouts
+  id: 8993
+  time: '2026-03-07T10:19:04.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/775
+- author: TurtleOfMen
+  changes:
+    - type: Add
+      message: Cargo area added to Damascus (Nonfunctional)
+    - type: Add
+      message: Compressed matter to CE office
+    - type: Tweak
+      message: Damascus disposal rework
+    - type: Tweak
+      message: Damascus gas sell point rework
+    - type: Tweak
+      message: Damascus material silo moved to disposals
+    - type: Tweak
+      message: Trit chamber output reworked
+    - type: Tweak
+      message: Various cosmetic fixes including missing tiles and diagonal latticework
+  id: 8994
+  time: '2026-03-09T08:13:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/776
+- author: TurtleOfMen
+  changes:
+    - type: Add
+      message: Running lights, cosmetic decals, power cables to Harvester
+    - type: Tweak
+      message: Tile changes, Engi details
+  id: 8995
+  time: '2026-03-09T09:13:16.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/777
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: Petrel QoL and fixes
+  id: 8996
+  time: '2026-03-09T10:35:41.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/779
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: Adds explosives to the SLE Uplink
+    - type: Tweak
+      message: further uplink refactors
+    - type: Fix
+      message: further remaining NFSD labels
+  id: 8997
+  time: '2026-03-09T10:36:47.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/778
+- author: SolStar2
+  changes:
+    - type: Tweak
+      message: New lizard plush sprites!
+  id: 8998
+  time: '2026-03-09T12:25:52.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/780
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: backend cleanup
+  id: 8999
+  time: '2026-03-10T02:34:46.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/781
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Damascus air sink glitch
+  id: 9000
+  time: '2026-03-10T13:22:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/782
+- author: Phoenix51505
+  changes:
+    - type: Add
+      message: Added the Replicant trait for characters to choose at creation.
+  id: 9001
+  time: '2026-03-14T07:07:17.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/784
+- author: Zenixic
+  changes:
+    - type: Tweak
+      message: Extended engineering on the Heartbeat.
+    - type: Add
+      message: 'Added an APU, a Material silo and a FTL drive to the Heartbeat. '
+  id: 9002
+  time: '2026-03-16T06:29:02.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/785
+- author: assignedgod
+  changes:
+    - type: Tweak
+      message: Modified some decals on the master, gave it an FTL drive!
+  id: 9003
+  time: '2026-03-16T06:29:16.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/786
+- author: Phoenix51505
+  changes:
+    - type: Fix
+      message: Fixed ghosts and pointer entities falling into FTL
+    - type: Fix
+      message: Fixed replicants being unsearchable via records
+    - type: Fix
+      message: Attempts to fix instances of being left behind despite the ESS
+  id: 9004
+  time: '2026-03-16T21:13:34.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/787
