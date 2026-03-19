@@ -1633,3 +1633,91 @@
     - CloakingDevice
   - type: BorgModuleIcon
     icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye-module }
+
+- type: entity # Aurora
+  parent: [ BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband ]
+  id: ShipmindModuleHand
+  name: hand shipmind module
+  description: A versatile module capable of holding almost anything alongside wielding an integrated set of tools. The manipulators are incompatible with firearms.
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleShipmind
+  - type: Sprite
+    layers:
+    - state: xenoborg_generic
+    - state: icon-xenoborg-tools
+  - type: ItemBorgModule
+    moduleId: ShipmindHand 
+    items:
+    - Crowbar
+    - Wrench
+    - Screwdriver
+    - Wirecutter
+    - Multitool
+    - WelderExperimental
+  - type: DroppableBorgModule
+    moduleId: Hands
+    items: []
+    placeholders:
+    - id: ClothingHandsGlovesColorBlack
+      whitelist:
+        components:
+        - Item
+      blacklist:
+        components:
+        - Gun
+      displayName: borg-placeholder-display-name-universal
+  - type: BorgModule
+    defaultModule: true
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-tool-module }
+  
+- type: entity # Aurora
+  parent: [ BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband ]
+  id: ShipmindModuleSpaceMovement
+  name: space movement shipmind module
+  description: Module that helps a shipmind chassis move better in space.
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleShipmind
+  - type: Sprite
+    layers:
+    - state: xenoborg_scout
+    - state: icon-xenoborg-space-movement
+  - type: ItemBorgModule
+    moduleId: ShipmindSpaceMovement 
+    items:
+    - HandheldGPSBasic
+    - HandHeldMassScannerBorg
+    - HandheldStationMapUnpowered
+    - WeaponGrapplingGun
+    - JetpackShipmind
+  - type: BorgModule
+    defaultModule: true
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-space-movement-module }
+
+- type: entity
+  parent: [ BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband ]
+  id: ShipmindModuleCombat
+  name: shipmind combat module
+  description: Module with a heavy energy cannon and disabler smg.
+  components:
+  - type: Tag
+    tags:
+    - BorgModuleShipmind
+  - type: Sprite
+    layers:
+    - state: xenoborg_heavy
+    - state: icon-xenoborg-laser2
+  - type: ItemBorgModule
+    moduleId: ShipmindCombat 
+    items: 
+    - WeaponXrayCannonCyborg
+    - WeaponDisablerSMGCyborg
+  - type: BorgModule
+    defaultModule: true
+  - type: BorgModuleIcon
+    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser2-module }
