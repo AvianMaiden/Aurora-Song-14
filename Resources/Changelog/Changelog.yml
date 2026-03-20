@@ -6505,3 +6505,18 @@ Entries:
   id: 9011
   time: '2026-03-20T04:44:21.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/792
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Corpsman gets Medical access
+    - type: Tweak
+      message: Damascus can now have 8 max Site Workers
+    - type: Tweak
+      message: Ghost roles are no longer whitelisted
+    - type: Tweak
+      message: change Damascus's hex code
+    - type: Fix
+      message: back-end department listings
+  id: 9012
+  time: '2026-03-20T08:59:04.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/796
