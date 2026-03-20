@@ -6534,3 +6534,10 @@ Entries:
   id: 9014
   time: '2026-03-20T19:28:34.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/799
+- author: assignedgod
+  changes:
+    - type: Fix
+      message: Cherry picked the double e-sword sound glitch fix
+  id: 9015
+  time: '2026-03-20T19:54:39.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/798
