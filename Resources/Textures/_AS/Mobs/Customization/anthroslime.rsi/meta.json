@@ -14,6 +14,10 @@
     {
       "name": "slime_vulp_ears",
       "directions": 4
+    },
+    {
+      "name": "slime_vulp_tail",
+      "directions": 4
     }
   ]
 }

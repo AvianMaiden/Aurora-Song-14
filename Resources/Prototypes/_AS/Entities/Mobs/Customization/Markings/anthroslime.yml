@@ -15,3 +15,12 @@
   sprites:
   - sprite: _AS/Mobs/Customization/anthroslime.rsi
     state:  slime_vulp_ears
+
+- type: marking
+  id: SlimeVulpTail
+  bodyPart: Tail
+  markingCategory: Tail
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _AS/Mobs/Customization/anthroslime.rsi
+    state:  slime_vulp_tail
