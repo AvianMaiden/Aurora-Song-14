@@ -6541,3 +6541,14 @@ Entries:
   id: 9015
   time: '2026-03-20T19:54:39.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/798
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: SLEO QoL changes and fixes
+    - type: Tweak
+      message: Jackhammer firerate
+    - type: Fix
+      message: grenade cartridges are now reloadable
+  id: 9016
+  time: '2026-03-21T09:06:21.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/801
