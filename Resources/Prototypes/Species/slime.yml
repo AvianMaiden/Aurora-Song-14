@@ -22,7 +22,7 @@
     Chest: MobSlimeTorso
     HeadTop: MobSlimeMarkingFollowSkinNoAlpha # Aurora's Song | Matches alpha with base to make animal ears seemless.
     HeadSide: MobSlimeMarkingFollowSkin
-    Tail: MobSlimeMarkingFollowSkinNoAlpha
+    Tail: MobSlimeMarkingFollowSkinNoAlpha # Aurora's Song | Matches alpha with base to make animal tails seemless.
 #    Wings: MobSlimeMarkingFollowSkin //Need to work on this, Den has a different visual layer composition
     Eyes: MobHumanoidEyes
     LArm: MobSlimeLArm
@@ -54,8 +54,8 @@
       required: false
     Head:
       points: 1
-      required: true
-      defaultMarkings: [SlimeHead]
+      required: true # Aurora's Song | Base head marking to allow for animal heads
+      defaultMarkings: [SlimeHead] # Aurora's Song | Base head marking to allow for animal heads
     HeadTop:
       points: 2
       required: false
