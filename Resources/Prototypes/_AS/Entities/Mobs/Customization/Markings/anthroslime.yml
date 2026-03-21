@@ -1,0 +1,17 @@
+- type: marking
+  id: SlimeVulpSnout
+  bodyPart: Head
+  markingCategory: Head
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _AS/Mobs/Customization/anthroslime.rsi
+    state:  slime_vulp_head
+
+- type: marking
+  id: SlimeVulpEars
+  bodyPart: HeadTop
+  markingCategory: HeadTop
+  speciesRestriction: [SlimePerson]
+  sprites:
+  - sprite: _AS/Mobs/Customization/anthroslime.rsi
+    state:  slime_vulp_ears
