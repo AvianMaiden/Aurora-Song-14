@@ -8,9 +8,6 @@
   },
   "states": [
     {
-      "name": "stamp-mantis"
-    },
-    {
         "name": "stamp-mantis-inhand-left",
         "directions": 4
     },

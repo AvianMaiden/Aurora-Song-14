@@ -8,21 +8,6 @@
   },
   "states": [
     {
-      "name": "pen_bso"
-    },
-    {
-      "name": "pen_ce"
-    },
-    {
-      "name": "pen_hos"
-    },
-    {
-      "name": "pen_lo"
-    },
-    {
-      "name": "pen_rd"
-    },
-    {
       "name": "folder-base-mantis"
     },
     {
