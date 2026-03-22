@@ -1,7 +1,7 @@
 {
   "version": 1,
   "license": "CC-BY-SA-3.0",
-  "copyright": "Made by Pato Grone for ss14",
+  "copyright": "By Sha-Seng (GitHub)",
   "size": {
     "x": 32,
     "y": 32
@@ -11,13 +11,7 @@
       "name": "icon"
     },
     {
-      "name": "base"
-    },
-    {
-      "name": "bolt-open"
-    },
-    {
-      "name": "equipped-BELT",
+      "name": "equipped-BACKPACK",
       "directions": 4
     },
     {
