@@ -1,6 +1,3 @@
-uplink-spaceblade-syndicate-name = Contra SpaceBlade
-uplink-spaceblade-syndicate-desc = Made from real metal!
-
 uplink-mantis-fist-double-name = Twinned Manifold
 uplink-mantis-fist-double-desc = Heavy mnemolith gauntlets forged through forbidden rituals, capable of hurling foes back and, at times, deflecting incoming fire. Said to take their name from their capacity for folding men. Deadly when wielded against psionic and otherworldly threats.
 
