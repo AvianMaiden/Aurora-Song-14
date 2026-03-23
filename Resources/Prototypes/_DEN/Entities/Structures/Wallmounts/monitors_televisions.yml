@@ -11,7 +11,7 @@
       state: sombertelevision
     - map: ["computerLayerScreen"]
       state: sombertelevision-on
-  - type: EtherealLight # Dims around ethereal entities
+  #- type: EtherealLight # Dims around ethereal entities
   - type: PointLight
     radius: 2
     energy: 4

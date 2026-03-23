@@ -87,8 +87,8 @@
   #    coefficients:
   #      Piercing: 1.25
   #      Holy: 1.25
-  - type: ItemToggleDamageOtherOnHit
-  - type: ItemToggleEmbeddableProjectile
+  #- type: ItemToggleDamageOtherOnHit
+  #- type: ItemToggleEmbeddableProjectile
  #   activatedEmbedOnThrow: true
  #   activatedSound: /Audio/Weapons/star_hit.ogg
  #   activatedRemovalTime: 2

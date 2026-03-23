@@ -1,6 +1,6 @@
 - type: decal
   id: MiniTileSomberDark
-  parent: MiniTile
+  #parent: MiniTile # Doesn't exist on Aurora Song, but it should be fine since it's just for organization to my understanding
   abstract: true
 
 - type: decal

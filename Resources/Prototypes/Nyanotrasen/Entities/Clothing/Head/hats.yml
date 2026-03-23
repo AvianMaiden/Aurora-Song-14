@@ -39,14 +39,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatFezMantis
-  name: dated mantis fez
-  description: "A fine red fez with a gold tassel. All the company would pay for prior to the mantis equipment refresh." # TheDen
+  abstract: true
   components:
-  - type: Appearance
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Head/Hats/mantis_fez.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Head/Hats/mantis_fez.rsi
   - type: Tag # TheDen
     tags:
     - WhitelistChameleon

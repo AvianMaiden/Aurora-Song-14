@@ -59,11 +59,7 @@
   id: ClothingOuterWinterCoatMantis
   name: mantis winter coat
   description: Solve cold cases in style.
-  components:
-    - type: Sprite
-      sprite: Nyanotrasen/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
-    - type: Clothing
-      sprite: Nyanotrasen/Clothing/OuterClothing/WinterCoats/mantis_winter_coat.rsi
+  abstract: true # made abstract so it can be referenced without worrying about the missing sprites - Aurora Song
 
 - type: entity
   parent: ClothingOuterWinterRD

@@ -27,7 +27,7 @@
         - MachineMask
   - type: Anchorable
   - type: InteractionOutline
-  - type: EtherealLight # Dims around ethereal entities
+  #- type: EtherealLight # Dims around ethereal entities
   - type: PointLight
     enabled: false
     radius: 3
@@ -110,7 +110,7 @@
         layer:
         - MidImpassable
         - LowImpassable
-  - type: EtherealLight # Dims around ethereal entities
+  #- type: EtherealLight # Dims around ethereal entities
   - type: PointLight
     enabled: false
     radius: 4

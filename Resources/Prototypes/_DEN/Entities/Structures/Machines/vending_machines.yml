@@ -53,18 +53,18 @@
   - type: Speech
     speechVerb: Electricity
     speechSounds: Tenor
-  - type: Psionic
-    removable: false
-    roller: false
-    assayFeedback:
-      - reliquary-feedback # I SEE YOU, INTERLOPER. YOUR THOUGHTS TRESPASS UPON SACRED MATRICES.
-    psychognomicDescriptors: # Not "old" or "demiurgic" like the Oracle or Sophia, it has a younger, smaller soul
-      - p-descriptor-mysterious
-      - p-descriptor-emanative
-  - type: InnatePsionicPowers
-    powersToAdd:
-      - XenoglossyPower
-      - TelepathyPower
+  #- type: Psionic
+  #  removable: false
+  #  roller: false
+  #  assayFeedback:
+  #    - reliquary-feedback # I SEE YOU, INTERLOPER. YOUR THOUGHTS TRESPASS UPON SACRED MATRICES.
+  #  psychognomicDescriptors: # Not "old" or "demiurgic" like the Oracle or Sophia, it has a younger, smaller soul
+  #    - p-descriptor-mysterious
+  #    - p-descriptor-emanative
+  #- type: InnatePsionicPowers
+  #  powersToAdd:
+  #    - XenoglossyPower
+  #    - TelepathyPower
   - type: IntrinsicRadioReceiver
   - type: IntrinsicRadioTransmitter
     channels:
@@ -73,16 +73,16 @@
     channels:
     - Science
     - Common # They can at least listen
-  - type: LanguageKnowledge
-    speaks:
-    - Psychomantic
-    understands:
-    - Psychomantic
-  - type: Actions
-  - type: ThermalVision # Weird psionic senses
-    pulseTime: 0 # Toggled, not timed
-    lightRadius: 7
-    color: "#4dc4ff"
+  #- type: LanguageKnowledge
+  #  speaks:
+  #  - Psychomantic
+  #  understands:
+  #  - Psychomantic
+  #- type: Actions
+  #- type: ThermalVision # Weird psionic senses
+  #  pulseTime: 0 # Toggled, not timed
+  #  lightRadius: 7
+  #  color: "#4dc4ff"
   - type: Examiner # So they can at least inspect what they dispensed
   - type: Fixtures
     fixtures:

@@ -103,11 +103,6 @@
     attackRate: 1 # Aurora: Adjusted
     range: 1.85
     wideAnimationRotation: -60 # Swing that thing
-    #maxTargets: 10 # When you see a stat that looks good, just remember that if you hit anything non-psionic, you lose
-    #heavyRateModifier: 1 # Same speed
-    #heavyRangeModifier: 1 # Same range
-    #heavyDamageBaseModifier: 1 # Same damage
-    #heavyStaminaCost: 30 # Also you can't spam them or you'll fall over
     damage:
       types:
         Slash: 30 # 18.66 DPS (same as CaptainSabre), or 23.33 DPS against psions (but if you miss, it hits you hard) # Aurora: Up that to 30 dps, t5
@@ -127,7 +122,12 @@
       params:
         volume: -2
         variation: 0.05
-  - type: DamageOtherOnHit
+    #maxTargets: 10 # When you see a stat that looks good, just remember that if you hit anything non-psionic, you lose
+    #heavyRateModifier: 1 # Same speed
+    #heavyRangeModifier: 1 # Same range
+    #heavyDamageBaseModifier: 1 # Same damage
+    #heavyStaminaCost: 30 # Also you can't spam them or you'll fall over
+  #- type: DamageOtherOnHit
     #staminaCost: 80 # Throwing it will nearly, unless your species or traits let you do it, but then you'll still be extremely slow and unarmed # AS: Commented out
   - type: EmbeddableProjectile
     sound:
