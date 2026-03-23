@@ -6577,3 +6577,12 @@ Entries:
   id: 9019
   time: '2026-03-22T19:26:44.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/808
+- author: Phoenix51505
+  changes:
+    - type: Fix
+      message: >-
+        Fixed code in the ESS assuming that a shift length over a day is
+        impossible
+  id: 9020
+  time: '2026-03-23T06:40:31.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/814
