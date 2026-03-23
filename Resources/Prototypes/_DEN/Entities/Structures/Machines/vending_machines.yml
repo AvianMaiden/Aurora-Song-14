@@ -30,8 +30,8 @@
       shader: unshaded
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
-  - type: AccessReader
-    access: [["Mantis"]]
+  #- type: AccessReader
+  #  access: [["Mantis"]]
   - type: PointLight # As bright as a candle
     radius: 2.4
     energy: 2.4
@@ -42,12 +42,12 @@
     range: 0
     enabled: false
     sound:
-      path: /Audio/Effects/silence.ogg # It has some wires inside, but it doesn't hum
+      path: /Audio/_NF/Effects/silence.ogg # It has some wires inside, but it doesn't hum
   - type: SentienceTarget
     flavorKind: station-event-random-sentience-flavor-mechanical
     weight: 0.25 # It's plugged into the noosphere, come on
-  - type: TypingIndicator
-    proto: mantis
+  #- type: TypingIndicator
+  #  proto: mantis
   - type: Speech
     speechVerb: Electricity
     speechSounds: Tenor

@@ -57,7 +57,7 @@
         Piercing: 10 # 15 DPS (same as CombatKnife), or 18.75 DPS against psions
         Holy: 5 # 28.13 total DPS against psionic supernaturals
     activatedSoundOnHit:
-      path: /Audio/Weapons/Melee/rapierhit.ogg
+      path: /Audio/Weapons/bladeslice.ogg
       params:
         variation: 0.05
     activatedSoundOnHitNoDamage:

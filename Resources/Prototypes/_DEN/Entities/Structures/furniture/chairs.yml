@@ -30,9 +30,9 @@
         !type:DamageTrigger
         damage: 50
       behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          path: /Audio/Items/Handling/cloth_drop.ogg
+      #- !type:PlaySoundBehavior
+      #  sound:
+      #    path: /Audio/Items/Handling/cloth_drop.ogg
       - !type:SpawnEntitiesBehavior
         spawn:
           MaterialCloth:

@@ -152,7 +152,7 @@
     sprite: _DEN/Objects/Weapons/Melee/Mantis/mantissickle.rsi
   - type: Appearance
   - type: ToggleableVisuals
-    replaceMode: true
+    #replaceMode: true
     spriteLayer: null
     inhandVisuals:
       left:
@@ -165,7 +165,7 @@
     angle: -135
   - type: MeleeThrowOnHit # Just a tiny knockback to look cool, barely moves anything
     speed: 3
-    lifetime: 0.025
+    #lifetime: 0.025
   - type: DisarmMalus
     malus: 0
   - type: Tag
@@ -173,8 +173,8 @@
     - Knife
     - MantisSickle
     - MantisBeltStorable
-    sprite: _DEN/Objects/Weapons/Melee/tailorsknife.rsi
-    state: icon
+  #  sprite: _DEN/Objects/Weapons/Melee/tailorsknife.rsi
+  #  state: icon
   #- type: Item
   #  sprite: _DEN/Objects/Weapons/Melee/tailorsknife.rsi
   # Did you know giving one entity two of the same components causes errors

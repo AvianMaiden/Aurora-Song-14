@@ -49,6 +49,6 @@
     sprite: _Floof/Clothing/Departmental/Epistemics/mantisepithong.rsi
   - type: Clothing
     sprite: _Floof/Clothing/Departmental/Epistemics/mantisepithong.rsi
-  - type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
-    tags:
-    - Skirt
+  #- type: Tag #DeltaV, needed for species with nonhuman legs/can only wear skirts
+    #tags:
+    #- Skirt

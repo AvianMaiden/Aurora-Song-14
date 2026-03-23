@@ -83,9 +83,9 @@
     color: "#d9418d"
   - type: Pda
     id: ForensicMantisIDCard
-    state: pda-mantis
+    #state: pda-mantis
     penSlot:
-      startingItem: PenMantis
+      #startingItem: PenMantis
       priority: -2
       whitelist:
         tags:

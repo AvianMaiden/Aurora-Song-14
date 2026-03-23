@@ -22,7 +22,7 @@
     size: Small
   - type: Gun
     fireRate: 4
-    fireOnDropChance: 0.5
+    #fireOnDropChance: 0.5
   - type: BallisticAmmoProvider
     capacity: 2
     proto: NFShellShotgunBuckshot # Aurora

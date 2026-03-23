@@ -127,7 +127,7 @@
   - type: StorageFill
     contents:
     - id: LanternMantis
-    - id: BoxFolderMantis
+    #- id: BoxFolderMantis
     - id: HandLabelerMantis
   - type: Tag
     tags:
@@ -159,10 +159,10 @@
     contents:
     - id: SyringeMantis
     - id: ChemistryEmptyBottleMantis
-    - id: PillCanisterMnemolithMantis # The bottles are labeled and color coded for safety
-    - id: PillCanisterSpaceDrugsMantis
-    - id: PillCanisterCryptobiolinMantis
-    - id: PillCanisterMindbreakerToxinMantis # They don't have mindbreaker bullets anymore, so they get this instead
+    #- id: PillCanisterMnemolithMantis # The bottles are labeled and color coded for safety
+    #- id: PillCanisterSpaceDrugsMantis
+    #- id: PillCanisterCryptobiolinMantis
+    #- id: PillCanisterMindbreakerToxinMantis # They don't have mindbreaker bullets anymore, so they get this instead
   - type: Tag
     tags:
     - MantisBeltStorable
@@ -225,7 +225,7 @@
     - id: HandcuffsMantis # If these are ever used to selfsec I swear to god, the breakout time is already one second
     - id: ClothingNeckMantisShackles # Just a cosmetic neck item to complete the set
     - id: WrenchMantis # A pretty but otherwise normal wrench for anchoring chains
-    - id: LeashMantis # Matching chain leashes with sprites made to look like anchor points rather than handles
+    #- id: LeashMantis # Matching chain leashes with sprites made to look like anchor points rather than handles
       amount: 4
   - type: Tag
     tags:

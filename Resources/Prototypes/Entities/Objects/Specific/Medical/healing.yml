@@ -704,8 +704,8 @@
   - type: Sprite # TheDen - Space Drugs colored pill
     sprite: _DEN/Objects/Specific/Chemistry/pills.rsi
     state: spacedrugspill
-  - type: Pill
-    state: spacedrugspill
+  #- type: Pill
+  #  state: spacedrugspill
   - type: Item
     size: Tiny
     sprite: _DEN/Objects/Specific/Chemistry/pills.rsi
@@ -729,8 +729,8 @@
     contents:
     - id: PillSpaceDrugs
       amount: 5
-  - type: GuideHelp
-    guides: [ Psionics ]
+  #- type: GuideHelp
+  #  guides: [ Psionics ]
 
 - type: entity
   suffix: Pax 10u
