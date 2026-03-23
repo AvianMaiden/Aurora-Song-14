@@ -6586,3 +6586,10 @@ Entries:
   id: 9020
   time: '2026-03-23T06:40:31.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/814
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: rodentia can wear undergarments
+  id: 9021
+  time: '2026-03-23T07:39:04.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/810
