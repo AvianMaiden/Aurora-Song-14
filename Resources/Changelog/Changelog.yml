@@ -6593,3 +6593,10 @@ Entries:
   id: 9021
   time: '2026-03-23T07:39:04.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/810
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: converted animated tails to use the wagging feature ingame
+  id: 9022
+  time: '2026-03-23T07:43:33.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/812
