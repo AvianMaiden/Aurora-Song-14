@@ -35,6 +35,7 @@ chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->
      [true] [Name]{CAPITALIZE($entityName)}[/Name] {$message}[/italic]
     }
 
+# Aurora's Song - change to bolditalic
 chat-manager-entity-subtle-wrap-message = [bolditalic][color={$color}]{ PROPER($entity) ->
     *[false] the {$entityName} {$message}[/color][/bolditalic]
      [true] [Name]{$entityName}[/Name] {$message}[/color][/bolditalic]
