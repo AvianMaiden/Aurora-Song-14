@@ -1,5 +1,5 @@
 - type: entity
-  parent: [CaneBase, BaseAntiPsionicWeapon, BaseMantisContraband]
+  #parent: [CaneBase, BaseAntiPsionicWeapon, BaseMantisContraband]
   id: MantisMeleeCane
   name: gnomon
   description: "An amaranth cane crowned with an eidolite crystal. If flipped in the hand, the needle-sharp mnemolith tip serves as a thrusting weapon. A refined accessory, practical for mantes with limited mobility. Deadly when wielded against psionic and otherworldly threats."
@@ -82,21 +82,21 @@
     damage:
       types: # If you don't flip it, you just bonk them
         Blunt: 5 # 7.5 DPS (same as Crowbar)
-  - type: AntiPsionicWeapon # To override the +25% blunt damage against psions, because the bonking part isn't made of mnemolith
-    modifiers:
-      coefficients:
-        Piercing: 1.25
-        Holy: 1.25
+  #- type: AntiPsionicWeapon # To override the +25% blunt damage against psions, because the bonking part isn't made of mnemolith
+  #  modifiers:
+  #    coefficients:
+  #      Piercing: 1.25
+  #      Holy: 1.25
   - type: ItemToggleDamageOtherOnHit
   - type: ItemToggleEmbeddableProjectile
-    activatedEmbedOnThrow: true
-    activatedSound: /Audio/Weapons/star_hit.ogg
-    activatedRemovalTime: 2
-  - type: ItemToggleEmbedPassiveDamage
+ #   activatedEmbedOnThrow: true
+ #   activatedSound: /Audio/Weapons/star_hit.ogg
+ #   activatedRemovalTime: 2
+ # - type: ItemToggleEmbedPassiveDamage
   - type: ThrowingAngle
     angle: -135
-  - type: StaminaDamageOnHit
-    damage: 0
+  #- type: StaminaDamageOnHit
+  #  damage: 0
   - type: Tag
     tags:
     - MantisCane

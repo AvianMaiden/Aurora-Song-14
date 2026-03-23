@@ -221,7 +221,7 @@
         - MantisBoxRestraintsStorable # Only the items below should have this
   - type: StorageFill
     contents:
-    - id: ClothingHeadCageMantis # This version has a chain on the front to match the other restraints case items (the locker version does not)
+    #- id: ClothingHeadCageMantis # This version has a chain on the front to match the other restraints case items (the locker version does not)
     - id: HandcuffsMantis # If these are ever used to selfsec I swear to god, the breakout time is already one second
     - id: ClothingNeckMantisShackles # Just a cosmetic neck item to complete the set
     - id: WrenchMantis # A pretty but otherwise normal wrench for anchoring chains

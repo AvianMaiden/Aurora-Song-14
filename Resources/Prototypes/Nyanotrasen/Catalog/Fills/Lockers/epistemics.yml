@@ -35,4 +35,4 @@
       - id: BookPsionicsGuidebook # TheDen - This thing sucks right now but it's gotta go somewhere
       # Insulative headgear
       - id: ClothingHeadHatFezMantisInsulative # TheDen - Functionally identical to the tinfoil hat
-      - id: ClothingHeadCage # TheDen - A second one is in the restraints case in loadout
+      #- id: ClothingHeadCage # TheDen - A second one is in the restraints case in loadout

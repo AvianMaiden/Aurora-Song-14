@@ -251,7 +251,7 @@
 
 # Lethal casters (traitor items)
 - type: entity
-  parent: [BaseRivalCompanyContraband, BaseMantisCasterNoRecharge]
+  parent: BaseMantisCasterNoRecharge
   id: MantisCasterPistolLethal
   name: pistol caster (piercing)
   components:
@@ -275,7 +275,7 @@
       - MantisBeltStorable
 
 - type: entity
-  parent: [BaseRivalCompanyContraband, BaseMantisCasterNoRecharge]
+  parent: BaseMantisCasterNoRecharge
   id: MantisCasterRevolverLethal
   name: revolver caster (piercing)
   components:
@@ -301,7 +301,7 @@
       - MantisBeltStorable
 
 - type: entity
-  parent: [BaseRivalCompanyContraband, BaseMantisCasterNoRecharge]
+  parent: BaseMantisCasterNoRecharge
   id: MantisCasterShotgunLethal
   name: shotgun caster (piercing)
   components:
@@ -327,7 +327,7 @@
       - MantisBeltStorable
 
 - type: entity
-  parent: [BaseRivalCompanyContraband, BaseMantisCasterNoRecharge]
+  parent: BaseMantisCasterNoRecharge
   id: MantisCasterSubMachineGunLethal
   name: submachine gun caster (piercing)
   components:

@@ -29,7 +29,7 @@
   - type: FingerprintMask
 
 - type: entity
-  parent: [ClothingShoesBaseSocks, ClothingShoesMilitaryBase] #TheDen
+  parent: ClothingShoesMilitaryBase #TheDen
   id: ClothingUnderSocksMantisEpi
   name: mantis thigh-high socks
   description: A pair of thigh-high socks, styled for a mantis
