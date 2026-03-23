@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: [BaseItem, BaseMantisContraband]
+  parent: BaseItem
   id: HandcuffsMantis
   suffix: DO NOT MAP # We don't want to give mantes the idea that selfsec is a part of their job's function...
   name: graven shackles

@@ -96,7 +96,7 @@
     - 0,0,3,1 # 4x2
 
 - type: entity
-  parent: [MantisCaseLarge, BaseMantisContraband] # Contraband since its contents are
+  parent: MantisCaseLarge # Contraband since its contents are
   id: MantisCaseTools
   name: mantis tools case # In the mantis locker
   description: "An amaranth case to store your things. A Greek psi is carved into the top, marking it as yours."
@@ -134,7 +134,7 @@
     - MantisBeltStorable
 
 - type: entity
-  parent: [MantisCaseSmall, BaseMantisContraband] # Contraband since its contents are
+  parent: MantisCaseSmall # Contraband since its contents are
   id: MantisCaseChemicals
   name: mantis chemicals case # In the mantis locker
   description: "An amaranth case to carry your chemicals. Conveniently portable, but the slots inside will only fit their original contents. A watchful eye is carved into the top, marking it as yours."
@@ -201,7 +201,7 @@
     - MantisBeltStorable
 
 - type: entity
-  parent: [MantisCaseLarge, BaseMantisContraband] # Contraband since its contents are
+  parent: MantisCaseLarge # Contraband since its contents are
   id: MantisCaseRestraints
   suffix: DO NOT MAP # Mantes need to get this from loadout - see tags below
   name: mantis restraints case # Loadout option

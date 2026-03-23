@@ -3,7 +3,7 @@
 
 # Base items
 - type: entity
-  parent: [BaseItem, BaseMantisContraband]
+  parent: BaseItem
   id: BaseMantisCaster
   abstract: true
   components:

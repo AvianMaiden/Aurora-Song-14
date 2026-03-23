@@ -103,7 +103,7 @@
   - type: FlashImmunity # Aurora
 
 - type: entity
-  parent: [ClothingEyesGlassesEpistemicsVisor, BaseMantisContraband]
+  parent: ClothingEyesGlassesEpistemicsVisor
   id: ClothingEyesGlassesEpistemicsMantis
   name: mantis psionics pince-nez
   description: "A pince-nez that provides weld and flash protection. Comes with prescription eidolite lenses, if requested." #Aurora
@@ -119,7 +119,7 @@
     - MantisBeltStorable
 
 - type: entity
-  parent: [ClothingEyesGlassesEpistemicsMantis, BaseMantisContraband]
+  parent: [ClothingEyesGlassesEpistemicsMantis]
   id: ClothingEyesGlassesEpistemicsMantisTinted
   name: mantis psionics pince-nez (tinted)
   description: "A pince-nez that provides weld and flash protection. Comes with prescription eidolite lenses, if requested."
@@ -131,7 +131,7 @@
   - type: VisionCorrection
 
 - type: entity
-  parent: [ClothingEyesGlassesEpistemicsMantis, BaseMantisContraband]
+  parent: ClothingEyesGlassesEpistemicsMantis
   id: ClothingEyesGlassesEpistemicsMantisVeil
   name: mantis psionics blindfold
   description: "A sheer blindfold decorated with an electrum eye that provides flash immunity and weld protection."

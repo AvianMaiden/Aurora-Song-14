@@ -7,7 +7,7 @@
 
 - type: entity
   name: soul-shatter
-  parent: [BaseWeaponShotgun, BaseMantisContraband]
+  parent: BaseWeaponShotgun
   id: WeaponShotgunSoulshatter
   suffix: DO NOT MAP # Mantes shouldn't get free lethals
   description: "A gloomy sawn-off double barrel with an amaranth grip. Provides no tactical advantage. Uses 12 gauge shells."

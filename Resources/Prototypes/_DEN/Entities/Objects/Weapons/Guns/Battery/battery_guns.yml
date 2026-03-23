@@ -4,7 +4,7 @@
 
 # Mantis guns start
 - type: entity
-  parent: [BaseWeaponPowerCell, BaseMantisContraband]
+  parent: BaseWeaponPowerCell
   id: BaseMantisRanged # Lorewise, they use altered and contained anomaly cores to generate physical ammo
   abstract: true # But codewise, they're just battery guns that look and sound like they're shooting ballistics
   components:

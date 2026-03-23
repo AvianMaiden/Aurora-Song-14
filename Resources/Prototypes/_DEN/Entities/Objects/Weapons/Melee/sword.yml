@@ -165,7 +165,7 @@
     - MantisGreatsword
 
 - type: entity
-  parent: [BaseItem, BaseFoldable, BaseMantisContraband]
+  parent: [BaseItem, BaseFoldable]
   id: MantisMeleeGreatswordSheath # A suitstorage sheath for Faust, in this file because it's basically part of the sword
   name: foreboding scabbard
   suffix: Faust, Empty
