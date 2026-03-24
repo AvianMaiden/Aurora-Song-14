@@ -58,12 +58,9 @@
   id: ClothingUniformJumpsuitMantis
   name: dated mantis uniform
   description: "Modeled after an ancient infantry uniform, this uniform has superior mobility for tense situations. All the company would pay for prior to the mantis equipment refresh." # TheDen
+  abstract: true # made abstract so it can be referenced without worrying about the missing sprites - Aurora Song
   components:
   - type: Appearance
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/mantis_uniform.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/mantis_uniform.rsi
   - type: Tag # TheDen
     tags:
     - WhitelistChameleon

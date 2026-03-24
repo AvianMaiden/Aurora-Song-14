@@ -22,8 +22,7 @@
     tags:
     - MantisBoxRestraintsStorable
     - MantisBeltStorable
-  - type: GuideHelp
-    guides: [ MantisGuide ]
+
 
 - type: entity
   parent: ClothingNeckBase
@@ -44,7 +43,7 @@
   #  punishStunDuration: 0 # It's just a little amulet, it won't stun you
   - type: MeleeWeapon
     attackRate: 1.6
-    maxTargets: 1
+    #maxTargets: 1
     angle: 90
     soundHit:
       path: /Audio/_DEN/Effects/crystaltap3.ogg
@@ -59,5 +58,4 @@
     tags:
     - WhitelistChameleon
     - MantisBeltStorable
-  #- type: GuideHelp
-  #  guides: [ MantisGuide ]
+

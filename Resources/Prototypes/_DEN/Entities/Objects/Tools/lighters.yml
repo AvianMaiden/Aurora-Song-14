@@ -1,5 +1,5 @@
 - type: entity
-  parent: [FlippoLighter, BaseAntiPsionicWeapon]
+  parent: [FlippoLighter]
   id: FlippoLighterMantis
   name: mantis lighter
   description: "A glossy lighter sculpted from chips of mnemolith, housing an eidolite pyramid that draws energy from the noosphere. The flame gutters strangely, as if aware of what it burns."
@@ -70,7 +70,7 @@
       types:
         Heat: 2 # 3 DPS, or 3.75 DPS against psions
         Holy: 1 # 5 total DPS against psionic supernaturals
-  - type: ItemToggleDamageOtherOnHit
+  #- type: ItemToggleDamageOtherOnHit # AS - doesn't exist here, yet, maybe later.
   - type: ThrowingAngle
     angle: 180
   - type: Tag

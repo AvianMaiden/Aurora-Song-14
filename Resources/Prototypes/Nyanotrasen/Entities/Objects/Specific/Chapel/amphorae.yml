@@ -12,11 +12,6 @@
   description: It's an earthenware jar suitable for carrying liquids, an example of ancient technology.
   abstract: true
   components:
-  - type: Sprite
-    sprite: Nyanotrasen/Objects/Specific/Chapel/amphorae.rsi
-  - type: Item
-    size: Small
-    sprite: Nyanotrasen/Objects/Specific/Chapel/amphorae.rsi
   - type: StaticPrice
     price: 150
   - type: SolutionContainerManager
@@ -72,11 +67,3 @@
     damage:
       types:
         Blunt: 5
-
-- type: entity
-  parent: BaseAmphora
-  id: Amphora
-  components:
-  - type: Sprite
-    layers:
-      - state: amphora3

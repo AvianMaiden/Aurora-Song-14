@@ -21,7 +21,7 @@
     slots:
     - suitStorage
   - type: Gun
-    fireOnDropChance: 0.1
+    #fireOnDropChance: 0.1
     soundEmpty:
       path: /Audio/_DV/Weapons/Guns/Empty/dry_fire.ogg
       params:
@@ -53,9 +53,6 @@
   - type: Tag
     tags:
     - MantisBeltStorable
-  - type: GuideHelp
-    guides: [ MantisGuide ]
-
 - type: entity
   parent: BaseMantisRanged
   id: MantisRangedPistol

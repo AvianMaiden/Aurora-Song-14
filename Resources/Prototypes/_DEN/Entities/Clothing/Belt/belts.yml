@@ -84,7 +84,7 @@
     - id: MantisMeleeSickle
     - id: ClothingUniformJumpsuitMantisLoincloth
     - id: ClothingNeckMantisShackles
-    - id: LeashMantis
+    #- id: LeashMantis
     - id: FlippoLighterMantis
     - id: CandleSomberMantisCluster
 
@@ -96,9 +96,9 @@
   - type: StorageFill
     contents:
     - id: MantisMeleeCane
-    - id: PillCanisterMnemolithMantis
-    - id: PillCanisterSpaceDrugsMantis
-    - id: PlushieDollMantis
+    #- id: PillCanisterMnemolithMantis
+    #- id: PillCanisterSpaceDrugsMantis
+    #- id: PlushieDollMantis
     - id: PersonalAISomber
     - id: MantisTailorsKnife
 # Mantis belts end

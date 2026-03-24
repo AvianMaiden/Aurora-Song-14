@@ -23,12 +23,12 @@
     damage:
       types:
         Blunt: 9.5 # Heavier tiles hurt more, based on FloorTileItemSteel
-    staminaCost: 6
-    soundHit:
-      path: /Audio/Weapons/block_metal1.ogg
-      params:
-        volume: -60 # Why is it so loud...
-        variation: 0.05
+    #staminaCost: 6
+    #soundHit:
+    #  path: /Audio/Weapons/block_metal1.ogg
+    #  params:
+    #    volume: -60 # Why is it so loud...
+    #    variation: 0.05
 
 - type: entity
   parent: FloorTileItemSomberSteel
@@ -255,7 +255,7 @@
     stackType: FloorTileSomberGlassUranium
 
 - type: entity
-  parent: [FloorTileItemSomberSteel, BaseAntiPsionicWeapon]
+  parent: [FloorTileItemSomberSteel]
   id: FloorTileItemSomberMnemolithRough
   name: somber mnemolith tile (rough)
   components:
@@ -274,7 +274,7 @@
         Holy: 4.75 # 17.81 total damage against supernaturals
 
 - type: entity
-  parent: [FloorTileItemSomberSteel, BaseAntiPsionicWeapon]
+  parent: [FloorTileItemSomberSteel]
   id: FloorTileItemSomberMnemolithSmooth
   name: somber mnemolith tile (smooth)
   components:
@@ -309,9 +309,9 @@
     damage:
       types:
         Blunt: 5.5 # Lighter tiles hurt less, based on FloorTileItemBase
-    staminaCost: 5
-    soundHit:
-      collection: MetalThud
+    #staminaCost: 5
+    #soundHit:
+    #  collection: MetalThud
 
 - type: entity
   parent: FloorTileItemSomberWood

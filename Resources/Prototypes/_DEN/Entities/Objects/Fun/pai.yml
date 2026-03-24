@@ -11,8 +11,8 @@
     - state: mantis-pai-off-overlay
       shader: unshaded
       map: ["screen"]
-  - type: TypingIndicator
-    proto: mantis
+  #- type: TypingIndicator
+  #  proto: mantis
   - type: Speech
     speechVerb: Electricity
     speechSounds: Pai

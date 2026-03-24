@@ -1,4 +1,4 @@
-#- type: entity # Aurora: No leash
+#- type: entity # Aurora Song: No leash
 #  parent: BaseLeash
 #  id: LeashMantis
 #  name: graven chain
@@ -27,6 +27,4 @@
 #    tags:
 #    - MantisBoxRestraintsStorable
 #    - MantisBeltStorable
-#  - type: GuideHelp
-#    guides: [ MantisGuide ]
 #

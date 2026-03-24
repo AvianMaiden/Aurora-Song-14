@@ -10,12 +10,9 @@
   id: ClothingShoesBootsMantis
   name: dated mantis boots
   description: "Soft, comfortable, and good for rough terrain. All the company would pay for prior to the mantis equipment refresh." # TheDen
+  abstract: true # made abstract so it can be referenced without worrying about the missing sprites - Aurora Song
   components:
   - type: Appearance
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Shoes/Boots/mantis_boots.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Shoes/Boots/mantis_boots.rsi
   - type: Tag # TheDen
     tags:
     - WhitelistChameleon
