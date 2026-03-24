@@ -85,7 +85,7 @@ public sealed class GasCondenserSystem : EntitySystem
         //Alpha is a tuning variable to condense around 1u per second. Also a holdover from the previous implementation.
         //GasCondenserComponent MolesToReagentMultiplier = 0.2137f, so we want to tune the return of this function to be around 5 to get 1u per tick.
         //Alpha is tuned such that the median specific heat (nitrogen) condenses at about 1u per second. Different mixtures condense at different rates.
-        var alpha = 285f;
+        var alpha = 10f; //AURORA: condensers draw a lot less power, so alpha is changed to maintain ~5 mols condensed.
 
         return energy / (alpha * specificHeat);
         // END IMP ADD
