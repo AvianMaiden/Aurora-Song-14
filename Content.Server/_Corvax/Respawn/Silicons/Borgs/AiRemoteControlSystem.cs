@@ -244,7 +244,6 @@ public sealed class AiRemoteControlSystem : SharedAiRemoteControlSystem
             if (!ghostRole.ReregisterOnGhost || component.LifeStage > ComponentLifeStage.Running)
                 return;
 
-            Log.Error("Re-registering ghost role of parent AI");
             _ghostSystem.ReRegisterGhostRole(component.AiHolder.Value, ghostRole);
 
             component.AiHolder = null;
