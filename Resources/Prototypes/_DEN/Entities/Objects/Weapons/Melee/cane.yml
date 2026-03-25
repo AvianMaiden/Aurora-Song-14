@@ -1,5 +1,5 @@
 - type: entity
-  #parent: [CaneBase, BaseAntiPsionicWeapon, BaseMantisContraband]
+  parent: [Cane]
   id: MantisMeleeCane
   name: gnomon
   description: "An amaranth cane crowned with an eidolite crystal. If flipped in the hand, the needle-sharp mnemolith tip serves as a thrusting weapon. A refined accessory, practical for mantes with limited mobility. Deadly when wielded against psionic and otherworldly threats."
