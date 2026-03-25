@@ -90,6 +90,11 @@
       whitelist:
         tags:
         - Write
+  - type: Appearance
+    appearanceDataInit:
+      enum.PdaVisuals.PdaType:
+        !type:String
+        pda-mantis
   - type: PdaBorderColor
     borderColor: "#3b3640"
     accentVColor: "#431b57"

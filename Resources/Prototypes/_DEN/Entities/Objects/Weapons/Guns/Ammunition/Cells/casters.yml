@@ -76,7 +76,6 @@
       map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       shader: unshaded
   - type: PowerCell
-    levels: 7
   - type: ProjectileBatteryAmmoProvider
     proto: BulletMantisCapgun
     fireCost: 30 # Can fire 12 times, takes 2.5 seconds to recharge 1 shot
@@ -99,7 +98,6 @@
       map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       shader: unshaded
   - type: PowerCell
-    levels: 6
   - type: ProjectileBatteryAmmoProvider
     proto: BulletMantisCapgun
     fireCost: 60 # Can fire 6 times, takes 5 seconds to recharge 1 shot

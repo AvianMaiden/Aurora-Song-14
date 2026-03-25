@@ -158,8 +158,8 @@
     #   weight: 0.5 # Frontier
     - id: ResearchDisk10000
       weight: 0.5
-    - id: ResearchDisk20000
-      weight: 0.5
+    #- id: ResearchDisk20000
+    #  weight: 0.5
     - id: MaterialEidolite1 # TheDen - Pretty rock, worth 500 each
       amount: !type:RangeNumberSelector
         range: 3, 5
