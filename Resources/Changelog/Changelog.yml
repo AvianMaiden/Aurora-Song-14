@@ -6713,3 +6713,10 @@ Entries:
   id: 9031
   time: '2026-03-26T10:08:52.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/816
+- author: Leostel
+  changes:
+    - type: Add
+      message: adds the BH Barada, Damascus's first engi and salvage shuttle
+  id: 9032
+  time: '2026-03-26T10:19:53.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/829
