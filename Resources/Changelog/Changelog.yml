@@ -6641,3 +6641,10 @@ Entries:
   id: 9025
   time: '2026-03-26T06:19:57.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/826
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: rodentia undergarments no longer show up over clothes
+  id: 9026
+  time: '2026-03-26T09:03:53.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/825
