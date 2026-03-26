@@ -6671,3 +6671,26 @@ Entries:
   id: 9029
   time: '2026-03-26T09:25:28.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/821
+- author: TurtleOfMen
+  changes:
+    - type: Add
+      message: Damascus Bonus Machine next to CE
+    - type: Add
+      message: Bulk grounding rod crate to Damascus
+    - type: Add
+      message: Shipyard RCD & Damascus ID to CE office
+    - type: Add
+      message: Damascus shipyard console
+    - type: Add
+      message: Very mild cosmetic improvements to Damascus
+    - type: Remove
+      message: Damascus exped console
+    - type: Remove
+      message: Damascus RCD & Compressed matter
+    - type: Tweak
+      message: Moved Engi tank dispenser to PA room
+    - type: Tweak
+      message: Moved PA room emergency wall closet to PA airlock
+  id: 9030
+  time: '2026-03-26T09:30:43.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/828
