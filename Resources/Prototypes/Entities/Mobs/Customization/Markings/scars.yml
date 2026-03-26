@@ -105,7 +105,7 @@
   id: ScarSlimeFace1
   bodyPart: Head
   markingCategory: Overlay
-  speciesRestriction: [SlimePerson] # Frontier: added Goblin and afterwards | Aurora's Song - added Tajaran, moved slime's marking to overlay
+  speciesRestriction: [SlimePerson] # Aurora's Song - moved slime's marking to overlay
   followSkinColor: true
   sprites:
   - sprite: Mobs/Customization/scars.rsi
