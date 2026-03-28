@@ -8,7 +8,7 @@ namespace Content.Shared._NF.Shipyard.Components;
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentState]
 [Access(typeof(SharedShipyardSystem), typeof(SharedShuttleRecordsSystem))]
-public sealed partial class ShuttleDeedComponent : Component
+public sealed partial class SharedShuttleDeedComponent : Component // AS
 {
     public const int MaxNameLength = 30;
     public const int MaxSuffixLength = 3 + 1 + 4; // 3 digits, dash, up to 4 letters - should be enough
@@ -27,4 +27,11 @@ public sealed partial class ShuttleDeedComponent : Component
 
     [DataField, AutoNetworkedField]
     public bool PurchasedWithVoucher;
+
+    // AS: This is hopefully redundant
+    /// <summary>
+    ///     If false, shipyards will refuse to sell the assigned ship.
+    /// </summary>
+    [DataField, AutoNetworkedField]
+    public bool Sellable = true;
 }
