@@ -6720,3 +6720,10 @@ Entries:
   id: 9032
   time: '2026-03-26T10:19:53.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/829
+- author: SolStar
+  changes:
+    - type: Tweak
+      message: Added hud icons for license holders.
+  id: 9033
+  time: '2026-03-28T21:27:45.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/836
