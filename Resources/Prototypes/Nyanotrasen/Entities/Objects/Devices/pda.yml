@@ -60,8 +60,6 @@
   components:
   - type: Item
     sprite: _DEN/Objects/Devices/pda.rsi
-    state: pda-mantis # Aurora
-    heldPrefix: mantis # Aurora
   - type: Clothing
     sprite: _DEN/Objects/Devices/pda.rsi
     equippedPrefix: pda-mantis # Aurora
