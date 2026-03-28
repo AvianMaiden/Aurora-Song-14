@@ -1,7 +1,7 @@
-using Content.Shared._AS.License;
+using Content.Shared._AS.License; // Aurora
 using Content.Shared.Access.Components;
 using Content.Shared.Access.Systems;
-using Content.Shared.Mindshield.Components;
+using Content.Shared.Mindshield.Components; // Aurora
 using Content.Shared.Overlays;
 using Content.Shared.PDA;
 using Content.Shared.StatusIcon;
@@ -14,7 +14,7 @@ public sealed class ShowJobIconsSystem : EquipmentHudSystem<ShowJobIconsComponen
 {
     [Dependency] private readonly IPrototypeManager _prototype = default!;
     [Dependency] private readonly AccessReaderSystem _accessReader = default!;
-    [Dependency] private readonly LicenseSystem _license = default!;
+    [Dependency] private readonly LicenseSystem _license = default!; // Aurora
 
     private static readonly ProtoId<JobIconPrototype> JobIconForNoId = "JobIconNoId";
 
