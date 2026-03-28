@@ -82,13 +82,6 @@
     color: "#d9418d"
   - type: Pda
     id: ForensicMantisIDCard
-    #state: pda-mantis
-    penSlot:
-      #startingItem: PenMantis
-      priority: -2
-      whitelist:
-        tags:
-        - Write
   - type: Appearance
     appearanceDataInit:
       enum.PdaVisuals.PdaType:
