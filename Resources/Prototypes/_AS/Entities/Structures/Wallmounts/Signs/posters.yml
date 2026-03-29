@@ -22,6 +22,18 @@
     sprite: _AS/Structures/Wallmounts/posters.rsi
     state: as_poster_aurora
 
+#region Independent Astronautics Cooperative
+
+- type: entity
+  parent: PosterBase
+  id: ASPosterContrabandCNSHorizon
+  name: "Colonial Naval Surplus"
+  description: "CNF Surplus gear - built Auroran tough. Made to last."
+  components:
+  - type: Sprite
+    sprite: _AS/Structures/Wallmounts/posters.rsi
+    state: as_poster_cns_horizon
+
 #region Blue Horizons
 
 - type: entity
