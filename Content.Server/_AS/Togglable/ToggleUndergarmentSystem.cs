@@ -16,8 +16,8 @@ public sealed class ToggleUndergarmentSystem : EntitySystem
 
     private static readonly EntProtoId ToggleTopAction = "ActionToggleUndergarmentTop";
     private static readonly EntProtoId ToggleBottomAction = "ActionToggleUndergarmentBottom";
-    private static readonly HumanoidVisualLayers UndergarmentTop = HumanoidVisualLayers.UndergarmentTop;
-    private static readonly HumanoidVisualLayers UndergarmentBottom = HumanoidVisualLayers.UndergarmentBottom;
+    private const HumanoidVisualLayers UndergarmentTop = HumanoidVisualLayers.UndergarmentTop;
+    private const HumanoidVisualLayers UndergarmentBottom = HumanoidVisualLayers.UndergarmentBottom;
 
     /// <inheritdoc/>
     public override void Initialize()

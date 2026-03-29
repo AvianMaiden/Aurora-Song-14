@@ -5,7 +5,7 @@
   description: Toggles your undershirt
   components:
   - type: Action
-    icon: Interface/Actions/scream.png
+    icon: _AS/Interface/Actions/ToggleUndergarment.rsi/top.png
     checkCanInteract: true
     autoPopulate: false
   - type: InstantAction
@@ -18,7 +18,7 @@
   description: Toggles your undershirt
   components:
   - type: Action
-    icon: Interface/Actions/scream.png
+    icon: _AS/Interface/Actions/ToggleUndergarment.rsi/bottom.png
     checkCanInteract: true
     autoPopulate: false
   - type: InstantAction
