@@ -12,7 +12,7 @@
     - id: ASPosterContrabandIACLogo
 
 - type: entityTable
-  id: TableRandomPosterLegit
+  id: ASTableRandomPosterLegit
   table: !type:GroupSelector
     children:
     - id: ASPosterLegitAuroraSector
@@ -45,4 +45,4 @@
       - !type:NestedSelector
         tableId: TableRandomPosterContrabandIAC
       - !type:NestedSelector
-        tableId: TableRandomPosterLegit
+        tableId: ASTableRandomPosterLegit
