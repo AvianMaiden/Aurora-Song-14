@@ -6764,3 +6764,10 @@ Entries:
   id: 9038
   time: '2026-03-29T03:25:28.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/838
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: SLE Uplink Vendor is no longer a hologram on SLEO
+  id: 9039
+  time: '2026-03-29T04:52:53.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/841
