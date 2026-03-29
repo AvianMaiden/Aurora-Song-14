@@ -1,0 +1,16 @@
+- type: palette # Aurora's Song - custom mapping palettes
+  id: Aurora
+  name: Aurora
+  colors:
+    sle navy: "#2A4F63FF"
+    sle cobalt: "#98BBC2FF"
+    sle orange: "#E37B40FF"
+    sle gold: "#E5B250FF"
+
+    colonial cobalt: "#BDE8F5FF"
+    colonial light blue: "#4988C4FF"
+    colonial medium blue: "#1C4D8DFF"
+    colonial dark blue: "#0F2854FF"
+    colonial silver: "#BDE8F5FF"
+
+    damascus steel: "#B0C4DEFF"
