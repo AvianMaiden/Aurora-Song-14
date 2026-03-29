@@ -22,4 +22,11 @@
   id: ShipyardCompanies
   name: Shipyard Companies
   colors:
-    blue horizons blue: "#3BBCF2FF"
+    # bh: Blue Horizons
+    bh blue: "#3BBCF2FF"
+
+    # iac: Independent Astronautics Cooperative
+    iac yellow-orange: "#FBC60EFF"
+    iac bright red: "#EE562AFF"
+    iac off-black: "#1D1429FF"
+    iac purple: "#474069FF"
