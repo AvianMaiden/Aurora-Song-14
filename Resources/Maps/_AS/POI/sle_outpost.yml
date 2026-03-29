@@ -26540,8 +26540,6 @@ entities:
     - type: Transform
       pos: 17.5,-2.5
       parent: 1
-    - type: Physics
-      canCollide: False
 - proto: VendingMachineSnack
   entities:
   - uid: 3304
