@@ -375,6 +375,13 @@ public sealed partial class ShipyardSystem : SharedShipyardSystem
             return;
         }
 
+        if (!deed.Sellable) // AS
+        {
+            ConsolePopup(player, Loc.GetString("shipyard-console-invalid-station"));
+            PlayDenySound(player, uid, component);
+            return;
+        }
+
         if (_station.GetOwningStation(uid) is not { Valid: true } stationUid)
         {
             ConsolePopup(player, Loc.GetString("shipyard-console-invalid-station"));
