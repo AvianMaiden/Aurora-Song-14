@@ -6810,3 +6810,10 @@ Entries:
   id: 9044
   time: '2026-03-30T08:36:54.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/847
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: IPCs now talk like damaged borgs when they're hurt
+  id: 9045
+  time: '2026-03-30T22:51:09.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/850
