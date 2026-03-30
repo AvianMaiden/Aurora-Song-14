@@ -67,6 +67,8 @@
         - IdentityBlocker
         tags:
         - IPCMaskWearable
+        - Cigarette
+        - Cigar
     - name: neckalt # Aurora's Song - second neck slot
       slotTexture: neck
       slotFlags: NECK
