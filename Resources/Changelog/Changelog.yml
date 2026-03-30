@@ -6803,3 +6803,10 @@ Entries:
   id: 9043
   time: '2026-03-30T07:18:21.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/846
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: undergarment toggle no longer shows in action bar
+  id: 9044
+  time: '2026-03-30T08:36:54.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/847
