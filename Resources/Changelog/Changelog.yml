@@ -6949,3 +6949,12 @@ Entries:
   id: 9061
   time: '2026-03-31T20:48:12.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/832
+- author: portfiend
+  changes:
+    - type: Tweak
+      message: >-
+        Species with HSV skin tones no longer have a minimum brightness limit on
+        their skin.
+  id: 9062
+  time: '2026-03-31T20:49:55.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/868
