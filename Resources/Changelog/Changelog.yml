@@ -6863,3 +6863,10 @@ Entries:
   id: 9051
   time: '2026-03-31T09:50:35.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/857
+- author: ZigTag
+  changes:
+    - type: Add
+      message: the records computer now knows what hull you're using!
+  id: 9052
+  time: '2026-03-31T10:20:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/861
