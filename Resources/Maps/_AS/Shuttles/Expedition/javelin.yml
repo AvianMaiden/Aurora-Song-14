@@ -4,7 +4,7 @@ meta:
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 03/31/2026 01:54:34
+  time: 03/31/2026 08:05:28
   entityCount: 1215
 maps: []
 grids:
@@ -851,6 +851,8 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
+    - type: BecomesStation
+      id: Javelin
 - proto: AirAlarm
   entities:
   - uid: 1103
