@@ -971,7 +971,6 @@
     - Honk
     - Carpetium
     - JuiceThatMakesYouWeh
-    - MnemolithReagent # TheDen
   - type: Drink
     solution: anomaly
   - type: DrainableSolution
