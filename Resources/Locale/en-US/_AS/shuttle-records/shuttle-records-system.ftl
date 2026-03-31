@@ -1,1 +1,1 @@
-﻿shuttle-records-shuttle-hull-name-label = Hull Name: {$name}
+﻿shuttle-records-shuttle-hull-type-label = Hull Type: {$name}
