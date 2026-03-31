@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 03/31/2026 20:53:55
-  entityCount: 1277
+  time: 03/31/2026 21:22:56
+  entityCount: 1278
 maps: []
 grids:
 - 1
@@ -6777,6 +6777,13 @@ entities:
     components:
     - type: Transform
       pos: -6.5,3.5
+      parent: 1
+- proto: MachineFTLDrive50
+  entities:
+  - uid: 1278
+    components:
+    - type: Transform
+      pos: -3.5,-3.5
       parent: 1
 - proto: MachineMaterialSilo
   entities:
