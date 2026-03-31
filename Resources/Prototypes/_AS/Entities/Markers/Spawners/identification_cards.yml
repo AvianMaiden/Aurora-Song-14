@@ -7,7 +7,6 @@
     layers:
       - state: green
       - sprite: _AS/Objects/Misc/id_cards.rsi
-        state: default
         state: idsiteworker
   - type: ConditionalSpawner
     prototypes:
@@ -22,7 +21,6 @@
     layers:
       - state: green
       - sprite: _AS/Objects/Misc/id_cards.rsi
-        state: default
         state: autonomous
   - type: ConditionalSpawner
     prototypes:
