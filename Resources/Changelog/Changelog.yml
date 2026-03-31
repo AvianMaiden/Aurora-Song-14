@@ -6911,3 +6911,10 @@ Entries:
   id: 9057
   time: '2026-03-31T11:18:47.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/864
+- author: turtleofmen
+  changes:
+    - type: Fix
+      message: Javelin attribution
+  id: 9058
+  time: '2026-03-31T11:30:36.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/865
