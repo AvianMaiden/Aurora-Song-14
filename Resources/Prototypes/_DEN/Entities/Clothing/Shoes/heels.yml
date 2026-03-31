@@ -5,10 +5,10 @@
 - type: entity
   abstract: true
   id: ClothingShoesBaseHeelStocking
-  parent: ClothingShoesBaseSocks
+  parent: ClothingShoesHighheelBoots # prior parent doesn't exist on our fork, relies on deprecated use of HideLayerClothing component. | Aurora Song
   components:
   - type: FootstepModifier
-    footstepSoundCollection: 
+    footstepSoundCollection:
       collection: FootstepHighHeels
   - type: HideLayerClothing
     force: true
@@ -86,7 +86,7 @@
 
 - type: entity
   parent: ClothingShoesBaseHeelStocking
-  id: ClothingShoesHeelsStockingsBlackWPlain 
+  id: ClothingShoesHeelsStockingsBlackWPlain
   name: secretary heelstockings
   description: Heels with stockings. Meant to be worn together, they shape the legs just right—sharp, impossible to ignore once they're on.
   components:
@@ -127,4 +127,3 @@
     sprite: _DEN/Clothing/Shoes/Heels/whiteheels_plainblackstockings.rsi
   - type: Clothing
     sprite: _DEN/Clothing/Shoes/Heels/whiteheels_plainblackstockings.rsi
- 
