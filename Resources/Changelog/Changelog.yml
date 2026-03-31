@@ -6789,3 +6789,40 @@ Entries:
   id: 9041
   time: '2026-03-29T09:15:27.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/842
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: .25 mags no longer blow up
+  id: 9042
+  time: '2026-03-30T01:28:51.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/844
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: Traits you can't use will now be hidden from the menu
+  id: 9043
+  time: '2026-03-30T07:18:21.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/846
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: undergarment toggle no longer shows in action bar
+  id: 9044
+  time: '2026-03-30T08:36:54.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/847
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: IPCs now talk like damaged borgs when they're hurt
+  id: 9045
+  time: '2026-03-30T22:51:09.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/850
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: Commissioner gets an Access Configurator now
+    - type: Fix
+      message: Access Configurator; Brigmedic -> Corpsman
+  id: 9046
+  time: '2026-03-30T23:33:31.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/854
