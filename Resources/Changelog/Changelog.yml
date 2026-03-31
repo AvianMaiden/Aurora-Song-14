@@ -6826,3 +6826,10 @@ Entries:
   id: 9046
   time: '2026-03-30T23:33:31.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/854
+- author: GreyScaleHarlequin
+  changes:
+    - type: Add
+      message: heelstockings of multiple types ported and listed in loadout.
+  id: 9047
+  time: '2026-03-31T06:24:49.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/856
