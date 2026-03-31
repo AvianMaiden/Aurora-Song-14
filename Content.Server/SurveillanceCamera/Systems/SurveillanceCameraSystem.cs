@@ -6,7 +6,7 @@ using Content.Shared.ActionBlocker;
 using Content.Shared.Database;
 using Content.Shared.DeviceNetwork;
 using Content.Shared.DeviceNetwork.Events;
-using Content.Shared.Item.ItemToggle.Components;
+using Content.Shared.Item.ItemToggle.Components; // Frontier
 using Content.Shared.Power;
 using Content.Shared.SurveillanceCamera;
 using Content.Shared.Verbs;
