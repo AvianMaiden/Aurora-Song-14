@@ -6842,3 +6842,10 @@ Entries:
   id: 9048
   time: '2026-03-31T07:56:01.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/858
+- author: snezshiba
+  changes:
+    - type: Add
+      message: Tajaran, Felinid, Feroxi, and Rabbit Rodentia markings to Slime
+  id: 9049
+  time: '2026-03-31T08:59:38.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/855
