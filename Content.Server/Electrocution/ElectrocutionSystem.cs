@@ -314,11 +314,10 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         TimeSpan time,
         bool refresh,
         float siemensCoefficient = 1f,
-        bool bypassInsulation = false, //Den insert
         StatusEffectsComponent? statusEffects = null,
         TransformComponent? sourceTransform = null)
-    { // Den insert - selection statement ammended to make use of bypassInsulation parameter
-        if (!DoCommonElectrocutionAttempt(uid, sourceUid, ref siemensCoefficient, ignoreInsulation: bypassInsulation))
+    {
+        if (!DoCommonElectrocutionAttempt(uid, sourceUid, ref siemensCoefficient))
             return false;
 
         if (!DoCommonElectrocution(uid, sourceUid, shockDamage, time, refresh, siemensCoefficient, statusEffects))
@@ -405,7 +404,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
                 ? _stun.TryUpdateParalyzeDuration(uid, time * ParalyzeTimeMultiplier)
                 : _stun.TryAddParalyzeDuration(uid, time * ParalyzeTimeMultiplier);
         }
-
+            
 
         // TODO: Sparks here.
 

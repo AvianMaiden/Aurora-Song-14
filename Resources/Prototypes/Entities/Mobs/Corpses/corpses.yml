@@ -63,10 +63,6 @@
     prototypes:
     - ResearchAssistantGear
     - ScientistGear
-    - ChaplainGear # DeltaV - Move Chaplain into Epistemics
-    - MantisGearAiry # TheDen
-    - MantisGearDark # TheDen
-    - MantisGearOrnate # TheDen
 
 - type: entity
   parent: SalvageHumanCorpse

@@ -178,38 +178,12 @@
   equipment:
     head: ClothingHeadBandBotany
 
-# Aurora Song - Mantis drip merge start
-- type: loadout
-  id: ContractorClothingMantisFezAiry
-  hideEffects:
-  - !type:GroupLoadoutEffect
-    proto: NFHeadwearCapable
-  price: 250
-  equipment:
-    head: ClothingHeadHatFezMantisAiry
-
-- type: loadout
-  id: ContractorClothingMantisFezOrnate
-  hideEffects:
-  - !type:GroupLoadoutEffect
-    proto: NFHeadwearCapable
-  price: 250
-  equipment:
-    head: ClothingHeadHatFezMantisOrnate
-
-- type: loadout
-  id: ContractorClothingMantisHoodDark
-  hideEffects:
-  - !type:GroupLoadoutEffect
-    proto: NFHeadwearCapable
-  price: 250
-  equipment:
-    head: ClothingHeadHoodMantisDark
-# Aurora Song - Mantis drip merge end
-
 #T1
 - type: loadout
-  id: ContractorClothingHeadHatHoodBioScientist # Time restrictions removed | Aurora Song
+  id: ContractorClothingHeadHatHoodBioScientist
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
   hideEffects:
   - !type:GroupLoadoutEffect
     proto: NFHeadwearCapable
