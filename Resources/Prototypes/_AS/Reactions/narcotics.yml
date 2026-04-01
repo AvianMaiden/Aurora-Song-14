@@ -97,3 +97,17 @@
   products:
       Confusiol: 5
 
+- type: reaction
+  id: ColdRageReaction
+  impact: Medium
+  requiredMixerCategories:
+  - Electrolysis
+  reactants:
+    Phenol:
+      amount: 2
+    Ephedrine:
+      amount: 2
+    Cryoxadone:
+      amount: 1
+  products:
+      ColdRage: 5

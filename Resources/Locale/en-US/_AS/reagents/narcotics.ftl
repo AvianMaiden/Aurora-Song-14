@@ -71,3 +71,5 @@ reagent-effect-cold-rage6 = Death is a surety for others, I am a god made flesh.
 reagent-effect-cold-rage7 = To kill is to live.
 reagent-effect-cold-rage8 = Who cares what they want, only I matter.
 reagent-effect-cold-rage9 = Rip and tear, until it is done.
+
+reagent-effectcold-rage-fade = Rage wanes, clarity returns...

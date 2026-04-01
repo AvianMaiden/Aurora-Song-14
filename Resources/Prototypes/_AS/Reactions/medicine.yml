@@ -128,10 +128,11 @@
   requiredMixerCategories:
   - Centrifuge
   reactants:
-    Copper:
+    Stimulants:
+      amount: 1
+    RedMead:
       amount: 1
     WarriorsBlood:
       amount: 1
   products:
-    murderDraught: 1
-    Sulfur: 1
+    murderDraught: 3

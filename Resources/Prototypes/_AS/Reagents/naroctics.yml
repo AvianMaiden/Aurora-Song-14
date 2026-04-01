@@ -213,3 +213,55 @@
   physicalDesc: reagent-physical-desc-icy
   flavor: coldDeath
   color: "#47ffbf"
+  metabolisms:
+    Cryogenic:
+        metabolismRate: 2 # Sheleg seem to specifically metabolise things slower, so to compensate it has to be declared higher
+        effects:
+        - !type:MovespeedModifier
+            walkSpeedModifier: 1.5
+            sprintSpeedModifier: 1.5
+            conditions:
+            - !type:Temperature
+              max: 213.0
+            - !type:OrganType
+              type: Sheleg
+        - !type:GenericStatusEffect
+          key: Stun
+          time: 3
+          type: Remove
+        - !type:GenericStatusEffect
+          key: KnockedDown
+          time: 3
+          type: Remove
+        - !type:GenericStatusEffect
+          key: StaminaModifier
+          component: StaminaModifier
+          time: 3
+          type: Add
+        - !type:ModifyStatusEffect
+          effectProto: StatusEffectForcedSleeping
+          time: 3
+          type: Remove
+        - !type:PopupMessage
+            type: Local
+            visualType: Medium
+            messages:
+              - "reagent-effect-cold-rage1"
+              - "reagent-effect-cold-rage2"
+              - "reagent-effect-cold-rage3"
+              - "reagent-effect-cold-rage4"
+              - "reagent-effect-cold-rage5"
+              - "reagent-effect-cold-rage6"
+              - "reagent-effect-cold-rage7"
+              - "reagent-effect-cold-rage8"
+              - "reagent-effect-cold-rage9"
+            probability: 0.5
+        - !type:PopupMessage
+          type: Local
+          visualType: Small
+          messages:
+          - "reagent-effect-cold-rage-fade"
+          probability: 0.35
+          conditions:
+          - !type:ReagentThreshold
+            max: 0.5
