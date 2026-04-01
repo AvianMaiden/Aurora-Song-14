@@ -6,7 +6,4 @@
   targetNode: EmergencyComfortDeploymentUnitWrapped
   category: construction-category-misc
   description: pillows-description
-  icon:
-    sprite: /Textures/_DEN/Structures/Furniture/pillows.rsi
-    state: EmergencyComfortDeploymentUnitWrapped
   objectType: Item
