@@ -123,3 +123,20 @@
   products:
       Frostmjod: 3
 
+- type: reaction
+  id: freyjasKissReaction
+  impact: Medium
+  requiredMixerCategories:
+  - Electrolysis
+  reactants:
+    Pyrazine:
+      amount: 2
+    Ephedrine:
+      amount: 2
+    Mead:
+      amount: 1
+    Libidozenithizine:
+      amount: 1
+  products:
+      FreyjasKiss: 6
+
