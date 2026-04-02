@@ -7033,3 +7033,10 @@ Entries:
   id: 9069
   time: '2026-04-02T04:17:43.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/879
+- author: BudaLope
+  changes:
+    - type: Add
+      message: More mags and power cells go into leg holsters
+  id: 9070
+  time: '2026-04-02T06:47:28.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/881
