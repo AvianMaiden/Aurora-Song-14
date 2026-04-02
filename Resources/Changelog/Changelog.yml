@@ -7047,3 +7047,10 @@ Entries:
   id: 9071
   time: '2026-04-02T08:36:12.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/883
+- author: ZigTag
+  changes:
+    - type: Tweak
+      message: disabled breaker flip
+  id: 9072
+  time: '2026-04-02T22:37:56.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/885
