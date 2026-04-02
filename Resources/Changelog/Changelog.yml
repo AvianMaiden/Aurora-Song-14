@@ -6972,3 +6972,14 @@ Entries:
   id: 9064
   time: '2026-04-02T02:36:44.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/874
+- author: Phoenix51505
+  changes:
+    - type: Tweak
+      message: Increased the durability of Shipminds
+    - type: Fix
+      message: Removed left over syndicate components from Shipminds
+    - type: Fix
+      message: Shipboard and Shortband radios for all AI
+  id: 9065
+  time: '2026-04-02T02:40:48.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/869
