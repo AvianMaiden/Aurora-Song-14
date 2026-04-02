@@ -6965,3 +6965,10 @@ Entries:
   id: 9063
   time: '2026-04-02T01:40:46.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/877
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: borg emotes no longer show up in the menu if you can't use them
+  id: 9064
+  time: '2026-04-02T02:36:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/874
