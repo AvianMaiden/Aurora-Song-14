@@ -314,7 +314,7 @@ public sealed class ElectrocutionSystem : SharedElectrocutionSystem
         TimeSpan time,
         bool refresh,
         float siemensCoefficient = 1f,
-        bool bypassInsulation = false, //Den insert
+        bool bypassInsulation = false, // The Den - this parameter is for bypassing insuls when an electrocution attempt is made.
         StatusEffectsComponent? statusEffects = null,
         TransformComponent? sourceTransform = null)
     { // TheDen - selection statement ammended to make use of bypassInsulation parameter
