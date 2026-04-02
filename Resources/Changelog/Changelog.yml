@@ -6958,3 +6958,10 @@ Entries:
   id: 9062
   time: '2026-03-31T20:49:55.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/868
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: IPCs can fit in borg chargers
+  id: 9063
+  time: '2026-04-02T01:40:46.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/877
