@@ -4,9 +4,9 @@
   suffix: Modern
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
 
 - type: entity
   parent: RailingCorner
@@ -14,9 +14,9 @@
   suffix: Modern
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
 
 - type: entity
   parent: RailingCornerSmall
@@ -24,9 +24,9 @@
   suffix: Modern
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
 
 - type: entity
   parent: RailingRound
@@ -34,9 +34,9 @@
   suffix: Modern
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
 
 - type: entity
   parent: Railing
@@ -44,10 +44,10 @@
   suffix: Modern, Grey
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: side_grey
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: side_grey
 
 - type: entity
@@ -56,10 +56,10 @@
   suffix: Modern, Grey
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: corner_grey
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: corner_grey
 
 - type: entity
@@ -68,10 +68,10 @@
   suffix: Modern, Grey
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: corner_small_grey
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: corner_small_grey
 
 - type: entity
@@ -80,10 +80,10 @@
   suffix: Modern, Grey
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: round_grey
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: round_grey
 
 - type: entity
@@ -121,22 +121,22 @@
   id: RailingDeltaVWood
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: side_wood
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: side_wood
-  
+
 
 - type: entity
   parent: [BaseRailingWood, RailingCorner]
   id: RailingCornerDeltaVWood
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: corner_wood
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: corner_wood
 
 - type: entity
@@ -144,10 +144,10 @@
   id: RailingCornerSmallDeltaVWood
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: corner_small_wood
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: corner_small_wood
 
 - type: entity
@@ -155,8 +155,8 @@
   id: RailingRoundDeltaVWood
   components:
   - type: Sprite
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: round_wood
   - type: Icon
-    sprite: DeltaV/Structures/Walls/railing.rsi
+    sprite: _DV/Structures/Walls/railing.rsi
     state: round_wood
