@@ -47,7 +47,7 @@
   id: CAFLeaderGearEVA
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryCAFLeader
-    back: ClothingBackpackCAFLeaderFilled # Given backpack filled sincce storage doesn't work on debug-set gear
+    back: ClothingBackpackCAFLeaderFilled # Given backpack filled since storage doesn't work on debug-set gear
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasCAF
     eyes: ClothingEyesGlassesSecurity
@@ -58,7 +58,7 @@
     belt: ClothingBeltMilitaryWebbingSecurityFilled
     pocket1: NFWeaponPistolN1984 # Frontier
     pocket2: FlashlightSeclite
-#  storage: # Commented out backpack filled sincce storage doesn't work on debug-set gear
+#  storage: # Commented out backpack filled since storage doesn't work on debug-set gear
 #    back:
 #    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
 #    - MedicatedSuture
@@ -71,7 +71,7 @@
   id: CAFLeaderGearEVAJackhammer
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryCAFLeader
-    back: ClothingBackpackCAFLeaderFilled # Given backpack filled sincce storage doesn't work on debug-set gear
+    back: ClothingBackpackCAFLeaderFilled # Given backpack filled since storage doesn't work on debug-set gear
     shoes: ClothingShoesBootsMagAdv
     mask: ClothingMaskGasCAF
     eyes: ClothingEyesGlassesSecurity
@@ -84,7 +84,7 @@
     pocket2: ASMagazineMarksmanRifle30Overpressure
   inhand:
   - ASWeaponRifleMarksmanHZ-3-3-MOverpressure
-#  storage: # Commented out backpack filled sincce storage doesn't work on debug-set gear
+#  storage: # Commented out backpack filled since storage doesn't work on debug-set gear
 #    back:
 #    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
 #    - MedicatedSuture
@@ -150,7 +150,7 @@
   id: CAFTrooperGearEVA
   equipment:
     jumpsuit: ClothingUniformJumpsuitMilitaryCAFTrooper
-    back: ClothingBackpackCAFTrooperFilled # Given backpack filled sincce storage doesn't work on debug-set gear
+    back: ClothingBackpackCAFTrooperFilled # Given backpack filled since storage doesn't work on debug-set gear
     shoes: ClothingShoesBootsMag
     mask: ClothingMaskGasCAF
     eyes: ClothingEyesGlassesSecurity
@@ -187,7 +187,7 @@
     pocket2: ASMagazineMarksmanRifle30Overpressure
   inhand:
     - ASWeaponRifleMarksmanHZ-3-3-MOverpressure
-#  storage: # Commented out backpack filled sincce storage doesn't work on debug-set gear
+#  storage: # Commented out backpack filled since storage doesn't work on debug-set gear
 #    back:
 #    - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
 #    - MedicatedSuture
@@ -264,7 +264,7 @@
     belt: ClothingBeltMedicalFilled
     pocket1: NFWeaponEnergyPistolDisabler
     pocket2: Flare
-#  storage: # Commented out backpack filled sincce storage doesn't work on debug-set gear
+#  storage: # Commented out backpack filled since storage doesn't work on debug-set gear
 #    back:
 #    - Hypospray
 #    - MedkitCombatFilled
@@ -346,7 +346,7 @@
     belt: ClothingBeltChiefEngineerFilled
     pocket1: Flare
     pocket2: GasAnalyzer
-#  storage: # Commented out backpack filled sincce storage doesn't work on debug-set gear
+#  storage: # Commented out backpack filled since storage doesn't work on debug-set gear
 #    back:
 #    - trayScanner
 #    - RCD
