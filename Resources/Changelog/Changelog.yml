@@ -7054,3 +7054,10 @@ Entries:
   id: 9072
   time: '2026-04-02T22:37:56.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/885
+- author: BudaLope
+  changes:
+    - type: Add
+      message: Added service flag to shuttles to allow 18+ content flagging
+  id: 9073
+  time: '2026-04-03T07:08:01.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/887
