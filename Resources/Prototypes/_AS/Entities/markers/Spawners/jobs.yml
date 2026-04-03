@@ -76,7 +76,7 @@
 - type: entity
   id: SpawnPointCAFLeader
   parent: SpawnPointJobBase
-  name: CAFLeader
+  name: CAF Leader
   components:
   - type: SpawnPoint
     job_id: CAFLeader
@@ -89,7 +89,7 @@
 - type: entity
   id: SpawnPointCAFEngineer
   parent: SpawnPointJobBase
-  name: CAFEngineer
+  name: CAF Engineer
   components:
   - type: SpawnPoint
     job_id: CAFEngineer
@@ -102,7 +102,7 @@
 - type: entity
   id: SpawnPointCAFMedical
   parent: SpawnPointJobBase
-  name: CAFMedical
+  name: CAF Medical
   components:
   - type: SpawnPoint
     job_id: CAFMedical
@@ -115,7 +115,7 @@
 - type: entity
   id: SpawnPointCAFTrooper
   parent: SpawnPointJobBase
-  name: CAFTrooper
+  name: CAF Trooper
   components:
   - type: SpawnPoint
     job_id: CAFTrooper
@@ -130,7 +130,7 @@
 - type: entity
   id: SpawnPointColonialCommandOfficial
   parent: SpawnPointJobBase
-  name: ColonialCommandOfficial
+  name: Colonial Command Official
   components:
   - type: SpawnPoint
     job_id: ColonialCommandOfficial
