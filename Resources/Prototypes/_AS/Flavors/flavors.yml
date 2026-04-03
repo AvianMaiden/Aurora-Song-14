@@ -27,3 +27,8 @@
   id: frostmjod
   flavorType: Base
   description: flavor-base-frostmjod
+
+- type: flavor
+  id: murderDraught
+  flavorType: Base
+  description: flavor-base-murderDraught
