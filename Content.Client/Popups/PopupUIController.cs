@@ -36,9 +36,9 @@ public sealed class PopupUIController : UIController, IOnStateEntered<GameplaySt
         _largeFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-BoldItalic.ttf"), 14);
 
         // TheDen - Added psychomantic popup types # Aurora Song: Changed to match above as we lacked the initial font
-        _smallPsionicFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-BoldItalic.ttf"), 9);
-        _mediumPsionicFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-BoldItalic.ttf"), 11);
-        _largePsionicFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/NotoSans/NotoSans-BoldItalic.ttf"), 13);
+        _smallPsionicFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/_AS/OpenDyslexic/OpenDyslexic-Regular.otf"), 9);
+        _mediumPsionicFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/_AS/OpenDyslexic/OpenDyslexic-Regular.otf"), 11);
+        _largePsionicFont = new VectorFont(cache.GetResource<FontResource>("/Fonts/_AS/OpenDyslexic/OpenDyslexic-Regular.otf"), 13);
     }
 
     public void OnStateEntered(GameplayState state)
