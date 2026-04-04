@@ -7160,3 +7160,10 @@ Entries:
   id: 9082
   time: '2026-04-04T16:32:08.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/891
+- author: assignedgod
+  changes:
+    - type: Tweak
+      message: Corrected the manifold reflect chance to be in acceptable parameters
+  id: 9083
+  time: '2026-04-04T17:23:16.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/896
