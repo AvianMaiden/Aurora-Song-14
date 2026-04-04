@@ -27,3 +27,7 @@ station-beacon-sle-outpost = SLE Outpost
 station-beacon-outpost = Outpost
 station-beacon-genpop = GenPop
 station-beacon-locker-room = Locker Room
+
+station-beacon-merc-shipyard = Merc Shipyard
+station-beacon-medical-shipyard = Medical Shipyard
+station-beacon-colonial-representative = Col Rep's Office
