@@ -13,7 +13,7 @@
   parent: BaseVessel
   name: CNF Petrel Mk II
   description: A heavily armed dropship. Capable of intercepting and tackling heavy threats. Can seat multiple CAF Marines.
-  price: 80000 # Arbitrary price, admin-spawned shuttle
+  price: 100000 # Arbitrary price, admin-spawned shuttle
   category: Medium
   group: ColonialCommand
   access: ColonialCommand
