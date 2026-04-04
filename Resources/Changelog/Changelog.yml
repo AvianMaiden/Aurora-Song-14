@@ -7091,3 +7091,10 @@ Entries:
   id: 9077
   time: '2026-04-04T00:12:05.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/890
+- author: Vandanna
+  changes:
+    - type: Add
+      message: bus docking loc strings
+  id: 9078
+  time: '2026-04-04T03:32:53.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/892
