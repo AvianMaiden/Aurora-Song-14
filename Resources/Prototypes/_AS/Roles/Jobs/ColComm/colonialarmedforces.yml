@@ -93,13 +93,18 @@
 #    - CrowbarRed
 #    - NFMagazinePistol45 # Frontier: MagazineMagnum<NFMagazinePistol45
 
-#- type: chameleonOutfit # TODO: add later
-#  id: CAFLeaderChameleonOutfit
-#  job: CAFLeader
-#  hasMindShield: true
-#  equipment:
-#    head: ClothingHeadHelmetHardsuitERTLeader
-#    neck: ClothingNeckBronzeheart
+- type: chameleonOutfit # TODO: expand later
+  id: CAFLeaderChameleonOutfit
+  job: CAFLeader
+  hasMindShield: true
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCAFLeader
+    head: ClothingHeadHelmetHardsuitMilitaryCAF
+    ears: ClothingHeadsetAltColCom
+    mask: ClothingMaskGasCAF
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMilitaryCAFLeader
+    shoes: ClothingShoesBootsMagAdv
 
 #region Trooper
 - type: job
@@ -196,13 +201,18 @@
 #    - CrowbarRed
 #    - NFMagazinePistol35 # Frontier: MagazinePistol<NFMagazinePistol35
 
-#- type: chameleonOutfit # Add later
-#  id: ERTSecurityChameleonOutfit
-#  job: ERTSecurity
-#  hasMindShield: true
-#  equipment:
-#    head: ClothingHeadHelmetHardsuitERTSecurity
-#    neck: ClothingNeckSecuritymedal
+- type: chameleonOutfit # TODO: expand later
+  id: CAFTrooperChameleonOutfit
+  job: CAFTrooper
+  hasMindShield: true
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCAFTrooper
+    head: ClothingHeadHelmetHardsuitMilitaryCAF
+    ears: ClothingHeadsetAltColCom
+    mask: ClothingMaskGasCAF
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMilitaryCAFTrooper
+    shoes: ClothingShoesBootsMag
 
 #region Medical
 - type: job
@@ -274,13 +284,18 @@
 #    - ChemistryBottleEpinephrine
 #    - ChemistryBottleEpinephrine
 
-#- type: chameleonOutfit # Add later
-#  id: ERTMedicalChameleonOutfit
-#  job: ERTMedical
-#  hasMindShield: true
-#  equipment:
-#    head: ClothingHeadHelmetHardsuitERTMedical
-#    neck: ClothingNeckStethoscope
+- type: chameleonOutfit # TODO: expand later
+  id: CAFMedicalChameleonOutfit
+  job: CAFMedical
+  hasMindShield: true
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCAFMedic
+    head: ClothingHeadHelmetHardsuitMilitaryCAF
+    ears: ClothingHeadsetAltColCom
+    mask: ClothingMaskGasCAF
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMilitaryCAFTrooper
+    shoes: ClothingShoesBootsMag
 
 #region Engineer
 - type: job
@@ -359,10 +374,15 @@
 #    - SheetSteel
 #    - SheetGlass
 
-#- type: chameleonOutfit # Add later
-#  id: ERTEngineerChameleonOutfit
-#  job: ERTEngineer
-#  hasMindShield: true
-#  equipment:
-#    head: ClothingHeadHelmetHardsuitERTEngineer
-#    neck: ClothingNeckEngineermedal
+- type: chameleonOutfit # TODO: expand later
+  id: CAFEngineerChameleonOutfit
+  job: CAFEngineer
+  hasMindShield: true
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitaryCAFEngineer
+    head: ClothingHeadHelmetHardsuitMilitaryCAF
+    ears: ClothingHeadsetAltColCom
+    mask: ClothingMaskGasCAF
+    gloves: ClothingHandsGlovesCombat
+    outerClothing: ClothingOuterHardsuitMilitaryCAFEngineer
+    shoes: ClothingShoesBootsMag

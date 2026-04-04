@@ -34,11 +34,14 @@
     pocket2: PenColcom
 
 
-# Add later
-#- type: chameleonOutfit
-#  id: CentralCommandOfficialOutfit
-#  job: CentralCommandOfficial
-#  hasMindShield: true
-#  equipment:
-#    neck: ClothingNeckScarfStripedCentcom
-#    mask: ClothingMaskGasCentcom
+- type: chameleonOutfit
+  id: ColonialCommandOfficialOutfit
+  job: ColonialCommandOfficial
+  hasMindShield: true
+  equipment:
+    jumpsuit: ASClothingUniformJumpsuitColcommFormal
+    shoes: ClothingShoesBootsCombatFilled
+    head: ASClothingHeadHatColonialOfficialBeretBig
+    eyes: ClothingEyesGlassesCommand
+    gloves: ASClothingHandsGlovesColonialOfficial
+    outerClothing: ASClothingOuterArmorColonialOfficialCarapace
