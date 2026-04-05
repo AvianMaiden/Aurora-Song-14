@@ -4,8 +4,6 @@ marking-OviniaEars-ovinia-ears-inner = Inner Ears
 
 marking-OviniaTail = Ovinia Tail (Default)
 marking-OviniaTail-ovinia-tail = Tail
-marking-OviniaTailAnimated = Ovinia Tail (animated)
-marking-OviniaTailAnimated-ovinia-tail_wag = Tail
 
 marking-OviniaEarsCow = Ovinia Ears (Side)
 marking-OviniaEarsCow-cow-ears = Outer Ears
