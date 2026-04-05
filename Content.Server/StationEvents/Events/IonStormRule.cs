@@ -7,6 +7,7 @@ using Content.Shared.Station.Components;
 using Content.Shared._Moffstation.Traits.Components;
 using Content.Shared._Moffstation.Traits.EntitySystems;
 //Moffstation - End
+using Robust.Shared.Random; // Aurora's Song - EMP Vulnerability Chance
 
 namespace Content.Server.StationEvents.Events;
 
@@ -14,6 +15,7 @@ public sealed class IonStormRule : StationEventSystem<IonStormRuleComponent>
 {
     [Dependency] private readonly IonStormSystem _ionStorm = default!;
     [Dependency] private readonly SharedEmpVulnerableSystem _empVulnerable = default!; //Moffstation - EMP Vulnerability
+    [Dependency] private readonly IRobustRandom _robustRandom = default!; // Aurora's Song - EMP Vulnerability Chance
 
     protected override void Started(EntityUid uid, IonStormRuleComponent comp, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
@@ -43,6 +45,9 @@ public sealed class IonStormRule : StationEventSystem<IonStormRuleComponent>
             // only affect vulnerable entities on the station
             // if(CompOrNull<StationMemberComponent>(xform.GridUid)?.Station != chosenStation)
             //     continue; Aurora's Song - removed as it does not pertain to shuttle fork.
+
+            if (!_robustRandom.Prob(empVulnerable.IonStunChance)) // Aurora's Song - EMP Vulnerability Chance
+                return;
 
             _empVulnerable.IonStormTarget((ent, empVulnerable));
         }

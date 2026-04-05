@@ -15,6 +15,13 @@ public sealed partial class EmpVulnerableComponent: Component
     [DataField, AutoNetworkedField]
     public TimeSpan IonStunDuration = TimeSpan.FromSeconds(5);
 
+    // Aurora's Song - Added probability because being stunned so frequently sucks
+    /// <summary>
+    /// Chance for entity to be disrupted by ion storm
+    /// </summary>
+    [DataField]
+    public float IonStunChance = 0.80f;
+
     ///<summary>
     /// Time the entity will be disrupted from an EMP
     /// </summary>
