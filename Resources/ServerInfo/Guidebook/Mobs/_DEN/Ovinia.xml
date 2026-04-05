@@ -3,7 +3,7 @@
 
 <!-- Aurora's Song - Removed animal friend trait mentioning -->
   <Box>
-    <GuideEntityEmbed Entity="MobOviniaDummy" Caption=""/>
+    <GuideEntityEmbed Entity="MobOvinia" Caption=""/>
   </Box>
 
   ## Benefits
