@@ -155,6 +155,7 @@
     - rice
     - icecream
     - fiber
+  - type: MothFood # Aurora Song
 
 - type: entity
   name: rosy mochi
