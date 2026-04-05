@@ -7237,3 +7237,10 @@ Entries:
   id: 9087
   time: '2026-04-05T11:07:15.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/901
+- author: GreyScaleHarlequin
+  changes:
+    - type: Fix
+      message: Mantis PDA now has an ID, you're a valid worker.
+  id: 9088
+  time: '2026-04-05T11:08:34.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/900
