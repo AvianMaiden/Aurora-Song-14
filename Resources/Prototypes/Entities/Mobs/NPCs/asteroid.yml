@@ -68,7 +68,7 @@
         Piercing: 10
   - type: NpcFactionMember
     factions:
-    - SalvageMob #DeltaV - Changed to SalvageMob to not be friendly to Ovinia
+    - SimpleHostile
   - type: HTN
     constantlyReplan: false
     rootTask:
