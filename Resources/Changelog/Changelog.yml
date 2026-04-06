@@ -7259,3 +7259,12 @@ Entries:
   id: 9089
   time: '2026-04-06T01:26:25.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/906
+- author: LizArmchair
+  changes:
+    - type: Add
+      message: air can dispensers to PB
+    - type: Fix
+      message: Fixed air can labeling
+  id: 9090
+  time: '2026-04-06T03:09:43.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/910
