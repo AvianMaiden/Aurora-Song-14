@@ -2,6 +2,7 @@ using Content.Shared.Chat;
 using Content.Shared.Tools;
 using Robust.Shared.Audio;
 using Robust.Shared.Containers;
+using Robust.Shared.GameStates; // Aurora's Song - Fix IPC encryption key prediction
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared.Radio.Components;
@@ -9,14 +10,14 @@ namespace Content.Shared.Radio.Components;
 /// <summary>
 ///     This component is by entities that can contain encryption keys
 /// </summary>
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent, AutoGenerateComponentState] // Aurora's Song - Fix IPC encryption key prediction
 public sealed partial class EncryptionKeyHolderComponent : Component
 {
     /// <summary>
     ///     Whether or not encryption keys can be removed from the headset.
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
-    [DataField("keysUnlocked")]
+    [DataField("keysUnlocked"), AutoNetworkedField] // Aurora's Song - Fix IPC encryption key prediction
     public bool KeysUnlocked = true;
 
     /// <summary>

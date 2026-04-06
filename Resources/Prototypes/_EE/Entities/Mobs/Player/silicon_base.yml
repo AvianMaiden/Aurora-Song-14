@@ -1,7 +1,14 @@
 - type: entity
   save: false
   id: PlayerSiliconHumanoidBase
-  parent: [BaseMob, MobDamageable, MobCombat, MobAtmosExposed, MobFlammable, StorableSpecies]
+  parent: # Aurora's Song - Make formatting similar to base.yml
+  - BaseMob
+  - MobDamageable
+  - MobPolymorphable # Aurora's Song - Add polymorphable and self interact to IPCs
+  - MobCombat
+  - MobAtmosExposed
+  - MobFlammable
+  - StorableSpecies
   abstract: true
   components:
     - type: ContentEye
