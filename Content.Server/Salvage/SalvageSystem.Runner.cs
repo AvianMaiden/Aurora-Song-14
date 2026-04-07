@@ -397,10 +397,10 @@ public sealed partial class SalvageSystem
                                 if (!_mapSystem.TryGetMap(_gameTicker.DefaultMap, out var mapUid))
                                 {
                                     Log.Error($"Could not get DefaultMap EntityUID, entity {quid} may be deleted.");
-                                    return;
-                                    var fallback = new EntityCoordinates(mapUid.Value, _random.NextVector2(2000f, 2000f));
-                                    SafetyWarp(quid, fallback);
+                                    break;
                                 }
+                                var fallback = new EntityCoordinates(mapUid.Value, _random.NextVector2(2000f, 2000f));
+                                SafetyWarp(quid, fallback);
                             }
                         }
                     }
@@ -435,10 +435,10 @@ public sealed partial class SalvageSystem
                     if (!_mapSystem.TryGetMap(_gameTicker.DefaultMap, out var mapUid))
                     {
                         Log.Error($"Could not get DefaultMap EntityUID, entity {quid} may be deleted.");
-                        return;
-                        var fallback = new EntityCoordinates(mapUid.Value, _random.NextVector2(2000f, 2000f));
-                        SafetyWarp(quid, fallback);
+                        break;
                     }
+                    var fallback = new EntityCoordinates(mapUid.Value, _random.NextVector2(2000f, 2000f));
+                    SafetyWarp(quid, fallback);
                 }
                 QueueDel(uid);
             }

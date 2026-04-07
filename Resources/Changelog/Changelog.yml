@@ -7174,3 +7174,148 @@ Entries:
   id: 9084
   time: '2026-04-05T03:42:31.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/897
+- author: TurtleOfMen
+  changes:
+    - type: Add
+      message: Napkins, ice box, jukebox, sink to bar.
+    - type: Add
+      message: Two experiment plushies
+    - type: Add
+      message: Boreal Cryogenic pipework
+    - type: Add
+      message: Tile variants and dirt to Boreal
+    - type: Add
+      message: Public crew monitor to med
+    - type: Add
+      message: Entertainment and Crew servers
+    - type: Add
+      message: Disposals switch to disposals conveyor belt
+    - type: Add
+      message: Slight cosmetic changes (posters, decals, banners)
+    - type: Add
+      message: Directional fans to sell point blast doors
+    - type: Add
+      message: Cameras for the AI
+    - type: Add
+      message: Bardrobe behind bar
+    - type: Remove
+      message: Removed many lights
+    - type: Tweak
+      message: Distro and waste numbers turned to standard rate
+    - type: Tweak
+      message: Moved valet roundstart spawnpoint
+    - type: Fix
+      message: Fixed Astrovend POI vending machines
+    - type: Fix
+      message: Fixed missing vacuum tiles from new lattices
+    - type: Fix
+      message: Distro mixer starts ON now
+    - type: Fix
+      message: Missing distro pipes replaced
+    - type: Fix
+      message: Map background
+    - type: Fix
+      message: Dock prototype issues
+    - type: Fix
+      message: De-spawning Boreal issue fixed
+  id: 9085
+  time: '2026-04-05T08:31:47.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/899
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: Increase general station role slots
+    - type: Tweak
+      message: Give Service Jani access
+  id: 9086
+  time: '2026-04-05T08:47:37.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/904
+- author: GreyScaleHarlequin
+  changes:
+    - type: Fix
+      message: You hallucinated that warrior's blood didn't heal burns
+  id: 9087
+  time: '2026-04-05T11:07:15.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/901
+- author: GreyScaleHarlequin
+  changes:
+    - type: Fix
+      message: Mantis PDA now has an ID, you're a valid worker.
+  id: 9088
+  time: '2026-04-05T11:08:34.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/900
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: increased encryption key count to 20 on IPCs
+    - type: Fix
+      message: interaction menu not appearing on IPCs
+    - type: Fix
+      message: non polymorphable IPCs
+    - type: Fix
+      message: encryption key component now properly syncs lock state with client
+    - type: Tweak
+      message: IPCs can now self insert batteries
+  id: 9089
+  time: '2026-04-06T01:26:25.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/906
+- author: LizArmchair
+  changes:
+    - type: Add
+      message: air can dispensers to PB
+    - type: Fix
+      message: Fixed air can labeling
+  id: 9090
+  time: '2026-04-06T03:09:43.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/910
+- author: portfiend
+  changes:
+    - type: Add
+      message: >-
+        Mochi has been added in a variety of flavors: (regular) mochi, cherry
+        mochi, bungo mochi, chocolate mochi, fiber mochi, rosy mochi, spice
+        mochi, tea mochi, ube mochi, and pumpkin mochi.
+  id: 9091
+  time: '2026-04-06T03:51:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/907
+- author: LizArmchair, ZigTag
+  changes:
+    - type: Add
+      message: Avali from Moff Station!
+    - type: Tweak
+      message: loadout code to add ammonia to survival kits
+  id: 9092
+  time: '2026-04-06T09:10:26.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/905
+- author: ZigTag
+  changes:
+    - type: Fix
+      message: >-
+        Denu formatting no longer breaks players with the silicon damage accent,
+        or the stuttering accent
+    - type: Fix
+      message: The silicon damage accent will no longer terminate your sentences early
+  id: 9093
+  time: '2026-04-06T09:19:10.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/911
+- author: Phoenix51505
+  changes:
+    - type: Fix
+      message: Hits ESS with more hammers to get it to work
+  id: 9094
+  time: '2026-04-06T09:19:35.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/908
+- author: snezshiba
+  changes:
+    - type: Add
+      message: Added Ovinia, a sheep/cow/deer roundstart species!
+  id: 9095
+  time: '2026-04-06T09:26:29.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/903
+- author: portfiend
+  changes:
+    - type: Tweak
+      message: A vast majority of loadouts no longer have playtime requirements.
+  id: 9096
+  time: '2026-04-07T12:23:47.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/915
