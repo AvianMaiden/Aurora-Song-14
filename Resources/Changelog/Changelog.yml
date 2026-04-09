@@ -7333,3 +7333,14 @@ Entries:
   id: 9098
   time: '2026-04-09T07:10:01.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/917
+- author: LizArmchair
+  changes:
+    - type: Add
+      message: space movement speed to Avali
+    - type: Tweak
+      message: 'Ionstorm stun chance, thirst factor of reagents. '
+    - type: Fix
+      message: carriable component
+  id: 9099
+  time: '2026-04-09T21:33:33.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/922
