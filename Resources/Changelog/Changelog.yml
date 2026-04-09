@@ -7326,3 +7326,10 @@ Entries:
   id: 9097
   time: '2026-04-08T14:19:42.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/914
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Undo UI lock on Damascus Shipyard
+  id: 9098
+  time: '2026-04-09T07:10:01.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/917
