@@ -19,6 +19,6 @@ spray-painter-style-locker-sle-commissioner = SLE (Commissioner)
 spray-painter-style-locker-colonial-representative = Colonial Representative
 
 # Crates
-spray-painter-style-cratesecure-sle-corspman = SLE (corpsman)
+spray-painter-style-cratesecure-sle-corpsman = SLE (corpsman)
 spray-painter-style-cratesecure-sle1 = SLE (plain)
 spray-painter-style-cratesecure-sle2 = SLE (stripe)
