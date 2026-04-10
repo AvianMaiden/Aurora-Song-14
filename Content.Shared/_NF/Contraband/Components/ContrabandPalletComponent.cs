@@ -1,7 +1,6 @@
-using Content.Shared.Access;
 using Content.Shared.Stacks;
-using Robust.Shared.Audio;
-using Robust.Shared.Prototypes;
+using Robust.Shared.Audio; // Aurora
+using Robust.Shared.Prototypes; // Aurora
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype;
 
 namespace Content.Shared._NF.Contraband.Components;
@@ -10,7 +9,7 @@ namespace Content.Shared._NF.Contraband.Components;
 [Access(typeof(SharedContrabandTurnInSystem))]
 public sealed partial class ContrabandPalletConsoleComponent : Component
 {
-    // AS
+    // Aurora
     /// <summary>
     /// The primary currency that should be reward. Tries to send it to an entity with a <see cref="ScuOutputComponent"/> first, then the triggering entities hand, and if both of those fail, spawns the coins on the console.
     /// Also determines what currency is given as a registration reward.
@@ -18,16 +17,18 @@ public sealed partial class ContrabandPalletConsoleComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField("cashType", serverOnly: true, customTypeSerializer: typeof(PrototypeIdSerializer<StackPrototype>))]
     public string? RewardType = null;
 
-    // AS
+    // Aurora
     /// <summary>
     /// The reward that should be sent to the triggering entities hand, or spawn on the console if it can't
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite), DataField("altCashType", serverOnly: true, customTypeSerializer: typeof(PrototypeIdSerializer<StackPrototype>))]
     public string? RewardTypeAlternate = null; // AS: Allow alt reward currencies
 
+    // Aurora
     [DataField]
-    public SoundSpecifier ErrorSound = new SoundCollectionSpecifier("CargoError"); // Aurora: add deny sound
+    public SoundSpecifier ErrorSound = new SoundCollectionSpecifier("CargoError");
 
+    // Aurora
     /// <summary>
     /// Leave null for no licence required
     /// </summary>
@@ -40,9 +41,11 @@ public sealed partial class ContrabandPalletConsoleComponent : Component
     [ViewVariables(VVAccess.ReadWrite), DataField]
     public string LocStringPrefix = string.Empty;
 
+    // Aurora
     [ViewVariables(VVAccess.ReadWrite), DataField]
     public int PalletDistance = 8;
 
+    // Aurora
     [DataField]
     public Dictionary<EntProtoId, EntProtoId> RegisterRecipies = new()
     {
