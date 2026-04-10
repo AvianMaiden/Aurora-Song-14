@@ -7396,3 +7396,18 @@ Entries:
   id: 9105
   time: '2026-04-10T21:29:37.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/932
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: switch ColRep dresser for proper one
+    - type: Tweak
+      message: adjust disposals to hopefully allow better trash flow
+    - type: Tweak
+      message: some decals
+    - type: Add
+      message: ATMs to cargo bays
+    - type: Fix
+      message: IFF marker
+  id: 9106
+  time: '2026-04-10T21:36:28.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/930
