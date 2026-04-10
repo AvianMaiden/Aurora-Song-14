@@ -4,7 +4,7 @@ meta:
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 04/10/2026 17:49:03
+  time: 04/10/2026 20:21:50
   entityCount: 12972
 maps:
 - 439
@@ -6826,52 +6826,27 @@ entities:
       pos: 21.5,-5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16092.28
+      secondsUntilStateChange: -16512.268
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
 - proto: AirlockCommandGlassLocked
   entities:
-  - uid: 4
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -17.5,11.5
-      parent: 1
-  - uid: 7
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -18.5,11.5
-      parent: 1
   - uid: 1149
     components:
     - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -18.5,15.5
+      pos: -18.5,11.5
       parent: 1
   - uid: 2219
     components:
     - type: Transform
+      pos: -17.5,11.5
+      parent: 1
+  - uid: 2352
+    components:
+    - type: Transform
       pos: -21.5,13.5
-      parent: 1
-  - uid: 2334
-    components:
-    - type: Transform
-      pos: -17.5,15.5
-      parent: 1
-  - uid: 2710
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -13.5,17.5
-      parent: 1
-  - uid: 2729
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: -13.5,25.5
       parent: 1
 - proto: AirlockCommandLocked
   entities:
@@ -6879,6 +6854,11 @@ entities:
     components:
     - type: Transform
       pos: -9.5,-38.5
+      parent: 1
+  - uid: 2334
+    components:
+    - type: Transform
+      pos: -23.5,8.5
       parent: 1
 - proto: AirlockEngineeringGlassLocked
   entities:
@@ -7297,7 +7277,7 @@ entities:
       pos: 37.5,-16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18958.533
+      secondsUntilStateChange: -19378.52
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7501,6 +7481,28 @@ entities:
     - type: Transform
       pos: -24.5,4.5
       parent: 1
+- proto: AirlockFrontierCommandGlassLocked
+  entities:
+  - uid: 4
+    components:
+    - type: Transform
+      pos: -17.5,15.5
+      parent: 1
+  - uid: 7
+    components:
+    - type: Transform
+      pos: -18.5,15.5
+      parent: 1
+  - uid: 1162
+    components:
+    - type: Transform
+      pos: -13.5,17.5
+      parent: 1
+  - uid: 2326
+    components:
+    - type: Transform
+      pos: -13.5,25.5
+      parent: 1
 - proto: AirlockFrontierCommandLocked
   entities:
   - uid: 276
@@ -7516,11 +7518,6 @@ entities:
       pos: 20.5,5.5
       parent: 1
   - uid: 2281
-    components:
-    - type: Transform
-      pos: -23.5,8.5
-      parent: 1
-  - uid: 2326
     components:
     - type: Transform
       pos: -14.5,13.5
@@ -7593,7 +7590,7 @@ entities:
       pos: -19.5,-19.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -18998.732
+      secondsUntilStateChange: -19418.719
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7751,7 +7748,7 @@ entities:
       pos: -75.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -19871.998
+      secondsUntilStateChange: -20291.984
       state: Opening
     - type: Docking
       name: dock-label-station-one-b
@@ -7765,7 +7762,7 @@ entities:
       pos: -75.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -19872.398
+      secondsUntilStateChange: -20292.385
       state: Opening
     - type: Docking
       name: dock-label-station-one-b
@@ -8254,7 +8251,7 @@ entities:
       pos: 35.5,6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -2379.2388
+      secondsUntilStateChange: -2799.2256
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -73727,9 +73724,6 @@ entities:
           - Open
         - - Pressed
           - Close
-        2281:
-        - - Pressed
-          - DoorBolt
   - uid: 2496
     components:
     - type: Transform
@@ -84842,11 +84836,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 18.5,10.5
       parent: 1
-  - uid: 2352
-    components:
-    - type: Transform
-      pos: -17.5,6.5
-      parent: 1
 - proto: WindoorSecure
   entities:
   - uid: 408
@@ -84932,11 +84921,22 @@ entities:
       parent: 1
 - proto: WindoorSecureCommandLocked
   entities:
+  - uid: 2710
+    components:
+    - type: Transform
+      pos: -17.5,6.5
+      parent: 1
   - uid: 2728
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -13.5,21.5
+      parent: 1
+  - uid: 2729
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: -17.5,6.5
       parent: 1
   - uid: 2749
     components:
@@ -84955,14 +84955,6 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: -17.5,20.5
-      parent: 1
-- proto: WindoorSecureFrontierCommandLocked
-  entities:
-  - uid: 1162
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: -17.5,6.5
       parent: 1
 - proto: WindoorSecureFrontierLocked
   entities:
