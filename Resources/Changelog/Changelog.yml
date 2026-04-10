@@ -7411,3 +7411,10 @@ Entries:
   id: 9106
   time: '2026-04-10T21:36:28.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/930
+- author: Vandanna
+  changes:
+    - type: Fix
+      message: Exped Falchions should be registerable now
+  id: 9107
+  time: '2026-04-10T21:36:50.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/927
