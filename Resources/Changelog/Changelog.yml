@@ -7389,3 +7389,10 @@ Entries:
   id: 9104
   time: '2026-04-10T21:27:59.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/929
+- author: Vandanna
+  changes:
+    - type: Tweak
+      message: Undeprecates Cargo access, grants to STC, Valet, Mail Carrier
+  id: 9105
+  time: '2026-04-10T21:29:37.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/932
