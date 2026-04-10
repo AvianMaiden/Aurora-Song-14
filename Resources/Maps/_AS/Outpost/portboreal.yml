@@ -4,8 +4,8 @@ meta:
   engineVersion: 267.4.0
   forkId: ""
   forkVersion: ""
-  time: 04/10/2026 20:21:50
-  entityCount: 12972
+  time: 04/10/2026 20:45:37
+  entityCount: 12973
 maps:
 - 439
 grids:
@@ -6826,7 +6826,7 @@ entities:
       pos: 21.5,-5.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -16512.268
+      secondsUntilStateChange: -16546.13
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7277,7 +7277,7 @@ entities:
       pos: 37.5,-16.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -19378.52
+      secondsUntilStateChange: -19412.383
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7590,7 +7590,7 @@ entities:
       pos: -19.5,-19.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -19418.719
+      secondsUntilStateChange: -19452.582
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -7748,7 +7748,7 @@ entities:
       pos: -75.5,-0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -20291.984
+      secondsUntilStateChange: -20325.848
       state: Opening
     - type: Docking
       name: dock-label-station-one-b
@@ -7762,7 +7762,7 @@ entities:
       pos: -75.5,0.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -20292.385
+      secondsUntilStateChange: -20326.248
       state: Opening
     - type: Docking
       name: dock-label-station-one-b
@@ -8251,7 +8251,7 @@ entities:
       pos: 35.5,6.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -2799.2256
+      secondsUntilStateChange: -2833.0886
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -75713,6 +75713,13 @@ entities:
     components:
     - type: Transform
       pos: -15.5,23.5
+      parent: 1
+- proto: SignRestroom
+  entities:
+  - uid: 12973
+    components:
+    - type: Transform
+      pos: -20.5,-18.5
       parent: 1
 - proto: SinkStemlessWater
   entities:
