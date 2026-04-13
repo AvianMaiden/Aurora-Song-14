@@ -8,14 +8,14 @@ using Content.Server.Station.Systems;
 using Content.Shared.Access.Components;
 using Content.Shared.CartridgeLoader;
 using Content.Shared.Database;
-using Content.Shared.DeltaV.CartridgeLoader.Cartridges;
-using Content.Shared.DeltaV.NanoChat;
+using Content.Shared._DV.CartridgeLoader.Cartridges;
+using Content.Shared._DV.NanoChat;
 using Content.Shared.PDA;
 using Content.Shared.Radio.Components;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 
-namespace Content.Server.DeltaV.CartridgeLoader.Cartridges;
+namespace Content.Server._DV.CartridgeLoader.Cartridges;
 
 public sealed class NanoChatCartridgeSystem : EntitySystem
 {
@@ -311,7 +311,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
             {
                 if (receiverCart.Card != recipient.Owner)
                     continue;
-
+                /*
                 // Check if devices are on same station/map
                 var recipientStation = _station.GetOwningStation(receiverUid);
                 var senderStation = _station.GetOwningStation(sender);
@@ -327,7 +327,7 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
                 // Needs telecomms
                 if (!HasActiveServer(senderStation.Value) || !HasActiveServer(recipientStation.Value))
                     continue;
-
+                */
                 // Check if recipient can receive
                 var receiveAttemptEv = new RadioReceiveAttemptEvent(channel, sender, receiverUid);
                 RaiseLocalEvent(ref receiveAttemptEv);

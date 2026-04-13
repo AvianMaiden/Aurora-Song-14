@@ -1,4 +1,4 @@
-﻿using Content.Shared.DeltaV.CartridgeLoader.Cartridges; // DeltaV
+﻿using Content.Shared._DV.CartridgeLoader.Cartridges; // DeltaV
 using Robust.Shared.Serialization;
 
 namespace Content.Shared.CartridgeLoader.Cartridges;
@@ -21,7 +21,7 @@ public sealed class LogProbeUiState : BoundUserInterfaceState
     /// </summary>
     public NanoChatData? NanoChatData { get; }
 
-    public LogProbeUiState(List<PulledAccessLog> pulledLogs, NanoChatData? nanoChatData = null) // DeltaV - NanoChat support
+    public LogProbeUiState(string entityName, List<PulledAccessLog> pulledLogs, NanoChatData? nanoChatData = null) // DeltaV - NanoChat support
     {
         EntityName = entityName;
         PulledLogs = pulledLogs;

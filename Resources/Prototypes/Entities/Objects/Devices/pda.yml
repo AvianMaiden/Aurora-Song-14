@@ -105,9 +105,9 @@
       - NotekeeperCartridge
       - NanoTaskCartridge
       - NewsReaderCartridge
-      - NanoChatCartridge # DeltaV
       - BountyContractsCartridge # Frontier
       - AstroNavCartridge # Frontier
+      - NanoChatCartridge # Auroras Song
     cartridgeSlot:
       priority: -1
       name: device-pda-slot-component-slot-name-cartridge
@@ -194,8 +194,8 @@
     - NewsReaderCartridge
     - BountyContractsCartridge # Frontier
     - AstroNavCartridge # Frontier
+    - NanoChatCartridge # Auroras Song
     - WantedListCartridge
-    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -211,7 +211,6 @@
   #     - NanoTaskCartridge
   #     - NewsReaderCartridge
   #     - MedTekCartridge
-  #     - NanoChatCartridge # DeltaV
   # End Frontier
 
 - type: entity
@@ -537,7 +536,7 @@
     - NanoTaskCartridge
     - NewsReaderCartridge
     - AstroNavCartridge
-    - NanoChatCartridge # DeltaV
+    - NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: BasePDA
@@ -556,7 +555,6 @@
     borderColor: "#e39751"
   - type: Icon
     state: pda-cargo
-    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -585,7 +583,6 @@
   #     - NanoTaskCartridge
   #     - NewsReaderCartridge
   #     - AstroNavCartridge
-  #     - NanoChatCartridge # DeltaV
   # End Frontier
 
 - type: entity
@@ -892,7 +889,6 @@
     accentVColor: "#8900c9"
   - type: Icon
     state: pda-rd
-      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -912,7 +908,6 @@
     accentVColor: "#8900c9"
   - type: Icon
     state: pda-science
-      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BaseSecurityPDA
@@ -940,7 +935,6 @@
     - NewsReaderCartridge
     - WantedListCartridge
     - LogProbeCartridge
-    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1013,7 +1007,7 @@
       - WantedListCartridge
       - LogProbeCartridge
       - AstroNavCartridge
-      - NanoChatCartridge # DeltaV
+      - NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: CentcomPDA
@@ -1042,7 +1036,7 @@
       - WantedListCartridge
       - MedTekCartridge
       - AstroNavCartridge
-      - NanoChatCartridge # DeltaV
+      - NanoChatCartridge # Auroras Song
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -1161,9 +1155,9 @@
     uiKey: enum.PdaUiKey.Key
     preinstalled:
       - NotekeeperCartridge
-      - NanoChatCartridge # DeltaV
       - NanoTaskCartridge
       - AstroNavCartridge # Frontier
+      - NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: BaseSecurityPDA
@@ -1196,8 +1190,8 @@
       - WantedListCartridge
       - LogProbeCartridge
       - AstroNavCartridge
-      - NanoChatCartridge # DeltaV
       - MailMetricsCartridge # Frontier
+      - NanoChatCartridge # Auroras Song
 
 - type: entity
   parent: ERTLeaderPDA
@@ -1304,7 +1298,6 @@
     borderColor: "#3f3f74"
   - type: Icon
     state: pda-reporter
-    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
@@ -1369,7 +1362,6 @@
     - NewsReaderCartridge
     - WantedListCartridge
     - LogProbeCartridge
-    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BaseMedicalPDA
@@ -1398,7 +1390,6 @@
     - NewsReaderCartridge
     - WantedListCartridge
     - MedTekCartridge
-    - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: ClownPDA
@@ -1545,7 +1536,6 @@
       - NotekeeperCartridge
       - NanoTaskCartridge
       - MedTekCartridge
-      - NanoChatCartridge # DeltaV
 
 - type: entity
   parent: BasePDA
