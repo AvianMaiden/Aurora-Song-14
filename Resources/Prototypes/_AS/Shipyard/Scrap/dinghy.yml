@@ -7,35 +7,34 @@
 # Discord: zenixic
 
 # Shuttle Notes:
-#
+# basically an exped construct.  Gobb Tinkerworks
 - type: vessel
-  id: Scorpion
+  id: Dinghy
   parent: BaseVessel
-  name: BH Scorpion
-  description: An expedition capable vessel with salvage and engineering capabilities. Equipped with a CTLA-25 Bluespace drive
-  price: 97100 # ~67000 appraise, ~30% markup. Increased by 10k due to FTL drive
-  category: Medium
-  group: Expedition
-  shuttlePath: /Maps/_AS/Shuttles/Expedition/scorpion.yml
-  guidebookPage: Null
+  name: GT Dinghy
+  description: The budget option, or the start of something greater. Doesn't hold air very well. Includes some basic materials.
+  price: 50000 # ~13000 appraise, minimum 50k price
+  category: Small
+  group: Scrap
+  shuttlePath: /Maps/_AS/Shuttles/Scrap/dinghy.yml
+  guidebookPage: ShipyardDinghy
   class:
   - Expedition
-  - Salvage
   - Engineering
   engine:
   - AME
 
 - type: gameMap
-  id: Scorpion
-  mapName: 'BH Scorpion'
-  mapPath: /Maps/_AS/Shuttles/Expedition/scorpion.yml
+  id: Dinghy
+  mapName: 'GT Dinghy'
+  mapPath: /Maps/_AS/Shuttles/Scrap/dinghy.yml
   minPlayers: 0
   stations:
-    Scorpion:
+    Dinghy:
       stationProto: StandardFrontierExpeditionVessel
       components:
       - type: StationNameSetup
-        mapNameTemplate: 'Scorpion {1}'
+        mapNameTemplate: 'Dinghy {1}'
         nameGenerator:
           !type:NanotrasenNameGenerator
           prefixCreator: '14'
