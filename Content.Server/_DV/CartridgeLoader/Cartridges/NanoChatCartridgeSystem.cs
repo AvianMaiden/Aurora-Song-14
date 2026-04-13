@@ -62,9 +62,6 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
 
         SubscribeLocalEvent<CartridgeLoaderComponent, ActiveProgramChangedEvent>(OnActiveProgramChanged);
 
-        SubscribeLocalEvent<CartridgeLoaderComponent, BoundUIOpenedEvent>(OnUiOpened);
-        SubscribeLocalEvent<CartridgeLoaderComponent, BoundUIClosedEvent>(OnUiClosed);
-
         SubscribeLocalEvent<NanoChatCartridgeComponent, CartridgeUiReadyEvent>(OnUiReady);
         SubscribeLocalEvent<NanoChatCartridgeComponent, CartridgeMessageEvent>(OnMessage);
 
@@ -854,8 +851,8 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         if (!string.IsNullOrWhiteSpace(name))
         {
             name = name.Trim();
-            if (name.Length > IdCardConsoleComponent.MaxFullNameLength)
-                name = name[..IdCardConsoleComponent.MaxFullNameLength];
+            if (name.Length > _maxNameLength)
+                name = name[.._maxNameLength];
         }
 
         // Generate a unique group number (surely unique I actually have no idea how to generate good unique numbers.)
@@ -1151,4 +1148,3 @@ public sealed class NanoChatCartridgeSystem : EntitySystem
         UpdateUIForCard(card);
     }
 }
-
