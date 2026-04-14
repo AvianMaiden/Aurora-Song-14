@@ -16,9 +16,9 @@
         whitelist:
           tags:
           - Sidearm
-        ejectSound: #Aurora edit - add unique holster sounds; originally made for Den
+        ejectSound: #Aurora's Song - add unique holster sounds; originally made for Den
           path: /Audio/_DEN/Weapons/pistol_unholster.ogg
-        insertSound: #Aurora edit - add unique holster sounds; originally made for Den
+        insertSound: #Aurora's Song - add unique holster sounds; originally made for Den
           path: /Audio/_DEN/Weapons/pistol_holster.ogg
       magazine:
         priority: 3
