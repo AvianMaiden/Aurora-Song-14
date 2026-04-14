@@ -975,7 +975,6 @@
     - Wizard
     - Xenoborg
     - Pirate # Frontier
-    listNumber: false
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
@@ -989,3 +988,4 @@
         type: AgentIDCardBoundUserInterface
   - type: NanoChatCard # DeltaV
     notificationsMuted: true
+    listNumber: false
