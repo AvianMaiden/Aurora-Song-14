@@ -7475,3 +7475,10 @@ Entries:
   id: 9114
   time: '2026-04-14T04:24:22.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/943
+- author: AvianMaiden
+  changes:
+    - type: Add
+      message: All holsters make a unique sound now!
+  id: 9115
+  time: '2026-04-14T04:24:51.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/938
