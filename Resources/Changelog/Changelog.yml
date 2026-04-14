@@ -7468,3 +7468,10 @@ Entries:
   id: 9113
   time: '2026-04-13T10:56:36.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/936
+- author: CombustibleToast
+  changes:
+    - type: Tweak
+      message: Scrubbers now scrub helium by default.
+  id: 9114
+  time: '2026-04-14T04:24:22.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/943
