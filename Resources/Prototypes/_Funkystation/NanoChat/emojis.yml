@@ -294,7 +294,7 @@
   category: Plushies
   sprite:
     sprite: /Textures/Objects/Fun/Plushies/carp.rsi
-    state: carplush
+    state: carpplush
 
 - type: nanoChatEmoji
   id: rainbowcarp
