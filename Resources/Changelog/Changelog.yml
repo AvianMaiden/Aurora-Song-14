@@ -7534,3 +7534,14 @@ Entries:
   id: 9121
   time: '2026-04-16T05:37:43.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/944
+- author: emergency-ketchup
+  changes:
+    - type: Tweak
+      message: Wooden railings to Little Byte Key in place of the old metal railings
+    - type: Tweak
+      message: Boardwalk layout changes on Little Byte Key
+    - type: Fix
+      message: Fixed missing floor tile on Little Byte Key
+  id: 9122
+  time: '2026-04-16T07:14:26.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/954
