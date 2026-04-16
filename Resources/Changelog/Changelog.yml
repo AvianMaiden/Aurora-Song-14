@@ -7495,3 +7495,10 @@ Entries:
   id: 9116
   time: '2026-04-16T03:15:44.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/889
+- author: entings
+  changes:
+    - type: Add
+      message: Added the scrambled speech accent, for fun and profit.
+  id: 9117
+  time: '2026-04-16T03:46:02.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/898
