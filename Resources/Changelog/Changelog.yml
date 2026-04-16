@@ -7502,3 +7502,12 @@ Entries:
   id: 9117
   time: '2026-04-16T03:46:02.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/898
+- author: Oberonics
+  changes:
+    - type: Tweak
+      message: >-
+        Changed the emote system so that you are no longer restricted on the
+        emotes you can send in chat. Everyone can yap!
+  id: 9118
+  time: '2026-04-16T03:47:54.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/924
