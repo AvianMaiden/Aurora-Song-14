@@ -7482,3 +7482,16 @@ Entries:
   id: 9115
   time: '2026-04-14T04:24:51.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/938
+- author: assignedgod
+  changes:
+    - type: Add
+      message: 'Updated height and width sliders to be more convenient '
+    - type: Tweak
+      message: Made fairies bigger
+    - type: Tweak
+      message: Made Oni bigger
+    - type: Tweak
+      message: Made Sheleg bigger
+  id: 9116
+  time: '2026-04-16T03:15:44.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/889
