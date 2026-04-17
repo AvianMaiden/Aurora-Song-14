@@ -7575,3 +7575,12 @@ Entries:
   id: 9124
   time: '2026-04-16T10:26:14.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/955
+- author: GreyScaleHarlequin
+  changes:
+    - type: Tweak
+      message: >-
+        Pomelustine now requires fabrication, no more accidental horny while
+        eating.
+  id: 9125
+  time: '2026-04-17T15:48:50.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/956
