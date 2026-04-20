@@ -59,7 +59,7 @@
     - state: site_manager_label
 
 - type: entity
-  parent: [EncryptionKey, BaseC3SyndicateContraband]
+  parent: [EncryptionKey, BaseC3Contraband]
   id: EncryptionKeyArcadia
   name: Arcadian encryption key
   categories: [ DoNotMap ]
