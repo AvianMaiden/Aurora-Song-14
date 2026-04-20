@@ -57,3 +57,22 @@
     layers:
     - state: crypt_silver
     - state: site_manager_label
+
+- type: entity
+  parent: [EncryptionKey, BaseC3SyndicateContraband]
+  id: EncryptionKeyArcadia
+  name: Arcadian encryption key
+  categories: [ DoNotMap ]
+  description: An encryption key used by Arcadian agents.
+  components:
+  - type: EncryptionKey
+    channels:
+    - Arcadia
+    defaultChannel: Arcadia
+  - type: Item
+    sprite: _AS/Objects/Devices/encryption_keys.rsi
+  - type: Sprite
+    sprite: _AS/Objects/Devices/encryption_keys.rsi
+    layers:
+    - state: crypt_silver
+    - state: arcadia_label
