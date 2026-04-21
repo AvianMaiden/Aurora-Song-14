@@ -76,3 +76,19 @@
     layers:
     - state: crypt_silver
     - state: arcadia_label
+
+- type: entity
+  parent: [EncryptionKey, BaseC3Contraband]
+  id: EncryptionKeyNanotrasen
+  name: nanotrasen encryption key
+  categories: [ DoNotMap ]
+  description: An encryption key used by members of the corporation, Nanotrasen.
+  components:
+  - type: EncryptionKey
+    channels:
+    - CentCom
+    defaultChannel: CentCom
+  - type: Sprite
+    layers:
+    - state: crypt_silver
+    - state: nano_label

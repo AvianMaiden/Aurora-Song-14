@@ -56,9 +56,9 @@
 - type: entity
   parent: [EncryptionKey, BaseCentcommCommandContraband] # Frontier: Added BaseCentcommCommandContraband, removed BaseCentcommContraband.
   id: EncryptionKeyCentCom
-  name: Nanotrasen encryption key #Aurora's Song - reflavor to general Nanotrasen over Central Command
+  name: central command encryption key
   categories: [ DoNotMap ] # Frontier
-  description: An encryption key used by the corporation, Nanotrasen. #Aurora's Song - reflavor to general Nanotrasen
+  description: An encryption key used by captain's bosses.
   components:
   - type: EncryptionKey
     channels:
