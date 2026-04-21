@@ -61,7 +61,7 @@
 - type: entity
   parent: [EncryptionKey, BaseC3Contraband]
   id: EncryptionKeyArcadia
-  name: Arcadian encryption key
+  name: arcadian encryption key
   categories: [ DoNotMap ]
   description: An encryption key used by Arcadian agents.
   components:

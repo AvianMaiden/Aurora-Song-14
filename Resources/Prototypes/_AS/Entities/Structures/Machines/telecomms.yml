@@ -16,3 +16,13 @@
       - EncryptionKeyService
       - EncryptionKeyNfsd
       - EncryptionKeyTraffic
+
+- type: entity
+  parent: TelecomServer
+  id: TelecomServerFilledArcadia
+  suffix: Arcadia
+  components:
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - EncryptionKeyArcadia
