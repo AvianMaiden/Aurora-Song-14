@@ -11,3 +11,17 @@
     - id: EncryptionKeyArcadia
       amount: 4
   - type: Storage
+
+- type: entity
+  name: nanotrasen encryption key box
+  parent: [BoxEncryptionKeyPassenger, BaseC3Contraband]
+  id: BoxEncryptionKeyNanotrasen
+  description: A box of clean, corporate blue encryption keys.
+  components:
+  - type: Item
+    size: Normal
+  - type: StorageFill
+    contents:
+    - id: EncryptionKeyNanotrasen
+      amount: 4
+  - type: Storage
