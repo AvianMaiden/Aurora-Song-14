@@ -1,3 +1,4 @@
+using Content.Client.RichText;
 using Content.Client.UserInterface.Systems.Chat.Controls;
 using Content.Shared._EE.CCVars; // EE - chat stacking
 using Content.Shared.Chat;
@@ -185,6 +186,7 @@ public partial class ChatBox : UIWidget
         formatted.PushColor(color);
         formatted.AddMarkupOrThrow(message);
         formatted.Pop();
+        Contents.AddMessage(formatted, tagsAllowed: UserFormattableTags.ChatAllowedTags); // DEN - Whitelist specific tags
 
         // EE - Chat stacking
         if (repeat != 0)

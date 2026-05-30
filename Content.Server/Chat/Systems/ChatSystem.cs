@@ -3,6 +3,8 @@ using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.GameTicking;
+using Content.Server.Ghost;
+using Content.Server.Interaction; // DEN - Use interaction system's range checks
 using Content.Server.Speech.EntitySystems;
 using Content.Server.Station.Systems;
 using Content.Shared.ActionBlocker;
@@ -49,13 +51,9 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedInteractionSystem _interactionSystem = default!; // Aurora's Song
     [Dependency] private ReplacementAccentSystem _wordreplacement = default!;
-    // [Dependency] private ExamineSystemShared _examineSystem = default!; // Aurora's Song
+    [Dependency] private ExamineSystemShared _examineSystem = default!;
+    [Dependency] private InteractionSystem _interaction = null!; // DEN - Use interaction system's range checks
     [Dependency] private EntityQuery<GhostHearingComponent> _ghostHearingQuery = default!;
-
-    // DEN START
-    public readonly Color DefaultSpeakColor = Color.White;
-    private readonly CollisionGroup _subtleWhisperMask = CollisionGroup.Impassable;
-    // DEN END
 
     private bool _loocEnabled = true;
     private bool _deadLoocEnabled;
@@ -128,10 +126,9 @@ public sealed partial class ChatSystem : SharedChatSystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false,
-        string? color = null) // TheDen
+        bool ignoreActionBlocker = false)
     {
-        TrySendInGameICMessage(source, message, desiredType, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, hideLog, shell, player, nameOverride, checkRadioPrefix, ignoreActionBlocker, color); // TheDen
+        TrySendInGameICMessage(source, message, desiredType, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, hideLog, shell, player, nameOverride, checkRadioPrefix, ignoreActionBlocker);
     }
 
     /// <inheritdoc />
@@ -145,8 +142,8 @@ public sealed partial class ChatSystem : SharedChatSystem
         ICommonSession? player = null,
         string? nameOverride = null,
         bool checkRadioPrefix = true,
-        bool ignoreActionBlocker = false,
-        string? color = null) // TheDen
+        bool ignoreActionBlocker = false
+        )
     {
         if (HasComp<GhostComponent>(source))
         {
@@ -189,15 +186,13 @@ public sealed partial class ChatSystem : SharedChatSystem
             message = message[1..];
         }
 
-        bool shouldCapitalize = (desiredType != InGameICChatType.Emote && desiredType != InGameICChatType.Subtle && desiredType != InGameICChatType.SubtleOOC);
+        bool shouldCapitalize = (desiredType != InGameICChatType.Emote && desiredType != InGameICChatType.Subtle); // DEN - Add subtle
         bool shouldPunctuate = _configurationManager.GetCVar(CCVars.ChatPunctuation);
         // Capitalizing the word I only happens in English, so we check language here
         bool shouldCapitalizeTheWordI = (!CultureInfo.CurrentCulture.IsNeutralCulture && CultureInfo.CurrentCulture.Parent.Name == "en")
             || (CultureInfo.CurrentCulture.IsNeutralCulture && CultureInfo.CurrentCulture.Name == "en");
 
-        message = SanitizeInGameICMessage(source, message, out var emoteStr, shouldCapitalize, shouldPunctuate, shouldCapitalizeTheWordI, desiredType);
-        message = FormattedMessage.EscapeText(message);
-        message = FormattedMessage.RemoveMarkupPermissive(message);
+        message = SanitizeInGameICMessage(source, message, out var emoteStr, shouldCapitalize, shouldPunctuate, shouldCapitalizeTheWordI);
 
         // Was there an emote in the message? If so, send it.
         if (player != null && emoteStr != message && emoteStr != null)
@@ -231,12 +226,9 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameICChatType.Emote:
                 SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
-            // DEN Start - Subtle and SubtleOOC
+            // DEN Start: add subtle
             case InGameICChatType.Subtle:
-                SendEntitySubtle(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker, color: color);
-                break;
-            case InGameICChatType.SubtleOOC:
-                SendEntitySubtle(source, $"ooc: {message}", range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker, color: color);
+                SendEntitySubtle(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
             // DEN End
         }
@@ -293,6 +285,11 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameOOCChatType.Looc:
                 SendLOOC(source, player, message, hideChat);
                 break;
+            // DEN Start: add subtle OOC
+            case InGameOOCChatType.SubtleOOC:
+                SendSubtleOOC(source, player, message, hideChat);
+                break;
+            // DEN End
         }
     }
 }

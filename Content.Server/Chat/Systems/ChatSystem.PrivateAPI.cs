@@ -58,7 +58,7 @@ public sealed partial class ChatSystem
             ("verb", Loc.GetString(_random.Pick(speech.SpeechVerbStrings))),
             ("fontType", speech.FontId),
             ("fontSize", speech.FontSize),
-            ("message", FormattedMessage.EscapeText(message)));
+            ("message", message)); // DEN - Remove markdown restrictions
 
         SendInVoiceRange(ChatChannel.Local, message, wrappedMessage, source, range);
 
@@ -101,7 +101,7 @@ public sealed partial class ChatSystem
         if (!_actionBlocker.CanSpeak(source) && !ignoreActionBlocker)
             return;
 
-        var message = TransformSpeech(source, FormattedMessage.RemoveMarkupOrThrow(originalMessage));
+        var message = TransformSpeech(source, originalMessage); // DEN - Remove markdown restrictions
         if (message.Length == 0)
             return;
 
@@ -124,13 +124,15 @@ public sealed partial class ChatSystem
         name = FormattedMessage.EscapeText(name);
 
         var wrappedMessage = Loc.GetString("chat-manager-entity-whisper-wrap-message",
-            ("entityName", name), ("message", FormattedMessage.EscapeText(message)));
+            ("entityName", name),
+            ("message", message)); // DEN - Remove markdown restrictions
 
         var wrappedobfuscatedMessage = Loc.GetString("chat-manager-entity-whisper-wrap-message",
-            ("entityName", nameIdentity), ("message", FormattedMessage.EscapeText(obfuscatedMessage)));
+            ("entityName", nameIdentity),
+            ("message", obfuscatedMessage)); // DEN - Remove markdown restrictions
 
         var wrappedUnknownMessage = Loc.GetString("chat-manager-entity-whisper-unknown-wrap-message",
-            ("message", FormattedMessage.EscapeText(obfuscatedMessage)));
+            ("message", obfuscatedMessage)); // DEN - Remove markdown restrictions
 
 
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange))
@@ -218,7 +220,7 @@ public sealed partial class ChatSystem
         var wrappedMessage = Loc.GetString("chat-manager-entity-me-wrap-message",
             ("entityName", name),
             ("entity", ent),
-            ("message", FormattedMessage.RemoveMarkupOrThrow(action)));
+            ("message", action)); // DEN - Remove markdown restrictions
 
         bool emoteEventInvoked = false; // Frontier: track emote event
         if (checkEmote &&
