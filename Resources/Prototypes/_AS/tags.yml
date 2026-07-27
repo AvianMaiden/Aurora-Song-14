@@ -40,7 +40,14 @@
 #region weapon group tags
 - type: Tag
   id: Baton
+#endregion
 
+#region shuttle weapons
+- type: Tag
+  id: ASMagazineBoxShuttle20
+
+- type: Tag
+  id: ASMagazineBoxShuttle20Large
 #endregion
 
 #region .30 rifle

@@ -1,0 +1,18 @@
+- type: entity
+  id: ASBulletShuttle20
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 33
+        Structural: 33
+    penetrationThreshold: 75
+    penetrationDamageTypeRequirement:
+    - Structural
+  - type: Tracer
+    color: "#ff2a00"
+    length: 4
+  - type: TimedDespawn
+    lifetime: 4 # 10 -> 4 since these bullets are traveling at 85m/s rather than 30-40m/s; keeps consistency with distance

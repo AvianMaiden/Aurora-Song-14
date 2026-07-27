@@ -1,0 +1,29 @@
+- type: entity
+  id: ASMagazineBoxShuttle20
+  name: Woodpecker box magazine (20mm autocannon)
+  parent: NFBaseMagazineRifle30
+  components:
+  - type: Tag
+    tags:
+    - ASMagazineBoxShuttle20 # exclusively fits into the Woodpecker cannon
+  - type: BallisticAmmoProvider
+    proto: ASBulletShuttle20
+    capacity: 350
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_box.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+
+- type: entity
+  id: ASMagazineBoxShuttle20Large
+  name: box magazine (20mm autocannon)
+  parent: ASMagazineBoxShuttle20
+  components:
+  - type: Tag
+    tags:
+    - ASMagazineBoxShuttle20Large
+  - type: BallisticAmmoProvider
+    proto: ASBulletShuttle20
+    capacity: 1000
