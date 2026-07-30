@@ -1,14 +1,15 @@
 - type: entity
   id: ASMagazineBoxShuttle20
-  name: Woodpecker box magazine (20mm autocannon)
   parent: NFBaseMagazineRifle30
+  name: box magazine (20x100mm autocannon)
+  description: A box magazine that fits exclusively into the Woodpecker and Hummingbird mounted autocannons. Authorized for government use only.
   components:
   - type: Tag
     tags:
-    - ASMagazineBoxShuttle20 # exclusively fits into the Woodpecker cannon
+    - ASMagazineBoxShuttle20 # makes this ammo box exclusive to the two cannons
   - type: BallisticAmmoProvider
     proto: ASBulletShuttle20
-    capacity: 350
+    capacity: 200
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_box.rsi
   - type: MagazineVisuals
@@ -17,13 +18,20 @@
     zeroVisible: false
 
 - type: entity
-  id: ASMagazineBoxShuttle20Large
-  name: box magazine (20mm autocannon)
-  parent: ASMagazineBoxShuttle20
+  id: ASMagazineBoxShuttleCoilgun
+  parent: NFBaseMagazineRifle30
+  name: box magazine (15mm coilgun)
+  description: A box magazine that fits exclusively into the Woodpecker and Hummingbird mounted autocannons. Authorized for government use only.
   components:
   - type: Tag
     tags:
-    - ASMagazineBoxShuttle20Large
+    - ASMagazineBoxShuttleCoilgun # makes this ammo box exclusive to the coilgun
   - type: BallisticAmmoProvider
-    proto: ASBulletShuttle20
-    capacity: 1000
+    proto: ASBulletShuttleCoilgun
+    capacity: 12
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_box.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false

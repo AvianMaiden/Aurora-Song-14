@@ -20,7 +20,7 @@
   id: ASShuttleGunWoodpeckerCAF
   parent: [ShuttleGunBase, ConstructibleMachine]
   name: NV/C-18 "Woodpecker"
-  description: A 20mm autocannon designed for general use against light and unarmored targets. This variant is designed for a fixed shuttle mount.
+  description: A 20x100mm autocannon designed for general use against light and unarmored targets. This variant is designed for a fixed shuttle mount.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
@@ -44,16 +44,15 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Gun
-    projectileSpeed: 85
+    projectileSpeed: 60
     minAngle: 0
-    maxAngle: 11
+    maxAngle: 7
     angleIncrease: 1
     angleDecay: 3
-    fireRate: 8
+    fireRate: 6
     soundGunshot:
-      path: /Audio/_Impstation/Weapons/Guns/Gunshots/nemesis.ogg
+      path: /Audio/Weapons/Guns/Gunshots/mateba.ogg
       params:
-        pitch: 0.75
         volume: 4
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
@@ -69,9 +68,96 @@
       gun_magazine:
         name: Magazine
         startingItem: ASMagazineBoxShuttle20
-        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        insertSound: /Audio/Weapons/Guns/MagIn/energycrossbow_reload.ogg
+        params:
+          volume: 6
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-          - ASMagazineBoxShuttle20 # exclusive ammo box for the Woodpecker cannon
+          - ASMagazineBoxShuttle20 # exclusive ammo box
+
+- type: entity
+  id: ASShuttleGunHummingbirdCAF
+  parent: ASShuttleGunWoodpeckerCAF
+  name: NV/C-208 "Hummingbird"
+  description: A nose-mounted 20x100mm rotary autocannon. BRRRRRRT.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    layers:
+    - state: exp-2100g
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    projectileSpeed: 60
+    minAngle: 0
+    maxAngle: 14
+    angleIncrease: 0.5
+    angleDecay: 6
+    fireRate: 15
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+
+- type: entity
+  id: ASShuttleGunCoilgunCAF
+  parent: [ShuttleGunBase, ConstructibleMachine]
+  name: NV/M-98X coilgun
+  description: A nose-mounted 15mm magnetic linear accelerator, capable of slinging a kinetic round at incredible velocities.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    layers:
+    - state: exp-2100g
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      gun_magazine: !type:ContainerSlot
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Gun
+    projectileSpeed: 70
+    minAngle: 0
+    maxAngle: 0
+    angleIncrease: 0
+    angleDecay: 1
+    fireRate: 0.3
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/kinetic_accel.ogg
+      params:
+        volume: 4
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: Machine
+    board: Null
+  - type: MagazineAmmoProvider
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ASMagazineBoxShuttleCoilgun
+        insertSound: /Audio/Weapons/Guns/MagIn/energycrossbow_reload.ogg
+        params:
+          volume: 6
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - ASMagazineBoxShuttleCoilgun # exclusive ammo box

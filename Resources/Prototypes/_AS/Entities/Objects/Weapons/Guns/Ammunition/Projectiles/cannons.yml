@@ -7,12 +7,50 @@
     damage:
       types:
         Piercing: 33
-        Structural: 33
-    penetrationThreshold: 75
+        Structural: 45
+    penetrationThreshold: 90
     penetrationDamageTypeRequirement:
     - Structural
   - type: Tracer
     color: "#ff2a00"
     length: 4
   - type: TimedDespawn
-    lifetime: 4 # 10 -> 4 since these bullets are traveling at 85m/s rather than 30-40m/s; keeps consistency with distance
+    lifetime: 5 # 10 -> 5 since these bullets are traveling at 60-80m/s rather than 30-40m/s; keeps consistency with distance
+  - type: RadarBlip
+    scale: 0.5
+    visibleFromOtherGrids: true
+    radarColor: "#ff2a00"
+
+- type: entity
+  id: ASBulletShuttleCoilgun
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 120
+        Structural: 800
+    penetrationThreshold: 1200
+    penetrationDamageTypeRequirement:
+    - Structural
+  - type: Sprite
+    noRot: false
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Projectiles/crossbow_bolts.rsi
+    layers:
+    - state: tip
+      color: "#00f7ff"
+      shader: unshaded
+    - state: tail
+      color: "#00f7ff"
+      shader: unshaded
+  - type: Tracer
+    color: "#00f7ff"
+    length: 8
+  - type: TimedDespawn
+    lifetime: 5 # 10 -> 5 since these bullets are traveling at 60-80m/s rather than 30-40m/s; keeps consistency with distance
+  - type: RadarBlip
+    scale: 1.5
+    visibleFromOtherGrids: true
+    radarColor: "#00f7ff"
+    shape: Star
