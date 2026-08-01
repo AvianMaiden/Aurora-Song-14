@@ -18,10 +18,29 @@
     zeroVisible: false
 
 - type: entity
+  id: ASMagazineBoxShuttle50
+  parent: NFBaseMagazineRifle30
+  name: box magazine (.50 caliber)
+  description: A box magazine of .50 caliber tungsten-core rounds, used in heavy machine guns.
+  components:
+  - type: Tag
+    tags:
+    - ASMagazineBoxShuttle50 # makes this ammo box exclusive to the two cannons
+  - type: BallisticAmmoProvider
+    proto: ASBulletShuttle50
+    capacity: 100
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_box.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+
+- type: entity
   id: ASMagazineBoxShuttleCoilgun
   parent: NFBaseMagazineRifle30
   name: box magazine (15mm coilgun)
-  description: A box magazine that fits exclusively into the Woodpecker and Hummingbird mounted autocannons. Authorized for government use only.
+  description: A box magazine containing 15mm tungsten sandshot shells for use in the Archer mounted coilgun. Authorized for government use only.
   components:
   - type: Tag
     tags:

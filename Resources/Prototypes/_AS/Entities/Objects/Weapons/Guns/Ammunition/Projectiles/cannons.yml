@@ -16,10 +16,22 @@
     length: 4
   - type: TimedDespawn
     lifetime: 5 # 10 -> 5 since these bullets are traveling at 60-80m/s rather than 30-40m/s; keeps consistency with distance
-  - type: RadarBlip
-    scale: 0.5
-    visibleFromOtherGrids: true
-    radarColor: "#ff2a00"
+
+- type: entity
+  id: ASBulletShuttle50
+  parent: NFBaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 45
+        Structural: 15
+  - type: Tracer
+    color: "#ff2a00"
+    length: 3
+  - type: TimedDespawn
+    lifetime: 10
 
 - type: entity
   id: ASBulletShuttleCoilgun

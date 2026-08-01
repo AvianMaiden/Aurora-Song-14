@@ -15,6 +15,97 @@
   - type: Machine
     board: Null
 
+- type: entity
+  id: ASShuttleGunMuleSLE
+  parent: [ShuttleGunBase, ConstructibleMachine]
+  name: NV/MG-340 "Mule"
+  description: A .30 rifle general-purpose machine gun in a fixed-mount configuration, akin to the iconic LMG-6.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    layers:
+    - state: exp-2100g
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      gun_magazine: !type:ContainerSlot
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Gun
+    projectileSpeed: 45
+    minAngle: 0
+    maxAngle: 7
+    angleIncrease: 1
+    angleDecay: 3
+    fireRate: 10
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/lmg.ogg
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
+  - type: Machine
+    board: Null
+  - type: MagazineAmmoProvider
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: NFMagazineBoxRifle30
+        insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - NFMagazineBoxRifle30 # same as the L6
+
+- type: entity
+  id: ASShuttleGunOxSLE
+  parent: ASShuttleGunMuleSLE
+  name: NV/MG-2C "Ox"
+  description: A .50 caliber heavy machine gun in a fixed-mount configuration; a timeless classic.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    layers:
+    - state: exp-2100g
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    projectileSpeed: 55
+    minAngle: 0
+    maxAngle: 6
+    angleIncrease: 1
+    angleDecay: 3
+    fireRate: 5
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: ASMagazineBoxShuttle50
+        whitelist:
+          tags:
+          - ASMagazineBoxShuttle50 # exclusive ammo box
+
 # CAF shuttle weapons
 - type: entity
   id: ASShuttleGunWoodpeckerCAF
@@ -104,8 +195,8 @@
 - type: entity
   id: ASShuttleGunCoilgunCAF
   parent: [ShuttleGunBase, ConstructibleMachine]
-  name: NV/M-98X coilgun
-  description: A nose-mounted 15mm magnetic linear accelerator, capable of slinging a kinetic round at incredible velocities.
+  name: NV/X-98 "Archer"
+  description: A nose-mounted 15mm magnetic linear accelerator, capable of slinging a kinetic round at incredible velocities. Primarily intended for ripping through lightly armored targets.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi

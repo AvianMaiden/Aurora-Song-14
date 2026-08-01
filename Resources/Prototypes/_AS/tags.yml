@@ -47,6 +47,9 @@
   id: ASMagazineBoxShuttle20
 
 - type: Tag
+  id: ASMagazineBoxShuttle50
+
+- type: Tag
   id: ASMagazineBoxShuttleCoilgun
 #endregion
 
