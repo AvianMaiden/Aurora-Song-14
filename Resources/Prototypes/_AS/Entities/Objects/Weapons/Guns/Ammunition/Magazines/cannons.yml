@@ -25,7 +25,7 @@
   components:
   - type: Tag
     tags:
-    - ASMagazineBoxShuttle50 # makes this ammo box exclusive to the two cannons
+    - ASMagazineBoxShuttle50 # makes this ammo box exclusive to the .50
   - type: BallisticAmmoProvider
     proto: ASBulletShuttle50
     capacity: 100
