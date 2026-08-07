@@ -255,3 +255,58 @@
         whitelist:
           tags:
           - ASMagazineBoxShuttleCoilgun # exclusive ammo box
+
+- type: entity
+  id: ASShuttleGunRocket75CAF
+  parent: [ShuttleGunBase, ConstructibleMachine]
+  name: NV/R-75 rocket pod
+  description: An eight-tube 75mm rocket pod for rapid explosive fire support.
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    layers:
+    - state: exp-2100g
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: ContainerContainer
+    containers:
+      machine_board: !type:Container
+      machine_parts: !type:Container
+      gun_magazine: !type:ContainerSlot
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 350
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Gun
+    projectileSpeed: 65
+    fireRate: 12
+    angleDecay: 45
+    minAngle: 0
+    maxAngle: 12
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
+      params:
+        variation: 0.05
+        pitch: 0.8
+    soundEmpty:
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
+  - type: Machine
+    board: Null
+  - type: MagazineVisuals
+    magState: mag
+    steps: 8
+    zeroVisible: false
+  - type: BallisticAmmoProvider
+    whitelist:
+      tags:
+      - ASCartridgeShuttleRocket75 # exclusive ammo
+    capacity: 8
+    proto: ASCartridgeShuttleRocket75 # exclusive ammo
+    soundInsert:
+      path: /Audio/Items/change_jaws.ogg

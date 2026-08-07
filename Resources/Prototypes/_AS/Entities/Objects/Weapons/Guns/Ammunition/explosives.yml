@@ -1,0 +1,21 @@
+# CAF shuttle weapons
+- type: entity
+  parent: NFBaseCartridgeRocket
+  id: ASCartridgeShuttleRocket75
+  name: 75mm HE rocket
+  description: A 75mm high-explosive rocket, designed to be launched from a shuttle rocket pod.
+  components:
+  - type: Tag
+    tags:
+    - ASCartridgeShuttleRocket75 # unique ammo for the shuttle weapon
+  - type: MultiHandedItem
+  - type: Item
+    size: Ginormous
+  - type: CartridgeAmmo
+    proto: NFBulletRocket
+    deleteOnSpawn: true
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    state: rpg
+  - type: StaticPrice
+    price: 20

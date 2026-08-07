@@ -41,6 +41,9 @@
 
 #region shuttle weapons
 - type: Tag
+  id: ASCartridgeShuttleRocket75
+
+- type: Tag
   id: ASMagazineBoxShuttle20
 
 - type: Tag
