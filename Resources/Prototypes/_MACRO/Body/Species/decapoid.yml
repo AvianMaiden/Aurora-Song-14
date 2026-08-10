@@ -44,6 +44,14 @@
     enum.HumanoidVisualLayers.Special:
       limit: 0
       required: false
+    # Aurora's Song Start
+    enum.HumanoidVisualLayers.UndergarmentTop:
+      limit: 0
+      required: false
+    enum.HumanoidVisualLayers.UndergarmentBottom:
+      limit: 0
+      required: false
+    # Aurora's Song End
 
 - type: entity
   abstract: true
