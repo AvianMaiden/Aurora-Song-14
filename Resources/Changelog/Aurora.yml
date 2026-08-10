@@ -2967,3 +2967,12 @@ Entries:
   id: 9719
   time: '2026-08-10T09:19:28.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1368
+- author: salamanderskies
+  changes:
+    - type: Add
+      message: Added new emote sounds for Moths, Arachnids, and Vox, from Impstation!
+    - type: Tweak
+      message: Allulalo hissing sounds adjusted slightly.
+  id: 9720
+  time: '2026-08-10T09:23:09.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1390
