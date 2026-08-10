@@ -2953,3 +2953,17 @@ Entries:
   id: 9718
   time: '2026-08-10T07:32:05.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1395
+- author: Laeras
+  changes:
+    - type: Add
+      message: >-
+        Medics rejoice! the Crit tracker cartridge is now purchasable in the
+        Medic Gear vend in PB, spawns by default in the medic PDA, and plays
+        your ringtone whenever the crew blows themselves up again!
+    - type: Add
+      message: The crit tracker cartridge has a mute button now!
+    - type: Add
+      message: The PDA has a volume setting now!
+  id: 9719
+  time: '2026-08-10T09:19:28.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1368
