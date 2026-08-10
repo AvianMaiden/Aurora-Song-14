@@ -2946,3 +2946,10 @@ Entries:
   id: 9717
   time: '2026-08-10T06:41:20.0000000+00:00'
   url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1371
+- author: ZigTag
+  changes:
+    - type: Add
+      message: deathrattle implants now notify on revival
+  id: 9718
+  time: '2026-08-10T07:32:05.0000000+00:00'
+  url: https://github.com/AuroraSong14/Aurora-Song-14/pull/1395
