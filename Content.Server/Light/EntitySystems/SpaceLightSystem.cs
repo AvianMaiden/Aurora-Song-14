@@ -62,9 +62,9 @@ public sealed partial class SpaceLightSystem : EntitySystem
 
     private static Color ParseSpaceLightColor(string value)
     {
-        if (!Color.TryFromHex(value, out var color))
-            color = Color.FromHex(CCVars.DefaultSpaceLightColor);
+        var color = Color.TryFromHex(value); // Aurora's Song - Use old TryFromHex syntax
+        color ??= Color.FromHex(CCVars.DefaultSpaceLightColor); // Aurora's Song - Null cast
 
-        return Color.FromSrgb(color);
+        return Color.FromSrgb(color.Value); // Aurora's Song - Cannot be null
     }
 }
