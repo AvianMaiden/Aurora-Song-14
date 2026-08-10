@@ -86,7 +86,7 @@
 
     # Claw
     - map: [ "enum.HumanoidVisualLayers.LHand" ] # this is the crab claw. has to render in front of the whole body
-
+    - map: [ "legs" ] # Aurora's Song - Legs Slot
     - map: [ "neck" ]
     - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
     - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
