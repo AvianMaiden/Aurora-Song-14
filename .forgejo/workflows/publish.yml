@@ -27,6 +27,8 @@ jobs:
     - uses: actions/checkout@v4.2.2
       with:
         submodules: 'recursive'
+        fetch-depth: 0
+        filter: blob:none
     # Aurora's Song
     # - name: Setup .NET Core
     #   uses: https://github.com/actions/setup-dotnet@v4.1.0 # Aurora's Song concat full URL
@@ -37,6 +39,41 @@ jobs:
       run: |
         cd RobustToolbox
         git fetch --depth=1
+
+    - name: Update changelog
+      run: |
+        dotnet tool install --global SpaceWizards.ChangelogTool --version 1.0.7
+        ss14-changelog update -d Resources/Changelog
+      env:
+        REPO: ${{ github.repository }}
+        BRANCH: stable
+        CHANGELOG_REPO_PATH: Resources/Changelog
+        EXTRA_CATEGORIES: Admin,Maps,Rules
+        GITHUB_TOKEN: ${{ secrets.CL_ACCESS_TOKEN }}
+
+    - name: Commit and push changelog changes
+      id: changelog
+      run: |
+        git config user.name "Space-Wizards-Bot"
+        git config user.email "support@spacestation14.com"
+        if [ -n "$(git status --porcelain Resources/Changelog)" ]; then
+          git add Resources/Changelog
+          git commit -m "Update changelog"
+          git remote set-url origin "https://x-access-token:${CL_ACCESS_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+        fi
+      env:
+        CL_ACCESS_TOKEN: ${{ secrets.CL_ACCESS_TOKEN }}
+
+    # - name: Create PR from stable to master
+    #   if: steps.changelog.outputs.committed == 'true'
+    #   env:
+    #     GH_TOKEN: ${{ secrets.CL_ACCESS_TOKEN }}
+    #   run: |
+    #     if [ -z "$(gh pr list --repo "$GITHUB_REPOSITORY" --head stable --base master --state open --json number --jq '.[].number')" ]; then
+    #       gh pr create --repo "$GITHUB_REPOSITORY" --base master --head stable --title "Update changelog" --body "Sync from release to master."
+    #     fi
 
     - name: Install dependencies
       run: dotnet restore
