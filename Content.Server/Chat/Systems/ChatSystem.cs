@@ -49,7 +49,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedInteractionSystem _interactionSystem = default!; // Aurora's Song
     [Dependency] private ReplacementAccentSystem _wordreplacement = default!;
-    [Dependency] private ExamineSystemShared _examineSystem = default!;
+    // [Dependency] private ExamineSystemShared _examineSystem = default!; // Aurora's Song
     [Dependency] private EntityQuery<GhostHearingComponent> _ghostHearingQuery = default!;
 
     // DEN START
