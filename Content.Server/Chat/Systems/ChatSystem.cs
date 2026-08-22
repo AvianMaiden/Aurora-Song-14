@@ -11,7 +11,6 @@ using Content.Shared.CCVar;
 using Content.Shared.Chat;
 using Content.Shared.Examine;
 using Content.Shared.Ghost;
-using Content.Shared.IdentityManagement;
 using Content.Shared.Interaction;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Players.RateLimiting;
@@ -25,8 +24,6 @@ using Robust.Shared.Random;
 using Robust.Shared.Replays;
 using Robust.Shared.Utility;
 using Content.Shared.Physics;
-using Robust.Shared.Physics;
-using Content.Shared._DEN.Earmuffs;
 
 namespace Content.Server.Chat.Systems;
 
@@ -52,7 +49,7 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private SharedAudioSystem _audio = default!;
     [Dependency] private SharedInteractionSystem _interactionSystem = default!; // Aurora's Song
     [Dependency] private ReplacementAccentSystem _wordreplacement = default!;
-    // [Dependency] private ExamineSystemShared _examineSystem = default!; // Aurora's Song
+    [Dependency] private ExamineSystemShared _examineSystem = default!;
     [Dependency] private EntityQuery<GhostHearingComponent> _ghostHearingQuery = default!;
 
     // DEN START
