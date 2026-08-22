@@ -48,10 +48,9 @@ jobs:
       run: dotnet build --configuration DebugOpt --no-restore /p:WarningsAsErrors=nullable /m
 
     - name: Run Shipyard Tests
-      shell: pwsh
+      # shell: pwsh # Aurora's Song - Use bash
       run: |
-        $env:DOTNET_gcServer=1
-        dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj --filter FullyQualifiedName~ShipyardTest -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
+        DOTNET_gcServer=1 dotnet test --no-build --configuration DebugOpt Content.IntegrationTests/Content.IntegrationTests.csproj --filter FullyQualifiedName~ShipyardTest -- NUnit.ConsoleOut=0 NUnit.MapWarningTo=Failed
   ci-success:
     name: Build & Run Shipyard Tests
     needs:

@@ -30,8 +30,8 @@ jobs:
       #   with: # Frontier
       #     python-version: "3.10" # Frontier
       - name: Install Python dependencies
-        run: |
-          pip3 install --ignore-installed --user pillow jsonschema
+        run: | # Aurora's Song - Use global python install instead
+          sudo apt install -y python3-pillow python3-jsonschema
       - name: Validate RSIs
         run: |
           python3 RobustToolbox/Schemas/validate_rsis.py Resources/
