@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
   # Frontier: re-enabled autopublish
   schedule:
-    - cron: '40 7 * * *'
+    - cron: '40 7 * * 2,4,6' # UTC 07:40 W F Su
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-dotnet # Aurora's Song
 
     steps:
     - name: Fail if we are attempting to run on the master branch
@@ -20,15 +20,17 @@ jobs:
       run: exit 1
 
     - name: Install dependencies
-      run: sudo apt-get install -y python3-paramiko python3-lxml
+      run: sudo apk add py3-paramiko py3-lxml # Aurora's Song - Use alpine runner instead
+      # run: sudo apt-get install -y python3-paramiko python3-lxml # Aurora's Song
 
     - uses: actions/checkout@v4.2.2
       with:
         submodules: 'recursive'
-    - name: Setup .NET Core
-      uses: actions/setup-dotnet@v4.1.0
-      with:
-        dotnet-version: 10.0.x
+    # Aurora's Song
+    # - name: Setup .NET Core
+    #   uses: https://github.com/actions/setup-dotnet@v4.1.0 # Aurora's Song concat full URL
+    #   with:
+    #     dotnet-version: 10.0.x
 
     - name: Get Engine Tag
       run: |
@@ -51,14 +53,14 @@ jobs:
       run: Tools/publish_multi_request.py
       env:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
-        GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
+        # GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }} # Aurora's Song
 
-    - name: Publish changelog (Discord)
-      continue-on-error: true
-      run: Tools/actions_changelogs_since_last_run.py
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+#     - name: Publish changelog (Discord)
+#       continue-on-error: true
+#       run: Tools/actions_changelogs_since_last_run.py
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
 
 #     Aurora Song Commented out because we don't have RSS
 #     - name: Publish changelog (RSS)
