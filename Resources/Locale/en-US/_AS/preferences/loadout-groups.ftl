@@ -1,3 +1,6 @@
+# region Pioneer
+loadout-group-pioneer-rescue = Rescue Opt-In
+
 # region Medic
 loadout-group-medic-head = head
 loadout-group-medic-jumpsuit = jumpsuit
@@ -42,3 +45,6 @@ loadout-group-site-worker-face = face
 loadout-group-site-worker-belt = belt
 loadout-group-site-worker-gloves = gloves
 loadout-group-site-worker-pda = PDA
+
+# region Pirate
+loadout-group-pirate-encryption-key = encryption keys

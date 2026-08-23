@@ -19,6 +19,7 @@
   - ContractorPDA
   - ContractorWallet
   - ContractorCartridge
+  - PioneerRescue # Aurora's Song - Added Rescue Opt-in category
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
@@ -47,6 +48,7 @@
   - PilotPDA
   - ContractorWallet
   - ContractorCartridge
+  - PioneerRescue # Aurora's Song - Added Rescue Opt-in category
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
@@ -73,6 +75,7 @@
   - MercenaryPDA
   - ContractorWallet
   - ContractorCartridge
+  - PioneerRescue # Aurora's Song - Added Rescue Opt-in category
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
@@ -322,6 +325,7 @@
   - ContractorHandItems
   - NFSpeciesSpecific
   - ASDecapoidSpeciesSpecific # Aurora's Song
+  - PirateEncryptionKey # Aurora's Song
   canCustomizeName: true # pseudonym?
 
 - type: roleLoadout
@@ -344,6 +348,7 @@
   - ContractorHandItems
   - NFSpeciesSpecific
   - ASDecapoidSpeciesSpecific # Aurora's Song
+  - PirateEncryptionKey # Aurora's Song
   canCustomizeName: true # pseudonym?
 
 - type: roleLoadout
@@ -366,6 +371,7 @@
   - ContractorHandItems
   - NFSpeciesSpecific
   - ASDecapoidSpeciesSpecific # Aurora's Song
+  - PirateEncryptionKey # Aurora's Song
   canCustomizeName: true # pseudonym?
 
 # region Prisoner
