@@ -7,8 +7,10 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+// DEN Start
 using Content.Shared.Ghost;
 using Content.Shared.Physics;
+// DEN End
 
 namespace Content.Server.Chat.Systems;
 
@@ -133,11 +135,12 @@ public sealed partial class ChatSystem
 
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange))
         {
+            // DEN Start - Prevent Subtle and Whisper From Being Heard Through Walls
             if (session.AttachedEntity is not { Valid: true } listener
                 || session.AttachedEntity.HasValue && HasComp<GhostComponent>(session.AttachedEntity.Value)
                 || !_interactionSystem.InRangeUnobstructed(source, listener, WhisperClearRange, _subtleWhisperMask))
                 continue;
-
+            // DEN End
             listener = session.AttachedEntity.Value;
 
             if (MessageRangeCheck(session, data, range) != MessageRangeCheckResult.Full)
@@ -148,7 +151,7 @@ public sealed partial class ChatSystem
             // Wrapped message is the result wrapped in an "x says y" string
             string result;
 
-            // DEN: should only hear subtle with no obstructions
+            // DEN Start - Should only hear subtle with no obstructions
             if (_interactionSystem.InRangeUnobstructed(source, listener, WhisperClearRange, _subtleWhisperMask))
             {
                 // Scenario 1: the listener can clearly understand the message
@@ -169,7 +172,7 @@ public sealed partial class ChatSystem
 
             _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, false, session.Channel);
         }
-
+            // DEN End
         _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
 
         var ev = new EntitySpokeEvent(source, message, channel, obfuscatedMessage);
@@ -263,6 +266,7 @@ public sealed partial class ChatSystem
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"LOOC from {source}: {message}");
     }
 
+    // DEN Start - Subtle Chat
     private void SendEntitySubtle(
         EntityUid source,
         string action,
@@ -302,6 +306,7 @@ public sealed partial class ChatSystem
             else
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Subtle from {ToPrettyString(source):user}: {action}");
     }
+    // DEN End
 
     private void SendDeadChat(EntityUid source, ICommonSession player, string message, bool hideChat)
     {

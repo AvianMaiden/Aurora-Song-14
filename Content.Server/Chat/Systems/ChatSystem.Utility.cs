@@ -74,8 +74,10 @@ public sealed partial class ChatSystem
     {
         foreach (var (session, data) in GetRecipients(source, VoiceRange))
         {
+            // DEN Start - Prevent Subtle And Whisper From Being Heard Through Walls
             if (session.AttachedEntity is not { Valid: true } playerEntity)
                 continue;
+            // DEN End
 
             // DEN edit: VRChat earmuffs, but on Den!
             if (TryComp<EarmuffsComponent>(playerEntity, out var earmuffs)
