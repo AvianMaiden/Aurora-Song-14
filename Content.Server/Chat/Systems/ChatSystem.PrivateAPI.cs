@@ -137,44 +137,25 @@ public sealed partial class ChatSystem
 
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange))
         {
-            // DEN Start - Prevent Subtle and Whisper From Being Heard Through Walls
-            if (session.AttachedEntity is not { Valid: true } listener
-                || session.AttachedEntity.HasValue && HasComp<GhostComponent>(session.AttachedEntity.Value)
-                || !_interactionSystem.InRangeUnobstructed(source, listener, WhisperClearRange, _subtleWhisperMask))
+            EntityUid listener;
+
+            if (session.AttachedEntity is not { Valid: true } playerEntity)
                 continue;
-            // DEN End
             listener = session.AttachedEntity.Value;
 
             if (MessageRangeCheck(session, data, range) != MessageRangeCheckResult.Full)
                 continue; // Won't get logged to chat, and ghosts are too far away to see the pop-up, so we just won't send it to them.
 
-            // How the entity perceives the message depends on whether it can understand its language
-            // Result is the intermediate message derived from the perceived one via obfuscation
-            // Wrapped message is the result wrapped in an "x says y" string
-            string result;
-
-            // DEN Start - Should only hear subtle with no obstructions
-            if (_interactionSystem.InRangeUnobstructed(source, listener, WhisperClearRange, _subtleWhisperMask))
-            {
-                // Scenario 1: the listener can clearly understand the message
-                result = message;
-            }
-            else if (_interactionSystem.InRangeUnobstructed(source, listener, WhisperMuffledRange, CollisionGroup.Opaque))
-            {
-                // Scenario 2: if the listener is too far, they only hear fragments of the message
-                result = wrappedUnknownMessage;
-                wrappedMessage = wrappedobfuscatedMessage;
-            }
+            if (data.Range <= WhisperClearRange || data.Observer)
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, message, wrappedMessage, source, false, session.Channel);
+            //If listener is too far, they only hear fragments of the message
+            else if (_examineSystem.InRangeUnOccluded(source, listener, WhisperMuffledRange))
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedobfuscatedMessage, source, false, session.Channel);
+            //If listener is too far and has no line of sight, they can't identify the whisperer's identity
             else
-            {
-                // Scenario 3: If listener is too far and has no line of sight, they can't identify the whisperer's identity
-                result = wrappedUnknownMessage;
-                wrappedMessage = wrappedUnknownMessage;
-            }
-
-            _chatManager.ChatMessageToOne(ChatChannel.Whisper, result, wrappedMessage, source, false, session.Channel);
+                _chatManager.ChatMessageToOne(ChatChannel.Whisper, obfuscatedMessage, wrappedUnknownMessage, source, false, session.Channel);
         }
-            // DEN End
+
         _replay.RecordServerMessage(new ChatMessage(ChatChannel.Whisper, message, wrappedMessage, GetNetEntity(source), null, MessageRangeHideChatForReplay(range)));
 
         var ev = new EntitySpokeEvent(source, message, channel, obfuscatedMessage);
@@ -267,48 +248,6 @@ public sealed partial class ChatSystem
         SendInVoiceRange(ChatChannel.LOOC, message, wrappedMessage, source, hideChat ? ChatTransmitRange.HideChat : ChatTransmitRange.Normal, player.UserId);
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"LOOC from {source}: {message}");
     }
-
-    // DEN Start - Subtle Chat
-    private void SendEntitySubtle(
-        EntityUid source,
-        string action,
-        ChatTransmitRange range,
-        string? nameOverride,
-        bool hideLog = false,
-        bool ignoreActionBlocker = false,
-        NetUserId? author = null,
-        string? color = null
-    )
-    {
-        if (!_actionBlocker.CanEmote(source) && !ignoreActionBlocker)
-            return;
-        // get the entity's apparent name (if no override provided).
-        var ent = Identity.Entity(source, EntityManager);
-        string name = FormattedMessage.EscapeText(nameOverride ?? Name(ent));
-        // Emotes use Identity.Name, since it doesn't actually involve your voice at all.
-        var wrappedMessage = Loc.GetString("chat-manager-entity-subtle-wrap-message",
-            ("entityName", name),
-            ("entity", ent),
-            ("color", color ?? DefaultSpeakColor.ToHex()),
-            ("message", action));
-
-        foreach (var (session, data) in GetRecipients(source, WhisperClearRange))
-        {
-            if (session.AttachedEntity is not { Valid: true } listener
-                || session.AttachedEntity.HasValue && HasComp<GhostComponent>(session.AttachedEntity.Value)
-                || !_interactionSystem.InRangeUnobstructed(source, listener, WhisperClearRange, _subtleWhisperMask))
-                continue;
-            if (MessageRangeCheck(session, data, range) == MessageRangeCheckResult.Disallowed)
-                continue;
-            _chatManager.ChatMessageToOne(ChatChannel.Emotes, action, wrappedMessage, source, false, session.Channel);
-        }
-        if (!hideLog)
-            if (name != Name(source))
-                _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Subtle from {ToPrettyString(source):user} as {name}: {action}");
-            else
-                _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Subtle from {ToPrettyString(source):user}: {action}");
-    }
-    // DEN End
 
     private void SendDeadChat(EntityUid source, ICommonSession player, string message, bool hideChat)
     {
