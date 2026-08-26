@@ -7,7 +7,7 @@
   parent: BaseVessel
   name: NA Sloop
   description: A small wooden pirate shuttle that was repossessed, stripped, and sold as-is.
-  price: 12500 #Appraises at 7,822
+  price: 12750 #Appraises at 7,822
   category: Small
   group: Scrap
   shuttlePath: /Maps/_AS/Shuttles/Scrap/sloop.yml
