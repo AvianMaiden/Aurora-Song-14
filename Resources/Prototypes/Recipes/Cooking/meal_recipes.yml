@@ -2682,30 +2682,30 @@
   id: RecipeBreakfastAmerican
   name: full american breakfast recipe
   result: FoodBreakfastAmerican
-  time: 30
+  time: 5 # Aurora's Song
   group: Savory
   reagents:
-    Egg: 12
+    EggCooked: 12 # Aurora's Song 
   solids:
-    FoodMeatBacon: 2
+    FoodMeatBaconCooked: 2 # Aurora's Song
     FoodPotato: 1
     FoodBakedPancake: 2
-  recipeType: Oven # Frontier
+  recipeType: Assembler # Aurora's Song
 
 - type: microwaveMealRecipe
   id: RecipeBreakfastEnglish
   name: full english breakfast recipe
   result: FoodBreakfastEnglish
-  time: 30
+  time: 5 # Aurora's Song
   group: Savory
   reagents:
-    Egg: 12
+    EggCooked: 12 # Aurora's Song
   solids:
-    FoodMeatBacon: 1
-    FoodMeat: 1
+    FoodMeatBaconCooked: 1 # Aurora's Song
+    FoodMeatCooked: 1 # Aurora's Song
     FoodTomato: 1
     FoodSoybeans: 2 # replace these with green beans once those become a thing
-  recipeType: Oven # Frontier
+  recipeType: Assembler # Aurora's Song
 
 - type: microwaveMealRecipe
   id: RecipeMoproach # TODO: Move this to be an actual surgery instead, once surgery gets implemented.
