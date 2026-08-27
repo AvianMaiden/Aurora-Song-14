@@ -175,9 +175,9 @@ public partial class ChatBox : UIWidget
         }
     }
 
-    private void OnNewHighlights(string highlighs)
+    private void OnNewHighlights(string highlights)
     {
-        _controller.UpdateHighlights(highlighs);
+        _controller.UpdateHighlights(highlights);
     }
 
     public void AddLine(string message, Color color, int repeat = 0) // EE - Chat stacking - repeat
@@ -199,8 +199,6 @@ public partial class ChatBox : UIWidget
                                 ));
         }
         // End EE - Chat stacking
-
-        Contents.AddMessage(formatted, tagsAllowed: null);
     }
 
     public void Focus(ChatSelectChannel? channel = null)
