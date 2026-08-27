@@ -837,7 +837,7 @@ public sealed partial class ChatUIController : UIController
     public void ProcessChatMessage(ChatMessage msg, bool speechBubble = true)
     {
         // color the name unless it's something like "the old man"
-        if ((msg.Channel == ChatChannel.Local || msg.Channel == ChatChannel.Whisper) && _chatNameColorsEnabled)
+        if ((msg.Channel == ChatChannel.Local || msg.Channel == ChatChannel.Whisper || msg.Channel == ChatChannel.Emotes || msg.Channel == ChatChannel.Subtle) && _chatNameColorsEnabled) // Aurora's Song - Affect emotes and subtle
         {
             var grammar = _ent.GetComponentOrNull<GrammarComponent>(_ent.GetEntity(msg.SenderEntity));
             if (grammar != null && grammar.ProperNoun == true)
@@ -911,14 +911,16 @@ public sealed partial class ChatUIController : UIController
                     AddSpeechBubble(msg, SpeechBubble.SpeechType.Looc);
                 break;
 
+            // DEN Start - Add Subtle and Subtle OOC
             case ChatChannel.Subtle:
-                AddSpeechBubble(msg, SpeechBubble.SpeechType.Emote);
+                AddSpeechBubble(msg, SpeechBubble.SpeechType.Subtle); // Aurora's Song - Subtle and Subtle OOC have unique speech bubble
                 break;
 
             case ChatChannel.SubtleOOC:
                 if (_config.GetCVar(CCVars.LoocAboveHeadShow))
-                    AddSpeechBubble(msg, SpeechBubble.SpeechType.Looc);
+                    AddSpeechBubble(msg, SpeechBubble.SpeechType.SubtleOOC); // Aurora's Song - Subtle and Subtle OOC have unique speech bubble
                 break;
+            // DEN End
         }
     }
 

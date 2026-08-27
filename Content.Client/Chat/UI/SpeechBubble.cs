@@ -26,7 +26,8 @@ namespace Content.Client.Chat.UI
             Say,
             Whisper,
             Looc,
-            SubtleOOC
+            Subtle, // Aurora's Song - Subtle and Subtle OOC have unique speech bubble
+            SubtleOOC, // DEN - Add Subtle OOC
         }
 
         /// <summary>
@@ -81,9 +82,12 @@ namespace Content.Client.Chat.UI
                 case SpeechType.Looc:
                     return new TextSpeechBubble(message, senderEntity, "emoteBox", Color.FromHex("#48d1cc"));
 
-                // DEN Start - Add subtle OOC
+                // DEN Start - Add Subtle and Subtle OOC
+                case SpeechType.Subtle:
+                    return new TextSpeechBubble(message, senderEntity, "emoteBox", Color.FromHex("#FFBBC0")); // Aurora's Song - Subtle and Subtle OOC have unique speech bubble
+
                 case SpeechType.SubtleOOC:
-                    return new TextSpeechBubble(message, senderEntity, "emoteBox", Color.LightPink);
+                    return new TextSpeechBubble(message, senderEntity, "emoteBox", Color.FromHex("#FF7782")); // Aurora's Song - Subtle and Subtle OOC have unique speech bubble
                 // DEN End
 
                 default:

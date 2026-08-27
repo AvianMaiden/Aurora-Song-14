@@ -22,12 +22,12 @@ public abstract partial class SharedChatSystem : EntitySystem
 {
     public const char RadioCommonPrefix = ';';
     public const char RadioChannelPrefix = ':';
-    // public const char RadioChannelAltPrefix = '.'; // TheDen - This is used for subtle
+    // public const char RadioChannelAltPrefix = '.'; // Aurora's Song - Used for Subtle
     public const char LocalPrefix = '>';
     public const char ConsolePrefix = '/';
     public const char DeadPrefix = '\\';
     public const char LOOCPrefix = '(';
-    public const char SubtleOOCPrefix = '^'; // DEN - Add subtle OOC
+    public const char SubtleOOCPrefix = '.'; // DEN - Add subtle OOC // Aurora's Song - Changed to . from ^ for parity
     public const char OOCPrefix = '[';
     public const char EmotesPrefix = '@';
     public const char EmotesAltPrefix = '*';

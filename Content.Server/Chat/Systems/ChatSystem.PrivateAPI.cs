@@ -137,7 +137,7 @@ public sealed partial class ChatSystem
 
         foreach (var (session, data) in GetRecipients(source, WhisperMuffledRange))
         {
-            // DEN Start - Prevent Whisper From Being Heard Through Walls
+            // DEN Start - Prevent Whisper From Being Heard Through Walls Or By Ghosts
             if (session.AttachedEntity is not { Valid: true } listener
                 || session.AttachedEntity.HasValue && HasComp<GhostComponent>(session.AttachedEntity.Value)
                 || !_interactionSystem.InRangeUnobstructed(source, listener, WhisperClearRange))
