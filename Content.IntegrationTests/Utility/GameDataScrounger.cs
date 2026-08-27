@@ -169,15 +169,15 @@ public static partial class GameDataScrounger
             // Take a directory off the stack.
             var dir = explorationStack.Pop();
 
-            var ignoredDir = ignoreList.Contains(dir); // Aurora's Song - Refactor ignored system
+            var ignoredDir = ignoreList.Contains(Path.GetFullPath(dir));
 
             explorationStack.AddRange(Directory.EnumerateDirectories(dir));
 
             foreach (var file in Directory.EnumerateFiles(dir, "*.yml"))
             {
-                var ignored = ignoreList.Contains(file) || ignoredDir; // Aurora's Song - Refactor ignored system
+                var ignored = ignoredDir || ignoreList.Contains(Path.GetFullPath(file));
 
-                foreach (var (kind, id) in IndexPrototypesIn(file, ignored)) // Aurora's Song - Refactor ignored system
+                foreach (var (kind, id) in IndexPrototypesIn(file, ignored))
                 {
                     // alternate universe where .net has rust's Entry api.
                     if (!_prototypeIndex.TryGetValue(kind, out var list))
@@ -202,8 +202,9 @@ public static partial class GameDataScrounger
     ///     yielding all (type, id) pairs.
     /// </summary>
     /// <param name="file">The file to index.</param>
+    /// <param name="ignored">Whether or not the file is ignored. This treats the entire file as abstract.</param>
     /// <returns>An enumerator of all prototypes in the file, regardless of kind.</returns>
-    private static IEnumerable<(string type, string id)> IndexPrototypesIn(string file, bool ignored = false) // Aurora's Song - Add ignored
+    private static IEnumerable<(string type, string id)> IndexPrototypesIn(string file, bool ignored = false)
     {
         var stream = new YamlStream();
 
@@ -221,7 +222,7 @@ public static partial class GameDataScrounger
 
                 var id = entryMapping[IdNode];
                 var type = entryMapping[TypeNode];
-                var @abstract = ignored; // Aurora's Song - Treat ignored files as abstract
+                var @abstract = ignored;
                 if (entryMapping.TryGetNode("abstract", out YamlScalarNode? abstractNode))
                 {
                     // TODO: This technically will exclude prototypes that use the abstract field for their own stuff,
@@ -357,7 +358,7 @@ public static partial class GameDataScrounger
                     if (entry is not YamlScalarNode { Value: {} value })
                         throw new Exception($"An entry in {path} is not a valid YAML scalar/string literal. Entry: {entry}");
 
-                    ignores.Add(resDir + value); // Aurora's Song - Fix scrounger
+                    ignores.Add(Path.GetFullPath($"{resDir}{value}"));
                 }
             }
         }
