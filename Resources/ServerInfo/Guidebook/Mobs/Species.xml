@@ -53,4 +53,8 @@
   <GuideEntityEmbed Entity="MobAllulalo" Caption="Allulalo"/>
   <GuideEntityEmbed Entity="MobDecapoid" Caption="Decapoid"/>
   </Box>
+  # Starfall Drift species
+  <Box>
+  <GuideEntityEmbed Entity="AppearanceLumari" Caption="Lumari"/>
+  </Box>
 </Document>
