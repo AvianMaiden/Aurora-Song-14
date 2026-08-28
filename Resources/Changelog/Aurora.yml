@@ -2806,78 +2806,78 @@ Entries:
   - type: Fix
     message: changelogs!
   id: 9727
-  time: '2026-08-28T00:34:56.6332239-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1454
+  time: '2026-08-28T00:47:12.6524918-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1454
 - author: Sere
   changes:
   - type: Fix
     message: Rings fit in both neck slots.
   id: 9728
-  time: '2026-08-28T00:34:56.6338229-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1441
+  time: '2026-08-28T00:47:12.6529138-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1441
 - author: Phoebe51505
   changes:
   - type: Tweak
     message: '[Redacted] Industries has rolled out a new software update for its Shipmind series, allowing them to optimize any sensor suites they use to achieve higher range.'
   id: 9729
-  time: '2026-08-28T00:34:56.6338526-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1444
+  time: '2026-08-28T00:47:12.6529360-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1444
 - author: TrixxedHeart
   changes:
   - type: Tweak
     message: Increased rot timer for players from 20 to 40 minutes.
   id: 9730
-  time: '2026-08-28T00:34:56.6339342-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1442
-- author: Ghost
+  time: '2026-08-28T00:47:12.6529795-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1442
+- author: DVDPlayerOfDiscordFame
   changes:
   - type: Tweak
     message: The Glykon's stats have been adjusted to be a single-shot sniper instead of a multi-shot one.
   id: 9731
-  time: '2026-08-28T00:34:56.6339591-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1403
+  time: '2026-08-28T00:47:12.6529923-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1403
 - author: Thlrds, TrixxedHeart
   changes:
   - type: Add
     message: Added Lumari, which are essentially moths with a different sprite, they have over 300 marking options, go crazy.
   id: 9732
-  time: '2026-08-28T00:34:56.6339951-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1430
+  time: '2026-08-28T00:47:12.6530158-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1430
 - author: Sere
   changes:
   - type: Tweak
     message: Wizden ChatSystem Split real. Big things to come.
   id: 9733
-  time: '2026-08-28T00:34:56.6340166-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1435
-- author: Ghost
+  time: '2026-08-28T00:47:12.6530309-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1435
+- author: ZigTag
   changes:
   - type: Tweak
     message: impact grenades (emps now) explode on wall impact
   id: 9734
-  time: '2026-08-28T00:34:56.6340386-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1382
-- author: Ghost
+  time: '2026-08-28T00:47:12.6530486-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1382
+- author: Phoenix51505
   changes:
   - type: Tweak
     message: The radio antenna's used for Port Boreal Alert Broadcasts have been refurbished and have a much increased broadcast range.
   id: 9735
-  time: '2026-08-28T00:34:56.6340807-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1411
+  time: '2026-08-28T00:47:12.6530812-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1411
 - author: SalamanderSkies
   changes:
   - type: Tweak
     message: The price of the NA Sloop has been increased to 12,750, from 12,500.
   id: 9736
-  time: '2026-08-28T00:34:56.6340988-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1439
-- author: Ghost
+  time: '2026-08-28T00:47:12.6530957-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1439
+- author: ZigTag
   changes:
   - type: Add
     message: Add back sheleg tones to the humanoid slider for shelegs
   id: 9737
-  time: '2026-08-28T00:34:56.6341227-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1388
+  time: '2026-08-28T00:47:12.6531117-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1388
 - author: lolmatdi
   changes:
   - type: Tweak
@@ -2885,40 +2885,40 @@ Entries:
   - type: Tweak
     message: You can now alt click the biogenerator to remove a slotted container
   id: 9738
-  time: '2026-08-28T00:34:56.6341731-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1423
+  time: '2026-08-28T00:47:12.6531523-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1423
 - author: lolmatdi
   changes:
   - type: Tweak
     message: Big Breakfasts are now assembled instead of baked!
   id: 9739
-  time: '2026-08-28T00:34:56.6342004-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1418
+  time: '2026-08-28T00:47:12.6531769-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1418
 - author: Sere
   changes:
   - type: Fix
     message: Headphones, flower wreath and pompom cloaks now fit in both neck slots.
   id: 9740
-  time: '2026-08-28T00:34:56.6342172-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1434
+  time: '2026-08-28T00:47:12.6531866-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1434
 - author: TrixxedHeart
   changes:
   - type: Fix
     message: Fixed Ovinia missing their Neck Fluff marking
   id: 9741
-  time: '2026-08-28T00:34:56.6342286-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1433
+  time: '2026-08-28T00:47:12.6531996-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1433
 - author: TrixxedHeart
   changes:
   - type: Tweak
     message: Welding Fuel now makes Vox drunk.
   id: 9742
-  time: '2026-08-28T00:34:56.6342428-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1422
-- author: Ghost
+  time: '2026-08-28T00:47:12.6532146-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1422
+- author: Phoenix51505
   changes:
   - type: Tweak
     message: The Health Service of Aurora have recalled faulty blood packs and sent out new packs that once more restore 5% of blood volume
   id: 9743
-  time: '2026-08-28T00:34:56.6343112-07:00'
-  url: https://codeberg.org/api/v1/repos/Aurora-Song/Aurora-Song-14/pulls/1414
+  time: '2026-08-28T00:47:12.6532789-07:00'
+  url: https://codeberg.org/Aurora-Song/Aurora-Song-14/pulls/1414
