@@ -320,5 +320,7 @@
       prob: 0.7
     - id: SpawnDungeonLootVaultGuns
       prob: 0.4
+    - id: ASClothingShoesBootsMagPunkParty # Aurora
+      prob: 0.1
     sound:
       path: /Audio/Items/jumpsuit_equip.ogg

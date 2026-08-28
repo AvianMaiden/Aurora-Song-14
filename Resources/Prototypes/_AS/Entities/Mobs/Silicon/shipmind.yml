@@ -75,6 +75,8 @@
     transmitFrequencyId: ShuttleTimer
   - type: RadarConsole
     followEntity: false
+    maxRange: 768 # The same as a standard 
+    maxIffRange: 1100 # a bit over sqrt(2) * 768
   - type: HolographicAvatar
     layerData:
     - sprite: Mobs/Silicon/station_ai.rsi

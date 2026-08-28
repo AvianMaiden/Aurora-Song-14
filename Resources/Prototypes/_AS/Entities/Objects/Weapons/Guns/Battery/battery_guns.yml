@@ -541,6 +541,80 @@
     autoRechargePauseTime: 6
 
 - type: entity
+  id: ASWeaponAdvancedHoloflareGun
+  parent: NFWeaponHoloflareGun
+  name: advanced holoflare pistol
+  description: |-
+    An upgraded model of the holoflare pistol, boasting a more robust battery.
+  components:
+  - type: Sprite
+    sprite: _AS/Objects/Weapons/Guns/Battery/advanced_holoflare.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-3
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+    - state: mode-cyan
+      shader: unshaded
+      map: [ "Firemode" ]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Battery
+    maxCharge: 1440
+    startingCharge: 1440
+  - type: BatterySelfRecharger
+    autoRechargeRate: 6
+  - type: MagazineVisuals
+    magState: mag
+    steps: 3
+    zeroVisible: false
+  - type: Appearance
+  - type: StaticPrice
+    price: 2500
+
+- type: entity
+  id: ASWeaponExperimentalHoloflareGun
+  parent: NFWeaponHoloflareGun
+  name: experimental holoflare pistol
+  description: |-
+    An experimental holoflare pistol with a micro-reactor battery
+  components:
+  - type: Sprite
+    sprite: _AS/Objects/Weapons/Guns/Battery/experimental_holoflare.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-1
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
+    - state: mode-cyan
+      shader: unshaded
+      map: [ "Firemode" ]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: Battery
+    maxCharge: 240
+    startingCharge: 240
+  - type: BatterySelfRecharger
+    autoRechargeRate: 33
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: true
+  - type: Appearance
+  - type: StaticPrice
+    price: 10000
+
+- type: entity
   name: energy shotgun # Yeah I ripped this from upstream's files too because it wasn't initialising the prototype and I'm lazy, sue me
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseC3NanoTrasenContraband, ASBaseWeaponManufacturerNanoTrasen] # Aurora's Song | BaseGrandTheftContraband<BaseC2ContrabandUnredeemable<BaseCeNanoTrasenContraband
   id: ASWeaponEnergyShotgun

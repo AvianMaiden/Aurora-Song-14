@@ -14,3 +14,4 @@
     slots:
     - OUTERCLOTHING
     - NECK
+    - NECK2 # Aurora's Song - Second neck slot (slotflags edition)

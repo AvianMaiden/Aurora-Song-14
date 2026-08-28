@@ -63,7 +63,9 @@ namespace Content.Shared.Humanoid
                     break;
                 case HumanoidVisualLayers.Chest:
                     yield return HumanoidVisualLayers.Chest;
+                    yield return HumanoidVisualLayers.NeckFluff; // Aurora's Song: This was supposed to be here but never got added for some reason
                     yield return HumanoidVisualLayers.Tail;
+                    yield return HumanoidVisualLayers.TailOverlay;// Aurora's Song: This was supposed to be here but never got added for some reason
                     break;
                 default:
                     yield break;

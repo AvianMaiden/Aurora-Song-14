@@ -16,6 +16,7 @@
         - !type:GroupSelector
           children:
           - id: FlashlightLantern
+          - id: ASHandheldFloodlight # Aurora
           - id: Flare
           - id: GlowstickGreen
         # Low-chance items
@@ -106,6 +107,8 @@
           prob: 0.7
         - id: ClothingHeadHatHardhatBlue
           prob: 0.5
+        - id: ASHandheldFloodlight # Aurora
+          prob: 0.3
 
 - type: entity
   id: ToolboxMechanicalFilledAllTools
