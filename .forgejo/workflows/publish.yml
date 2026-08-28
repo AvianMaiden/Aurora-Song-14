@@ -40,6 +40,11 @@ jobs:
         cd RobustToolbox
         git fetch --depth=1
 
+    # Aurora's Song Start
+    - name: Save old changelog
+      run: cp Resources/Changelog/Aurora.yml Resources/Changelog/Old.yml
+    # Aurora's Song End
+
     - name: Update changelog
       run: | # Aurora's Song - Use AS version until upstream updates theirs
         dotnet tool install --global AuroraSong.ChangelogTool --version 1.0.0
@@ -102,6 +107,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DISCORD_WEBHOOK_URL: ${{ secrets.CHANGELOG_DISCORD_WEBHOOK }}
+        SS14_CHANGELOG_DEBUG: true
 
 #     Aurora Song Commented out because we don't have RSS
 #     - name: Publish changelog (RSS)

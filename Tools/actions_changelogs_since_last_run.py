@@ -55,7 +55,7 @@ def main():
     diff = diff_changelog(last_changelog, cur_changelog)
     message_lines = changelog_entries_to_message_lines(diff)
 
-    if DEBUG:
+    if DEBUG and not DISCORD_WEBHOOK_URL: # Aurora's Song - If webhook, we want to send
         dump_debug_markdown(message_lines)
         return
 
