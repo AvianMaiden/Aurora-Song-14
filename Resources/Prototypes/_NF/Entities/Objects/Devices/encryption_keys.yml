@@ -49,7 +49,6 @@
     - Medical
     - Greeting # Aurora's Song - Added Greeting, to allow medical command to help onboard
     - Command
-    - Triage # Aurora's Song - Added Triage, for official medical staff calls
     defaultChannel: Common
   - type: Item
     sprite: _NF/Objects/Devices/encryption_keys.rsi

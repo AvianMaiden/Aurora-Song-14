@@ -22,7 +22,7 @@
   - CadetNfsdAccess
   special:
   - !type:AddImplantSpecial
-    implants: [ MindShieldImplant, TrackingImplant, TriageTrackingImplant ]
+    implants: [ MindShieldImplant, TrackingImplant ]
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift
@@ -40,10 +40,9 @@
     - ASRubberStampPal # Aurora's Song - Changed to AS version
   licenses:
   - LicenseContrabandHandling
-  encryptionKeys: # Aurora's Song - Added traffic and shipboard and triage encryption keys
+  encryptionKeys: # Aurora's Song - Added traffic and shipboard encryption keys
   - EncryptionKeyTraffic
   - EncryptionKeyShipboard
-  - EncryptionKeyTriage
 
 - type: chameleonOutfit
   id: PublicAffairsLiaisonChameleonOutfit

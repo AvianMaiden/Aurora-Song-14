@@ -25,7 +25,7 @@
   - StationTrafficController
   special:
   - !type:AddImplantSpecial
-    implants: [ TrackingImplant, TriageTrackingImplant ] # Aurora's Song - Added implants for tracking to the STC
+    implants: [ TrackingImplant ] # Aurora's Song - Added implants for tracking to the STC
   - !type:GiveItemOnHolidaySpecial
     holiday: FrontierBirthday
     prototype: FrontierBirthdayGift

@@ -144,7 +144,7 @@
   - type: ContainerFill
     containers:
       key_slots:
-      - EncryptionKeyMedicalMedic # Aurora's Song - EncryptionKeyMedical>EncryptionKeyMedicalMedic
+      - EncryptionKeyMedical
       - EncryptionKeyCommon
   - type: Sprite
     sprite: Clothing/Ears/Headsets/medical.rsi

@@ -19,7 +19,6 @@
   - ContractorPDA
   - ContractorWallet
   - ContractorCartridge
-  - PioneerRescue # Aurora's Song - Added Rescue Opt-in category
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
@@ -48,7 +47,6 @@
   - PilotPDA
   - ContractorWallet
   - ContractorCartridge
-  - PioneerRescue # Aurora's Song - Added Rescue Opt-in category
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems
@@ -75,7 +73,6 @@
   - MercenaryPDA
   - ContractorWallet
   - ContractorCartridge
-  - PioneerRescue # Aurora's Song - Added Rescue Opt-in category
   - ContractorImplanter
   - ContractorBackpackItems
   - ContractorHandItems

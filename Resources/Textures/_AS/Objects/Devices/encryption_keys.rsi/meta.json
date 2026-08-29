@@ -29,9 +29,6 @@
             "name": "as_label"
         },
         {
-            "name": "triage_label"
-        },
-        {
             "name": "arcadia_label"
         }
     ]

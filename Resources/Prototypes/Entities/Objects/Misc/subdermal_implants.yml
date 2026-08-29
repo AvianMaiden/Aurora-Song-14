@@ -106,8 +106,7 @@
       - Critical
       - Dead
     - type: RattleOnTrigger
-      radioChannel: # Aurora's Song - Changed to a list
-      - Sle # Aurora Song - Changed from "Nfsd" to "Sle"
+      radioChannel: "Sle" # Aurora Song - Changed from "Nfsd" to "Sle"
     # End Frontier: no sensor, add rattle
 
 #Traitor implants
@@ -432,5 +431,4 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: RattleOnTrigger
-    radioChannel:
-    - CentCom # Aurora's Song - changed to a list
+    radioChannel: CentCom

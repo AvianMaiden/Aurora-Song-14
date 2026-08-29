@@ -86,14 +86,11 @@ public sealed partial class ASRattleTriggerSystem : XOnTriggerSystem<RattleOnTri
             ("position", posText),
             ("deathtime", deathTime)); // Aurora's Song: Death Times
 
-        foreach (var channel in ent.Comp.RadioChannel)
-        {
-            _radioSystem.SendRadioMessage(
-                target,
-                message,
-                _prototypeManager.Index<RadioChannelPrototype>(channel),
-                target);
-        }
+        _radioSystem.SendRadioMessage(
+            target,
+            message,
+            _prototypeManager.Index<RadioChannelPrototype>(ent.Comp.RadioChannel),
+            target);
         // End Coyote
 
         _critCatridgeSystem.OnDeathrattle(); // Aurora's Song - Ping PDAs
