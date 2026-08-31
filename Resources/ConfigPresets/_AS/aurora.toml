@@ -46,6 +46,6 @@ period = 300
 
 [infolinks]
 discord    = "https://discord.gg/aurorasong"
-github     = "https://github.com/AuroraSong14/Aurora-Song-14"
+github     = "https://codeberg.org/Aurora-Song/Aurora-Song-14"
 wiki       = "https://wiki.aurorasong.gay/index.php?title=Main_Page"
-bug_report = "https://github.com/AuroraSong14/Aurora-Song-14/issues"
+bug_report = "https://codeberg.org/Aurora-Song/Aurora-Song-14/issues"
