@@ -76,6 +76,6 @@
     state: rpg
   - type: TimedDespawn
     lifetime: 5 # 10 -> 5 since these bullets are traveling at 60-80m/s rather than 30-40m/s; keeps consistency with distance
-  - type: RadarBlip # high-energy projectile giving off radar returns; also helps with aiming
+  - type: RadarBlip # helps with aiming dumbfire rockets
     scale: 0.8
     visibleFromOtherGrids: true

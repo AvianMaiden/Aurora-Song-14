@@ -3,7 +3,7 @@
   parent: NFBaseCartridgeRocket
   id: ASCartridgeShuttleRocket75
   name: 75mm HE rocket
-  description: A 75mm high-explosive rocket, designed to be launched from a shuttle rocket pod.
+  description: A 75mm high-explosive rocket, designed to be launched from a shuttle rocket pod. Authorized for government use only.
   components:
   - type: Tag
     tags:

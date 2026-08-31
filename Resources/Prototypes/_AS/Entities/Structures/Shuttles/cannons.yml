@@ -19,13 +19,14 @@
   id: ASShuttleGunMuleSLE
   parent: [ShuttleGunBase, ConstructibleMachine]
   name: NV/MG-340 "Mule"
-  description: A .30 rifle general-purpose machine gun in a fixed-mount configuration, akin to the iconic LMG-6.
+  description: A .30 rifle general-purpose machine gun in a fixed-mount configuration, akin to the iconic LMG-6. Not glamorous, but doesn't need to be.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    sprite: _AS/Objects/Weapons/Guns/Shuttles/mule.rsi
     layers:
-    - state: exp-2100g
-    - state: mag-7
+    - state: mule
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
@@ -58,8 +59,8 @@
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
-    steps: 8
-    zeroVisible: false
+    steps: 4
+    zeroVisible: true
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -73,16 +74,30 @@
           - NFMagazineBoxRifle30 # same as the L6
 
 - type: entity
+  id: ASShuttleGunMuleCoaxSLE
+  parent: ASShuttleGunMuleSLE
+  suffix: coaxial
+  components:
+  - type: Sprite
+    sprite: _AS/Objects/Weapons/Guns/Shuttles/mulecoax.rsi
+    layers:
+    - state: coaxial
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
+      map: [ "enum.GunVisualLayers.Mag" ]
+
+- type: entity
   id: ASShuttleGunOxSLE
   parent: ASShuttleGunMuleSLE
   name: NV/MG-2C "Ox"
   description: A .50 caliber heavy machine gun in a fixed-mount configuration; a timeless classic.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    sprite: _AS/Objects/Weapons/Guns/Shuttles/ox.rsi
     layers:
-    - state: exp-2100g
-    - state: mag-7
+    - state: ox
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-3
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     projectileSpeed: 55
@@ -95,8 +110,8 @@
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: MagazineVisuals
     magState: mag
-    steps: 8
-    zeroVisible: false
+    steps: 4
+    zeroVisible: true
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -120,6 +135,7 @@
     sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
     layers:
     - state: exp-2100g
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-7
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
@@ -156,7 +172,7 @@
   - type: MagazineVisuals
     magState: mag
     steps: 8
-    zeroVisible: false
+    zeroVisible: true
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -181,6 +197,7 @@
     sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
     layers:
     - state: exp-2100g
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-7
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
@@ -193,7 +210,7 @@
   - type: MagazineVisuals
     magState: mag
     steps: 8
-    zeroVisible: false
+    zeroVisible: true
 
 - type: entity
   id: ASShuttleGunCoilgunCAF
@@ -205,6 +222,7 @@
     sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
     layers:
     - state: exp-2100g
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-7
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
@@ -241,7 +259,7 @@
   - type: MagazineVisuals
     magState: mag
     steps: 8
-    zeroVisible: false
+    zeroVisible: true
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -260,7 +278,7 @@
   id: ASShuttleGunRocket75CAF
   parent: [ShuttleGunBase, ConstructibleMachine]
   name: NV/R-75 rocket pod
-  description: An eight-tube 75mm rocket pod for rapid explosive fire support.
+  description: A seven-tube 75mm rocket pod for rapid explosive fire support.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
@@ -284,16 +302,13 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
   - type: Gun
-    projectileSpeed: 65
+    projectileSpeed: 50
     fireRate: 12
     angleDecay: 45
     minAngle: 0
     maxAngle: 12
     soundGunshot:
-      path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg
-      params:
-        variation: 0.05
-        pitch: 0.8
+      path: /Audio/_RMC14/Effects/rocketpod_fire.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: Machine
@@ -306,7 +321,7 @@
     whitelist:
       tags:
       - ASCartridgeShuttleRocket75 # exclusive ammo
-    capacity: 8
+    capacity: 7
     proto: ASCartridgeShuttleRocket75 # exclusive ammo
     soundInsert:
       path: /Audio/Items/change_jaws.ogg
