@@ -132,7 +132,7 @@
   description: A 20x100mm autocannon designed for general use against light and unarmored targets. This variant is designed for a fixed shuttle mount.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    sprite: _AS/Objects/Weapons/Guns/Shuttles/woodpecker.rsi
     layers:
     - state: exp-2100g
       map: ["enum.GunVisualLayers.Base"]
@@ -194,7 +194,7 @@
   description: A nose-mounted 20x100mm rotary autocannon. BRRRRRRT.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    sprite: _AS/Objects/Weapons/Guns/Shuttles/hummingbird.rsi
     layers:
     - state: exp-2100g
       map: ["enum.GunVisualLayers.Base"]
@@ -219,11 +219,10 @@
   description: A nose-mounted 15mm magnetic linear accelerator, capable of slinging a kinetic round at incredible velocities. Primarily intended for ripping through lightly armored targets.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    sprite: _AS/Objects/Weapons/Guns/Shuttles/archer.rsi
     layers:
-    - state: exp-2100g
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-7
+    - state: archer
+    - state: mag-5
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
@@ -258,8 +257,8 @@
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
-    steps: 8
-    zeroVisible: true
+    steps: 5
+    zeroVisible: false
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -281,7 +280,7 @@
   description: A seven-tube 75mm rocket pod for rapid explosive fire support.
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Shuttles/launcher.rsi
+    sprite: _AS/Objects/Weapons/Guns/Shuttles/rocketpod75.rsi
     layers:
     - state: exp-2100g
     - state: mag-7
@@ -325,3 +324,15 @@
     proto: ASCartridgeShuttleRocket75 # exclusive ammo
     soundInsert:
       path: /Audio/Items/change_jaws.ogg
+
+- type: entity
+  id: ASShuttleGunRocketUnder75CAF
+  parent: ASShuttleGunRocket75CAF
+  suffix: under-wing
+  components:
+  - type: Sprite
+    sprite: _AS/Objects/Weapons/Guns/Shuttles/rocketpod75under.rsi
+    layers:
+    - state: coaxial
+    - state: mag-7
+      map: [ "enum.GunVisualLayers.Mag" ]
