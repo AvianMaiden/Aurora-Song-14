@@ -303,7 +303,7 @@
 
 - type: marking
   id: RodentiaCheeksWhiskers
-  bodyPart: HeadTop # for layering
+  bodyPart: HeadSide # for layering, originally was HeadTop, changed in AS
   groupWhitelist: [Rodentia, Human] # Funky - Remove IPC due to oversight, Aurora Song: Add humans
   sprites:
     - sprite: _DV/Mobs/Customization/Rodentia/cheek_markings.rsi

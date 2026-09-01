@@ -68,6 +68,7 @@
     markingData:
       layers:
       - Chest
+      - NeckFluff # Aurora's Song
       - Tail
       - Overlay
       - TailOverlay

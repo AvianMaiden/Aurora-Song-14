@@ -211,6 +211,8 @@
   start: start
   graph:
     - node: start
+      actions:
+        - !type:DestroyEntity {} # AuroraSong - So that the tables actually get destroyed when deconstructed.
       edges:
         - to: TableCasinoCards
           completed:

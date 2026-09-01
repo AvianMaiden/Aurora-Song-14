@@ -20,11 +20,11 @@ Small fixes/refactors are exempt. Media may be used in SS14 progress reports wit
 
 ## Requirements
 <!-- Confirm the following by placing an X in the brackets without spaces inside (for example: [X] ): -->
-- [ ] I have read [CONTRIBUTING.md](https://github.com/AuroraSong14/Aurora-Song-14/blob/master/CONTRIBUTING.md) and am following the [Pull Request and Changelog Guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
+- [ ] I have read [CONTRIBUTING.md](https://codeberg.org/Aurora-Song/Aurora-Song-14/src/branch/master/CONTRIBUTING.md) and am following the [Pull Request and Changelog Guidelines](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
 - [ ] I have added media to this PR or it does not require an in-game showcase.
 - [ ] I have reviewed the [Ship Submission Guidelines](https://frontierstation.wiki.gg/wiki/Ship_Submission_Guidelines) if relevant.
 - [ ] I confirm that the content in this PR is my own work, and/or is properly attributed to the original author(s).
-- [ ] I hereby provide and license all personal software contributions within this pull request under the repository's existing [MIT license](https://github.com/AuroraSong14/Aurora-Song-14/blob/master/LICENSE-MIT.txt).
+- [ ] I hereby provide and license all personal software contributions within this pull request under the repository's existing [MIT license](https://codeberg.org/Aurora-Song/Aurora-Song-14/src/branch/master/LICENSE-MIT.txt).
 <!-- You should understand that not following the above may get your PR closed at maintainer’s discretion -->
 
 ## Breaking changes

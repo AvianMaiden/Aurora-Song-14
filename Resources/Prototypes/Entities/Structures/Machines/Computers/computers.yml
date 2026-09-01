@@ -222,10 +222,11 @@
   - type: Tag
     tags:
       - Syndicate
+    # Aurora's Song Start - Parity with Shuttle Console
   - type: RadarConsole
-    maxRange: 384
   - type: WorldLoader
-    radius: 1536
+    radius: 256
+    # Aurora's Song End
   - type: PointLight
     radius: 1.5
     energy: 4.0

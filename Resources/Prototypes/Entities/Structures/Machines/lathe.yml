@@ -54,18 +54,28 @@
     price: 800
   - type: ResearchClient
   - type: TechnologyDatabase
-  - type: MaterialStorageMagnetPickup # Frontier
-    range: 0.30 # Frontier
+#  - type: MaterialStorageMagnetPickup # Frontier #Aurora's song, moved to baseLatheMagnet
+#    range: 0.30 # Frontier
   - type: ApcPowerReceiver
     powerLoad: 150
   - type: PowerState
     idlePowerDraw: 150
     workingPowerDraw: 1000
 
-# a lathe that can be sped up with space lube / slowed down with glue
+# Aurora's Song - Start
+# a lathe that has magnet
 - type: entity
   abstract: true
   parent: BaseLathe
+  id: BaseLatheMagnet
+  components:
+  - type: MaterialStorageMagnetPickup
+#Aurora's Song -End
+
+# a lathe that can be sped up with space lube / slowed down with glue
+- type: entity
+  abstract: true
+  parent: BaseLatheMagnet # Aurora's Song
   id: BaseLatheLube
   components:
   - type: ReagentSpeed
@@ -381,7 +391,7 @@
 
 - type: entity
   id: Biofabricator
-  parent: BaseLathe
+  parent: BaseLatheMagnet # Aurora's Song
   name: biocube fabricator
   description: Produces animal cubes using biomass.
   categories: [ HideSpawnMenu ] # Frontier
@@ -588,7 +598,7 @@
       - NFBlueprintAdvanced # Frontier
 
 - type: entity
-  parent: BaseLathe
+  parent: BaseLatheMagnet # Aurora's Song
   id: UniformPrinter
   name: uniform printer
   description: Prints new or replacement uniforms.
@@ -719,7 +729,7 @@
   # End Coyote
 
 - type: entity
-  parent: BaseLathe
+  parent: BaseLatheMagnet # Aurora's Song
   id: OreProcessor
   name: ore processor
   description: It produces sheets and ingots using ores.
@@ -775,7 +785,7 @@
     - AdvancedSmelting
 
 - type: entity
-  parent: BaseLathe
+  parent: BaseLatheMagnet # Aurora's Song
   id: Sheetifier
   name: sheet-meister 2000
   description: A very sheety machine.
@@ -809,7 +819,7 @@
   - type: OreSiloClient # Frontier
 
 - type: entity
-  parent: BaseLathe
+  parent: BaseLatheMagnet #Aurora's Song
   id: CutterMachine
   name: cutter machine
   description: This is a cutter. It cuts. Add variety to your station floor with eye-pleasing patterns! Don't stick your fingers in.

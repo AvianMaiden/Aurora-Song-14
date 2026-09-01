@@ -8,4 +8,12 @@
   - type: Implanter
     implant: RadioImplantSLE
 
+- type: entity
+  id: PrisonTrackingImplanter
+  name: prison tracking implanter
+  parent: [ BaseC2ContrabandUnredeemable, BaseImplantOnlyImplanter ]
+  components:
+  - type: Implanter
+    implant: PrisonTrackingImplant
+
 #endregion SLE
