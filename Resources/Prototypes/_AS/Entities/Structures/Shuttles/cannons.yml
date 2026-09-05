@@ -134,9 +134,9 @@
   - type: Sprite
     sprite: _AS/Objects/Weapons/Guns/Shuttles/woodpecker.rsi
     layers:
-    - state: exp-2100g
+    - state: woodpecker
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-7
+    - state: mag-2
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
@@ -171,8 +171,8 @@
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
-    steps: 8
-    zeroVisible: true
+    steps: 3
+    zeroVisible: false
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -196,9 +196,9 @@
   - type: Sprite
     sprite: _AS/Objects/Weapons/Guns/Shuttles/hummingbird.rsi
     layers:
-    - state: exp-2100g
+    - state: hummingbird
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-7
+    - state: mag-2
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     projectileSpeed: 60
