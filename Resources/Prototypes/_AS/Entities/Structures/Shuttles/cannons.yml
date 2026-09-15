@@ -129,7 +129,7 @@
   id: ASShuttleGunWoodpeckerCAF
   parent: [ShuttleGunBase, ConstructibleMachine]
   name: NV/C-18 "Woodpecker"
-  description: A 20x100mm autocannon designed for general use against light and unarmored targets. This variant is designed for a fixed shuttle mount.
+  description: A 20x100mm autocannon chain gun designed for general use against light and unarmored targets. This variant is designed for a fixed shuttle mount.
   components:
   - type: Sprite
     sprite: _AS/Objects/Weapons/Guns/Shuttles/woodpecker.rsi
@@ -209,8 +209,8 @@
     fireRate: 15
   - type: MagazineVisuals
     magState: mag
-    steps: 8
-    zeroVisible: true
+    steps: 3
+    zeroVisible: false
 
 - type: entity
   id: ASShuttleGunCoilgunCAF
