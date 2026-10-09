@@ -222,7 +222,7 @@
     sprite: _AS/Objects/Weapons/Guns/Shuttles/archer.rsi
     layers:
     - state: archer
-    - state: mag-5
+    - state: mag-6
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
@@ -257,8 +257,8 @@
   - type: MagazineAmmoProvider
   - type: MagazineVisuals
     magState: mag
-    steps: 5
-    zeroVisible: false
+    steps: 7
+    zeroVisible: true
   - type: ItemSlots
     slots:
       gun_magazine:
@@ -282,8 +282,8 @@
   - type: Sprite
     sprite: _AS/Objects/Weapons/Guns/Shuttles/rocketpod75.rsi
     layers:
-    - state: exp-2100g
-    - state: mag-7
+    - state: pod
+    - state: mag-4
       map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
@@ -314,7 +314,7 @@
     board: Null
   - type: MagazineVisuals
     magState: mag
-    steps: 8
+    steps: 5
     zeroVisible: false
   - type: BallisticAmmoProvider
     whitelist:
@@ -333,6 +333,6 @@
   - type: Sprite
     sprite: _AS/Objects/Weapons/Guns/Shuttles/rocketpod75under.rsi
     layers:
-    - state: coaxial
-    - state: mag-7
+    - state: pod
+    - state: mag-4
       map: [ "enum.GunVisualLayers.Mag" ]
