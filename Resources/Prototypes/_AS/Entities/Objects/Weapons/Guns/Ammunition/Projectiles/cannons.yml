@@ -72,8 +72,10 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
-    state: rpg
+    noRot: false
+    sprite: _AS/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    layers:
+    - state: rocket75
   - type: TimedDespawn
     lifetime: 5 # 10 -> 5 since these bullets are traveling at 60-80m/s rather than 30-40m/s; keeps consistency with distance
   - type: RadarBlip # helps with aiming dumbfire rockets

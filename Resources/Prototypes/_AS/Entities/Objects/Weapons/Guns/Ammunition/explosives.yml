@@ -12,10 +12,10 @@
   - type: Item
     size: Ginormous
   - type: CartridgeAmmo
-    proto: NFBulletRocket
+    proto: ASBulletShuttleRocket75
     deleteOnSpawn: true
   - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
-    state: rpg
+    sprite: _AS/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    state: rocket75
   - type: StaticPrice
     price: 20
