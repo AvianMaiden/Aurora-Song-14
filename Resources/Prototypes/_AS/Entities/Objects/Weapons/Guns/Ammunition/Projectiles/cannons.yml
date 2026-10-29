@@ -73,7 +73,7 @@
   components:
   - type: Sprite
     noRot: false
-    sprite: _AS/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _AS/Objects/Weapons/Guns/Ammunition/Explosives/rocket75.rsi
     layers:
     - state: rocket75
   - type: TimedDespawn

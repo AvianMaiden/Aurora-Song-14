@@ -15,7 +15,7 @@
     proto: ASBulletShuttleRocket75
     deleteOnSpawn: true
   - type: Sprite
-    sprite: _AS/Objects/Weapons/Guns/Ammunition/Explosives/explosives.rsi
+    sprite: _AS/Objects/Weapons/Guns/Ammunition/Explosives/rocket75.rsi
     state: rocket75
   - type: StaticPrice
     price: 20
